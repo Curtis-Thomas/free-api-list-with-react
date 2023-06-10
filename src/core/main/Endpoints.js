@@ -1,6 +1,6 @@
 import { Box, Typography, Button } from "@mui/material";
 
-const Endpoints = ({ header, endpoint, description, example }) => {
+const Endpoints = ({ header, endpoint, description }) => {
   const handleCopyEndpoint = () => {
     clearClipboard()
       .then(() => {
@@ -11,19 +11,6 @@ const Endpoints = ({ header, endpoint, description, example }) => {
       })
       .catch((error) => {
         console.error("Failed to copy endpoint to clipboard:", error);
-      });
-  };
-
-  const handleCopyExample = () => {
-    clearClipboard()
-      .then(() => {
-        return navigator.clipboard.writeText(example);
-      })
-      .then(() => {
-        console.log("Copied example to clipboard:", example);
-      })
-      .catch((error) => {
-        console.error("Failed to copy example to clipboard:", error);
       });
   };
 
@@ -52,31 +39,24 @@ const Endpoints = ({ header, endpoint, description, example }) => {
     <Box
       sx={{
         border: "solid 1px #3333",
-        padding: 1,
+        padding: 2,
+        display: "flex",
+        justifyContent: "space-between",
       }}
     >
-      <Typography>Endpoint</Typography>
-      <br />
-
-      <Typography>{header}</Typography>
-      <br />
-      <Typography>{endpoint}</Typography>
-      <Button variant="outlined" onClick={handleCopyEndpoint}>
-        Copy Endpoint
-      </Button>
-      <br />
-      <br />
+      <Box>
+        <Typography>{header}</Typography>
+      </Box>
+      <Box>
+        <Typography>{endpoint}</Typography>
+      </Box>
+      <Box>
+        <Button variant="outlined" onClick={handleCopyEndpoint}>
+          Copy Endpoint
+        </Button>
+      </Box>
 
       <Typography>{description}</Typography>
-      <br />
-
-      <Typography>Example Request</Typography>
-      <br />
-
-      <Typography>{example}</Typography>
-      <Button variant="outlined" onClick={handleCopyExample}>
-        Copy Example
-      </Button>
     </Box>
   );
 };

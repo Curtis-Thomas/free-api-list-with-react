@@ -11,12 +11,7 @@ const AnimalsDailyCatFacts = () => {
       <Box>
         <BoxTest />
         <BoxApiInfo baseEndpoint="https://cat-fact.herokuapp.com" />
-        <Endpoints
-          header="GET"
-          endpoint="/facts/random"
-          description="animal_type,amount"
-          example="/facts/random?animal_type=cat&amount=2"
-        />
+        <Endpoints header="GET" endpoint="/facts/random" />
       </Box>
     </Box>
   );
