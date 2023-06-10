@@ -19,6 +19,7 @@ function App() {
             {/* <Route path="" element={< />} /> */}
 
             <Route path="/" element={<Main />} />
+            <Route path="/free-api-list-with-react/" element={<Main />} />
             <Route path="/AnimalsDash" element={<AnimalDash />} />
             <Route
               path="/AnimalsDash/AnimalsDailyCatFacts"
