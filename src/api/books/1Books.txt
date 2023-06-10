@@ -1,16 +1,6 @@
-{name:'Books',
-    list: [
-         //https://www.abibliadigital.com.br/en
-         {name:'A Biblia Digital'},
-
-         //https://bhagavadgita.io/api/
-         {name:'Bhagavad Gita'},
-
-         //https://gita-api.vercel.app/
-         {name:'Bhagavad Gita telugu'},
-
-         //https://bible-api.com/
-         {name:'Bible-Api'},
+'Books',
+ 
+       
 
          //https://www.bl.uk/collection-metadata/metadata-services/linked-open-bnb
          {name:'British National Bibliography'},
@@ -62,7 +52,7 @@
 
          //https://wizard-world-api.herokuapp.com/swagger/index.html
          {name:'Wizard World'},
-         
+
          //https://wolnelektury.pl/api/
          {name:'Wolne Lektury'},
     ]},

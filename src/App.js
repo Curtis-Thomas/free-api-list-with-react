@@ -25,6 +25,7 @@ import ContIntDash from "./api/contInt/ContInt1Dash";
 import CryptocurrencyDash from "./api/cryptocurrency/Cryptocurrency1Dash";
 import CurrencyExchangeDash from "./api/currencyExchange/CurrencyExchange1Dash";
 import BooksABibliaDigital from "./api/books/BooksABibliDigital";
+import BooksBibleApi from "./api/books/BooksBibleApi";
 
 function App() {
   return (
@@ -107,6 +108,7 @@ function App() {
               path="/BooksDash/ABibliaDigital"
               element={<BooksABibliaDigital />}
             />
+            <Route path="/BooksDash/BibleApi" element={<BooksBibleApi />} />
           </Routes>
         </Box>
         <Box sx={{ height: "5vh" }}>

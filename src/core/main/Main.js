@@ -48,8 +48,8 @@ const Main = () => {
         <BtnRouting
           btnName="Books"
           navigateTo="/BooksDash"
-          // backgroundColor="white"
-          // textColor="#0077ba"
+          backgroundColor="#0077ba"
+          textColor="white"
         />
         <BtnRouting
           btnName="Business"
