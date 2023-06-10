@@ -70,14 +70,14 @@ const BoxTestCrud = ({ url }) => {
           placeholder="Base URL"
           value={urlValue}
           onChange={(e) => setUrl(e.target.value)}
-          sx={{ marginRight: 2, width: "300px" }}
+          sx={{ marginRight: 2, width: "100%" }}
         />
         <Input
           label="Endpoint"
           placeholder="Endpoint"
           value={endpointValue}
           onChange={(e) => setEndpoint(e.target.value)}
-          sx={{ marginRight: 2, width: "300px" }}
+          sx={{ marginRight: 2, width: "100%" }}
         />
         <Button variant="contained" onClick={fetchAPI}>
           Fetch
