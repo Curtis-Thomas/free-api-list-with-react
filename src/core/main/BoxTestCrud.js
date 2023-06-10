@@ -21,7 +21,7 @@ const BoxTestCrud = ({ url }) => {
         const response = await axios[crudOption](`${urlValue}${endpointValue}`);
         if (response.status === 200) {
           const { data } = response;
-          setResponse(data.text);
+          setResponse(data);
         } else {
           const errorMessage = `Error: ${response.status}`;
           setResponse(errorMessage);
@@ -58,7 +58,7 @@ const BoxTestCrud = ({ url }) => {
           value={crudOption}
           onChange={handleCrudOptionChange}
           label="CRUD Option"
-          sx={{ marginRight: 2, width: "110px" }} // Set a minWidth for the dropdown
+          sx={{ marginRight: 2, width: "110px" }}
         >
           <MenuItem value="get">GET</MenuItem>
           <MenuItem value="post">POST</MenuItem>
@@ -93,7 +93,19 @@ const BoxTestCrud = ({ url }) => {
 
       <Box>
         <Typography variant="h6">Response</Typography>
-        <Typography>{response}</Typography>
+        <pre
+          style={{
+            fontFamily: "monospace",
+            whiteSpace: "pre-wrap",
+            background: "#f7f7f7",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          {typeof response === "object"
+            ? JSON.stringify(response, null, 2)
+            : response}
+        </pre>
       </Box>
     </Box>
   );
