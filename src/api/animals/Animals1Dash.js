@@ -14,6 +14,7 @@ const AnimalDash = () => {
         <BtnRouting btnName="Cat as a service" navigateTo="AnimalsCataas" />
         <BtnRouting btnName="Dog Api" navigateTo="AnimalsDogApi" />
         <BtnRouting btnName="Dog" navigateTo="AnimalsDog" />
+        <BtnRouting btnName="Meow Facts" navigateTo="AnimalsMeowFacts" />
       </Box>
     </Box>
   );

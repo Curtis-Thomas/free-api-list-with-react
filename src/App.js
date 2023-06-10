@@ -9,6 +9,7 @@ import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
 import AnimalsCataas from "./api/animals/AnimalsCataas";
 import AnimalsDogApi from "./api/animals/AnimalsDogApi";
 import AnimalsDog from "./api/animals/AnimalsDog";
+import AnimalsMeowFacts from "./api/animals/AnimalsMeowFacts";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
               element={<AnimalsDogApi />}
             />
             <Route path="/AnimalsDash/AnimalsDog" element={<AnimalsDog />} />
+            <Route path="/AnimalsDash/AnimalsMeowFacts" element={<AnimalsMeowFacts />} />
           </Routes>
         </Box>
         <Box sx={{ height: "5vh" }}>
