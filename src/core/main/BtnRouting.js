@@ -17,6 +17,7 @@ const BtnRouting = ({ btnName, navigateTo }) => {
         border: "solid 1px black",
         width: isMobile ? "100%" : "33vw",
         maxWidth: "100%",
+        marginBottom: 2,
       }}
     >
       <Button fullWidth={true} onClick={handleClick}>
