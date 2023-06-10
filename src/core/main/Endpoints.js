@@ -9,7 +9,6 @@ const Endpoints = ({ header, endpoint, description, example }) => {
       <Typography>
         {header} {endpoint}
       </Typography>
-      <Box display="block"></Box>
 
       <Typography>{description}</Typography>
       <br></br>
