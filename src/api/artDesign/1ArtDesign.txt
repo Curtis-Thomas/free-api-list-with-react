@@ -1,19 +1,19 @@
  name:'Art & Design',
 
-  
-
-
     //http://colormind.io/api-access/
     {name:'Colormind'},
+
+
+
 
     //https://www.colourlovers.com/api
     {name:'ColorLovers'},
 
-    //https://collection.cooperhewitt.org/api
-    {name:'Cooper Hewitt'},
 
-    //https://developer.dribbble.com/
-    {name:'Dribble'},
+
+ 
+
+    
 
     //https://github.com/cheatsnake/emojihub
     {name:'EmojiHub'},

@@ -14,6 +14,7 @@ import AnimeDash from "./api/anime/Anime1Dash";
 import AntiMalwareDash from "./api/antiMalware/AntiMalware1Dash";
 import ArtDesignDash from "./api/artDesign/ArtDesign1Dash";
 import ArtDesignArtic from "./api/artDesign/ArtDesignArtic";
+import ArtDesignEmojiHub from "./api/artDesign/ArtDesignEmojiHub";
 
 function App() {
   return (
@@ -52,6 +53,10 @@ function App() {
             <Route
               path="/ArtDesignDash/ArtDesignArtic"
               element={<ArtDesignArtic />}
+            />
+            <Route
+              path="/ArtDesignDash/ArtDesignEmojiHub"
+              element={<ArtDesignEmojiHub />}
             />
           </Routes>
         </Box>

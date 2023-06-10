@@ -17,21 +17,21 @@ const ArtDesignArtic = () => {
           endpoint="/129884"
           description="/artworks/{id}"
         />
+        <Endpoints
+          header="GET"
+          endpoint="?fields=id,title,artist_display,date_display,main_reference_number"
+        />
+        <Endpoints
+          header="GET"
+          endpoint="?page=2&limit=100"
+          description="Include pagination"
+        />
+        <Endpoints header="GET" endpoint="/search?q=cats" />
+        <Endpoints
+          header="GET"
+          endpoint="/search?q=cats&query[term][is_public_domain]=true"
+        />
       </Box>
-      <Endpoints
-        header="GET"
-        endpoint="?fields=id,title,artist_display,date_display,main_reference_number"
-      />
-      <Endpoints
-        header="GET"
-        endpoint="?page=2&limit=100"
-        description="Include pagination"
-      />
-      <Endpoints header="GET" endpoint="/search?q=cats" />
-      <Endpoints
-        header="GET"
-        endpoint="/search?q=cats&query[term][is_public_domain]=true"
-      />
     </Box>
   );
 };
