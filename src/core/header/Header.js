@@ -12,7 +12,7 @@ const Header = () => {
     >
       <Typography>
         Free API List with React, a collection of free APIs across different
-        categories.
+        categories. Btn White = Empty
       </Typography>
     </Box>
   );

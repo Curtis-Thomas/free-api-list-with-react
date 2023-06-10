@@ -1,0 +1,16 @@
+name: 'Animals',
+ 
+        //https://random.dog/woof.json
+        {name:'RandomDog'},
+
+      
+        //https://randomfox.ca/floof/
+        {name:'RandomFox'},
+
+        //(do Later)https://userguide.rescuegroups.org/display/APIDG/API+Developers+Guide+Home
+        {name:'RescueGroups'},
+
+        //https://shibe.online/
+        {name:'Shibe.Online'},
+
+      

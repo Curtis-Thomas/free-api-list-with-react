@@ -10,6 +10,7 @@ import AnimalsCataas from "./api/animals/AnimalsCataas";
 import AnimalsDogApi from "./api/animals/AnimalsDogApi";
 import AnimalsDog from "./api/animals/AnimalsDog";
 import AnimalsMeowFacts from "./api/animals/AnimalsMeowFacts";
+import AnimeDash from "./api/anime/Anime1Dash";
 
 function App() {
   return (
@@ -20,10 +21,9 @@ function App() {
         </Box>
         <Box sx={{ minHeight: "85vh", padding: "16px" }}>
           <Routes>
-            {/* <Route path="" element={< />} /> */}
-
             <Route path="/" element={<Main />} />
             <Route path="/free-api-list-with-react/" element={<Main />} />
+
             <Route path="/AnimalsDash" element={<AnimalDash />} />
             <Route
               path="/AnimalsDash/AnimalsDailyCatFacts"
@@ -38,7 +38,12 @@ function App() {
               element={<AnimalsDogApi />}
             />
             <Route path="/AnimalsDash/AnimalsDog" element={<AnimalsDog />} />
-            <Route path="/AnimalsDash/AnimalsMeowFacts" element={<AnimalsMeowFacts />} />
+            <Route
+              path="/AnimalsDash/AnimalsMeowFacts"
+              element={<AnimalsMeowFacts />}
+            />
+
+            <Route path="/AnimeDash" element={<AnimeDash />} />
           </Routes>
         </Box>
         <Box sx={{ height: "5vh" }}>

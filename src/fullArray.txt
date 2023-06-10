@@ -2,45 +2,7 @@
 //https://free-apis.github.io/#/categories
 let arr = [
     
-    {name:'Anime',
-    list: [
-        //(Broke404)https://aniapi.com/docs/
-        {name:'AniAPI'},
-        //https://wiki.anidb.net/HTTP_API_Definition
-        {name:'AniDB'},
-        //https://github.com/AniList/ApiV2-GraphQL-Docs
-        {name:'AniList'},
-        //https://github.com/RocktimSaikia/anime-chan
-        {name:'AnimeChan'},
-        //https://chandan-02.github.io/anime-facts-rest-api/
-        {name:'AnimeFacts'},
-        //https://www.animenewsnetwork.com/encyclopedia/api.php
-        {name:'AnimeNewsNetwork'},
-        //https://catboys.com/api
-        {name:'Catboy'},
-        //https://danbooru.donmai.us/wiki_pages/help:api
-        {name:'Danbooru Anime'},
-        //https://jikan.moe/
-        {name:'Jikan'},
-        //https://kitsu.docs.apiary.io/#
-        {name:'Kitsu'},
-        //(broke 404 ) https://api.mangadex.org/docs.html
-        {name:'MangaDex'},
-        //https://rapidapi.com/pierre.carcellermeunier/api/mangapi3/
-        {name:'Mangapi'},
-        //https://myanimelist.net/clubs.php?cid=13727
-        {name:'MyAnimeList'},
-        //https://docs.nekos.best/
-        {name:'NekosBest'},
-        //https://shikimori.one/api/doc
-        {name:'Shikimori'},
-        //(Broke)https://ghibliapi.herokuapp.com/
-        {name:'Studio Ghibli'},
-        {name:'Trace Moe'},
-        {name:'Waifu.im'},
-        {name:'Waifu Pics'},
-
-]},
+    
     {name:'Anti-Malware',
 list: [
     //https://docs.abuseipdb.com/#introduction

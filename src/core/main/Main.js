@@ -9,7 +9,18 @@ const Main = () => {
       <NavBar />
 
       <Box>
-        <BtnRouting btnName="Animals" navigateTo="/AnimalsDash" />
+        <BtnRouting
+          btnName="Animals"
+          navigateTo="/AnimalsDash"
+          backgroundColor="#1976D2"
+          textColor="white"
+        />
+        <BtnRouting
+          btnName="Anime"
+          navigateTo="/AnimeDash"
+          backgroundColor="white"
+          textColor="#1976D2"
+        />
       </Box>
     </Box>
   );
