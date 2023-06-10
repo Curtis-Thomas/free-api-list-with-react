@@ -100,6 +100,9 @@ const BoxTestCrud = ({ url }) => {
             background: "#f7f7f7",
             padding: "10px",
             borderRadius: "5px",
+            maxHeight: "60vh",
+            overflow: "auto",
+            border: "solid 1px #333333",
           }}
         >
           {typeof response === "object"
