@@ -24,7 +24,12 @@ const Endpoints = ({ header, endpoint, description, example }) => {
   };
 
   return (
-    <Box>
+    <Box
+      sx={{
+        border: "solid 1px #3333",
+        padding: 1,
+      }}
+    >
       <Typography>Endpoint</Typography>
       <br />
 

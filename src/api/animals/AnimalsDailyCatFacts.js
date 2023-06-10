@@ -12,7 +12,7 @@ const AnimalsDailyCatFacts = () => {
         header="GET"
         endpoint="/facts/random"
         description="animal_type,amount"
-        example="GET /facts/random?animal_type=cat&amount=2"
+        example="/facts/random?animal_type=cat&amount=2"
       />
     </Box>
   );
