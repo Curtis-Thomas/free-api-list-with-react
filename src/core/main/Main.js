@@ -21,6 +21,18 @@ const Main = () => {
           backgroundColor="white"
           textColor="#1976D2"
         />
+        <BtnRouting
+          btnName="Anti-Malware"
+          navigateTo="/AntiMalwareDash"
+          backgroundColor="white"
+          textColor="#1976D2"
+        />
+        <BtnRouting
+          btnName="Art & Design"
+          navigateTo="/ArtDesignDash"
+          // backgroundColor="white"
+          // textColor="#1976D2"
+        />
       </Box>
     </Box>
   );

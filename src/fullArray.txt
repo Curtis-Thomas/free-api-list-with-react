@@ -3,84 +3,8 @@
 let arr = [
     
     
-    {name:'Anti-Malware',
-list: [
-    //https://docs.abuseipdb.com/#introduction
-    {name:'AbuselPDB'},
-    //https://otx.alienvault.com/api
-    {name:'AlienVault Open Threat Exchange (OTX)'},
-    //https://capev2.readthedocs.io/en/latest/usage/api.html
-    {name:'CAPEsandbox'},
-    //https://developers.google.com/safe-browsing/
-    {name:'Google Safe Browsing'},
-    //https://maldatabase.com/api-doc.html
-    {name:'Maldatabase'},
-    //https://malshare.com/doc.php
-    {name:'Malshare'},
-    //https://bazaar.abuse.ch/api/
-    {name:'MalwareBazaar'},
-    //https://metacert.com/
-    {name:'Metacert'},
-    //https://rapidapi.com/Amiichu/api/exerra-phishing-check/
-    {name:'NoPhishy'},
-    //https://phisherman.gg/
-    {name:'Phisherman'},
-    //https://docs.scanii.com/
-    {name:'Scanii'},
-    //https://urlhaus-api.abuse.ch/
-    {name:'URLhaus'},
-    //https://urlscan.io/docs/api/
-    {name:'URLScan.io'},
-    //https://developers.virustotal.com/v2.0/reference/getting-started
-    {name:'VirusTotal'},
-    //https://support.mywot.com/hc/en-us/sections/360004477734-API-
-    {name:'Web of Trust'},
-
-]},
-    {name:'Art & Design',
-list: [
-    //https://api.amethyste.moe/
-    {name: 'Amethyst'},
-    //https://api.artic.edu/docs/
-    {name:'Art Institute of Chicago'},
-    //http://colormind.io/api-access/
-    {name:'Colormind'},
-    //https://www.colourlovers.com/api
-    {name:'ColorLovers'},
-    //https://collection.cooperhewitt.org/api
-    {name:'Cooper Hewitt'},
-    //https://developer.dribbble.com/
-    {name:'Dribble'},
-    //https://github.com/cheatsnake/emojihub
-    {name:'EmojiHub'},
-    //https://pro.europeana.eu/page/search
-    {name:'Europeana'},
-    //https://github.com/harvardartmuseums/api-docs
-    {name:'Harvard Art Museums'},
-    //https://icon.horse/
-    {name:'Icon Horse'},
-    //https://developer.iconfinder.com/reference/overview-1
-    {name:'Iconfinder'},
-    //https://img.icons8.com/
-    {name:'Icons8'},
-    //https://lordicon.com/
-    {name:'Lordicon'},
-    //https://metmuseum.github.io/
-    {name:'Metropolitan Museum of Art'},
-    //http://api.thenounproject.com/index.html
-    {name:'Noun Project'},
-    //https://php-noise.com/
-    {name:'PHP-Noice'},
-    //https://pixelencounter.com/api
-    {name:'Pixel Encounter'},
-    //https://data.rijksmuseum.nl/object-metadata/api/
-    {name:'Rijksmuseum'},
-    //https://wordcloudapi.com/
-    {name:'Word Cloud'},
-    //https://x-colors.herokuapp.com/
-    {name:'xColors'},
     
-]},
+   
     {name:'Authentication & Authorization',
 list: [
     //https://auth0.com/

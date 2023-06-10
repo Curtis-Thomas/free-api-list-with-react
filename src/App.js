@@ -11,6 +11,9 @@ import AnimalsDogApi from "./api/animals/AnimalsDogApi";
 import AnimalsDog from "./api/animals/AnimalsDog";
 import AnimalsMeowFacts from "./api/animals/AnimalsMeowFacts";
 import AnimeDash from "./api/anime/Anime1Dash";
+import AntiMalwareDash from "./api/antiMalware/AntiMalware1Dash";
+import ArtDesignDash from "./api/artDesign/ArtDesign1Dash";
+import ArtDesignArtic from "./api/artDesign/ArtDesignArtic";
 
 function App() {
   return (
@@ -44,6 +47,12 @@ function App() {
             />
 
             <Route path="/AnimeDash" element={<AnimeDash />} />
+            <Route path="/AntiMalwareDash" element={<AntiMalwareDash />} />
+            <Route path="/ArtDesignDash" element={<ArtDesignDash />} />
+            <Route
+              path="/ArtDesignDash/ArtDesignArtic"
+              element={<ArtDesignArtic />}
+            />
           </Routes>
         </Box>
         <Box sx={{ height: "5vh" }}>
