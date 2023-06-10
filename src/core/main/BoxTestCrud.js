@@ -11,7 +11,7 @@ import axios from "axios";
 
 const BoxTestCrud = ({ url }) => {
   const [response, setResponse] = useState("");
-  const [crudOption, setCrudOption] = useState("");
+  const [crudOption, setCrudOption] = useState("get");
   const [urlValue, setUrl] = useState("");
   const [endpointValue, setEndpoint] = useState("");
 
