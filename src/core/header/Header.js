@@ -1,5 +1,4 @@
-import { Box } from "@mui/material";
-import CategoryBtn from "../main/BtnRouting";
+import { Box, Typography } from "@mui/material";
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
         padding: "8px",
       }}
     >
-      <CategoryBtn btnName="Home" navigateTo="/" />
+      <Typography>Header</Typography>
     </Box>
   );
 };
