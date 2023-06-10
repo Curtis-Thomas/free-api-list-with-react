@@ -7,7 +7,7 @@ import BoxTestCrud from "../../core/main/BoxTestCrud";
 const AnimalsDogApi = () => {
   return (
     <Box>
-      <NavBar link="/AnimalsDash" route2="/AnimalsDash" />
+      <NavBar link="/AnimalsDash" route2="/DogApi" />
       <Box>
         <BoxTestCrud />
         <BoxApiInfo baseEndpoint="https://dogapi.dog/api/v2" />

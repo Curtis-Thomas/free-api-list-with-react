@@ -7,7 +7,7 @@ import BoxTestImg from "../../core/main/BoxTestImg";
 const AnimalsCataas = () => {
   return (
     <Box>
-      <NavBar link="/AnimalsDash" route2="/AnimalsDash" />
+      <NavBar link="/AnimalsDash" route2="/Cataas" />
       <Box>
         <BoxTestImg />
         <BoxApiInfo baseEndpoint="https://cataas.com/" />

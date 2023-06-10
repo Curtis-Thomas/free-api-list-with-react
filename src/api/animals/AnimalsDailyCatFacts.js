@@ -7,7 +7,7 @@ import NavBar from "../../core/main/navigation/NavBar";
 const AnimalsDailyCatFacts = () => {
   return (
     <Box>
-      <NavBar link="/AnimalsDash" route2="/AnimalsDash" />
+      <NavBar link="/AnimalsDash" route2="/DailyCatFacts" />
       <Box>
         <BoxTest />
         <BoxApiInfo baseEndpoint="https://cat-fact.herokuapp.com" />

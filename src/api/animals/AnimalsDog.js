@@ -7,7 +7,7 @@ import BoxTestCrud from "../../core/main/BoxTestCrud";
 const AnimalsDog = () => {
   return (
     <Box>
-      <NavBar link="/AnimalsDash" route2="/AnimalsDash" />
+      <NavBar link="/AnimalsDash" route2="/Dog" />
       <Box>
         <BoxTestCrud />
 

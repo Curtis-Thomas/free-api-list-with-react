@@ -7,7 +7,7 @@ import BoxTestCrud from "../../core/main/BoxTestCrud";
 const AnimalsMeowFacts = () => {
   return (
     <Box>
-      <NavBar link="/AnimalsDash" route2="/AnimalsDash" />
+      <NavBar link="/AnimalsDash" route2="/MeowFacts" />
       <Box>
         <BoxTestCrud />
         <BoxApiInfo baseEndpoint="https://meowfacts.herokuapp.com" />
