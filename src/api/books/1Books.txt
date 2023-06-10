@@ -1,0 +1,68 @@
+{name:'Books',
+    list: [
+         //https://www.abibliadigital.com.br/en
+         {name:'A Biblia Digital'},
+
+         //https://bhagavadgita.io/api/
+         {name:'Bhagavad Gita'},
+
+         //https://gita-api.vercel.app/
+         {name:'Bhagavad Gita telugu'},
+
+         //https://bible-api.com/
+         {name:'Bible-Api'},
+
+         //https://www.bl.uk/collection-metadata/metadata-services/linked-open-bnb
+         {name:'British National Bibliography'},
+
+         //https://github.com/CrossRef/rest-api-doc
+         {name:'Crossref Metadata Search'},
+
+         //https://api.ganjoor.net/index.html
+         {name:'Ganjoor'},
+
+         //https://developers.google.com/books/
+         {name:'Google books'},
+
+         //https://github.com/GurbaniNow/api
+         {name:'GurbaniNow'},
+
+         //https://gutendex.com/
+         {name:'Gutendex'},
+
+         //https://openlibrary.org/developers/api
+         {name:'Open Library'},
+
+         //http://www.penguinrandomhouse.biz/webservices/rest/
+         {name:'Penguin Publishing'},
+
+         //https://github.com/thundercomb/poetrydb#readme
+         {name:'PoetryDB'},
+
+         //https://quran.api-docs.io/v4/getting-started/introduction
+         {name:'Quran'},
+
+         //https://alquran.cloud/api
+         {name:'Quran Cloud'},
+
+         //https://github.com/fawazahmed0/quran-api#readme
+         {name:'Quran-api'},
+
+         //https://aninditabasu.github.io/indica/html/rv.html
+         {name:'Rig veda'},
+
+         //https://docs.api.bible/
+         {name:'The Bible'},
+
+         //https://api-thirukkural.web.app/
+         {name:'Thirukkural'},
+
+         //https://aninditabasu.github.io/indica/html/vs.html
+         {name:'Vedic Society'},
+
+         //https://wizard-world-api.herokuapp.com/swagger/index.html
+         {name:'Wizard World'},
+         
+         //https://wolnelektury.pl/api/
+         {name:'Wolne Lektury'},
+    ]},

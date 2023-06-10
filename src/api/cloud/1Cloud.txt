@@ -1,0 +1,60 @@
+  {name:'Cloud Storage & File Sharing',
+    list: [
+        //https://anonfiles.com/docs/api
+        {name:'AnonFiles'},
+
+        //https://bayfiles.com/docs/api
+        {name:'BayFiles'},
+
+        //https://developer.box.com/
+        {name:'Box'},
+
+        //https://ddownload.com/api
+        {name:'ddownload'},
+
+        //https://www.dropbox.com/developers
+        {name:'Dropbox'},
+
+        //https://www.file.io/
+        {name:'File.io'},
+
+        //https://www.filestack.com/
+        {name:'Filestack'},
+
+        //https://gofile.io/api
+        {name:'GoFile'},
+
+        //https://developers.google.com/drive/
+        {name:'Google drive'},
+
+        //https://gyazo.com/api/docs
+        {name:'Gyazo'},
+
+        //https://api.imgbb.com/
+        {name:'Imgbb'},
+
+        //https://developer.microsoft.com/en-us/onedrive
+        {name:'OneDrive'},
+
+        //https://getpantry.cloud/
+        {name:'Pantry'},
+
+        //https://pastebin.com/doc_api
+        {name:'Pastebin'},
+
+        //https://docs.pinata.cloud/
+        {name:'Pinata'},
+
+        //https://docs.pinata.cloud/
+        {name:'Quip'},
+
+        //https://docs.storj.io/dcs/
+        {name:'Storj'},
+
+        //https://0x0.st/
+        {name:'The Null Pointer'},
+        
+        //https://web3.storage/
+        {name:'Web3 Storage'},
+        
+    ]},

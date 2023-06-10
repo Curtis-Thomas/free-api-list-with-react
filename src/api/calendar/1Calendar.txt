@@ -1,0 +1,47 @@
+ {name:'Calandar',
+    list: [
+        //https://www.abstractapi.com/api/holidays-api
+        {name:'Abstract Public Holidays'},
+
+        //https://calendarific.com/
+        {name:'Calendarific'},
+
+        //https://apilayer.com/marketplace/checkiday-api
+        {name:'Checkiday - National Holiday API'},
+
+        //http://calapi.inadiutorium.cz/
+        {name:'Church Calendar'},
+
+        //https://svatky.adresa.info/
+        {name:'Czech Nameday Calendar'},
+
+        //https://docs.getfestivo.com/docs/products/public-holidays-api/intro/
+        {name:'Festico Public Holiday'},
+
+        //https://developers.google.com/calendar
+        {name:'Google Calendar'},
+
+        //https://www.hebcal.com/home/developer-apis
+        {name:'Hebrew Calendar'},
+
+        //https://holidayapi.com/
+        {name:'Holidays'},
+
+        //https://www.lectserve.com/
+        {name:'LectServe'},
+
+        //https://date.nager.at/
+        {name:'Nager.Date'},
+
+        //https://nameday.abalin.net/
+        {name:'Nameday Calendar'},
+
+        //https://www.isdayoff.ru/
+        {name:'Non-Working Days'},
+
+        //https://github.com/egno/work-calendar
+        {name:'Russian Calendar'},
+        
+        //https://github.com/egno/work-calendar
+        {name:'UK Bank Holidays'},
+    ]},

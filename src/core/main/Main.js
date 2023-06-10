@@ -39,6 +39,54 @@ const Main = () => {
           backgroundColor="white"
           textColor="#0077ba"
         />
+        <BtnRouting
+          btnName="Blockchain"
+          navigateTo="/BlockchainDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="Books"
+          navigateTo="/BooksDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="Business"
+          navigateTo="/BusinessDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="Calendar"
+          navigateTo="/CalendarDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="Cloud"
+          navigateTo="/CloudDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="ContInt"
+          navigateTo="/ContIntDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="Cryptocurrency"
+          navigateTo="/CryptocurrencyDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
+        <BtnRouting
+          btnName="CurrencyExchange"
+          navigateTo="/CurrencyExchangeDash"
+          // backgroundColor="white"
+          // textColor="#0077ba"
+        />
       </Box>
     </Box>
   );

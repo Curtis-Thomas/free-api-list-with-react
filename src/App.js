@@ -16,6 +16,14 @@ import ArtDesignDash from "./api/artDesign/ArtDesign1Dash";
 import ArtDesignArtic from "./api/artDesign/ArtDesignArtic";
 import ArtDesignEmojiHub from "./api/artDesign/ArtDesignEmojiHub";
 import AuthenticationDash from "./api/authentication/Authentication1Dash";
+import BlockchainDash from "./api/blockchain/Blockchain1Dash";
+import BooksDash from "./api/books/Books1Dash";
+import BusinessDash from "./api/business/Business1Dash";
+import CalendarDash from "./api/calendar/Calendar1Dash";
+import CloudDash from "./api/cloud/Cloud1Dash";
+import ContIntDash from "./api/contInt/ContInt1Dash";
+import CryptocurrencyDash from "./api/cryptocurrency/Cryptocurrency1Dash";
+import CurrencyExchangeDash from "./api/currencyExchange/CurrencyExchange1Dash";
 
 function App() {
   return (
@@ -41,7 +49,29 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/free-api-list-with-react/" element={<Main />} />
 
+            {/* Dashboards */}
             <Route path="/AnimalsDash" element={<AnimalDash />} />
+            <Route path="/AnimeDash" element={<AnimeDash />} />
+            <Route path="/ArtDesignDash" element={<ArtDesignDash />} />
+            <Route
+              path="/AuthenticationDash"
+              element={<AuthenticationDash />}
+            />
+            <Route path="/BlockchainDash" element={<BlockchainDash />} />
+            <Route path="/BooksDash" element={<BooksDash />} />
+            <Route path="/BusinessDash" element={<BusinessDash />} />
+            <Route path="/CalendarDash" element={<CalendarDash />} />
+            <Route path="/CloudDash" element={<CloudDash />} />
+            <Route path="/ContIntDash" element={<ContIntDash />} />
+            <Route
+              path="/CryptocurrencyDash"
+              element={<CryptocurrencyDash />}
+            />
+            <Route
+              path="/CurrencyExchangeDash"
+              element={<CurrencyExchangeDash />}
+            />
+
             <Route
               path="/AnimalsDash/AnimalsDailyCatFacts"
               element={<AnimalsDailyCatFacts />}
@@ -60,9 +90,8 @@ function App() {
               element={<AnimalsMeowFacts />}
             />
 
-            <Route path="/AnimeDash" element={<AnimeDash />} />
             <Route path="/AntiMalwareDash" element={<AntiMalwareDash />} />
-            <Route path="/ArtDesignDash" element={<ArtDesignDash />} />
+
             <Route
               path="/ArtDesignDash/ArtDesignArtic"
               element={<ArtDesignArtic />}
@@ -70,10 +99,6 @@ function App() {
             <Route
               path="/ArtDesignDash/ArtDesignEmojiHub"
               element={<ArtDesignEmojiHub />}
-            />
-            <Route
-              path="/AuthenticationDash"
-              element={<AuthenticationDash />}
             />
           </Routes>
         </Box>

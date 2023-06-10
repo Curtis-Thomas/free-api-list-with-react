@@ -1,0 +1,21 @@
+
+    {name:'Continous Integration',
+    list: [
+        //https://learn.microsoft.com/en-us/rest/api/resourcehealth/
+        {name:'Azure DevOps Health'},
+
+        //https://api-docs.bitrise.io/
+        {name:'Bitrise'},
+
+        //https://buddy.works/docs/api/getting-started/overview
+        {name:'Buddy'},
+
+        //https://circleci.com/docs/api/v1/index.html#circleci-v1-api-overview
+        {name:'CircleCL'},
+
+        //https://docs.cloudbees.com/docs/cloudbees-codeship/latest/api-overview/
+        {name:'Codeship'},
+        
+        //https://docs.travis-ci.com/api/
+        {name:'Travis CL'},
+    ]},

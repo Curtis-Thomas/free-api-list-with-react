@@ -1,0 +1,54 @@
+{name:'Currency Exchange',
+    list: [
+        //https://1forge.com/api
+        {name:'1Forge'},
+
+        //https://www.amdoren.com/currency-api/
+        {name:'Amdoren'},
+
+        //https://fixer.io/
+        {name:'apilayer fixer.io'},
+
+        //https://www.cbr.ru/development/SXML/
+        {name:'Bank of Russia'},
+
+        //https://github.com/fawazahmed0/currency-api#readme
+        {name:'Currency-api'},
+
+        //https://currencyfreaks.com/
+        {name:'CurrencyFreaks'},
+
+        //https://currencylayer.com/documentation
+        {name:'Currencylayer'},
+
+        //https://currencybeacon.com/api-documentation
+        {name:'CurrencyScoop'},
+
+        //https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.xml
+        {name:'Czech National Bank'},
+
+        //https://docs.awesomeapi.com.br/api-de-moedas
+        {name:'Economia.Awesome'},
+
+        //https://www.exchangerate-api.com/
+        {name:'ExchangeRate-API'},
+
+        //https://exchangerate.host/#/
+        {name:'Exchangerate.host'},
+
+        //https://exchangeratesapi.io/
+        {name:'Exchangeratesapi.io'},
+
+        //https://www.frankfurter.app/docs/
+        {name:'Frankfurter'},
+
+        //https://freeforexapi.com/Home/Api
+        {name:'FreeForexAPI'},
+
+        //http://api.nbp.pl/en.html
+        {name:'National Bank of Poland'},
+        
+        //https://www.vatcomply.com/documentation
+        {name:'VATComply.com'},
+
+    ]},

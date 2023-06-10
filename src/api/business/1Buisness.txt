@@ -1,0 +1,71 @@
+{name:'Business',
+    list: [
+        //https://superset.apache.org/docs/api/
+        {name:'Apache Superset'},
+
+        //https://charityapi.orghunter.com/
+        {name:'Charity Search'},
+
+        //https://dashboard.clearbit.com/docs#logo-api
+        {name:'Clarbit Logo'},
+
+        //https://domainsdb.info/
+        {name:'Domainsdb.info'},
+
+        //https://developers.freelancer.com/
+        {name:'Freelancer'},
+
+        //https://developers.google.com/gmail/api/guides
+        {name:'Gmail'},
+
+        //https://developers.google.com/analytics/
+        {name:'Google Analytics'},
+
+        //https://instatus.com/help/api
+        {name:'Instatus'},
+
+        //https://mailchimp.com/developer/
+        {name:'Mailchimp'},
+
+        //https://www.mailjet.com/
+        {name:'mailjet'},
+
+        //https://markerapi.com/
+        {name:'markerapi'},
+
+        //https://api.orb-intelligence.com/docs/
+        {name:'ORB Intelligence'},
+
+        //https://redash.io/help/user-guide/integrations-and-api/api
+        {name:'Redash'},
+
+        //https://smartsheet.redoc.ly/
+        {name:'Smartsheet'},
+
+        //https://developer.squareup.com/reference/square
+        {name:'Square'},
+
+        //https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi
+        {name:'SwiftKanban'},
+
+        //https://tenders.guru/hu/api
+        {name:'Tenders in Hungary'},
+        
+        //https://tenders.guru/pl/api
+        {name:'Tenders in Poland'},
+
+        //https://tenders.guru/ro/api
+        {name:'Tenders in Romania'},
+
+        //https://tenders.guru/es/api
+        {name:'Tenders in Spain'},
+        
+        //https://tenders.guru/ua/api
+        {name:'Tenders in Ukraine'},
+
+        //https://tomba.io/api
+        {name:'Tomba email finder'},
+        
+        //https://developer.atlassian.com/cloud/trello/
+        {name:'Trello'},
+    ]},
