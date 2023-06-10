@@ -7,11 +7,12 @@ import Footer from "./core/footer/Footer";
 import AnimalDash from "./api/animals/Animals1Dash";
 import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
 import AnimalsCataas from "./api/animals/AnimalsCataas";
+import AnimalsDogApi from "./api/animals/AnimalsDogApi";
 
 function App() {
   return (
     <Router>
-      <Box sx={{ backgroundColor: "#E1D9D1", minHeight: "100vh" }}>
+      <Box sx={{ backgroundColor: "#E1D9D1", minHeight: "101vh" }}>
         <Box sx={{ minHeight: "5vh" }}>
           <Header />
         </Box>
@@ -29,6 +30,10 @@ function App() {
             <Route
               path="/AnimalsDash/AnimalsCataas"
               element={<AnimalsCataas />}
+            />
+            <Route
+              path="/AnimalsDash/AnimalsDogApi"
+              element={<AnimalsDogApi />}
             />
           </Routes>
         </Box>

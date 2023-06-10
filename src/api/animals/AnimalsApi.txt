@@ -1,13 +1,11 @@
 {name: 'Animals',
     list: [
         
-       
-       
-        {name:'Cat Facts'}, //https://cataas.com/#/
-        {name:'Cataas'},
-        
         {name:'Cats'},
         //https://dogapi.dog/docs/api-v2
+
+
+
         {name:'Dog Facts'},
         //https://dog.ceo/dog-api
         {name:'Dogs'},
