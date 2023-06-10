@@ -42,6 +42,7 @@ const Endpoints = ({ header, endpoint, description }) => {
         padding: 2,
         display: "flex",
         justifyContent: "space-between",
+        alignItems: "center",
       }}
     >
       <Box>

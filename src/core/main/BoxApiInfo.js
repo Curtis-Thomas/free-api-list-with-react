@@ -13,12 +13,27 @@ const BoxApiInfo = ({ baseEndpoint }) => {
   };
 
   return (
-    <Box sx={{ height: "5vh", marginTop: "5vh", marginBottom: "10vh" }}>
-      <Typography>Base URL:</Typography>
-      <Typography>{baseEndpoint}</Typography>
-      <Button variant="outlined" onClick={handleCopyClick}>
-        Copy
-      </Button>
+    <Box
+      sx={{
+        height: "5vh",
+        marginTop: "5vh",
+        marginBottom: "10vh",
+        display: "flex",
+        justifyContent: "space-evenly",
+        alignItems: "center",
+      }}
+    >
+      <Box>
+        <Typography>Base URL:</Typography>
+      </Box>
+      <Box>
+        <Typography>{baseEndpoint}</Typography>
+      </Box>
+      <Box>
+        <Button variant="outlined" onClick={handleCopyClick}>
+          Copy
+        </Button>
+      </Box>
     </Box>
   );
 };
