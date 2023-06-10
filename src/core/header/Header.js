@@ -5,10 +5,15 @@ const Header = () => {
     <Box
       sx={{
         display: "flex",
-        padding: "8px",
+        alignItems: "center",
+        minHeight: "5vh",
+        justifyContent: "center",
       }}
     >
-      <Typography>Header</Typography>
+      <Typography>
+        Free API List with React, a collection of free APIs across different
+        categories.
+      </Typography>
     </Box>
   );
 };

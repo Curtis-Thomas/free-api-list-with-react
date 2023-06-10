@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Box sx={{ backgroundColor: "#E1D9D1", minHeight: "100vh" }}>
-        <Box sx={{ height: "5vh" }}>
+        <Box sx={{ minHeight: "5vh" }}>
           <Header />
         </Box>
         <Box sx={{ minHeight: "85vh", padding: "16px" }}>
