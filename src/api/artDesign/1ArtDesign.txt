@@ -9,51 +9,12 @@
     //https://www.colourlovers.com/api
     {name:'ColorLovers'},
 
-
-
- 
-
-    
-
-    //https://github.com/cheatsnake/emojihub
-    {name:'EmojiHub'},
-
-    //https://pro.europeana.eu/page/search
-    {name:'Europeana'},
-
-    //https://github.com/harvardartmuseums/api-docs
-    {name:'Harvard Art Museums'},
-
-    //https://icon.horse/
-    {name:'Icon Horse'},
-
-    //https://developer.iconfinder.com/reference/overview-1
-    {name:'Iconfinder'},
-
-    //https://img.icons8.com/
-    {name:'Icons8'},
-
-    //https://lordicon.com/
-    {name:'Lordicon'},
-
     //https://metmuseum.github.io/
     {name:'Metropolitan Museum of Art'},
-
-    //http://api.thenounproject.com/index.html
-    {name:'Noun Project'},
 
     //https://php-noise.com/
     {name:'PHP-Noice'},
 
-    //https://pixelencounter.com/api
-    {name:'Pixel Encounter'},
 
-    //https://data.rijksmuseum.nl/object-metadata/api/
-    {name:'Rijksmuseum'},
 
-    //https://wordcloudapi.com/
-    {name:'Word Cloud'},
 
-    //https://x-colors.herokuapp.com/
-    {name:'xColors'},
-    

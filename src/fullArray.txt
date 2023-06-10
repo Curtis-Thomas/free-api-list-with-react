@@ -5,49 +5,8 @@ let arr = [
     
     
    
-    {name:'Authentication & Authorization',
-list: [
-    //https://auth0.com/
-    {name:'Auth0'},
-    //https://otp.dev/en/docs/
-    {name:'GetOTP'},
-    //https://m3o.com/user
-    {name:'Micro User Service'},
-    //https://mojoauth.com/
-    {name:'MojoAuth'},
-    //https://sawolabs.com/
-    {name:'SAWO Labs'},
-    //https://stytch.com/
-    {name:'Stytch'},
-    //https://warrant.dev/
-    {name:'Warrant'},
 
-]},
-    {name:'Blockchain',
-    list: [
-        //https://graphql.bitquery.io/auth/login
-        {name:'Bitquery'},
-        //https://chain.link/developer-resources
-        {name:'Chainlink'},
-        //https://tierion.com/chainpoint/
-        {name:'Chainpoint'},
-        //https://www.covalenthq.com/docs/api/#/0/0/USD/1
-        {name:'Covalent'},
-        //https://etherscan.io/apis
-        {name:'Etherscan'},
-        //https://docs.helium.com/api/blockchain/introduction/
-        {name:'Helium'},
-        //https://nownodes.io/
-        {name:'Nownodes'},
-        //https://developers.steem.io/
-        {name:'Steem'},
-        //https://thegraph.com/en/
-        {name:'The Graph'},
-        //https://walltime.info/api.html
-        {name:'Walltime'},
-        //https://docs.watchdata.io/
-        {name:'Watchdata'},
-    ]},
+    
     {name:'Books',
     list: [
          //https://www.abibliadigital.com.br/en

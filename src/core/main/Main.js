@@ -33,6 +33,12 @@ const Main = () => {
           backgroundColor="#1976D2"
           textColor="white"
         />
+        <BtnRouting
+          btnName="Authentication"
+          navigateTo="/AuthenticationDash"
+          // backgroundColor="#1976D2"
+          // textColor="white"
+        />
       </Box>
     </Box>
   );

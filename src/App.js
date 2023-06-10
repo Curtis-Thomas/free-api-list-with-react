@@ -15,6 +15,7 @@ import AntiMalwareDash from "./api/antiMalware/AntiMalware1Dash";
 import ArtDesignDash from "./api/artDesign/ArtDesign1Dash";
 import ArtDesignArtic from "./api/artDesign/ArtDesignArtic";
 import ArtDesignEmojiHub from "./api/artDesign/ArtDesignEmojiHub";
+import AuthenticationDash from "./api/authentication/Authentication1Dash";
 
 function App() {
   return (
@@ -57,6 +58,10 @@ function App() {
             <Route
               path="/ArtDesignDash/ArtDesignEmojiHub"
               element={<ArtDesignEmojiHub />}
+            />
+            <Route
+              path="/AuthenticationDash"
+              element={<AuthenticationDash />}
             />
           </Routes>
         </Box>
