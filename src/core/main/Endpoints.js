@@ -2,8 +2,10 @@ import { Box, Typography, Button } from "@mui/material";
 
 const Endpoints = ({ header, endpoint, description, example }) => {
   const handleCopyEndpoint = () => {
-    navigator.clipboard
-      .writeText(endpoint)
+    clearClipboard()
+      .then(() => {
+        return navigator.clipboard.writeText(endpoint);
+      })
       .then(() => {
         console.log("Copied endpoint to clipboard:", endpoint);
       })
@@ -13,14 +15,37 @@ const Endpoints = ({ header, endpoint, description, example }) => {
   };
 
   const handleCopyExample = () => {
-    navigator.clipboard
-      .writeText(example)
+    clearClipboard()
+      .then(() => {
+        return navigator.clipboard.writeText(example);
+      })
       .then(() => {
         console.log("Copied example to clipboard:", example);
       })
       .catch((error) => {
         console.error("Failed to copy example to clipboard:", error);
       });
+  };
+
+  const clearClipboard = () => {
+    return new Promise((resolve, reject) => {
+      const textarea = document.createElement("textarea");
+      textarea.value = "";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        const successful = document.execCommand("cut");
+        if (!successful) {
+          throw new Error("Clearing clipboard failed");
+        }
+        resolve();
+      } catch (error) {
+        reject(error);
+      } finally {
+        document.body.removeChild(textarea);
+      }
+    });
   };
 
   return (
