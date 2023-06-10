@@ -1,11 +1,9 @@
 {name: 'Animals',
     list: [
         
-        //https://alexwohlbruck.github.io/cat-facts/
-        {name:'Axolotl'},
-        //(BROKE)https://docs.thecatapi.com/
-        {name:'Cat Facts'},
-        //https://cataas.com/#/
+       
+       
+        {name:'Cat Facts'}, //https://cataas.com/#/
         {name:'Cataas'},
         
         {name:'Cats'},

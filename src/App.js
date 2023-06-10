@@ -6,6 +6,7 @@ import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
 import AnimalDash from "./api/animals/Animals1Dash";
 import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
+import AnimalsCataas from "./api/animals/AnimalsCataas";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
             <Route
               path="/AnimalsDash/AnimalsDailyCatFacts"
               element={<AnimalsDailyCatFacts />}
+            />
+            <Route
+              path="/AnimalsDash/AnimalsCataas"
+              element={<AnimalsCataas />}
             />
           </Routes>
         </Box>

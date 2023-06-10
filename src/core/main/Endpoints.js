@@ -36,28 +36,29 @@ const Endpoints = ({ header, endpoint, description }) => {
   };
 
   return (
-    <Box
-      sx={{
-        border: "solid 1px #3333",
-        padding: 2,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
-      <Box>
-        <Typography>{header}</Typography>
+    <Box sx={{ border: "solid 1px #3333", padding: 2, marginBottom: 2 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Box>
+          <Typography>{header}</Typography>
+        </Box>
+        <Box>
+          <Typography>{endpoint}</Typography>
+        </Box>
+        <Box>
+          <Button variant="outlined" onClick={handleCopyEndpoint}>
+            Copy Endpoint
+          </Button>
+        </Box>
       </Box>
       <Box>
-        <Typography>{endpoint}</Typography>
+        <Typography>Description :{description}</Typography>
       </Box>
-      <Box>
-        <Button variant="outlined" onClick={handleCopyEndpoint}>
-          Copy Endpoint
-        </Button>
-      </Box>
-
-      <Typography>{description}</Typography>
     </Box>
   );
 };
