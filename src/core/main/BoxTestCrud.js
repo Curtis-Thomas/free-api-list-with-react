@@ -65,23 +65,30 @@ const BoxTestCrud = ({ url }) => {
           <MenuItem value="put">PUT</MenuItem>
           <MenuItem value="delete">DELETE</MenuItem>
         </Select>
-        <Input
-          label="Base URL"
-          placeholder="Base URL"
-          value={urlValue}
-          onChange={(e) => setUrl(e.target.value)}
-          sx={{ marginRight: 2, width: "100%" }}
-        />
-        <Input
-          label="Endpoint"
-          placeholder="Endpoint"
-          value={endpointValue}
-          onChange={(e) => setEndpoint(e.target.value)}
-          sx={{ marginRight: 2, width: "100%" }}
-        />
-        <Button variant="contained" onClick={fetchAPI}>
-          Fetch
-        </Button>
+        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
+          <Input
+            label="Base URL"
+            placeholder="Base URL"
+            value={urlValue}
+            onChange={(e) => setUrl(e.target.value)}
+            sx={{ marginRight: 2, width: "100%" }}
+          />
+        </Box>
+        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
+          <Input
+            label="Endpoint"
+            placeholder="Endpoint"
+            value={endpointValue}
+            onChange={(e) => setEndpoint(e.target.value)}
+            sx={{ marginRight: 2, width: "100%" }}
+          />
+        </Box>
+        <Box>
+          <Button variant="contained" onClick={fetchAPI}>
+            Fetch
+          </Button>
+        </Box>
+        <Box></Box>
       </Box>
 
       <Box>
