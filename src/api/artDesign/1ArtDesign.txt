@@ -2,8 +2,6 @@
 
   
 
-    //https://api.artic.edu/docs/
-    {name:'Art Institute of Chicago'},
 
     //http://colormind.io/api-access/
     {name:'Colormind'},

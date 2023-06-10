@@ -30,8 +30,8 @@ const Main = () => {
         <BtnRouting
           btnName="Art & Design"
           navigateTo="/ArtDesignDash"
-          // backgroundColor="white"
-          // textColor="#1976D2"
+          backgroundColor="#1976D2"
+          textColor="white"
         />
       </Box>
     </Box>
