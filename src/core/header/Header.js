@@ -8,6 +8,10 @@ const Header = () => {
         alignItems: "center",
         minHeight: "5vh",
         justifyContent: "center",
+        backgroundColor: "#313335",
+        color: "white",
+        textAlign: "center",
+        padding: 2,
       }}
     >
       <Typography>

@@ -46,7 +46,7 @@ const BoxTestCrud = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px purple",
+        border: "solid 1px #0077ba",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
@@ -84,7 +84,11 @@ const BoxTestCrud = ({ url }) => {
           />
         </Box>
         <Box>
-          <Button variant="contained" onClick={fetchAPI}>
+          <Button
+            variant="contained"
+            onClick={fetchAPI}
+            style={{ backgroundColor: "#0077ba" }}
+          >
             Fetch
           </Button>
         </Box>
@@ -102,7 +106,7 @@ const BoxTestCrud = ({ url }) => {
             borderRadius: "5px",
             maxHeight: "60vh",
             overflow: "auto",
-            border: "solid 1px #333333",
+            border: "solid 1px ##0077ba",
           }}
         >
           {typeof response === "object"

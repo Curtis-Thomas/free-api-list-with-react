@@ -22,6 +22,7 @@ const NavBar = ({ link, route2 }) => {
         marginBottom: 3,
         width: "100%",
         alignItems: "stretch",
+        justifyContent: "space-evenly",
       }}
     >
       <Box sx={{ flex: 1 }}>
@@ -29,12 +30,14 @@ const NavBar = ({ link, route2 }) => {
           onClick={handleClickHome}
           to="/"
           style={{
-            border: "solid 1px #666666",
             padding: 2,
             display: "block",
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
+            color: "#313335",
+            textDecoration: "none",
+            textAlign: "center",
           }}
         >
           Home
@@ -45,12 +48,14 @@ const NavBar = ({ link, route2 }) => {
           onClick={handleClick}
           to={link}
           style={{
-            border: "solid 1px #666666",
+            color: "#313335",
             padding: 2,
             display: "block",
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
+            textDecoration: "none",
+            textAlign: "center",
           }}
         >
           {link}
@@ -60,12 +65,14 @@ const NavBar = ({ link, route2 }) => {
         <Link
           to={link}
           style={{
-            border: "solid 1px #666666",
+            color: "#313335",
             padding: 2,
             display: "block",
             overflow: "hidden",
             textOverflow: "ellipsis",
             whiteSpace: "nowrap",
+            textDecoration: "none",
+            textAlign: "center",
           }}
         >
           {route2}

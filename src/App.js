@@ -20,11 +20,23 @@ import AuthenticationDash from "./api/authentication/Authentication1Dash";
 function App() {
   return (
     <Router>
-      <Box sx={{ backgroundColor: "#E1D9D1", minHeight: "101vh" }}>
+      <Box sx={{ backgroundColor: "#ffffff", minHeight: "101vh" }}>
         <Box sx={{ minHeight: "5vh" }}>
           <Header />
         </Box>
-        <Box sx={{ minHeight: "85vh", padding: "16px" }}>
+        <Box
+          sx={{
+            minHeight: "85vh",
+            padding: 2,
+            "@media screen and (max-width: 600px)": {
+              padding: 1,
+            },
+            "@media screen and (min-width: 601px)": {
+              margin: "0 auto",
+              maxWidth: "960px",
+            },
+          }}
+        >
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/free-api-list-with-react/" element={<Main />} />

@@ -12,32 +12,32 @@ const Main = () => {
         <BtnRouting
           btnName="Animals"
           navigateTo="/AnimalsDash"
-          backgroundColor="#1976D2"
+          backgroundColor="#0077ba"
           textColor="white"
         />
         <BtnRouting
           btnName="Anime"
           navigateTo="/AnimeDash"
           backgroundColor="white"
-          textColor="#1976D2"
+          textColor="#0077ba"
         />
         <BtnRouting
           btnName="Anti-Malware"
           navigateTo="/AntiMalwareDash"
           backgroundColor="white"
-          textColor="#1976D2"
+          textColor="#0077ba"
         />
         <BtnRouting
           btnName="Art & Design"
           navigateTo="/ArtDesignDash"
-          backgroundColor="#1976D2"
+          backgroundColor="#0077ba"
           textColor="white"
         />
         <BtnRouting
           btnName="Authentication"
           navigateTo="/AuthenticationDash"
           backgroundColor="white"
-          textColor="#1976D2"
+          textColor="#0077ba"
         />
       </Box>
     </Box>

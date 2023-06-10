@@ -14,17 +14,19 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px black",
-        width: isMobile ? "100%" : "33vw",
-        maxWidth: "100%",
+        width: isMobile ? "100%" : "30%",
+        maxWidth: isMobile ? "45%" : "100%",
         marginBottom: 2,
         backgroundColor: `${backgroundColor}`,
+        border: "solid 1px 8d6cab ",
+        borderRadius: "3px",
       }}
     >
       <Button
         fullWidth={true}
         onClick={handleClick}
         style={{ color: `${textColor}` }}
+        sx={{ border: "solid 1px #0077ba" }}
       >
         {btnName}
       </Button>
