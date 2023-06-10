@@ -24,6 +24,7 @@ import CloudDash from "./api/cloud/Cloud1Dash";
 import ContIntDash from "./api/contInt/ContInt1Dash";
 import CryptocurrencyDash from "./api/cryptocurrency/Cryptocurrency1Dash";
 import CurrencyExchangeDash from "./api/currencyExchange/CurrencyExchange1Dash";
+import BooksABibliaDigital from "./api/books/BooksABibliDigital";
 
 function App() {
   return (
@@ -99,6 +100,12 @@ function App() {
             <Route
               path="/ArtDesignDash/ArtDesignEmojiHub"
               element={<ArtDesignEmojiHub />}
+            />
+
+            {/* Books */}
+            <Route
+              path="/BooksDash/ABibliaDigital"
+              element={<BooksABibliaDigital />}
             />
           </Routes>
         </Box>
