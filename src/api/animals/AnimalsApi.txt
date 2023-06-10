@@ -1,14 +1,12 @@
 {name: 'Animals',
     list: [
         
-        {name:'Cats'},
-        //https://dogapi.dog/docs/api-v2
-
-
-
-        {name:'Dog Facts'},
+    
         //https://dog.ceo/dog-api
         {name:'Dogs'},
+
+
+        
         //https://documenter.getpostman.com/view/664302/S1ENwy59
         {name:'eBird'},
         //https://www.fishwatch.gov/developers

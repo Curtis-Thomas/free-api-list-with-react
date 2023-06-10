@@ -40,7 +40,7 @@ const BoxTestImg = ({ url }) => {
       }}
     >
       <Box sx={{ marginBottom: 2 }}>
-        <Typography variant="h6">Testing Box</Typography>
+        <Typography variant="h6">IMG Testing Box</Typography>
         <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
           <Input
             label="Base URL"
