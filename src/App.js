@@ -10,7 +10,7 @@ import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
 function App() {
   return (
     <Router>
-      <Box sx={{ backgroundColor: "#E1D9D1", height: "100vh" }}>
+      <Box sx={{ backgroundColor: "#E1D9D1", minHeight: "100vh" }}>
         <Box sx={{ height: "5vh" }}>
           <Header />
         </Box>
