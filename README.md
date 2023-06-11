@@ -1,4 +1,6 @@
 # Free API List with React
+![Image Alt Text](./ReadMeImg.png)
+
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue)](https://curtis-thomas.github.io/free-api-list-with-react/)
 
