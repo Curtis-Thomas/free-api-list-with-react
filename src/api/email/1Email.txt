@@ -1,0 +1,37 @@
+
+    {name:'Email',
+    list: [
+        //https://www.abstractapi.com/api/email-verification-validation-api
+        {name:'Abstract Email Validation'},
+        //https://mailboxlayer.com/
+        {name:'apilayer mailboxlayer'},
+        //https://www.disify.com/
+        {name:'Disify'},
+        //https://dropmail.me/api/#live-demo
+        {name:'DropMail'},
+        //https://eva.pingutil.com/
+        {name:'EVA'},
+        //https://www.guerrillamail.com/GuerrillaMailAPI.html
+        {name:'Guerrilla Mail'},
+        //https://improvmx.com/api/
+        {name:'ImprovMX'},
+        //https://open.kickbox.com/
+        {name:'Kickbox'},
+        //https://docs.mail.gw/
+        {name:'mail.gw'},
+        //https://docs.mail.tm/
+        {name:'mail.tm'},
+        //https://www.mailboxvalidator.com/api-email-free
+        {name:'MailboxValidator'},
+        //https://www.mailcheck.ai/#documentation
+        {name:'MailCheck.ai'},
+        //https://mailtrap.docs.apiary.io/#
+        {name:'Mailtrap'},
+        //https://docs.sendgrid.com/api-reference/how-to-use-the-sendgrid-v3-api/authentication
+        {name:'Sendgrid'},
+        //https://developers.sendinblue.com/docs
+        {name:'Sendinblue'},
+        //https://verifier.meetchopra.com/docs#/
+        {name:'Verifier'},
+        
+    ]},

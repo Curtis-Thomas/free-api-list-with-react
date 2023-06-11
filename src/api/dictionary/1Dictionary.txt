@@ -1,0 +1,31 @@
+    
+    {name:'Dictionaries',
+    list: [
+        //http://ccdb.hemiola.com/
+        {name:'Chinese Character Web'},
+        //https://ctext.org/tools/api
+        {name:'Chinese Text Project'},
+        //https://api.collinsdictionary.com/api/v1/documentation/html/
+        {name:'Collins'},
+        //https://dictionaryapi.dev/
+        {name:'Free Dictionary'},
+        //https://new-kbbi-api.herokuapp.com/
+        {name:'Indonesia Dictionary'},
+        //https://www.linguarobot.io/
+        {name:'Lingua Robot'},
+        //https://dictionaryapi.com/
+        {name:'Merriam-Webster'},
+        //https://owlbot.info/
+        {name:'OwlBot'},
+        //https://developer.oxforddictionaries.com/
+        {name:'Oxford'},
+        //https://www.synonyms.com/synonyms_api.php
+        {name:'Synonyma'},
+        //https://en.wiktionary.org/w/api.php
+        {name:'Wiktionary'},
+        //https://developer.wordnik.com/
+        {name:'Wordnik'},
+        //https://www.wordsapi.com/docs/
+        {name:'Words'},
+
+    ]},

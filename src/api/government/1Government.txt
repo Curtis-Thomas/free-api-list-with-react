@@ -1,0 +1,174 @@
+ {name:'Government',
+    list: [
+        //https://apikijangportal.bnm.gov.my/
+        {name:'Bank Negara Malaysia'},
+        //https://www.bclaws.gov.bc.ca/civix/template/complete/api/index.html
+        {name:'BCLaws'},
+        //https://brasilapi.com.br/
+        {name:'Brazil'},
+        //https://dadosabertos.bcb.gov.br/
+        {name:'Brazil Central Bank Open Data'},
+        //https://www.receitaws.com.br/
+        {name:'Brazil Recetia WS'},
+        //https://dadosabertos.camara.leg.br/swagger/api.html
+        {name:'Brazil Chamber of Deputies Open Data'},
+        //https://www.census.gov/data/developers/data-sets.html
+        {name:'Census.gov'},
+        //https://daten.berlin.de/
+        {name:'City, Berlin'},
+        //https://ckan.multimediagdansk.pl/en
+        {name:'City, Gdansk'},
+        //https://otwartedane.gdynia.pl/en/api_doc.html
+        {name:'City, Gydnia'},
+        //https://hri.fi/en_gb/
+        {name:'City, Helsinki'},
+        //https://opendata.city-adm.lviv.ua/
+        {name:'City, Lviv'},
+        //https://data.nantesmetropole.fr/pages/home/
+        {name:'City, Nantes Open Data'},
+        //https://opendata.cityofnewyork.us/
+        {name:'City, New York Oepn Data'},
+        //https://opendata.praha.eu/en
+        {name:'City, Prague Open Data'},
+        //https://open.toronto.ca/
+        {name:'City, Toronto Open Data'},
+        //https://code.gov/
+        {name:'Code.gov'},
+        //https://data.colorado.gov/
+        {name:'Colorado Information Marketplace'},
+        //https://datausa.io/about/api/
+        {name:'Data USA'},
+        //https://api.data.gov/
+        {name:'Data.gov'},
+        //https://explore.data.parliament.uk/?learnmore=Members
+        {name:'Data.parliment.uk'},
+        //https://dip.bundestag.de/documents/informationsblatt_zur_dip_api_v01.pdf
+        {name:'Deutscher Bundestag DIP'},
+        //https://opendata.dc.gov/pages/using-apis
+        {name:'District of Columbia Open Data'},
+        //https://www.epa.gov/developers/data-data-products#apis
+        {name:'EPA'},
+        //https://www.fbi.gov/wanted/api
+        {name:'FBI Wanted'},
+        //https://api.open.fec.gov/developers/
+        {name:'FEC'},
+        //https://www.federalregister.gov/reader-aids/developer-resources/rest-api
+        {name:'Federal Register'},
+        //https://ratings.food.gov.uk/open-data/en-GB
+        {name:'Food Standadrds Agency'},
+        //https://www.thegazette.co.uk/data
+        {name:'Gazetta Data, UK'},
+        //https://www.gunpolicy.org/api
+        {name:'Gun Policy'},
+        //http://iinei.inei.gob.pe/microdatos/
+        {name:'INEI'},
+        //https://interpol.api.bund.dev/
+        {name:'Interpol Red Notices'},
+        //https://data.ibb.gov.tr/
+        {name:'Istanbul (iBB) Open Data'},
+        //https://www.nps.gov/subjects/developer/index.htm
+        {name:'National Park Services, US'},
+        //https://www.data.act.gov.au/
+        {name:'Open GOvernment, ACT'},
+        //https://datos.gob.ar/
+        {name:'Open Government, Argentina'},
+        //https://www.data.gov.au/
+        {name:'Open Government, Australia'},
+        //https://www.data.gv.at/
+        {name:'Open Government, Austria'},
+        //https://data.gov.be/en
+        {name:'Open Government Belgium'},
+        //https://open.canada.ca/en
+        {name:'Open Government, Canada'},
+        //https://www.dane.gov.co/
+        {name:'Open Government, Colombia'},
+        //https://data.gov.cy/?language=en
+        {name:'Open Government, Cyprus'},
+        //https://data.gov.cz/english/
+        {name:'Open Government, Czech Republic'},
+        //https://www.opendata.dk/
+        {name:'Open Government, Denmark'},
+        //https://avaandmed.eesti.ee/instructions/opendata-dataset-api
+        {name:'Open Government, Estonia'},
+        //https://www.avoindata.fi/en
+        {name:'Open Government Finland'},
+        //https://www.data.gouv.fr/fr/
+        {name:'Open Government, France'},
+        //https://www.govdata.de/daten/-/details/govdata-metadatenkatalog
+        {name:'Open Government, Germany'},
+        //https://data.gov.gr/
+        {name:'Open Government, Greece'},
+        //https://data.gov.in/
+        {name:'Open Government, India'},
+        //https://data.gov.ie/pages/developers
+        {name:'Open Government, Ireland'},
+        //https://www.dati.gov.it/
+        {name:'Open Government, Italy'},
+        //https://www.data.go.kr/
+        {name:'Open Government, Korea'},
+        //https://data.gov.lt/public/api/1
+        {name:'Open Government, Lithuania'},
+        //https://data.public.lu/fr/
+        {name:'Open Government, Luxembourg'},
+        //https://datos.gob.mx/
+        {name:'Open Government, Mexico'},
+        //https://data.overheid.nl/en/ondersteuning/data-publiceren/api
+        {name:'Open Government, Netherlands'},
+        //https://api.nsw.gov.au/
+        {name:'Open Government, New South Wales'},
+        //https://www.data.govt.nz/
+        {name:'Open Government, New Zeland'},
+        //https://data.norge.no/dataservices
+        {name:'Open Government, Norway'},
+        //https://www.datosabiertos.gob.pe/
+        {name:'Open Government, Peru'},
+        //https://dane.gov.pl/en
+        {name:'Open Government, Poland'},
+        //https://dados.gov.pt/en/docapi/
+        {name:'Open Government, Portugal'},
+        //https://www.data.qld.gov.au/
+        {name:'Open Government, Queensland Government'},
+        //https://data.gov.ro/
+        {name:'Open Government, Romania'},
+        //https://data.gov.sa/
+        {name:'Open Government, Saudia Arabia'},
+        //https://data.gov.sg/developer
+        {name:'Open Government, Singaporee'},
+        //https://data.gov.sk/en/
+        {name:'Open Government, Slovakia'},
+        //https://podatki.gov.si/
+        {name:'Open Government, Slovenia'},
+        //https://data.sa.gov.au/
+        {name:'Open Government, South Australian Government'},
+        //https://datos.gob.es/en
+        {name:'Open Government, Spain'},
+        //https://www.dataportal.se/en/404
+        {name:'Open Government, Sweden'},
+        //https://handbook.opendata.swiss/de/content/nutzen/api-nutzen.html
+        {name:'Open Government, Swwitzerland'},
+        //https://data.gov.tw/
+        {name:'Open Government, Taiwan'},
+        //https://data.go.th/
+        {name:'Open Government, Thailand'},
+        //https://www.data.gov.uk/
+        {name:'Open Government, UK'},
+        //https://data.gov/
+        {name:'Open Government, USA'},
+        //https://www.data.vic.gov.au/
+        {name:'Open Government, Victoria State Government'},
+        //https://data.wa.gov.au/
+        {name:'Open Government, West Australia'},
+        //https://api.whenisthenextboardexam.com/docs/
+        {name:'PRC Exam Schedule'},
+        //https://represent.opennorth.ca/
+        {name:'Represent by Open North'},
+        //https://developer.company-information.service.gov.uk/
+        {name:'UK Companies House'},
+        //https://uselection.togatech.org/api/
+        {name:'USE Presidential Election Data by TogaTech'},
+        //https://www.usa.gov/developer
+        {name:'USA.gov'},
+        //https://api.usaspending.gov/
+        {name:'USAspending.gov'},
+   
+    ]},

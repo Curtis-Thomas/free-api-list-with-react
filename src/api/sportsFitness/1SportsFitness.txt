@@ -1,0 +1,66 @@
+{name:'Sports & Fitness',
+    list: [
+        //https://www.api-football.com/documentation-v3
+        {name:'API-FOOTBALL'},
+        //https://apimedic.com/
+        {name:'ApiMedic'},
+        //https://app.balldontlie.io/
+        {name:'balldontlie'},
+        //http://api.cfl.ca/
+        {name:'Canadian Football League (CFL)'},
+        //https://api.citybik.es/v2/
+        {name:'City Bikes'},
+        //https://www.cloudbet.com/api/
+        {name:'Cloudbet'},
+        //https://collegefootballdata.com/
+        {name:'CollegeFootballData.com'},
+        //http://ergast.com/mrd/
+        {name:'Ergast F1'},
+        //https://dev.fitbit.com/
+        {name:'Fitbit'},
+        //https://rapidapi.com/GiulianoCrescimbeni/api/football98/
+        {name:'Football'},
+        // /https://www.scorebat.com/video-api/
+        {name:'Football (Soccer) Videos'},
+        //https://github.com/azharimm/football-standings-api
+        {name:'Football Standings'},
+        //https://www.football-data.org/
+        {name:'Football-Data'},
+        //https://developer.jcdecaux.com/#/home
+        {name:'JCDecaux Bike'},
+        //https://appac.github.io/mlb-data-api-docs/
+        {name:'MLB Records and Stats'},
+        //https://rapidapi.com/api-sports/api/api-nba/
+        {name:'NBA Data'},
+        //https://any-api.com/nba_com/nba_com/docs/API_Description
+        {name:'NBA Stats'},
+        //https://gitlab.com/dword4/nhlapi
+        {name:'NHL Records and Stats'},
+        //https://data.oddsmagnet.com/
+        {name:'Oddsmagnet'},
+        //https://www.openligadb.de/
+        {name:'OpenLigaDB'},
+        //https://rapidapi.com/heisenbug/api/premier-league-live-scores/
+        {name:'Premier League Standings'},
+        // /https://sportdataapi.com/
+        {name:'Sports Data'},
+        //https://developers.decathlon.com/products/sports
+        {name:'Sports List & Data'},
+        //https://developers.decathlon.com/products/sport-places
+        {name:'Sports Places'},
+        //https://developers.decathlon.com/products/sport-vision
+        {name:'Sports Vision'},
+        //https://docs.sportmonks.com/cricket/
+        {name:'Sportmonks Cricket'},
+        //https://api.squiggle.com.au/
+        {name:'Squiggle'},
+        // /https://developers.strava.com/
+        {name:'Strava'},
+        //https://suredbits.com/api/#lightning-api-v0-beta-documentation
+        {name:'SuredBits'},
+        //https://www.thesportsdb.com/api.php
+        {name:'TheSportsDB'},
+        //https://www.tredict.com/blog/oauth_docs/
+        {name:'Tredict'},
+        //https://wger.de/en/software/api
+        {name:'Wger'},

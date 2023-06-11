@@ -1,0 +1,32 @@
+ {name:'Shopping',
+    list: [
+        //https://bestbuyapis.github.io/api-documentation/#overview
+        {name:'Best Buy'},
+        //https://www.digikey.com/en/resources/api-solutions
+        {name:'Digi-Key'},
+        //https://dummyproducts-api.herokuapp.com/
+        {name:'Dummy Products'},
+        //https://developer.ebay.com/
+        {name:'eBay'},
+        //https://www.etsy.com/developers/documentation/getting_started/api_basics
+        {name:'Etsy'},
+        //https://seller.flipkart.com/api-docs/FMSAPI.html
+        {name:'Flipkart Marketplace'},
+        //https://open.lazada.com/apps/user/login?redirectURL=https%3A%2F%2Fopen.lazada.com%2Fdoc%2Fdoc.htm
+        {name:'Lazada'},
+        //https://developers.mercadolibre.cl/es_ar/api-docs-es
+        {name:'Mercadolibre'},
+        //https://octopart.com/api/v4/reference
+        {name:'Octopart'},
+        //https://developer.olx.pl/api/doc#section/
+        {name:'OLX Poland'},
+        //https://dev-portal.rappi.com/en/
+        {name:'Rappi'},
+        //https://open.shopee.com/developer-guide/12
+        {name:'Shopee'},
+        //https://developer.tokopedia.com/openapi/guide/#/
+        {name:'Tokopedia'},
+        //https://woocommerce.github.io/woocommerce-rest-api-docs/#introduction
+        {name:'WooCommerce'},
+        
+    ]},

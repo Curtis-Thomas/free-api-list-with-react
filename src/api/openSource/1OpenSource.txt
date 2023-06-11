@@ -1,0 +1,21 @@
+ {name:'Open Source Projects',
+    list: [
+        //https://api.count.ly/reference/rest-api-reference
+        {name:'Countly'},
+        //https://api.openverse.engineering/v1/
+        {name:'Creative COmmons'},
+        //https://www.datamuse.com/api/
+        {name:'Datamuse'},
+        //https://www.drupal.org/drupalorg/docs/apis/rest-and-other-apis
+        {name:'Drupal.org'},
+        //https://evilinsult.com/api/
+        {name:'Evil Insults Generator'},
+        //https://github-contributions.vercel.app/
+        {name:'GitHub Contribution Chart Generator'},
+        //https://github.com/anuraghazra/github-readme-stats
+        {name:'GitHub ReadMe Stats'},
+        //https://www.metabase.com/
+        {name:'Metabase Shields'},
+        //https://shields.io/
+        {name:'Shields'},
+    ]},

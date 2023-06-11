@@ -1,0 +1,51 @@
+{name:'Food & Drink',
+    list: [
+        //https://baconmockup.com/
+        {name:'BaconMockup'},
+        //https://chompthis.com/api/
+        {name:'Chomp'},
+        //https://coffee.alexflipnote.dev/
+        {name:'Coffee'},
+        //https://developer.edamam.com/edamam-docs-nutrition-api
+        {name:'Edamam Nutrition'},
+        //https://developer.edamam.com/edamam-docs-recipe-api
+        {name:'Edamam recipes'},
+        //https://github.com/surhud004/Foodish#readme
+        {name:'Foodish'},
+        //https://fruityvice.com/
+        {name:'Fruityvice'},
+        //https://developer.kroger.com/reference/
+        {name:'Kroger'},
+        //https://github.com/heycarsten/lcbo-api
+        {name:'LCBO'},
+        //https://www.openbrewerydb.org/
+        {name:'Open Brewery DB'},
+        // /https://world.openfoodfacts.org/data
+        {name:'Open Food Facts'},
+        //https://punkapi.com/
+        {name:'PunkAPI'},
+        //https://rustybeer.herokuapp.com/
+        {name:'Rustybeer'},
+        //https://spoonacular.com/food-api
+        {name:'Spoonacular'},
+        //https://api-portal.systembolaget.se/
+        {name:'Systembolaget'},
+        //https://github.com/evz/tacofancy-api
+        {name:'TacoFancy'},
+        //https://rapidapi.com/apidojo/api/tasty/
+        {name:'Tasty'},
+        //https://github.com/andyklimczak/TheReportOfTheWeek-API
+        {name:'The Report of the Week'},
+        //https://www.thecocktaildb.com/api.php
+        {name:'TheCocktailDB'},
+        //https://www.themealdb.com/api.php
+        {name:'TheMealDB'},
+        // /https://untappd.com/api/docs
+        {name:'Untapped'},
+        //http://nypl.github.io/menus-api/
+        {name:'What\'s on the menu?'},
+        //https://whiskyhunter.net/api/
+        {name:'WhiskyHunter'},
+        //https://zestfuldata.com/
+        {name:'Zestful'},
+    ]},

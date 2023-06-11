@@ -1,0 +1,81 @@
+{name:'Securtiy',
+    list: [
+        //https://github.com/fingerprintjs/aev
+        {name:'Application Environment Verification'},
+        //https://docs.binaryedge.io/api-v2.html
+        {name:'BinaryEdge'},
+        //https://bitwarden.com/help/api/
+        {name:'BitWarden'},
+        //https://github.com/fingerprintjs/botd
+        {name:'Botd'},
+        //https://docs.bugcrowd.com/api/getting-started/
+        {name:'Bugcrowd'},
+        //https://search.censys.io/api
+        {name:'C3nsys'},
+        //https://classify-web.herokuapp.com/#/api
+        {name:'Classify'},
+        //https://completecriminalchecks.com/Developers/
+        {name:'Complete Criminal Checks'},
+        //https://crxcavator.io/apidocs
+        {name:'CRX cavator'},
+        //https://github.com/Dehash-lt/api
+        {name:'Dehash.It'},
+        //https://docs.sublimesecurity.com/reference/emailrep-introduction
+        {name:'EmailRep'},
+        //https://github.com/polarspetroll/EscapeAPI
+        {name:'Escape'},
+        //https://filterlists.com/
+        {name:'FilterLists'},
+        //https://dev.fingerprint.com/docs
+        {name:'FingerprintJS Pro'},
+        //https://www.fraudlabspro.com/developer/api/screen-order
+        {name:'Fraud Labs'},
+        //https://api-docs.fullhunt.io/#introduction
+        {name:'FullHunt'},
+        //https://api.gitguardian.com/docs
+        {name:'GitGuardian'},
+        //https://docs.greynoise.io/reference/get_v3-community-ip
+        {name:'GreyNoise'},
+        //https://api.hackerone.com/
+        {name:'HackerOne'},
+        //https://hashable.space/pages/api/
+        {name:'Hashable'},
+        //https://haveibeenpwned.com/API/v3
+        {name:'HaveIBeenPened'},
+        //https://github.com/IntelligenceX/SDK/blob/master/Intelligence%20X%20API.pdf
+        {name:'Intelligence X'},
+        //https://docs.loginradius.com/
+        {name:'LoginRadius'},
+        //https://msrc.microsoft.com/report/developer
+        {name:'Microsoft Securtiy Response Center (MSRC'},
+        //https://github.com/mozilla/http-observatory/blob/master/httpobs/docs/api.md
+        {name:'Mozilla http scanner'},
+        //https://github.com/mozilla/tls-observatory#api-endpoints
+        {name:'Mozilla tls scanner'},
+        //https://nvd.nist.gov/vuln/Data-Feeds/JSON-feed-changelog
+        {name:'National Vulnerability Database'},
+        //https://github.com/fawazsullia/password-generator/
+        {name:'Passwordinator'},
+        //https://phishstats.info/
+        {name:'PhishStats'},
+        //https://privacy-com.readme.io/docs
+        {name:'Privacy.com'},
+        //https://pulsedive.com/api/
+        {name:'Pulsedive'},
+        //https://securitytrails.com/corp/apidocs
+        {name:'SecurtiyTrails'},
+        //https://developer.shodan.io/
+        {name:'Shodan'},
+        //https://spyse-dev.readme.io/reference/quick-start
+        {name:'Spyse'},
+        //https://threatjammer.com/docs/index
+        {name:'Threat Jammer'},
+        //https://data.police.uk/docs/
+        {name:'UK Police'},
+        //https://api.virushee.com/
+        {name:'Virushee'},
+        //https://vuldb.com/?kb.api
+        {name:'VulDB'},
+      
+
+    ]},

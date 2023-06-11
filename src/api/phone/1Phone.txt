@@ -1,0 +1,13 @@
+ {name:'Phone',
+    list: [
+        //https://cloudmersive.com/phone-number-validation-API
+        {name:'Cloudmersive Validate'},
+        //https://www.abstractapi.com/api/phone-validation-api
+        {name:'Abstract Phone Validation'},
+        //https://numverify.com/
+        {name:'apilayer numverify'},
+        //https://github.com/azharimm/phone-specs-api
+        {name:'Phone Specification'},
+        //https://veriphone.io/
+        {name:'Veriphone'},
+    ]},

@@ -1,0 +1,17 @@
+ {name:'Data Validation',
+    list: [
+        //https://www.lob.com/
+        {name:'Lob.com'},
+        //https://www.postman.com/postman/workspace/published-postman-templates/documentation/631643-f695cab7-6878-eb55-7943-ad88e1ccfd65?ctx=documentation
+        {name:'Postman Echo'},
+        //http://www.purgomalum.com/
+        {name:'PurgoMalum'},
+        //https://www.smarty.com/docs/cloud/us-autocomplete-pro-api
+        {name:'US Autocomplete'},
+        //https://www.smarty.com/products/apis/us-extract-api
+        {name:'US Extract'},
+        //https://www.smarty.com/docs/cloud/us-street-api
+        {name:'US Street Address'},
+        //https://vatlayer.com/documentation
+        {name:'vatlayer'},
+    ]},

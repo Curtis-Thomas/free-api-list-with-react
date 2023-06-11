@@ -1,0 +1,13 @@
+ {name:'Programming',
+    list: [
+        //https://codeforces.com/apiHelp
+        {name:'Codeforces'},
+        //https://www.hackerearth.com/docs/wiki/developers/v4/
+        {name:'Hackerearth'},
+        //https://ce.judge0.com/
+        {name:'Judge0 CE'},
+        //https://kontests.net/api
+        {name:'KONTESTS'},
+        //https://docs.mintlify.com/probot
+        {name:'Mintlify'},
+    ]},

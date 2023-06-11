@@ -1,0 +1,48 @@
+ {name:'Machine Learning',
+    list: [
+        //https://aiforthai.in.th/index.php
+        {name:'AI For Thai'},
+        //https://docs.clarifai.com/api-guide/api-overview/
+        {name:'Clarifai'},
+        //https://www.cloudmersive.com/image-recognition-and-processing-api
+        {name:'Cloudmersive'},
+        //https://www.deepcode.ai/
+        {name:'Deepcode'},
+        //https://cloud.google.com/dialogflow/docs/
+        {name:'Dialoglfow'},
+        //http://uttesh.com/exude-api/
+        {name:'EXUDE-API'},
+        //chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/document-blocked.html?details=%7B%22url%22%3A%22http%3A%2F%2Fiyfbodn.com%2F%3Fdn%3Dhirak.site%26pid%3D9POT3387I%26pbsubid%3Dab43bc35-bfd3-9dbe-c04a-7ed5e2728478%26noads%3Dhttp%253A%252F%252Fiyfbodn.com%252F%253Fdn%253Dhirak.site%2526skipskenzo%253Dtrue%22%2C%22hn%22%3A%22iyfbodn.com%22%2C%22dn%22%3A%22iyfbodn.com%22%2C%22fs%22%3A%22%7C%7Ciyfbodn.com%5E%22%7D
+        {name:'Hirak FaceAPI'},
+        //https://imagga.com/
+        {name:'Imagga'},
+        //https://rapidapi.com/user/inferdo
+        {name:'Inferdo'},
+        //https://docs.identity.ps/docs
+        {name:'IPS Online'},
+        //https://irisnet.de/api/
+        {name:'Irisnet'},
+        //https://keen.io/
+        {name:'Keen IO'},
+        //https://machinetutors.com/portfolio/MT_api.html
+        {name:'Machinetutors'},
+        //https://messengerx.readthedocs.io/en/latest/
+        {name:'MessengerX.io'},
+        //https://nlpcloud.com/
+        {name:'NLP Cloud'},
+        //https://openvisionapi.com/
+        {name:'OpenVisionAPI'},
+        //https://perspectiveapi.com/
+        {name:'Perspective'},
+        //https://universe.roboflow.com/
+        {name:'Roboflow Universe'},
+        //https://skybiometry.com/documentation/
+        {name:'SkyBiometry'},
+        //chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/document-blocked.html?details=%7B%22url%22%3A%22http%3A%2F%2Fiyfbodn.com%2F%3Fdn%3Dtimedoor.io%26pid%3D9POT3387I%26pbsubid%3D4c887c3c-b8fa-5c35-2f3e-392a527d85ce%26noads%3Dhttp%253A%252F%252Fiyfbodn.com%252F%253Fdn%253Dtimedoor.io%2526skipskenzo%253Dtrue%26enc_txt%3D%252B1CP6LmsTmg7xVqBK98hzFZMAiASdjg5Cqpvb%252F3Q4J3oOI%252FB7VZ6cch%252B3O2RsF9I7FHrqV4wtyBGQHquzkp4fw2sV0RanhVA6GUjQYVNnBeaclg9%252FhkqrMRatGgUYeZd%26enc_lnk%3D4fiHOOd3bUPFsb69bWhKgHiQp8dCXS2GiXZt%252BsqtFN%252FAtW1XyIeg7%252BdU67KYQaFmI%252BcI9%252Bfm%252BEnuA%252B4ySceqBdpGUeKkVi0d0YJwyrNwJDNpZ%252FnVJkHzOwkk2ZvCqCX5%22%2C%22hn%22%3A%22iyfbodn.com%22%2C%22dn%22%3A%22iyfbodn.com%22%2C%22fs%22%3A%22%7C%7Ciyfbodn.com%5E%22%7D
+        {name:'Time Door'},
+        //https://unplu.gg/test_api.html
+        {name:'Unplugg'},
+        //https://products.wolframalpha.com/api/
+        {name:'WolframeAlpha'},
+        
+    ]},
