@@ -1,11 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { Box, Button, useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Box, Button } from "@mui/material";
 
 const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
   const navigate = useNavigate();
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleClick = () => {
     navigate(navigateTo);
@@ -14,7 +11,7 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
   return (
     <Box
       sx={{
-        width: isMobile ? "100%" : "30%",
+        width: "95%",
         maxWidth: "100%",
         marginBottom: 2,
         backgroundColor: `${backgroundColor}`,
