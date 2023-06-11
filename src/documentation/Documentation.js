@@ -7,7 +7,7 @@ import React from 'react';
 */
 const Documentation = () => {
     return (
-        <div>s
+        <div>
             <h1>Documentation Page</h1>
             {/* Add your content here */}
         </div>
