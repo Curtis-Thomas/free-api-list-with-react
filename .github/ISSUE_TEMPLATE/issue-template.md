@@ -1,31 +1,31 @@
----
-name: Issue Template
-about: Provide a clear and concise description of the issue or feature request.
-title: ''
-labels: ''
-assignees: ''
+Issue Template
 
----
 
-Steps to Reproduce (For Bug Reports)
-If you're reporting a bug, please include steps to reproduce the issue. This helps us understand the problem and investigate it more effectively.
+Description
+[Provide a brief description of the issue or feature request]
 
-Step 1
-Step 2
-Step 3
-...
 Expected Behavior
-Describe what you expected to happen.
+[Describe the expected behavior or outcome]
 
-Actual Behavior
-Describe what actually happened.
+Current Behavior
+[Describe the current behavior or any error messages]
 
-Screenshots or Code Snippets (Optional)
-If applicable, include any relevant screenshots, error messages, or code snippets that help illustrate the issue.
+Steps to Reproduce (if applicable)
+[Provide steps to reproduce the issue, if applicable]
 
-Environment (Optional)
-Operating System:
-Browser (if applicable):
-Version of the Project:
-Additional Information (Optional)
-Add any other context or information about the issue that you think might be helpful.
+Screenshots (if applicable)
+[Add screenshots or images to help explain the issue, if applicable]
+
+Environment
+Operating System: [e.g., Windows 10, macOS Mojave]
+Browser: [e.g., Chrome, Firefox]
+Version: [e.g., 89.0.4389.82]
+Additional Information
+[Add any additional information or context about the issue]
+
+Contribution Opportunity
+[If the issue is related to contributing, specify how others can help]
+
+Related Links
+[Include any relevant links or references]
+
