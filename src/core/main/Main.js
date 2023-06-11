@@ -8,7 +8,7 @@ const Main = () => {
 
     <Box>
       <NavBar />
-      <Box>
+      <Box sx={{ display: "flex" }}>
         {/* Column 1 */}
 
         <Box>
@@ -90,15 +90,245 @@ const Main = () => {
             // backgroundColor="white"
             // textColor="#0077ba"
           />
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
         </Box>
 
         {/* Column 2 */}
 
-        <Box></Box>
+        <Box>
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+        </Box>
 
         {/* Column 3 */}
 
-        <Box></Box>
+        <Box>
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName=""
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+        </Box>
       </Box>
     </Box>
   );
