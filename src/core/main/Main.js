@@ -8,10 +8,15 @@ const Main = () => {
 
     <Box>
       <NavBar />
-      <Box sx={{ display: "flex" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         {/* Column 1 */}
 
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <BtnRouting
             btnName="Animals"
             navigateTo="/AnimalsDash"
@@ -91,25 +96,25 @@ const Main = () => {
             // textColor="#0077ba"
           />
           <BtnRouting
-            btnName=""
+            btnName="Data Validation"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
-            btnName=""
+            btnName="Development"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
-            btnName=""
+            btnName="Dictionary"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
-            btnName=""
+            btnName="Documents Production"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
@@ -118,105 +123,105 @@ const Main = () => {
 
         {/* Column 2 */}
 
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <BtnRouting
-            btnName=""
+            btnName="Email"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Entertainment"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Environment"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Events"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Finance"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Food Drink"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Games Comics"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Geocoding"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Government"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Health"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Jobs"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Machine Learning"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Music"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="News"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Open Data"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Open Source"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Patent"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
@@ -225,105 +230,105 @@ const Main = () => {
 
         {/* Column 3 */}
 
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <BtnRouting
-            btnName=""
+            btnName="Personality"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
-            btnName=""
+            btnName="Phone"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Photography"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Programming"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Science Math"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Security"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Shopping"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Social"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Sports fitness"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Test Data"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Text Analysis"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Tracking"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Transportation"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="URL Shortener"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Vehicle"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Video"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName=""
+            btnName="Weather"
             navigateTo=""
             // backgroundColor="white"
             // textColor="#0077ba"
