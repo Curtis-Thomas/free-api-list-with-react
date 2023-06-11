@@ -8,10 +8,15 @@ const Main = () => {
 
     <Box>
       <NavBar />
-      <Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+        }}
+      >
         {/* Column 1 */}
 
-        <Box>
+        <Box sx={{ flex: 1 }}>
           <BtnRouting
             btnName="Animals"
             navigateTo="/AnimalsDash"
@@ -90,15 +95,245 @@ const Main = () => {
             // backgroundColor="white"
             // textColor="#0077ba"
           />
+          <BtnRouting
+            btnName="Data Validation"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName="Development"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName="Dictionary"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName="Documents Production"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
         </Box>
 
         {/* Column 2 */}
 
-        <Box></Box>
+        <Box sx={{ flex: 1 }}>
+          <BtnRouting
+            btnName="Email"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Entertainment"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Environment"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Events"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Finance"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Food Drink"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Games Comics"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Geocoding"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Government"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Health"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Jobs"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Machine Learning"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Music"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="News"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Open Data"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Open Source"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Patent"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+        </Box>
 
         {/* Column 3 */}
 
-        <Box></Box>
+        <Box sx={{ flex: 1 }}>
+          <BtnRouting
+            btnName="Personality"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+          <BtnRouting
+            btnName="Phone"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Photography"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Programming"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Science Math"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Security"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Shopping"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Social"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Sports fitness"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Test Data"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Text Analysis"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Tracking"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Transportation"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="URL Shortener"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Vehicle"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Video"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />{" "}
+          <BtnRouting
+            btnName="Weather"
+            navigateTo=""
+            // backgroundColor="white"
+            // textColor="#0077ba"
+          />
+        </Box>
       </Box>
     </Box>
   );
