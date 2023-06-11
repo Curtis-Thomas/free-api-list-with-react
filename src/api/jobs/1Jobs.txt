@@ -1,0 +1,38 @@
+ {name:'Jobs',
+    list: [
+        //https://developer.adzuna.com/overview
+        {name:'Adzuna'},
+        //https://documenter.getpostman.com/view/18545278/UVJbJdKh
+        {name:'Arbeitnow'},
+        //https://jobsuche.api.bund.dev/
+        {name:'Arbeitsamt'},
+        //https://www.careerjet.com/partners/api/
+        {name:'Careerjet'},
+        //https://devitjobs.uk/job_feed.xml
+        {name:'DevITjobs UK'},
+        //https://findwork.dev/accounts/login/?next=/developers/
+        {name:'Findwork'},
+        //https://graphql.jobs/docs/api/
+        {name:'GraphQL Jobs'},
+        //https://api.jobs2careers.com/api/spec.pdf
+        {name:'Jobs2Careers'},
+        //https://jooble.org/api/about
+        {name:'Jooble'},
+        //http://www.juju.com/publisher/spec/
+        {name:'Juju'},
+        //https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview
+        {name:'Open Skills'},
+        //https://www.reed.co.uk/developers
+        {name:'Reed'},
+        //https://www.themuse.com/developers/api/v2
+        {name:'The Muse'},
+        //https://developers.upwork.com/?lang=python
+        {name:'Upwork'},
+        //https://developer.usajobs.gov/
+        {name:'USAJOBS'},
+        //https://developer.usajobs.gov/
+        {name:'WhatJobs'},
+        //https://www.ziprecruiter.co.uk/?utm_source=ziprecruiter-com-redirect
+        {name:'ZipRecruiter'},
+        
+    ]},

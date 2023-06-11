@@ -1,0 +1,60 @@
+ {name:'Photography',
+    list: [
+        //https://screenshotlayer.com/
+        {name:'apilayer Screenshot'},
+        //https://apitemplate.io/
+        {name:'APITemplate.io'},
+        //https://docs.bruzu.com/
+        {name:'Bruzu'},
+        //https://cheetaho.com/docs/getting-started/
+        {name:'CheetahO'},
+        //https://dagpi.xyz/
+        {name:'Dagpi'},
+        //https://duply.co/docs#getting-started-api
+        {name:'Duply'},
+        //https://dynapictures.com/docs/#introduction
+        {name:'DynaPictures'},
+        //https://www.flickr.com/services/api/
+        {name:'Flickr'},
+        //https://developers.gettyimages.com/
+        {name:'Getty Images'},
+        //https://developers.gfycat.com/api/
+        {name:'Gfycat'},
+        //https://developers.giphy.com/docs/sdk
+        {name:'Giphy'},
+        //https://developers.google.com/photos
+        {name:'Gogle Photos'},
+        //https://apidocs.imgur.com/
+        {name:'Imgur'},
+        //https://imsea.herokuapp.com/
+        {name:'Imsea'},
+        //https://picsum.photos/
+        {name:'Lorem Picsum'},
+        //https://objectcut.com/
+        {name:'ObjectCut'},
+        //https://www.pexels.com/api/
+        {name:'Pexels'},
+        //https://www.photoroom.com/api/
+        {name:'PhotoRoom'},
+        //https://pixabay.com/sk/service/about/api/
+        {name:'Pixabay'},
+        //https://placekeanu.com/
+        {name:'PlaceKeanu'},
+        //https://github.com/DenverCoder1/readme-typing-svg
+        {name:'Readme typing SVG'},
+        //https://www.remove.bg/api#remove-background
+        {name:'Remove.bg'},
+        //https://resmush.it/api
+        {name:'ReSmush.it'},
+        //https://apidocs.sirv.com/#getting-started
+        {name:'shutterstock'},
+        //https://apidocs.sirv.com/#getting-started
+        {name:'Sirv'},
+        //https://unsplash.com/developers
+        {name:'Unsplash'},
+        //https://wallhaven.cc/help/api
+        {name:'Wallhaven'},
+        //https://www.damsuccess.com/hc/en-us/articles/202134055-REST-API
+        {name:'Webdam'},
+
+    ]},

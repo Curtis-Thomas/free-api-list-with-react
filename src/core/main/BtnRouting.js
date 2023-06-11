@@ -15,7 +15,7 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
     <Box
       sx={{
         width: isMobile ? "100%" : "30%",
-        maxWidth: isMobile ? "45%" : "100%",
+        maxWidth: "100%",
         marginBottom: 2,
         backgroundColor: `${backgroundColor}`,
         border: "solid 1px 8d6cab ",

@@ -1,0 +1,11 @@
+ {name:'Patent',
+    list: [
+        //https://developers.epo.org/
+        {name:'EPO'},
+        //https://patentsview.org/apis/purpose
+        {name:'PatentsView'},
+        //https://tiponet.tipo.gov.tw/Gazette/OpenData/OD/OD05.aspx?QryDS=API00
+        {name:'TIPO'},
+        //https://www.uspto.gov/learning-and-resources/open-data-and-mobility
+        {name:'USPTO'},
+    ]},

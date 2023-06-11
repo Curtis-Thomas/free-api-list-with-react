@@ -1,0 +1,66 @@
+{name:'Science & Math',
+    list: [
+        //https://api.arcsecond.io/
+        {name:'arcsecond.io'},
+        //https://info.arxiv.org/help/api/user-manual.html
+        {name:'arXiv'},
+        //https://core.ac.uk/services#api
+        {name:'CORE'},
+        //https://www.gbif.org/developer/summary
+        {name:'GBIF'},
+        //https://github.com/idigbio/idigbio-search-api/wiki
+        {name:'iDigBio'},
+        //https://github.com/inspirehep/rest-api-doc
+        {name:'inspirehep.net'},
+        //https://isevenapi.xyz/
+        {name:'isEven (humor)'},
+        //https://isro.vercel.app/
+        {name:'ISRO'},
+        //https://www.itis.gov/ws_description.html
+        {name:'ITIS'},
+        //https://thespacedevs.com/llapi
+        {name:'Launch Library 2'},
+        //https://mpds.io/#start
+        {name:'Materials Platform for Data Science'},
+        //https://www.asterank.com/mpc
+        {name:'Minor Planet Center'},
+        // /https://api.nasa.gov/
+        {name:'NASA'},
+        //https://ui.adsabs.harvard.edu/help/api/api-docs.html#servers
+        {name:'NASA ADS'},
+        //https://newton.vercel.app/
+        {name:'Newton'},
+        //https://api.noctuasky.com/api/v1/swaggerdoc/
+        {name:'Noctua'},
+        //http://numbersapi.com/#42
+        {name:'Numbers'},
+        //https://oceanfacts.herokuapp.com/
+        {name:'Ocean Facts'},
+        //http://open-notify.org/Open-Notify-API/
+        {name:'Open Notify'},
+        //https://developer.osf.io/
+        {name:'Open Science Framework'},
+        //https://www2.purpleair.com/
+        {name:'Purple Air'},
+        //https://github.com/elizabethadegbaju/remotecalc
+        {name:'Remote Calc'},
+        //https://share.osf.io/api/v2/
+        {name:'SHARE'},
+        // /https://api.spacex.land/graphql/
+        {name:'SpaceX'},
+        //https://sunrise-sunset.org/api
+        {name:'Sunrise and Sunset'},
+        //https://github.com/FranP-code/API-Times-Adder
+        {name:'Times Adder'},
+        //https://tle.ivanstanojevic.me/#/docs
+        {name:'TLE'},
+        //https://earthquake.usgs.gov/fdsnws/event/1/
+        {name:'USGS Earthquake Hazards Program'},
+        //https://waterservices.usgs.gov/
+        {name:'USGS Wateer Services'},
+        //https://datahelpdesk.worldbank.org/knowledgebase/topics/125589
+        {name:'World Bank'},
+        // /https://x-math.herokuapp.com/
+        {name:'xMath'},
+
+    ]},

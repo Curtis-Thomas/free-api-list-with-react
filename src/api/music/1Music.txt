@@ -1,0 +1,69 @@
+ {name:'Music',
+    list: [
+        //https://docs.7digital.com/reference/introduction
+        {name:'7digital'},
+        //https://aimastering.com/api_docs/
+        {name:'AI Mastering'},
+        //https://www.audiomack.com/data-api/docs
+        {name:'Audiomack'},
+        //https://bandcamp.com/developer
+        {name:'Bandcamp'},
+        //https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0
+        {name:'Bandsintown'},
+        //https://developers.deezer.com/login?redirect=/api
+        {name:'Deezer'},
+        //https://www.discogs.com/developers/
+        {name:'Discogs'},
+        //https://freesound.org/docs/api/
+        {name:'Freesound'},
+        //https://github.com/cyberboysumanjay/GaanaAPI
+        {name:'Gaana'},
+        //https://docs.genius.com/
+        {name:'Genius'},
+        //https://binaryjazz.us/genrenator-api/
+        {name:'Generator'},
+        //https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+        {name:'iTunes Search'},
+        //https://developer.jamendo.com/v3.0/docs
+        {name:'Jamendo'},
+        //https://github.com/cyberboysumanjay/JioSaavnAPI
+        {name:'JioSaavn'},
+        //https://developer.kkbox.com/#/
+        {name:'KKBOX'},
+        //https://docs.ksoft.si/api/lyrics-api
+        {name:'KSoft.Si Lyrics'},
+        //https://www.last.fm/api
+        {name:'LastFM'},
+        //https://lyricsovh.docs.apiary.io/#
+        {name:'Lyrics.ovh'},
+        //https://www.mixcloud.com/developers/
+        {name:'Mixcloud'},
+        //https://musicbrainz.org/doc/MusicBrainz_API
+        {name:'MusicBrainz'},
+        //https://developer.musixmatch.com/
+        {name:'Musixmatch'},
+        //https://developer.prod.napster.com/
+        {name:'Napster'},
+        //https://openwhyd.github.io/openwhyd/API
+        {name:'Openwhyd'},
+        //https://phish.in/api-docs
+        {name:'Phishin'},
+        //https://api.radio-browser.info/
+        {name:'Radio Browser'},
+        //https://www.songkick.com/developer/
+        {name:'Songkick'},
+        //https://www.notion.so/API-d0ebe08a5e304a55928405eb682f6741
+        {name:'Songlink / Odesli'},
+        //https://www.songsterr.com/a/wa/api/
+        {name:'Songsterr'},
+        //https://developers.soundcloud.com/docs/api/guide
+        {name:'SoundCloud'},
+        //https://developer.spotify.com/documentation/web-api/
+        {name:'Spotify'},
+        //https://tastedive.com/read/api
+        {name:'TasteDive'},
+        //https://www.theaudiodb.com/api_guide.php
+        {name:'TheAudioDB'},
+        //https://api.vagalume.com.br/docs/
+        {name:'Vagalume'},
+    ]},

@@ -1,0 +1,194 @@
+{name:'Games & Comics',
+    list: [
+        //https://age-of-empires-2-api.herokuapp.com/
+        {name:'Age of Empires II'},
+        //https://amiiboapi.com/
+        {name:'AmiiboAPI'},
+        //https://acnhapi.com/
+        {name:'Animal Crossing: New Horizons'},
+        //https://github.com/didadadida93/autochess-vng-api
+        {name:'Autochess VNG'},
+        //https://github.com/bartervg/barter.vg/wiki
+        {name:'Barter.vg'},
+        //https://develop.battle.net/documentation/guides/getting-started
+        {name:'Battle.net'},
+        //https://boardgamegeek.com/wiki/page/BGG_XML_API2
+        {name:'Board Game Geek'},
+        //https://developer.brawlstars.com/#/
+        {name:'Brawl Stars'},
+        //https://apidocs.cheapshark.com/
+        {name:'Bugsnax'},
+        //https://apidocs.cheapshark.com/
+        {name:'CheapShark'},
+        //https://www.chess.com/news/view/published-data-api
+        {name:'Chess.com'},
+        //http://www.icndb.com/api/
+        {name:'Chuck Norris Database'},
+        //https://developer.clashofclans.com/#/
+        {name:'Clash of Clans'},
+        //https://developer.clashroyale.com/#/
+        {name:'Clash Royale'},
+        //https://comicvine.gamespot.com/api/documentation
+        {name:'Comic Vine'},
+        //https://crafatar.com/
+        {name:'Casfatar'},
+        //https://battle.crossuniverse.net/apiDocs.html
+        {name:'Cross Universe'},
+        //https://deckofcardsapi.com/
+        {name:'Deckl of Cards'},
+        //https://bungie-net.github.io/multi/index.html
+        {name:'Destiny The Game'},
+        //https://digimon-api.vercel.app/
+        {name:'Digimon Information'},
+        //https://documenter.getpostman.com/view/14059948/TzecB4fH
+        {name:'Digimon TCG'},
+        //https://disneyapi.dev/
+        {name:'Disney'},
+        //https://docs.opendota.com/
+        {name:'Dota 2'},
+        //https://www.dnd5eapi.co/docs/
+        {name:'Dungeons and Dragons'},
+        //https://open5e.com/
+        {name:'Dungeons and Dragons (Alternate)'},
+        //https://esi.evetech.net/ui
+        {name:'Eve Online'},
+        //https://ffxivcollect.com/
+        {name:'FFXIV Collect'},
+        //https://www.easports.com/fifa/ultimate-team/api/fut/item
+        {name:'FIFA Ultimate Team'},
+        //https://xivapi.com/
+        {name:'Final Fantacy XIV'},
+        //https://fortnitetracker.com/site-api
+        {name:'Fortnite'},
+        //https://docs.forza-api.tk/
+        {name:'Forza'},
+        // /https://www.freetogame.com/api-doc
+        {name:'FreeToGame'},
+        //https://asli-fun-fact-api.herokuapp.com/
+        {name:'Fun Facts'},
+        //https://api.funtranslations.com/
+        {name:'FunTranslations'},
+        //https://www.gamerpower.com/api-read
+        {name:'GamerPower'},
+        //https://gdbrowser.com/api
+        {name:'GdBrowser'},
+        //https://github.com/sameerkumar18/geek-joke-api
+        {name:'Geek-Jokes'},
+        //https://genshin.dev/
+        {name:'Genshin Impact'},
+        //https://www.giantbomb.com/api/documentation/
+        {name:'Giant Bomb'},
+        //https://github.com/favware/graphql-pokemon
+        {name:'GraphQL Pokemon'},
+        //https://wiki.guildwars2.com/wiki/API:Main
+        {name:'Guild Wars 2'},
+        //https://github.com/rubensayshi/gw2spidy/wiki
+        {name:'GW2Spidey'},
+        //https://developer.haloapi.com/
+        {name:'Halo'},
+        //https://hearthstoneapi.com/
+        {name:'Hearthstone'},
+        //https://rapidapi.com/Ziggoto/api/humble-bundle
+        {name:'Humble Bundle'},
+        //https://humorapi.com/
+        {name:'Humor'},
+        //https://api.hypixel.net/
+        {name:'Hypixel'},
+        //https://github.com/gadhagod/Hyrule-Compendium-API
+        {name:'Hyrule Compendium'},
+        //https://hytale-api.com/
+        {name:'Hytale'},
+        //https://api-docs.igdb.com/#getting-started
+        {name:'IGDB.com'},
+        //https://sv443.net/jokeapi/v2/
+        {name:'JokeAPI'},
+        //https://jokes.one/api/joke/
+        {name:'Jokes One'},
+        //http://jservice.io/
+        {name:'Jservice'},
+        //https://lichess.org/api
+        {name:'Lichess'},
+        //https://magicthegathering.io/
+        {name:'Magic The Gathering'},
+        //https://mario-kart-tour-api.herokuapp.com/
+        {name:'Mario Kart Tour'},
+        //https://developer.marvel.com/
+        {name:'Marvel'},
+        //https://api.mcsrvstat.us/
+        {name:'MineCraft Server Status'},
+        //https://www.mmobomb.com/api
+        {name:'MMO Games'},
+        //https://docs.mod.io/#getting-started
+        {name:'mod.io'},
+        //https://wiki.vg/Mojang_API
+        {name:'Mojang'},
+        //https://docs.mhw-db.com/
+        {name:'Monster Hunter World'},
+        //https://opentdb.com/api_config.php
+        {name:'Open Trivia'},
+        //https://developers.pandascore.co/docs
+        {name:'PandaScore'},
+        //https://www.pathofexile.com/developer/docs
+        {name:'PAth of Exile'},
+        //https://playerdb.co/
+        {name:'PlayerDB'},
+        //https://pokeapi.co/
+        {name:'Pokeapi'},
+        //https://github.com/mazipan/graphql-pokeapi
+        {name:'PokeAPI (GraphQL)'},
+        //https://pokemontcg.io/
+        {name:'Pokemon TCG'},
+        //https://psychonauts-api.netlify.app/
+        {name:'Psychonauts'},
+        //https://developer.pubg.com/
+        {name:'PUBG'},
+        //https://github.com/deltadex7/puyodb-api-deno
+        {name:'Puyo Nexus'},
+        //https://quizapi.io/
+        {name:'quizapi.io'},
+        //https://raider.io/api
+        {name:'Raider'},
+        //https://rawg.io/apidocs
+        {name:'RAWG.io'},
+        //https://rickandmortyapi.com/
+        {name:'Rick and Morty'},
+        //https://developer.riotgames.com/
+        {name:'Riot Games'},
+        //https://rps101.pythonanywhere.com/api
+        {name:'RPS 101'},
+        //https://runescape.wiki/w/Application_programming_interface
+        {name:'Runescape'},
+        //https://github.com/JessVel/sakura-card-captor-api
+        {name:'Sakura CardCaptor'},
+        //https://scryfall.com/docs/api
+        {name:'Scryfall'},
+        //https://spacetraders.io/?rel=pub-apis
+        {name:'SpaceTradersAPI'},
+        //https://github.com/Revadike/InternalSteamWebAPI/wiki
+        {name:'Steam'},
+        //https://superheroapi.com/
+        {name:'SuperHeroes'},
+        //https://tcgdex.dev/
+        {name:'TCGdex'},
+        //https://docs.tebex.io/plugin/
+        {name:'Tebex'},
+        //https://tetr.io/about/api/
+        {name:'TETR.IO'},
+        //https://www.tronalddump.io/
+        {name:'Tronald Dump'},
+        //https://docs.universalis.app/
+        {name:'Universalis'},
+        //https://valorant-api.com/
+        {name:'Valorant (non-official)'},
+        //https://api.wfstats.cf/
+        {name:'Warface (non-official)'},
+        //https://developers.wargaming.net/
+        {name:'Wargaming.net'},
+        //https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md
+        {name:'When is next MCU film'},
+        //https://xkcd.com/json.html
+        {name:'xkcd'},
+        //https://ygoprodeck.com/api-guide/
+        {name:'Yu-Gi-Oh!'},
+
+    ]},

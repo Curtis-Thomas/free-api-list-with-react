@@ -1,0 +1,43 @@
+ {name:'News',
+    list: [
+        //https://mediastack.com/
+        {name:'apilayer mediastack'},
+        //https://developer.ap.org/
+        {name:'Associated Press'},
+        //https://chroniclingamerica.loc.gov/about/api/
+        {name:'Chronicling America'},
+        //https://currentsapi.services/en
+        {name:'Currents'},
+        //https://github.com/feedbin/feedbin-api
+        {name:'Feedbin'},
+        //https://gnews.io/
+        {name:'GNews'},
+        //https://corona.dnsforfamily.com/api.txt
+        {name:'Graphs for Coronavirus'},
+        //https://github.com/cyberboysumanjay/Inshorts-News-API
+        {name:'Inshorts News'},
+        //https://www.marketaux.com/
+        {name:'MarketAux'},
+        //https://developer.nytimes.com/
+        {name:'New York Times'},
+        //https://newsapi.org/
+        {name:'News'},
+        //https://newsdata.io/documentation
+        {name:'NewsData'},
+        //https://rapidapi.com/machaao-inc-machaao-inc-default/api/newsx/
+        {name:'NewsX'},
+        //http://dev.npr.org/
+        {name:'NPR One'},
+        //https://spaceflightnewsapi.net/
+        {name:'Spaceflight News'},
+        //https://open-platform.theguardian.com/
+        {name:'The Guardian'},
+        //https://github.com/theoldreader/api
+        {name:'The Old Reader'},
+        //https://www.thenewsapi.com/
+        {name:'TheNews'},
+        //https://trove.nla.gov.au/about/create-something/using-api
+        {name:'Trove'},
+        
+        
+    ]},

@@ -1,0 +1,81 @@
+{name:'Social',
+    list: [
+        //https://github.com/4chan/4chan-API
+        {name:'4chan'},
+        //https://www.ayrshare.com/
+        {name:'Ayrshare'},
+        //https://aztro.sameerkumar.website/
+        {name:'aztro'},
+        //https://developers.google.com/blogger/
+        {name:'Blogger'},
+        //https://developer.webex.com/
+        {name:'Cisco Spark'},
+        //https://discord.drivet.xyz/profile/api
+        {name:'Dangerous Discord Database'},
+        //https://disqus.com/api/docs/auth/
+        {name:'Disqus'},
+        //https://disqus.com/api/docs/auth/
+        {name:'Doge-Meme'},
+        //https://developers.facebook.com/
+        {name:'Facebook'},
+        //https://location.foursquare.com/developer/
+        {name:'Foursquare'},
+        //https://www.foaas.com/
+        {name:'Fuck Off as a Service'},
+        //https://docs.fullcontact.com/
+        {name:'Full Contact'},
+        //https://github.com/HackerNews/API
+        {name:'HackerNews'},
+        //https://hashnode.com/
+        {name:'Hashnode'},
+        //https://developers.facebook.com/docs/instagram
+        {name:'Instagram'},
+        //https://developers.kakao.com/
+        {name:'Kakao'},
+        //https://github.com/Phineas/lanyard
+        {name:'Lanyard'},
+        //https://developers.line.biz/en/
+        {name:'Line'},
+        //https://learn.microsoft.com/en-us/linkedin/?context=linkedin%2Fcontext
+        {name:'LinkedIn'},
+        //https://www.meetup.com/api/guide/
+        {name:'Meetup.com'},
+        //https://learn.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
+        {name:'Microsoft Graph'},
+        //https://developers.naver.com/main/
+        {name:'NAVER'},
+        //https://docs.opencollective.com/help/contributing/development/api
+        {name:'Open Collective'},
+        // /https://developers.pinterest.com/
+        {name:'Pintrest'},
+        //https://api.producthunt.com/v2/docs
+        {name:'Product Hunt'},
+        // /https://www.reddit.com/dev/api
+        {name:'Reddit'},
+        // /https://developers.revolt.chat/api/
+        {name:'Revolt'},
+        //https://www.saidit.net/dev/api
+        {name:'Saidit'},
+        //https://api.slack.com/
+        {name:'Slack'},
+        //https://dev.tamtam.chat/
+        {name:'TamTam'},
+        //https://core.telegram.org/bots/api
+        {name:'Telegram Bot'},
+        //https://core.telegram.org/api#getting-started
+        {name:'Telegram MTProto'},
+        //https://telegra.ph/api
+        {name:'Telegraph'},
+        //https://developers.tiktok.com/doc/login-kit-web
+        {name:'TikTok'},
+        //https://trashnothing.com/developer
+        {name:'Trash Nothing'},
+        //https://www.tumblr.com/privacy/consent/begin?redirect=https%3A%2F%2Fwww.tumblr.com%2Fdocs%2Fen%2Fapi%2Fv2&v=2
+        {name:'Tumblr'},
+        //https://dev.twitch.tv/docs
+        {name:'Twitch'},
+        //https://developer.twitter.com/en/docs
+        {name:'Twitter'},
+        //https://vk.com/dev/sites
+        {name:'vk'},
+    ]},
