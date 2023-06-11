@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Box, Typography } from "@mui/material";
 
 /**
  * The Documentation component returns a simple div element containing an h1 heading. 
@@ -7,10 +7,10 @@ import React from 'react';
 */
 const Documentation = () => {
     return (
-        <div>
-            <h1>Documentation Page</h1>
+        <Box>
+            <Typography variant="h2">Documentation Page</Typography>
             {/* Add your content here */}
-        </div>
+        </Box>
     );
 };
 
