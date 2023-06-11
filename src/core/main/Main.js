@@ -97,25 +97,25 @@ const Main = () => {
           />
           <BtnRouting
             btnName="Data Validation"
-            navigateTo=""
+            navigateTo="/DataValidationDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
             btnName="Development"
-            navigateTo=""
+            navigateTo="/DevelopmentDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
             btnName="Dictionary"
-            navigateTo=""
+            navigateTo="/DictionaryDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
             btnName="Documents Production"
-            navigateTo=""
+            navigateTo="/DocsProdDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
@@ -126,103 +126,103 @@ const Main = () => {
         <Box sx={{ flex: 1 }}>
           <BtnRouting
             btnName="Email"
-            navigateTo=""
+            navigateTo="/EmailDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Entertainment"
-            navigateTo=""
+            navigateTo="/EntertainmentDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Environment"
-            navigateTo=""
+            navigateTo="/EnvironmentDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Events"
-            navigateTo=""
+            navigateTo="/EventsDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Finance"
-            navigateTo=""
+            navigateTo="/FinanceDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Food Drink"
-            navigateTo=""
+            navigateTo="/FoodDrinkDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Games Comics"
-            navigateTo=""
+            navigateTo="/GamesComicsDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Geocoding"
-            navigateTo=""
+            navigateTo="/GeocodingDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Government"
-            navigateTo=""
+            navigateTo="/GovernmentDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Health"
-            navigateTo=""
+            navigateTo="/HealthDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Jobs"
-            navigateTo=""
+            navigateTo="/JobsDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Machine Learning"
-            navigateTo=""
+            navigateTo="/MachineLearningDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Music"
-            navigateTo=""
+            navigateTo="/MusicDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="News"
-            navigateTo=""
+            navigateTo="/NewsDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Open Data"
-            navigateTo=""
+            navigateTo="/OpenDataDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Open Source"
-            navigateTo=""
+            navigateTo="/OpenSourceDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Patent"
-            navigateTo=""
+            navigateTo="/PatentDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
@@ -233,103 +233,103 @@ const Main = () => {
         <Box sx={{ flex: 1 }}>
           <BtnRouting
             btnName="Personality"
-            navigateTo=""
+            navigateTo="/PersonalityDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
           <BtnRouting
             btnName="Phone"
-            navigateTo=""
+            navigateTo="/PhoneDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Photography"
-            navigateTo=""
+            navigateTo="/PhotographyDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Programming"
-            navigateTo=""
+            navigateTo="/ProgrammingDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Science Math"
-            navigateTo=""
+            navigateTo="/ScienceMathDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Security"
-            navigateTo=""
+            navigateTo="/SecurityDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Shopping"
-            navigateTo=""
+            navigateTo="/ShoppingDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Social"
-            navigateTo=""
+            navigateTo="/SocialDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
-            btnName="Sports fitness"
-            navigateTo=""
+            btnName="Sports Fitness"
+            navigateTo="/SportsFitnessDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Test Data"
-            navigateTo=""
+            navigateTo="/TestDataDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Text Analysis"
-            navigateTo=""
+            navigateTo="/TextAnalysisDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Tracking"
-            navigateTo=""
+            navigateTo="/TrackingDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Transportation"
-            navigateTo=""
+            navigateTo="/TransportationDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="URL Shortener"
-            navigateTo=""
+            navigateTo="/UrlShortenerDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Vehicle"
-            navigateTo=""
+            navigateTo="/VehicleDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Video"
-            navigateTo=""
+            navigateTo="/VideoDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />{" "}
           <BtnRouting
             btnName="Weather"
-            navigateTo=""
+            navigateTo="/WeatherDash"
             // backgroundColor="white"
             // textColor="#0077ba"
           />
