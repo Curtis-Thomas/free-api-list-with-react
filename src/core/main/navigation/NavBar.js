@@ -18,7 +18,7 @@ const NavBar = ({ link, route2 }) => {
           <Box sx={{ flexGrow: 1 }}>
             <Link label="Home" to={"/"} />
           </Box>
-          <Box>
+          <Box sx={{ overflow: "hidden", whiteSpace: "nowrap" }}>
             {/* since each 'category' link has dash at the end, 
               remove it before passing to Link component
               for clarity */}

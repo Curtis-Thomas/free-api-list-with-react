@@ -15,10 +15,7 @@ const onMouseOut = (e) => {
 };
 
 const linkStyle = {
-  textOverflow: "ellipsis",
-  whiteSpace: "nowrap",
   padding: "0 0.5rem",
-  overflow: "hidden",
   textDecoration: "none",
   color: "black",
 };
