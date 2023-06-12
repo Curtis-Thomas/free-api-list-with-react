@@ -46,7 +46,7 @@ const NavBar = ({ link, route2 }) => {
       </Box>
       {link && (
         <>
-          <Box sx={{ flex: 1, textAlign: "right" }}>Catgeory:</Box>
+          <Box sx={{ flex: 1, textAlign: "right" }}>Category:</Box>
           <Box
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
