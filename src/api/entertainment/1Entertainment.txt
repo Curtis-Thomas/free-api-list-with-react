@@ -1,24 +1,20 @@
-  {name:'Entertainment',
-    list: [
+  Checked June 2023 by Curt
+
+  name:'Entertainment',
+   
         //https://api.chucknorris.io/
         {name:'chucknorris.io'},
+
         //https://github.com/sameerkumar18/corporate-bs-generator-api
         {name:'Corporate Buzz Words'},
-        //https://excuser.herokuapp.com/
-        {name:'Excuser'},
-        //http://ww1.aakhilv.me/
-        {name:'Fun Fact'},
+
         //https://imgflip.com/api
         {name:'Imgflip'},
-        //https://mememaker.github.io/API/
-        {name:'Meme Maker'},
-        //https://github.com/theIYD/NaMoMemes
-        {name:'NamoMemes'},
+
         //https://uselessfacts.jsph.pl/
         {name:'Random Useless Facts'},
+
         //https://techy-api.vercel.app/
         {name:'Techy'},
-        //https://github.com/beanboi7/yomomma-apiv2
-        {name:'Yo Momma Jokes'},
         
-    ]},
+    
