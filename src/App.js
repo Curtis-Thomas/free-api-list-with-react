@@ -66,6 +66,7 @@ import OpenSourceDash from "./api/openSource/OpenSource1Dash";
 import TextAnalysisDash from "./api/textAnalysis/TextAnalysis1Dash";
 import Tools from "./tools/Tools";
 import Documentation from "./documentation/Documentation";
+import EntertainmentChuckNorris from "./api/entertainment/EntertainmentchuckNorris";
 
 function App() {
   return (
@@ -197,6 +198,11 @@ function App() {
               element={<BooksABibliaDigital />}
             />
             <Route path="/BooksDash/BibleApi" element={<BooksBibleApi />} />
+            {/* Entertainment */}
+            <Route
+              path="/EntertainmentDash/EntertainmentChuckNorris"
+              element={<EntertainmentChuckNorris />}
+            />
           </Routes>
         </Box>
         <Box sx={{ height: "5vh" }}>

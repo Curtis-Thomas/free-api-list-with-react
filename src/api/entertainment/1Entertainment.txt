@@ -2,8 +2,6 @@
 
   name:'Entertainment',
    
-        //https://api.chucknorris.io/
-        {name:'chucknorris.io'},
 
         //https://github.com/sameerkumar18/corporate-bs-generator-api
         {name:'Corporate Buzz Words'},

@@ -7,7 +7,12 @@ const EntertainmentDash = () => {
     <Box>
       <NavBar link="/EntertainmentDash" />
       <Box>
-        <BtnRouting btnName="" navigateTo="" />
+        <BtnRouting
+          btnName="Chuck Norris"
+          navigateTo="EntertainmentChuckNorris"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
