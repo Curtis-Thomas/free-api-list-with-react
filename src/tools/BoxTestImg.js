@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { Box, Typography, Button, Input } from "@mui/material";
 import axios from "axios";
 
+/**
+ * Component for testing image fetching from an API endpoint.
+ *
+ * @param {string} url - The base URL of the API.
+ */
 const BoxTestImg = ({ url }) => {
   const [response, setResponse] = useState("");
   const [urlValue, setUrl] = useState("");
   const [endpointValue, setEndpoint] = useState("");
 
+  /**
+   * Fetches the image from the API endpoint and sets the response state accordingly.
+   */
   const fetchAPI = async () => {
     try {
       const response = await axios.get(`${urlValue}${endpointValue}`, {

@@ -4,6 +4,12 @@ import { AppBar, Toolbar, Box } from "@mui/material";
 
 import Link from "./Link";
 
+/**
+ * Component for a navigation bar that displays links.
+ *
+ * @param {string} link - The URL for the link.
+ * @param {string} route2 - The route for the second link.
+ */
 const NavBar = ({ link, route2 }) => {
   return (
     <>

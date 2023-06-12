@@ -1,37 +1,27 @@
+ checked by curt june 2023
+ 
  {name:'Environment',
     list: [
-        //https://docs.breezometer.com/api-documentation/pollen-api/v2/
-        {name:'BreezoMeter Pollen'},
-        //https://docs.carboninterface.com/#/
-        {name:'Carbon Interface'},
-        //https://www.climatiq.io/docs
-        {name:'Climatiq'},
-        //https://docs.cloverly.com/
-        {name:'Cloverly'},
+       
         //https://corrently.io/books/susscope2-framework-fur-co2-emissionen-strombezug
         {name:'CO2 Offset'},
+
         //https://www.energidataservice.dk/
         {name:'Danish data service Energi'},
-        //https://gruenstromindex.de/
-        {name:'GrunstromIndex'},
-        //https://www.iqair.com/air-pollution-data-api
-        {name:'IQAir'},
-        //https://api-docs.luchtmeetnet.nl/
-        {name:'Lunchtmeetnet'},
+
+
         //https://data.nationalgrideso.com/
         {name:'National Grid ESO'},
-        //https://docs.openaq.org/docs
-        {name:'OpenAQ'},
+
         //https://pm25.lass-net.org/#apis
         {name:'PM2.5 Open Data Portal'},
+
         //http://www.pm25.in/api_doc
         {name:'PM25.in'},
-        //https://developer.nrel.gov/docs/solar/pvwatts/v6/
-        {name:'PVWatts'},
-        //https://srpenergy-api-client-python.readthedocs.io/en/latest/api.html
-        {name:'Srp Energy'},
+
         //https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0
         {name:'UK Carbon Intensity'},
+
         //https://api.websitecarbon.com/
         {name:'Website Carbon'},
         

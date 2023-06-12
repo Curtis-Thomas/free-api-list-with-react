@@ -1,6 +1,16 @@
 import { Box, Typography, Button } from "@mui/material";
 
+/**
+ * Component for displaying an endpoint with a header, endpoint URL, and description.
+ *
+ * @param {string} header - The header text for the endpoint.
+ * @param {string} endpoint - The URL of the endpoint.
+ * @param {string} description - The description of the endpoint.
+ */
 const Endpoints = ({ header, endpoint, description }) => {
+  /**
+   * Handles copying the endpoint URL to the clipboard.
+   */
   const handleCopyEndpoint = () => {
     clearClipboard()
       .then(() => {
@@ -14,6 +24,11 @@ const Endpoints = ({ header, endpoint, description }) => {
       });
   };
 
+  /**
+   * Clears the clipboard by creating a temporary textarea element and simulating a cut command.
+   *
+   * @returns {Promise} - A promise that resolves when the clipboard is cleared successfully.
+   */
   const clearClipboard = () => {
     return new Promise((resolve, reject) => {
       const textarea = document.createElement("textarea");
@@ -57,7 +72,7 @@ const Endpoints = ({ header, endpoint, description }) => {
         </Box>
       </Box>
       <Box>
-        <Typography>Description :{description}</Typography>
+        <Typography>Description: {description}</Typography>
       </Box>
     </Box>
   );

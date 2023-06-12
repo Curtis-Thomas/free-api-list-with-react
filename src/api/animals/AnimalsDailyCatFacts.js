@@ -7,11 +7,22 @@ import BoxTestCrud from "../../tools/BoxTestCrud";
 const AnimalsDailyCatFacts = () => {
   return (
     <Box>
+      {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/DailyCatFacts" />
+
+      {/* CRUD test box */}
       <BoxTestCrud />
+
       <Box>
+        {/* API information box */}
         <BoxApiInfo baseEndpoint="https://cat-fact.herokuapp.com" />
-        <Endpoints header="GET" endpoint="/facts/random" />
+
+        {/* Endpoint */}
+        <Endpoints
+          header="GET"
+          endpoint="/facts/random"
+          description="Retrieve a random cat fact"
+        />
       </Box>
     </Box>
   );

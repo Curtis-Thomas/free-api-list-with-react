@@ -1,6 +1,14 @@
 import { Typography, Box, Button } from "@mui/material";
 
+/**
+ * Component for displaying API information, including a base URL and a copy button.
+ *
+ * @param {string} baseEndpoint - The base URL of the API.
+ */
 const BoxApiInfo = ({ baseEndpoint }) => {
+  /**
+   * Handles the click event of the copy button and copies the base URL to the clipboard.
+   */
   const handleCopyClick = () => {
     navigator.clipboard
       .writeText(baseEndpoint)

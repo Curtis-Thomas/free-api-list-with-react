@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Header from "./core/header/Header";
 import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
+
 import AnimalDash from "./api/animals/Animals1Dash";
 import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
 import AnimalsCataas from "./api/animals/AnimalsCataas";
@@ -126,47 +126,44 @@ function App() {
             <Route path="/DictionaryDash" element={<DictionaryDash />} />
             <Route path="/DocsProdDash" element={<DocsProdDash />} />
             <Route path="/EmailDash" element={<EmailDash />} />
-            <Route
-              path="/EntertainmentDash"
-              element={<EntertainmentDash />}
-            />{" "}
-            <Route path="/EnvironmentDash" element={<EnvironmentDash />} />{" "}
-            <Route path="/EventsDash" element={<EventsDash />} />{" "}
-            <Route path="/FinanceDash" element={<FinanceDash />} />{" "}
-            <Route path="/FoodDrinkDash" element={<FoodDrinkDash />} />{" "}
-            <Route path="/GamesComicsDash" element={<GamesComicsDash />} />{" "}
-            <Route path="/GeocodingDash" element={<GeoCodingDash />} />{" "}
-            <Route path="/GovernmentDash" element={<GovernmentDash />} />{" "}
-            <Route path="HealthDash" element={<HealthDash />} />{" "}
+            <Route path="/EntertainmentDash" element={<EntertainmentDash />} />
+            <Route path="/EnvironmentDash" element={<EnvironmentDash />} />
+            <Route path="/EventsDash" element={<EventsDash />} />
+            <Route path="/FinanceDash" element={<FinanceDash />} />
+            <Route path="/FoodDrinkDash" element={<FoodDrinkDash />} />
+            <Route path="/GamesComicsDash" element={<GamesComicsDash />} />
+            <Route path="/GeocodingDash" element={<GeoCodingDash />} />
+            <Route path="/GovernmentDash" element={<GovernmentDash />} />
+            <Route path="HealthDash" element={<HealthDash />} />
             <Route path="/JobsDash" element={<JobsDash />} />
             <Route
               path="/MachineLearningDash"
               element={<MachineLearningDash />}
             />
-            <Route path="/MusicDash" element={<MusicDash />} />{" "}
-            <Route path="/NewsDash" element={<NewsDash />} />{" "}
-            <Route path="/OpenSourceDash" element={<OpenSourceDash />} />{" "}
-            <Route path="/OpenDataDash" element={<OpenDataDash />} />{" "}
-            <Route path="/PatentDash" element={<PatentDash />} />{" "}
-            <Route path="/PersonalityDash" element={<PersonalityDash />} />{" "}
+            <Route path="/MusicDash" element={<MusicDash />} />
+            <Route path="/NewsDash" element={<NewsDash />} />
+            <Route path="/OpenSourceDash" element={<OpenSourceDash />} />
+            <Route path="/OpenDataDash" element={<OpenDataDash />} />
+            <Route path="/PatentDash" element={<PatentDash />} />
+            <Route path="/PersonalityDash" element={<PersonalityDash />} />
             <Route path="/PhoneDash" element={<PhoneDash />} />
-            <Route path="/PhotographyDash" element={<PhotographyDash />} />{" "}
-            <Route path="/ProgrammingDash" element={<ProgrammingDash />} />{" "}
-            <Route path="/ScienceMathDash" element={<ScienceMathDash />} />{" "}
-            <Route path="/SecurityDash" element={<SecurityDash />} />{" "}
-            <Route path="/ShoppingDash" element={<ShoppingDash />} />{" "}
-            <Route path="/SocialDash" element={<SocialDash />} />{" "}
-            <Route path="/SportsFitnessDash" element={<SportsFitnessDash />} />{" "}
-            <Route path="/TestDataDash" element={<TestDataDash />} />{" "}
-            <Route path="/TextAnalysisDash" element={<TextAnalysisDash />} />{" "}
-            <Route path="/TrackingDash" element={<TrackingDash />} />{" "}
+            <Route path="/PhotographyDash" element={<PhotographyDash />} />
+            <Route path="/ProgrammingDash" element={<ProgrammingDash />} />
+            <Route path="/ScienceMathDash" element={<ScienceMathDash />} />
+            <Route path="/SecurityDash" element={<SecurityDash />} />
+            <Route path="/ShoppingDash" element={<ShoppingDash />} />
+            <Route path="/SocialDash" element={<SocialDash />} />
+            <Route path="/SportsFitnessDash" element={<SportsFitnessDash />} />
+            <Route path="/TestDataDash" element={<TestDataDash />} />
+            <Route path="/TextAnalysisDash" element={<TextAnalysisDash />} />
+            <Route path="/TrackingDash" element={<TrackingDash />} />
             <Route
               path="/TransportationDash"
               element={<TransportationDash />}
-            />{" "}
-            <Route path="/UrlShortenerDash" element={<UrlShortenerDash />} />{" "}
-            <Route path="/VehicleDash" element={<VehicleDash />} />{" "}
-            <Route path="/VideoDash" element={<VideoDash />} />{" "}
+            />
+            <Route path="/UrlShortenerDash" element={<UrlShortenerDash />} />
+            <Route path="/VehicleDash" element={<VehicleDash />} />
+            <Route path="/VideoDash" element={<VideoDash />} />
             <Route path="/WeatherDash" element={<WeatherDash />} />
             <Route
               path="/AnimalsDash/AnimalsDailyCatFacts"
