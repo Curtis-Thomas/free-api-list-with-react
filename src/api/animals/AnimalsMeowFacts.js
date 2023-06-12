@@ -2,14 +2,14 @@ import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
 import NavBar from "../../core/main/navigation/NavBar";
-import BoxTestCrud from "../../core/main/BoxTestCrud";
+import BoxTestCrud from "../../tools/BoxTestCrud";
 
 const AnimalsMeowFacts = () => {
   return (
     <Box>
       <NavBar link="/AnimalsDash" route2="/MeowFacts" />
+      <BoxTestCrud />
       <Box>
-        <BoxTestCrud />
         <BoxApiInfo baseEndpoint="https://meowfacts.herokuapp.com" />
         <Endpoints header="GET" endpoint="/" description="" />
         <Endpoints header="GET" endpoint="/?count=3" description="" />

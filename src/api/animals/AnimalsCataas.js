@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
 import NavBar from "../../core/main/navigation/NavBar";
-import BoxTestImg from "../../core/main/BoxTestImg";
+import BoxTestImg from "../../tools/BoxTestImg";
 
 const AnimalsCataas = () => {
   return (

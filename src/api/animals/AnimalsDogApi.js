@@ -2,14 +2,14 @@ import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
 import NavBar from "../../core/main/navigation/NavBar";
-import BoxTestCrud from "../../core/main/BoxTestCrud";
+import BoxTestCrud from "../../tools/BoxTestCrud";
 
 const AnimalsDogApi = () => {
   return (
     <Box>
       <NavBar link="/AnimalsDash" route2="/DogApi" />
+      <BoxTestCrud />
       <Box>
-        <BoxTestCrud />
         <BoxApiInfo baseEndpoint="https://dogapi.dog/api/v2" />
         <Endpoints header="GET" endpoint="/breeds" description="" />
         <Endpoints header="GET" endpoint="/breeds/{id}" description="" />
