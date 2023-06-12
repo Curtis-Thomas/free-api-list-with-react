@@ -7,18 +7,36 @@ import BoxTestCrud from "../../tools/BoxTestCrud";
 const AnimalsDog = () => {
   return (
     <Box>
+      {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/Dog" />
-      <BoxTestCrud />
-      <Box>
-        <BoxApiInfo baseEndpoint="https://dog.ceo/api" />
-        <Endpoints header="GET" endpoint="/breeds/list/all" description="" />
-        <Endpoints header="GET" endpoint="/breed/hound/images" description="" />
-        <Endpoints header="GET" endpoint="/breed/hound/list" description="" />
 
+      {/* CRUD test box */}
+      <BoxTestCrud />
+
+      <Box>
+        {/* API information box */}
+        <BoxApiInfo baseEndpoint="https://dog.ceo/api" />
+
+        {/* Endpoints */}
+        <Endpoints
+          header="GET"
+          endpoint="/breeds/list/all"
+          description="Retrieve a list of all dog breeds"
+        />
+        <Endpoints
+          header="GET"
+          endpoint="/breed/hound/images"
+          description="Retrieve images of hound dogs"
+        />
+        <Endpoints
+          header="GET"
+          endpoint="/breed/hound/list"
+          description="Retrieve a list of hound dog sub-breeds"
+        />
         <Endpoints
           header="GET"
           endpoint="/breeds/image/random"
-          description=""
+          description="Retrieve a random dog image"
         />
       </Box>
     </Box>
