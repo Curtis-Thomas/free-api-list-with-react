@@ -9,7 +9,7 @@ import NavBar from "../core/main/navigation/NavBar";
 const Documentation = () => {
   return (
     <Box>
-      <NavBar />
+      <NavBar link="/Docs" />
       <Typography variant="h2">Documentation Page</Typography>
       {/* Add your content here */}
     </Box>

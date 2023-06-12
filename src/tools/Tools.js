@@ -5,7 +5,7 @@ import NavBar from "../core/main/navigation/NavBar";
 const Tools = () => {
   return (
     <Box>
-      <NavBar />
+      <NavBar link="/Tools" />
       <Typography variant="h2">Tools Page</Typography>
     </Box>
   );
