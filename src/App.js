@@ -68,6 +68,7 @@ import Tools from "./tools/Tools";
 import Documentation from "./documentation/Documentation";
 import EntertainmentChuckNorris from "./api/entertainment/EntertainmentchuckNorris";
 import EntertainmentCorpBuzzWords from "./api/entertainment/EntertainmentCorpBuzzWords";
+import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
 
 function App() {
   return (
@@ -207,6 +208,10 @@ function App() {
             <Route
               path="/EntertainmentDash/EntertainmentCorpBuzzWords"
               element={<EntertainmentCorpBuzzWords />}
+            />
+            <Route
+              path="/EntertainmentDash/EntertainmentTechy"
+              element={<EntertainmentTechy />}
             />
           </Routes>
         </Box>

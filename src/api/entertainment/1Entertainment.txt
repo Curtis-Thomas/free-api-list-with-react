@@ -1,18 +1,10 @@
   Checked June 2023 by Curt
 
   name:'Entertainment',
-   
-
-        //https://github.com/sameerkumar18/corporate-bs-generator-api
-        {name:'Corporate Buzz Words'},
 
         //https://imgflip.com/api
         {name:'Imgflip'},
 
         //https://uselessfacts.jsph.pl/
         {name:'Random Useless Facts'},
-
-        //https://techy-api.vercel.app/
-        {name:'Techy'},
-        
     

@@ -19,6 +19,12 @@ const EntertainmentDash = () => {
           backgroundColor="#0077ba"
           textColor="white"
         />
+        <BtnRouting
+          btnName="Techy"
+          navigateTo="EntertainmentTechy"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
