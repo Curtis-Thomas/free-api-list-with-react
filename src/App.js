@@ -64,6 +64,8 @@ import SecurityDash from "./api/security/Security1Dash";
 import DataValidationDash from "./api/dataValidation/DataValidation1Dash";
 import OpenSourceDash from "./api/openSource/OpenSource1Dash";
 import TextAnalysisDash from "./api/textAnalysis/TextAnalysis1Dash";
+import Tools from "./tools/Tools";
+import Documentation from "./documentation/Documentation";
 
 function App() {
   return (
@@ -88,6 +90,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/free-api-list-with-react/" element={<Main />} />
+            {/* Header Btn Routing */}
+            <Route path="/Tools" element={<Tools />} />
+            <Route path="/Docs" element={<Documentation />} />
             {/* Dashboards */}
             <Route path="/AnimalsDash" element={<AnimalDash />} />
             <Route path="/AnimeDash" element={<AnimeDash />} />
