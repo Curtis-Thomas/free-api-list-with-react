@@ -13,6 +13,12 @@ const EntertainmentDash = () => {
           backgroundColor="#0077ba"
           textColor="white"
         />
+        <BtnRouting
+          btnName="Corp Buzz Words"
+          navigateTo="EntertainmentCorpBuzzWords"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );

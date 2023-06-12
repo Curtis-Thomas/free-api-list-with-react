@@ -67,6 +67,7 @@ import TextAnalysisDash from "./api/textAnalysis/TextAnalysis1Dash";
 import Tools from "./tools/Tools";
 import Documentation from "./documentation/Documentation";
 import EntertainmentChuckNorris from "./api/entertainment/EntertainmentchuckNorris";
+import EntertainmentCorpBuzzWords from "./api/entertainment/EntertainmentCorpBuzzWords";
 
 function App() {
   return (
@@ -202,6 +203,10 @@ function App() {
             <Route
               path="/EntertainmentDash/EntertainmentChuckNorris"
               element={<EntertainmentChuckNorris />}
+            />
+            <Route
+              path="/EntertainmentDash/EntertainmentCorpBuzzWords"
+              element={<EntertainmentCorpBuzzWords />}
             />
           </Routes>
         </Box>
