@@ -1,18 +1,26 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Box } from "@mui/material";
 import React from "react";
+import Box from "@mui/material/Box";
+
+import Link from "./Link";
 
 const NavBar = ({ link, route2 }) => {
-  const navigate = useNavigate();
-
-  const handleClickHome = (e) => {
-    e.preventDefault();
-    navigate("/");
+  const handleMouseOver = (event) => {
+    event.target.style.color = "#ffffff";
   };
 
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate(link);
+  const handleMouseOut = (event) => {
+    event.target.style.color = "#000000";
+  };
+
+  const linkStyle = {
+    padding: 2,
+    display: "block",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    color: "#313335",
+    textDecoration: "none",
+    textAlign: "center",
   };
 
   return (
@@ -20,64 +28,50 @@ const NavBar = ({ link, route2 }) => {
       sx={{
         display: "flex",
         marginBottom: 3,
+        height: "2.5rem",
         width: "100%",
-        alignItems: "stretch",
+        alignItems: "center",
         justifyContent: "space-evenly",
+        backgroundColor: "#a1a1a1",
       }}
     >
-      <Box sx={{ flex: 1 }}>
-        <Link
-          onClick={handleClickHome}
-          to="/"
-          style={{
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            color: "#313335",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
+      <Box
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+        sx={{ flex: 3 }}
+      >
+        <Link href="/" style={linkStyle}>
           Home
         </Link>
       </Box>
-      <Box sx={{ flex: 1 }}>
-        <Link
-          onClick={handleClick}
-          to={link}
-          style={{
-            color: "#313335",
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
-          {link}
-        </Link>
-      </Box>
-      <Box sx={{ flex: 1 }}>
-        <Link
-          to={link}
-          style={{
-            color: "#313335",
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
-          {route2}
-        </Link>
-      </Box>
+      {link && (
+        <>
+          <Box sx={{ flex: 1, textAlign: "right" }}>Category:</Box>
+          <Box
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+            sx={{ flex: 1 }}
+          >
+            <Link href={link} style={linkStyle}>
+              <b>{link}</b>
+            </Link>
+          </Box>
+        </>
+      )}
+      {route2 && (
+        <>
+          <Box sx={{ flex: 1, textAlign: "right" }}>API:</Box>
+          <Box
+            onMouseOver={handleMouseOver}
+            onMouseOut={handleMouseOut}
+            sx={{ flex: 1 }}
+          >
+            <Link style={linkStyle}>
+              <b>{route2}</b>
+            </Link>
+          </Box>
+        </>
+      )}
     </Box>
   );
 };
