@@ -26,7 +26,6 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
         maxWidth: "100%",
         marginBottom: 2,
         backgroundColor: `${backgroundColor}`,
-        border: "solid 1px #8d6cab",
         borderRadius: "3px",
       }}
     >
