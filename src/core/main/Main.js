@@ -133,8 +133,8 @@ const Main = () => {
           <BtnRouting
             btnName="Entertainment"
             navigateTo="/EntertainmentDash"
-            // backgroundColor="white"
-            // textColor="#0077ba"
+            backgroundColor="#0077ba"
+            textColor="white"
           />{" "}
           <BtnRouting
             btnName="Environment"
