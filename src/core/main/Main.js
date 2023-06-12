@@ -157,8 +157,8 @@ const Main = () => {
           <BtnRouting
             btnName="Food Drink"
             navigateTo="/FoodDrinkDash"
-            // backgroundColor="white"
-            // textColor="#0077ba"
+            // backgroundColor="#0077ba"
+            // textColor="white"
           />{" "}
           <BtnRouting
             btnName="Games Comics"

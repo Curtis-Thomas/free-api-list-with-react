@@ -7,7 +7,12 @@ const FoodDrinkDash = () => {
     <Box>
       <NavBar link="/FoodDrinkDash" />
       <Box>
-        <BtnRouting btnName="" navigateTo="" />
+        <BtnRouting
+          btnName=""
+          navigateTo=""
+          // backgroundColor="#0077ba"
+          // textColor="white"
+        />
       </Box>
     </Box>
   );
