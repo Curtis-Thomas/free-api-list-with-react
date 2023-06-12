@@ -3,11 +3,27 @@ import Box from "@mui/material/Box";
 
 import Link from "./Link";
 
+/**
+ * Component for a navigation bar that displays links.
+ *
+ * @param {string} link - The URL for the link.
+ * @param {string} route2 - The route for the second link.
+ */
 const NavBar = ({ link, route2 }) => {
+  /**
+   * Handles the mouseover event of the link and changes the text color to white.
+   *
+   * @param {object} event - The mouseover event object.
+   */
   const handleMouseOver = (event) => {
     event.target.style.color = "#ffffff";
   };
 
+  /**
+   * Handles the mouseout event of the link and changes the text color to black.
+   *
+   * @param {object} event - The mouseout event object.
+   */
   const handleMouseOut = (event) => {
     event.target.style.color = "#000000";
   };
