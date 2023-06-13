@@ -43,7 +43,14 @@ const ContributorsContent = () => {
           </Link>
         </Typography>
         <Typography>
-          ###<Link>###</Link>###
+          Godwin Agbleze - June 12th 2023{" "}
+          <Link
+            href="https://github.com/godwin-17"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Github
+          </Link>
         </Typography>
         <Typography>
           ###<Link>###</Link>###
