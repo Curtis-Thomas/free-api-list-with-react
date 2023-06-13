@@ -33,7 +33,14 @@ const ContributorsContent = () => {
           </Link>
         </Typography>
         <Typography>
-          ###<Link>###</Link>###
+          Jibran Absarulislam - June 12th 2023{" "}
+          <Link
+            href="https://github.com/jibranabsarulislam"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
         </Typography>
         <Typography>
           ###<Link>###</Link>###

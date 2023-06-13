@@ -1,5 +1,6 @@
 import React from "react";
-import Box from "@mui/material/Box";
+
+import { AppBar, Toolbar, Box } from "@mui/material";
 
 import Link from "./Link";
 
@@ -10,85 +11,37 @@ import Link from "./Link";
  * @param {string} route2 - The route for the second link.
  */
 const NavBar = ({ link, route2 }) => {
-  /**
-   * Handles the mouseover event of the link and changes the text color to white.
-   *
-   * @param {object} event - The mouseover event object.
-   */
-  const handleMouseOver = (event) => {
-    event.target.style.color = "#ffffff";
-  };
-
-  /**
-   * Handles the mouseout event of the link and changes the text color to black.
-   *
-   * @param {object} event - The mouseout event object.
-   */
-  const handleMouseOut = (event) => {
-    event.target.style.color = "#000000";
-  };
-
-  const linkStyle = {
-    padding: 2,
-    display: "block",
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    color: "#313335",
-    textDecoration: "none",
-    textAlign: "center",
-  };
-
   return (
-    <Box
-      sx={{
-        display: "flex",
-        marginBottom: 3,
-        height: "2.5rem",
-        width: "100%",
-        alignItems: "center",
-        justifyContent: "space-evenly",
-        backgroundColor: "#a1a1a1",
-      }}
-    >
-      <Box
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-        sx={{ flex: 3 }}
-      >
-        <Link href="/" style={linkStyle}>
-          Home
-        </Link>
-      </Box>
-      {link && (
-        <>
-          <Box sx={{ flex: 1, textAlign: "right" }}>Category:</Box>
-          <Box
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            sx={{ flex: 1 }}
-          >
-            <Link href={link} style={linkStyle}>
-              <b>{link}</b>
-            </Link>
+    <>
+      <AppBar position="static" style={{ backgroundColor: "#bbb" }}>
+        <Toolbar>
+          <Box sx={{ flexGrow: 1 }}>
+            <Link label="Home" to={"/"} />
           </Box>
-        </>
-      )}
-      {route2 && (
-        <>
-          <Box sx={{ flex: 1, textAlign: "right" }}>API:</Box>
-          <Box
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
-            sx={{ flex: 1 }}
-          >
-            <Link style={linkStyle}>
-              <b>{route2}</b>
-            </Link>
+          <Box sx={{ overflow: "hidden", whiteSpace: "nowrap" }}>
+            {/* since each 'category' link has dash at the end, 
+              remove it before passing to Link component
+              for clarity */}
+            {link && <Link label={link.slice(0, -4)} to={link} />}
+            {route2 && (
+              <>
+                <span
+                  style={{
+                    color: "black",
+                    pointerEvents: "none",
+                    tabIndex: "-1",
+                  }}
+                >
+                  {" ▶ "}
+                </span>
+                <Link label={route2} to="#" />
+              </>
+            )}
           </Box>
-        </>
-      )}
-    </Box>
+        </Toolbar>
+      </AppBar>
+      <br />
+    </>
   );
 };
 
