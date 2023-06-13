@@ -51,7 +51,7 @@ const themeDark = createTheme({
           padding: "8px 16px",
           color: "#e4e6eb", // Custom color for the button text
           backgroundColor: "#242526", // Custom background color for the button
-          border: "1px solid #e4e6eb", // Custom border for the button
+          border: "1px solid #3a3b3c", // Custom border for the button
         },
       },
     },
