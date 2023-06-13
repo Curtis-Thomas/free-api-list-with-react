@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Box, Button, Typography } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 
 /**
  * Component for the header of the application.
@@ -22,25 +22,23 @@ const Header = ({ toggleDarkMode }) => {
   };
 
   return (
-    <Box
-      sx={{
-        alignItems: "center",
-        minHeight: "5vh",
-        backgroundColor: "#313335",
-        color: "white",
-        textAlign: "center",
-        padding: 2,
-      }}
-    >
-      <Typography variant="h1" fontSize={20}>
-        Free API List with React
-      </Typography>
-      <Box>
-        <Button onClick={handleToolsClick}>Tools</Button>
-        <Button onClick={handleDocsClick}>Docs</Button>
-        <Button onClick={toggleDarkMode}>Dark Mode</Button>
-      </Box>
-    </Box>
+    <AppBar position="static">
+      <Toolbar>
+        <Box>
+          <Typography variant="h1" fontSize={20} component="div">
+            Free API List with React
+          </Typography>
+        </Box>
+
+        <Box sx={{ marginLeft: "auto" }}>
+          <Button onClick={handleToolsClick}>Tools</Button>
+          <Button onClick={handleDocsClick}>Docs</Button>
+        </Box>
+        <Box>
+          <Button onClick={toggleDarkMode}>Dark Mode</Button>
+        </Box>
+      </Toolbar>
+    </AppBar>
   );
 };
 
