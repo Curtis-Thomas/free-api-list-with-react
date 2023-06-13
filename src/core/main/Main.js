@@ -99,7 +99,12 @@ const Main = () => {
         {/* Column 3 */}
 
         <Box sx={{ flex: 1 }}>
-          <BtnRouting btnName="Personality" navigateTo="/PersonalityDash" />
+          <BtnRouting
+            btnName="Personality"
+            navigateTo="/PersonalityDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />
           <BtnRouting btnName="Phone" navigateTo="/PhoneDash" />{" "}
           <BtnRouting btnName="Photography" navigateTo="/PhotographyDash" />{" "}
           <BtnRouting btnName="Programming" navigateTo="/ProgrammingDash" />{" "}

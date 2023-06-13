@@ -73,6 +73,7 @@ import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
 import theme from "./theme";
 import themeDark from "./themeDark";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
+import PersonalityQuoteClear from "./api/personality/PersonalityQuoteClear";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -236,6 +237,11 @@ function App() {
               <Route
                 path="/EntertainmentDash/EntertainmentTechy"
                 element={<EntertainmentTechy />}
+              />
+              {/* Personality */}
+              <Route
+                path="/PersonalityDash/PersonalityQuoteClear"
+                element={<PersonalityQuoteClear />}
               />
             </Routes>
           </Box>
