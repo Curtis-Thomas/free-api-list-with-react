@@ -21,25 +21,25 @@ const themeDark = createTheme({
   },
   typography: {
     body1: {
-      color: "#e4e6eb",
+      color: "#dadedf",
     },
     h1: {
-      color: "#e4e6eb",
+      color: "#c1c7c9",
     },
     h2: {
-      color: "#e4e6eb",
+      color: "#a7b0b2",
     },
     h3: {
-      color: "#e4e6eb",
+      color: "#a7b0b2",
     },
     h4: {
-      color: "#e4e6eb",
+      color: "#a7b0b2",
     },
     h5: {
-      color: "#e4e6eb",
+      color: "#a7b0b2",
     },
     h6: {
-      color: "#e4e6eb",
+      color: "#a7b0b2",
     },
   },
   components: {
@@ -49,7 +49,7 @@ const themeDark = createTheme({
           textTransform: "none",
           borderRadius: 0,
           padding: "8px 16px",
-          color: "#e4e6eb", // Custom color for the button text
+          color: "#a7b0b2", // Custom color for the button text
           backgroundColor: "#242526", // Custom background color for the button
           border: "1px solid #3a3b3c", // Custom border for the button
         },
