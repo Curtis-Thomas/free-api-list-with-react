@@ -25,14 +25,19 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
         width: "95%",
         maxWidth: "100%",
         marginBottom: 2,
-        backgroundColor: `${backgroundColor}`,
         borderRadius: "3px",
       }}
     >
       <Button
         fullWidth={true}
         onClick={handleClick}
-        style={{ color: `${textColor}` }}
+        sx={{
+          color: textColor,
+          backgroundColor: backgroundColor,
+          "&:hover": {
+            backgroundColor: backgroundColor,
+          },
+        }}
       >
         {btnName}
       </Button>

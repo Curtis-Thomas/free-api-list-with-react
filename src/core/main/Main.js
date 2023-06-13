@@ -17,16 +17,31 @@ const Main = () => {
         {/* Column 1 */}
 
         <Box sx={{ flex: 1 }}>
-          <BtnRouting btnName="Animals" navigateTo="/AnimalsDash" />
+          <BtnRouting
+            btnName="Animals"
+            navigateTo="/AnimalsDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />
           <BtnRouting btnName="Anime" navigateTo="/AnimeDash" />
           <BtnRouting btnName="Anti-Malware" navigateTo="/AntiMalwareDash" />
-          <BtnRouting btnName="Art & Design" navigateTo="/ArtDesignDash" />
+          <BtnRouting
+            btnName="Art & Design"
+            navigateTo="/ArtDesignDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />
           <BtnRouting
             btnName="Authentication"
             navigateTo="/AuthenticationDash"
           />
           <BtnRouting btnName="Blockchain" navigateTo="/BlockchainDash" />
-          <BtnRouting btnName="Books" navigateTo="/BooksDash" />
+          <BtnRouting
+            btnName="Books"
+            navigateTo="/BooksDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />
           <BtnRouting btnName="Business" navigateTo="/BusinessDash" />
           <BtnRouting btnName="Calendar" navigateTo="/CalendarDash" />
           <BtnRouting btnName="Cloud" navigateTo="/CloudDash" />
@@ -55,16 +70,16 @@ const Main = () => {
 
         <Box sx={{ flex: 1 }}>
           <BtnRouting btnName="Email" navigateTo="/EmailDash" />{" "}
-          <BtnRouting btnName="Entertainment" navigateTo="/EntertainmentDash" />{" "}
+          <BtnRouting
+            btnName="Entertainment"
+            navigateTo="/EntertainmentDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />{" "}
           <BtnRouting btnName="Environment" navigateTo="/EnvironmentDash" />{" "}
           <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
           <BtnRouting btnName="Finance" navigateTo="/FinanceDash" />{" "}
-          <BtnRouting
-            btnName="Food Drink"
-            navigateTo="/FoodDrinkDash"
-            // backgroundColor= {theme.palette.primary.main}
-            //
-          />{" "}
+          <BtnRouting btnName="Food Drink" navigateTo="/FoodDrinkDash" />{" "}
           <BtnRouting btnName="Games Comics" navigateTo="/GamesComicsDash" />{" "}
           <BtnRouting btnName="Geocoding" navigateTo="/GeocodingDash" />{" "}
           <BtnRouting btnName="Government" navigateTo="/GovernmentDash" />{" "}
