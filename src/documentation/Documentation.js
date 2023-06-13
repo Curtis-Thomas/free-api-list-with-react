@@ -10,7 +10,7 @@ import Contributors from "./Contributors";
 const Documentation = () => {
   return (
     <Box>
-      <NavBar link="/Docs" />
+      <NavBar route2="/Docs" />
       <Contributors />
       <Overview />
       <GettingStarted />
