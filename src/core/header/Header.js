@@ -4,7 +4,7 @@ import { Box, Button, Typography } from "@mui/material";
 /**
  * Component for the header of the application.
  */
-const Header = () => {
+const Header = ({ toggleDarkMode }) => {
   const navigate = useNavigate();
 
   /**
@@ -32,10 +32,13 @@ const Header = () => {
         padding: 2,
       }}
     >
-      <Typography>Free API List with React</Typography>
+      <Typography variant="h1" fontSize={20}>
+        Free API List with React
+      </Typography>
       <Box>
         <Button onClick={handleToolsClick}>Tools</Button>
         <Button onClick={handleDocsClick}>Docs</Button>
+        <Button onClick={toggleDarkMode}>Dark Mode</Button>
       </Box>
     </Box>
   );

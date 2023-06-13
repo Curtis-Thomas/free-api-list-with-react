@@ -13,85 +13,50 @@ const theme = createTheme({
       main: "#00bcd4", // Main secondary color
       contrastText: "#ffffff", // Contrast text color to be used with the secondary color
     },
-    // Error color palette
-    error: {
-      main: "#f44336", // Main error color
-    },
-    // Success color palette
-    success: {
-      main: "#4caf50", // Main success color
-    },
-    // Warning color palette
-    warning: {
-      main: "#ff9800", // Main warning color
-    },
-    // Info color palette
-    info: {
-      main: "#2196f3", // Main info color
-    },
     // Background color palette
     background: {
       default: "#ffffff", // Default background color
     },
-    // Text color palette
     text: {
-      primary: "#000000", // Primary text color
+      primary: "#0077ba",
+      secondary: "#0077ba",
     },
-    // Disabled color palette
-    disabled: {
-      main: "#808080", // Main disabled color
+  },
+  typography: {
+    body1: {
+      color: "#0077ba",
     },
-    // Hover color palette
-    hover: {
-      main: "#e0e0e0", // Main hover color
+    h1: {
+      color: "#ffffff",
     },
-    // Active color palette
-    active: {
-      main: "#1976d2", // Main active color
+    h2: {
+      color: "#0077ba",
     },
-    // Focus color palette
-    focus: {
-      main: "#1976d2", // Main focus color
+    h3: {
+      color: "#0077ba",
     },
-    // Link color palette
-    link: {
-      main: "#1976d2", // Main link color
+    h4: {
+      color: "#0077ba",
     },
-    // Placeholder color palette
-    placeholder: {
-      main: "#bdbdbd", // Main placeholder color
+    h5: {
+      color: "#0077ba",
     },
-    // Icon color palette
-    icon: {
-      main: "#757575", // Main icon color
+    h6: {
+      color: "#0077ba",
     },
-    // Border color palette
-    border: {
-      main: "#e0e0e0", // Main border color
-    },
-    // Divider color palette
-    divider: {
-      main: "#e0e0e0", // Main divider color
-    },
-    // Success background color palette
-    successBackground: {
-      main: "#e8f5e9", // Main success background color
-    },
-    // Error background color palette
-    errorBackground: {
-      main: "#ffebee", // Main error background color
-    },
-    // Warning background color palette
-    warningBackground: {
-      main: "#fff3e0", // Main warning background color
-    },
-    // Info background color palette
-    infoBackground: {
-      main: "#e3f2fd", // Main info background color
-    },
-    // Accent color palette
-    accent: {
-      main: "#ff4081", // Main accent color
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          borderRadius: 0,
+          padding: "8px 16px",
+          color: "#0077ba", // Custom color for the button text
+          backgroundColor: "#ffffff", // Custom background color for the button
+          border: "1px solid #0077ba", // Custom border for the button
+        },
+      },
     },
   },
 });

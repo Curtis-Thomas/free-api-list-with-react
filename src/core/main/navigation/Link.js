@@ -11,13 +11,15 @@ const onMouseOver = (e) => {
 };
 
 const onMouseOut = (e) => {
-  e.target.style.removeProperty("background-color");
+  e.target.style.backgroundColor = "#bbb";
 };
 
 const linkStyle = {
   padding: "0 0.5rem",
   textDecoration: "none",
   color: "black",
+  border: "none",
+  backgroundColor: "#bbb",
 };
 
 const Link = (props) => {

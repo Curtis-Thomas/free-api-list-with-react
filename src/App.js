@@ -1,5 +1,5 @@
-import { Box, ThemeProvider } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import Header from "./core/header/Header";
 import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
@@ -71,14 +71,32 @@ import EntertainmentCorpBuzzWords from "./api/entertainment/EntertainmentCorpBuz
 import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
 
 import theme from "./theme";
+import themeDark from "./themeDark";
+import { Box, createTheme, ThemeProvider } from "@mui/material";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  const lightTheme = createTheme(theme);
+  const darkTheme = createTheme(themeDark);
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
-        <Box sx={{ backgroundColor: "#ffffff", minHeight: "101vh" }}>
+        <Box
+          sx={{
+            minHeight: "100vh",
+            backgroundColor: darkMode
+              ? darkTheme.palette.background.default
+              : lightTheme.palette.background.default,
+          }}
+        >
           <Box sx={{ minHeight: "5vh" }}>
-            <Header />
+            <Header toggleDarkMode={toggleDarkMode} />
           </Box>
           <Box
             sx={{

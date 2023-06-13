@@ -33,7 +33,6 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
         fullWidth={true}
         onClick={handleClick}
         style={{ color: `${textColor}` }}
-        sx={{ border: "solid 1px #0077ba" }}
       >
         {btnName}
       </Button>
