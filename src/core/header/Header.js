@@ -1,5 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  Switch,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 
 /**
  * Component for the header of the application.
@@ -35,7 +42,7 @@ const Header = ({ toggleDarkMode }) => {
           <Button onClick={handleDocsClick}>Docs</Button>
         </Box>
         <Box>
-          <Button onClick={toggleDarkMode}>Dark Mode</Button>
+          <Switch onChange={toggleDarkMode} />
         </Box>
       </Toolbar>
     </AppBar>
