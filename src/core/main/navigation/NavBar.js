@@ -27,7 +27,6 @@ const NavBar = ({ link, route2 }) => {
               <>
                 <span
                   style={{
-                    color: "black",
                     pointerEvents: "none",
                     tabIndex: "-1",
                   }}
