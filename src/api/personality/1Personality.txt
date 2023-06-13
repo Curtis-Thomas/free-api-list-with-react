@@ -1,49 +1,43 @@
-{name:'Personality',
-    list: [
+checked by curt june 2023
+
+name:'Personality',
+
         //https://api.adviceslip.com/
         {name:'Advice slip'},
+
         //https://biriyani.anoram.com/
         {name:'Biriyani As A Service'},
-        //https://developers.forem.com/api
-        {name:'Dev.to'},
+
         //https://github.com/fisenkodv/dictum
         {name:'Dictum'},
+
         //https://favqs.com/api
         {name:'FavQs.com'},
-        //https://www.foaas.com/
-        {name:'FOAAS'},
-        //https://forismatic.com/en/api/
-        {name:'Forismatic'},
+
         //https://icanhazdadjoke.com/api
         {name:'icanhazdadjoke'},
-        //https://api.goprogram.ai/inspiration/docs/
-        {name:'Inspiration'},
+
         //https://kanye.rest/
         {name:'kanye.rest'},
-        // /https://kimiquotes.herokuapp.com/doc
-        {name:'kimiquotes'},
-        // /https://github.com/Medium/medium-api-docs
-        {name:'Medium'},
-        //https://github.com/skolakoda/programming-quotes-api
-        {name:'Programming Quotes'},
+
         //https://github.com/lukePeavey/quotable
         {name:'Quotable Quotes'},
+
         //https://pprathameshmore.github.io/QuoteGarden/
         {name:'Quote Garden'},
+
         // /https://www.jcquotes.com/0akEm
         {name:'quoteclear'},
+
         //https://quotesondesign.com/api/
         {name:'Quotes on Design'},
+
         //https://github.com/tlcheah2/stoic-quote-lambda-public-api
         {name:'Stoicism Qyote'},
-        //https://theysaidso.com/api/
-        {name:'The Said So Quotes'},
-        //https://app.traitify.com/developer
-        {name:'Traitify'},
-        //https://www.udemy.com/developers/instructor/
-        {name:'Udemy(instructor)'},
+
         //https://vadivelu.anoram.com/
-        {name:'Vadivelu HTT{ Quotes'},
+        name:'Vadivelu HTT Quotes'
+
         //https://zenquotes.io/
         {name:'Zen Quotes'},
-    ]},
+    
