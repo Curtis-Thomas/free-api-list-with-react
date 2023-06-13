@@ -24,25 +24,25 @@ const theme = createTheme({
   },
   typography: {
     body1: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
     h1: {
-      color: "#000000",
+      color: "#373d3f",
     },
     h2: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
     h3: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
     h4: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
     h5: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
     h6: {
-      color: "#0077ba",
+      color: "#373d3f",
     },
   },
   components: {
