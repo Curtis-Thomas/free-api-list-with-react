@@ -56,6 +56,14 @@ const themeDark = createTheme({
       },
     },
   },
+  MuiAppBar: {
+    styleOverrides: {
+      root: {
+        backgroundColor: "#bbb", // Custom background color for the AppBar
+        color: "#b0b3b8", // Custom color for the AppBar text
+      },
+    },
+  },
 });
 
 export default themeDark;

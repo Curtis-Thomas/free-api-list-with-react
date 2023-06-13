@@ -13,7 +13,7 @@ import Link from "./Link";
 const NavBar = ({ link, route2 }) => {
   return (
     <>
-      <AppBar position="static" style={{ backgroundColor: "#bbb" }}>
+      <AppBar position="static">
         <Toolbar>
           <Box sx={{ flexGrow: 1 }}>
             <Link label="Home" to={"/"} />
