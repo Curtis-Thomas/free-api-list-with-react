@@ -4,7 +4,6 @@ import {
   Switch,
   Toolbar,
   Typography,
-  Grid,
   IconButton,
   Stack,
 } from "@mui/material";
@@ -13,37 +12,44 @@ import BuildIcon from "@mui/icons-material/Build";
 import DescriptionIcon from "@mui/icons-material/Description";
 
 /**
- * Component for the header of the application.
- */
+
+Component for the header of the application.
+*/
 const Header = ({ toggleDarkMode }) => {
   const navigate = useNavigate();
-
   /**
-   * Handles the click event of the "Tools" button and navigates to the "Tools" route.
-   */
+
+Handles the click event of the "Tools" button and navigates to the "Tools" route.
+*/
   const handleToolsClick = () => {
     navigate("Tools");
   };
-
   /**
-   * Handles the click event of the "Docs" button and navigates to the "Docs" route.
-   */
+
+Handles the click event of the "Docs" button and navigates to the "Docs" route.
+*/
   const handleDocsClick = () => {
     navigate("Docs");
   };
-
   return (
     <AppBar position="static">
       <Toolbar>
-        <Grid container justifyContent="space-between" alignItems="center">
-          <Grid item xs={8}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <div>
             <Typography variant="h6" component="div">
               <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-                Free API List with React
+                FAR
               </Link>
             </Typography>
-          </Grid>
-          <Grid item xs={4} sx={{ textAlign: "right" }}>
+          </div>
+          <div style={{ textAlign: "right" }}>
             <Stack direction="row" spacing={1}>
               <IconButton onClick={handleToolsClick} edge="end">
                 <BuildIcon />
@@ -53,8 +59,8 @@ const Header = ({ toggleDarkMode }) => {
               </IconButton>
               <Switch onChange={toggleDarkMode} />
             </Stack>
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </Toolbar>
     </AppBar>
   );
