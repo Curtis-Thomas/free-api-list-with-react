@@ -56,7 +56,7 @@ const BoxTestCrud = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px #0077ba",
+        border: "solid 1px #bbb",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
@@ -99,13 +99,7 @@ const BoxTestCrud = ({ url }) => {
         </Box>
         {/* Button to trigger the API request */}
         <Box>
-          <Button
-            variant="contained"
-            onClick={fetchAPI}
-            style={{ backgroundColor: "#0077ba" }}
-          >
-            Fetch
-          </Button>
+          <Button onClick={fetchAPI}>Fetch</Button>
         </Box>
         <Box></Box>
       </Box>
