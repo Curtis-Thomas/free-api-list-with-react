@@ -7,18 +7,8 @@ const ArtDesignDash = () => {
     <Box>
       <NavBar link="/ArtDesignDash" />
       <Box>
-        <BtnRouting
-          btnName="Artic"
-          navigateTo="ArtDesignArtic"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="EmojiHub"
-          navigateTo="ArtDesignEmojiHub"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
+        <BtnRouting btnName="Artic" navigateTo="ArtDesignArtic" />
+        <BtnRouting btnName="EmojiHub" navigateTo="ArtDesignEmojiHub" />
       </Box>
     </Box>
   );
