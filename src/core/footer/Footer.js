@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Box, Typography, Toolbar } from "@mui/material";
+import { AppBar, Typography, Toolbar } from "@mui/material";
 
 const Footer = () => {
   return (
