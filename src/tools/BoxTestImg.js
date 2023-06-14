@@ -41,7 +41,7 @@ const BoxTestImg = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px purple",
+        border: "solid 1px #bbb",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
