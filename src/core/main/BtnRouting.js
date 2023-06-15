@@ -22,10 +22,13 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
   return (
     <Box
       sx={{
+        display:"flex",
         width: "95%",
         maxWidth: "100%",
         marginBottom: 2,
         borderRadius: "3px",
+        marginLeft:"auto",
+        marginRight:"auto",
       }}
     >
       <Button
