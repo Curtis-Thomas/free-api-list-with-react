@@ -29,9 +29,6 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
         borderRadius: "3px",
         marginLeft:"auto",
         marginRight:"auto",
-        '@media screen and (max-width: 600px)': { 
-          maxHeight:"4%",
-        }
       }}
     >
       <Button

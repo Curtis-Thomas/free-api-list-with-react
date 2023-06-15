@@ -12,6 +12,9 @@ const Main = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
+          '@media screen and (max-width: 600px)': { 
+            display: "block"
+          }
         }}
       >
         {/* Column 1 */}
