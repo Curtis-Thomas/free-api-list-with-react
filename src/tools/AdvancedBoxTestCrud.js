@@ -130,7 +130,11 @@ const AdvancedBoxTestCrud = ({ url }) => {
           />
         </Box>
         {/* Button to send the API request */}
-        <Button variant="contained" onClick={fetchAPI}>
+        <Button
+          sx={{ "&:hover": { backgroundColor: "inherit" } }}
+          variant="contained"
+          onClick={fetchAPI}
+        >
           Send Request
         </Button>
       </Box>

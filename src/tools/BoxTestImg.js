@@ -68,7 +68,11 @@ const BoxTestImg = ({ url }) => {
           />
         </Box>
         <Box>
-          <Button variant="contained" onClick={fetchAPI}>
+          <Button
+            sx={{ "&:hover": { backgroundColor: "inherit" } }}
+            variant="contained"
+            onClick={fetchAPI}
+          >
             Fetch
           </Button>
         </Box>
