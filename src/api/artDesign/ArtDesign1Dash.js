@@ -9,6 +9,7 @@ const ArtDesignDash = () => {
       <Box>
         <BtnRouting btnName="Artic" navigateTo="ArtDesignArtic" />
         <BtnRouting btnName="EmojiHub" navigateTo="ArtDesignEmojiHub" />
+        <BtnRouting btnName="MetMuseum" navigateTo="ArtDesignMetMuseum" />
       </Box>
     </Box>
   );
