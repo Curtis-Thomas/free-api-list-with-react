@@ -53,6 +53,16 @@ const ContributorsContent = () => {
           </Link>
         </Typography>
         <Typography>
+          Sneha Chitre - June 16th 2023{" "}
+          <Link
+            href="https://github.com/snehachitre-apps"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
+        </Typography>
+        <Typography>
           ###<Link>###</Link>###
         </Typography>
         <Typography>
