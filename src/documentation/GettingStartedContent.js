@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 const GettingStartedContent = () => {
   return (
     <Box sx={{ border: "solid 1px #333333" }}>
-      <Typography>Getting Started Content</Typography>
+      <Typography>Getting Started Content_Test</Typography>
     </Box>
   );
 };
