@@ -33,6 +33,16 @@ const ContributorsContent = () => {
           </Link>
         </Typography>
         <Typography>
+          Prashant Chawla - June 11th 2023{" "}
+          <Link
+            href="https://github.com/pchawlaji"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </Link>
+        </Typography>
+        <Typography>
           Jibran Absarulislam - June 12th 2023{" "}
           <Link
             href="https://github.com/jibranabsarulislam"
