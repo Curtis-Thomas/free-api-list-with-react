@@ -1,10 +1,4 @@
- 
-    {name:'Events',
-    list: [
-        //https://www.eventbrite.com/platform/api/
-        {name:'Eventbrite'},
-        //https://platform.seatgeek.com/
-        {name:'SeatGeek'},
-        //https://developer.ticketmaster.com/products-and-docs/apis/getting-started/
-        {name:'Ticketmaster'},
-    ]},
+ checked by curt june 23
+    name:'Events',
+  
+    

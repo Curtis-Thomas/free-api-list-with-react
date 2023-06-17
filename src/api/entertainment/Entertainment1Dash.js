@@ -7,7 +7,15 @@ const EntertainmentDash = () => {
     <Box>
       <NavBar link="/EntertainmentDash" />
       <Box>
-        <BtnRouting btnName="" navigateTo="" />
+        <BtnRouting
+          btnName="Chuck Norris"
+          navigateTo="EntertainmentChuckNorris"
+        />
+        <BtnRouting
+          btnName="Corp Buzz Words"
+          navigateTo="EntertainmentCorpBuzzWords"
+        />
+        <BtnRouting btnName="Techy" navigateTo="EntertainmentTechy" />
       </Box>
     </Box>
   );

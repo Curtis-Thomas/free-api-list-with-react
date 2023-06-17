@@ -1,15 +1,15 @@
 import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
-import BoxTest from "../../core/main/BoxTestCrud";
 import NavBar from "../../core/main/navigation/NavBar";
+import BoxTestCrud from "../../tools/BoxTestCrud";
 
 const ArtDesignArtic = () => {
   return (
     <Box>
       <NavBar link="/ArtDesignDash" route2="/Artic" />
+      <BoxTestCrud />
       <Box>
-        <BoxTest />
         <BoxApiInfo baseEndpoint="https://api.artic.edu/api/v1/artworks" />
         <Endpoints header="GET" endpoint="/" />
         <Endpoints

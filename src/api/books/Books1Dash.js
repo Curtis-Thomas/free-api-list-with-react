@@ -7,18 +7,8 @@ const BooksDash = () => {
     <Box>
       <NavBar link="/BooksDash" />
       <Box>
-        <BtnRouting
-          btnName="ABiblia Digital"
-          navigateTo="ABibliaDigital"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Bible Api"
-          navigateTo="BibleApi"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
+        <BtnRouting btnName="ABiblia Digital" navigateTo="ABibliaDigital" />
+        <BtnRouting btnName="Bible Api" navigateTo="BibleApi" />
       </Box>
     </Box>
   );

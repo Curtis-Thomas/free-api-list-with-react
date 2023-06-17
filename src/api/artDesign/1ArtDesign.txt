@@ -9,8 +9,7 @@
     //https://www.colourlovers.com/api
     {name:'ColorLovers'},
 
-    //https://metmuseum.github.io/
-    {name:'Metropolitan Museum of Art'},
+
 
     //https://php-noise.com/
     {name:'PHP-Noice'},

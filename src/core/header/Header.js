@@ -1,24 +1,68 @@
-import { Box, Typography } from "@mui/material";
+import { Link, useNavigate } from "react-router-dom";
+import {
+  AppBar,
+  Switch,
+  Toolbar,
+  Typography,
+  IconButton,
+  Stack,
+} from "@mui/material";
 
-const Header = () => {
+import BuildIcon from "@mui/icons-material/Build";
+import DescriptionIcon from "@mui/icons-material/Description";
+
+/**
+
+Component for the header of the application.
+*/
+const Header = ({ toggleDarkMode }) => {
+  const navigate = useNavigate();
+  /**
+
+Handles the click event of the "Tools" button and navigates to the "Tools" route.
+*/
+  const handleToolsClick = () => {
+    navigate("Tools");
+  };
+  /**
+
+Handles the click event of the "Docs" button and navigates to the "Docs" route.
+*/
+  const handleDocsClick = () => {
+    navigate("Docs");
+  };
   return (
-    <Box
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        minHeight: "5vh",
-        justifyContent: "center",
-        backgroundColor: "#313335",
-        color: "white",
-        textAlign: "center",
-        padding: 2,
-      }}
-    >
-      <Typography>
-        Free API List with React, a collection of free APIs across different
-        categories. Btn White = Empty
-      </Typography>
-    </Box>
+    <AppBar position="static">
+      <Toolbar>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
+          <div>
+            <Typography variant="h6" component="div">
+              <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                FAR
+              </Link>
+            </Typography>
+          </div>
+          <div style={{ textAlign: "right" }}>
+            <Stack direction="row" spacing={1}>
+              <IconButton onClick={handleToolsClick} edge="end">
+                <BuildIcon />
+              </IconButton>
+              <IconButton onClick={handleDocsClick} edge="end">
+                <DescriptionIcon />
+              </IconButton>
+              <Switch onChange={toggleDarkMode} />
+            </Stack>
+          </div>
+        </div>
+      </Toolbar>
+    </AppBar>
   );
 };
 

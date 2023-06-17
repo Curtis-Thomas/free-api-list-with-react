@@ -1,84 +1,46 @@
-import { Link, useNavigate } from "react-router-dom";
-import { Box } from "@mui/material";
 import React from "react";
 
+import { AppBar, Toolbar, Box } from "@mui/material";
+
+import Link from "./Link";
+
+/**
+ * Component for a navigation bar that displays links.
+ *
+ * @param {string} link - The URL for the link.
+ * @param {string} route2 - The route for the second link.
+ */
 const NavBar = ({ link, route2 }) => {
-  const navigate = useNavigate();
-
-  const handleClickHome = (e) => {
-    e.preventDefault();
-    navigate("/");
-  };
-
-  const handleClick = (e) => {
-    e.preventDefault();
-    navigate(link);
-  };
-
   return (
-    <Box
-      sx={{
-        display: "flex",
-        marginBottom: 3,
-        width: "100%",
-        alignItems: "stretch",
-        justifyContent: "space-evenly",
-      }}
-    >
-      <Box sx={{ flex: 1 }}>
-        <Link
-          onClick={handleClickHome}
-          to="/"
-          style={{
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            color: "#313335",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
-          Home
-        </Link>
-      </Box>
-      <Box sx={{ flex: 1 }}>
-        <Link
-          onClick={handleClick}
-          to={link}
-          style={{
-            color: "#313335",
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
-          {link}
-        </Link>
-      </Box>
-      <Box sx={{ flex: 1 }}>
-        <Link
-          to={link}
-          style={{
-            color: "#313335",
-            padding: 2,
-            display: "block",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            whiteSpace: "nowrap",
-            textDecoration: "none",
-            textAlign: "center",
-          }}
-        >
-          {route2}
-        </Link>
-      </Box>
-    </Box>
+    <>
+      <AppBar position="static">
+        <Toolbar>
+          <Box sx={{ flexGrow: 1 }}>
+            <Link label="Home" to={"/"} />
+          </Box>
+          <Box sx={{ overflow: "hidden", whiteSpace: "nowrap" }}>
+            {/* since each 'category' link has dash at the end, 
+              remove it before passing to Link component
+              for clarity */}
+            {link && <Link label={link.slice(0, -4)} to={link} />}
+            {route2 && (
+              <>
+                <span
+                  style={{
+                    pointerEvents: "none",
+                    tabIndex: "-1",
+                  }}
+                >
+                  {" ▶ "}
+                </span>
+                <Link label={route2} to="#" />
+              </>
+            )}
+          </Box>
+        </Toolbar>
+      </AppBar>
+      <br />
+    </>
   );
 };
 

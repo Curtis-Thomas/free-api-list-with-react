@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import { Box, Typography, Button, Input } from "@mui/material";
 import axios from "axios";
 
+/**
+ * Component for testing image fetching from an API endpoint.
+ *
+ * @param {string} url - The base URL of the API.
+ */
 const BoxTestImg = ({ url }) => {
   const [response, setResponse] = useState("");
   const [urlValue, setUrl] = useState("");
   const [endpointValue, setEndpoint] = useState("");
 
+  /**
+   * Fetches the image from the API endpoint and sets the response state accordingly.
+   */
   const fetchAPI = async () => {
     try {
       const response = await axios.get(`${urlValue}${endpointValue}`, {
@@ -33,7 +41,7 @@ const BoxTestImg = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px purple",
+        border: "solid 1px #bbb",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
@@ -60,7 +68,11 @@ const BoxTestImg = ({ url }) => {
           />
         </Box>
         <Box>
-          <Button variant="contained" onClick={fetchAPI}>
+          <Button
+            sx={{ "&:hover": { backgroundColor: "inherit" } }}
+            variant="contained"
+            onClick={fetchAPI}
+          >
             Fetch
           </Button>
         </Box>

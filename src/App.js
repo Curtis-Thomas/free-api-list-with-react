@@ -1,9 +1,9 @@
-import { Box } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import { useState } from "react";
 import Header from "./core/header/Header";
 import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
+
 import AnimalDash from "./api/animals/Animals1Dash";
 import AnimalsDailyCatFacts from "./api/animals/AnimalsDailyCatFacts";
 import AnimalsCataas from "./api/animals/AnimalsCataas";
@@ -64,141 +64,200 @@ import SecurityDash from "./api/security/Security1Dash";
 import DataValidationDash from "./api/dataValidation/DataValidation1Dash";
 import OpenSourceDash from "./api/openSource/OpenSource1Dash";
 import TextAnalysisDash from "./api/textAnalysis/TextAnalysis1Dash";
+import Tools from "./tools/Tools";
+import Documentation from "./documentation/Documentation";
+import EntertainmentChuckNorris from "./api/entertainment/EntertainmentchuckNorris";
+import EntertainmentCorpBuzzWords from "./api/entertainment/EntertainmentCorpBuzzWords";
+import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
+
+import theme from "./theme";
+import themeDark from "./themeDark";
+import { Box, createTheme, ThemeProvider } from "@mui/material";
+import PersonalityQuoteClear from "./api/personality/PersonalityQuoteClear";
+import ArtDesignMetMuseum from "./api/artDesign/ArtDesignMetMuseum";
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
+  const lightTheme = createTheme(theme);
+  const darkTheme = createTheme(themeDark);
+
   return (
-    <Router>
-      <Box sx={{ backgroundColor: "#ffffff", minHeight: "101vh" }}>
-        <Box sx={{ minHeight: "5vh" }}>
-          <Header />
-        </Box>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router>
         <Box
           sx={{
-            minHeight: "85vh",
-            padding: 2,
-            "@media screen and (max-width: 600px)": {
-              padding: 1,
-            },
-            "@media screen and (min-width: 601px)": {
-              margin: "0 auto",
-              maxWidth: "960px",
-            },
+            minHeight: "100vh",
+            backgroundColor: darkMode
+              ? darkTheme.palette.background.default
+              : lightTheme.palette.background.default,
           }}
         >
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/free-api-list-with-react/" element={<Main />} />
-            {/* Dashboards */}
-            <Route path="/AnimalsDash" element={<AnimalDash />} />
-            <Route path="/AnimeDash" element={<AnimeDash />} />
-            <Route path="/ArtDesignDash" element={<ArtDesignDash />} />
-            <Route
-              path="/AuthenticationDash"
-              element={<AuthenticationDash />}
-            />
-            <Route path="/BlockchainDash" element={<BlockchainDash />} />
-            <Route path="/BooksDash" element={<BooksDash />} />
-            <Route path="/BusinessDash" element={<BusinessDash />} />
-            <Route path="/CalendarDash" element={<CalendarDash />} />
-            <Route path="/CloudDash" element={<CloudDash />} />
-            <Route path="/ContIntDash" element={<ContIntDash />} />
-            <Route
-              path="/CryptocurrencyDash"
-              element={<CryptocurrencyDash />}
-            />
-            <Route
-              path="/CurrencyExchangeDash"
-              element={<CurrencyExchangeDash />}
-            />
-            <Route
-              path="/DataValidationDash"
-              element={<DataValidationDash />}
-            />
-            <Route path="/DevelopmentDash" element={<DevelopmentDash />} />
-            <Route path="/DictionaryDash" element={<DictionaryDash />} />
-            <Route path="/DocsProdDash" element={<DocsProdDash />} />
-            <Route path="/EmailDash" element={<EmailDash />} />
-            <Route
-              path="/EntertainmentDash"
-              element={<EntertainmentDash />}
-            />{" "}
-            <Route path="/EnvironmentDash" element={<EnvironmentDash />} />{" "}
-            <Route path="/EventsDash" element={<EventsDash />} />{" "}
-            <Route path="/FinanceDash" element={<FinanceDash />} />{" "}
-            <Route path="/FoodDrinkDash" element={<FoodDrinkDash />} />{" "}
-            <Route path="/GamesComicsDash" element={<GamesComicsDash />} />{" "}
-            <Route path="/GeocodingDash" element={<GeoCodingDash />} />{" "}
-            <Route path="/GovernmentDash" element={<GovernmentDash />} />{" "}
-            <Route path="HealthDash" element={<HealthDash />} />{" "}
-            <Route path="/JobsDash" element={<JobsDash />} />
-            <Route
-              path="/MachineLearningDash"
-              element={<MachineLearningDash />}
-            />
-            <Route path="/MusicDash" element={<MusicDash />} />{" "}
-            <Route path="/NewsDash" element={<NewsDash />} />{" "}
-            <Route path="/OpenSourceDash" element={<OpenSourceDash />} />{" "}
-            <Route path="/OpenDataDash" element={<OpenDataDash />} />{" "}
-            <Route path="/PatentDash" element={<PatentDash />} />{" "}
-            <Route path="/PersonalityDash" element={<PersonalityDash />} />{" "}
-            <Route path="/PhoneDash" element={<PhoneDash />} />
-            <Route path="/PhotographyDash" element={<PhotographyDash />} />{" "}
-            <Route path="/ProgrammingDash" element={<ProgrammingDash />} />{" "}
-            <Route path="/ScienceMathDash" element={<ScienceMathDash />} />{" "}
-            <Route path="/SecurityDash" element={<SecurityDash />} />{" "}
-            <Route path="/ShoppingDash" element={<ShoppingDash />} />{" "}
-            <Route path="/SocialDash" element={<SocialDash />} />{" "}
-            <Route path="/SportsFitnessDash" element={<SportsFitnessDash />} />{" "}
-            <Route path="/TestDataDash" element={<TestDataDash />} />{" "}
-            <Route path="/TextAnalysisDash" element={<TextAnalysisDash />} />{" "}
-            <Route path="/TrackingDash" element={<TrackingDash />} />{" "}
-            <Route
-              path="/TransportationDash"
-              element={<TransportationDash />}
-            />{" "}
-            <Route path="/UrlShortenerDash" element={<UrlShortenerDash />} />{" "}
-            <Route path="/VehicleDash" element={<VehicleDash />} />{" "}
-            <Route path="/VideoDash" element={<VideoDash />} />{" "}
-            <Route path="/WeatherDash" element={<WeatherDash />} />
-            <Route
-              path="/AnimalsDash/AnimalsDailyCatFacts"
-              element={<AnimalsDailyCatFacts />}
-            />
-            <Route
-              path="/AnimalsDash/AnimalsCataas"
-              element={<AnimalsCataas />}
-            />
-            <Route
-              path="/AnimalsDash/AnimalsDogApi"
-              element={<AnimalsDogApi />}
-            />
-            <Route path="/AnimalsDash/AnimalsDog" element={<AnimalsDog />} />
-            <Route
-              path="/AnimalsDash/AnimalsMeowFacts"
-              element={<AnimalsMeowFacts />}
-            />
-            <Route path="/AntiMalwareDash" element={<AntiMalwareDash />} />
-            <Route
-              path="/ArtDesignDash/ArtDesignArtic"
-              element={<ArtDesignArtic />}
-            />
-            <Route
-              path="/ArtDesignDash/ArtDesignEmojiHub"
-              element={<ArtDesignEmojiHub />}
-            />
-            {/* Books */}
-            <Route
-              path="/BooksDash/ABibliaDigital"
-              element={<BooksABibliaDigital />}
-            />
-            <Route path="/BooksDash/BibleApi" element={<BooksBibleApi />} />
-          </Routes>
+          <Box sx={{ minHeight: "5vh" }}>
+            <Header toggleDarkMode={toggleDarkMode} />
+          </Box>
+          <Box
+            sx={{
+              minHeight: "85vh",
+              padding: 2,
+              "@media screen and (max-width: 600px)": {
+                padding: 1,
+              },
+              "@media screen and (min-width: 601px)": {
+                margin: "0 auto",
+                maxWidth: "960px",
+              },
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/free-api-list-with-react/" element={<Main />} />
+              {/* Header Btn Routing */}
+              <Route path="/Tools" element={<Tools />} />
+              <Route path="/Docs" element={<Documentation />} />
+              {/* Dashboards */}
+              <Route path="/AnimalsDash" element={<AnimalDash />} />
+              <Route path="/AnimeDash" element={<AnimeDash />} />
+              <Route path="/ArtDesignDash" element={<ArtDesignDash />} />
+              <Route
+                path="/AuthenticationDash"
+                element={<AuthenticationDash />}
+              />
+              <Route path="/BlockchainDash" element={<BlockchainDash />} />
+              <Route path="/BooksDash" element={<BooksDash />} />
+              <Route path="/BusinessDash" element={<BusinessDash />} />
+              <Route path="/CalendarDash" element={<CalendarDash />} />
+              <Route path="/CloudDash" element={<CloudDash />} />
+              <Route path="/ContIntDash" element={<ContIntDash />} />
+              <Route
+                path="/CryptocurrencyDash"
+                element={<CryptocurrencyDash />}
+              />
+              <Route
+                path="/CurrencyExchangeDash"
+                element={<CurrencyExchangeDash />}
+              />
+              <Route
+                path="/DataValidationDash"
+                element={<DataValidationDash />}
+              />
+              <Route path="/DevelopmentDash" element={<DevelopmentDash />} />
+              <Route path="/DictionaryDash" element={<DictionaryDash />} />
+              <Route path="/DocsProdDash" element={<DocsProdDash />} />
+              <Route path="/EmailDash" element={<EmailDash />} />
+              <Route
+                path="/EntertainmentDash"
+                element={<EntertainmentDash />}
+              />
+              <Route path="/EnvironmentDash" element={<EnvironmentDash />} />
+              <Route path="/EventsDash" element={<EventsDash />} />
+              <Route path="/FinanceDash" element={<FinanceDash />} />
+              <Route path="/FoodDrinkDash" element={<FoodDrinkDash />} />
+              <Route path="/GamesComicsDash" element={<GamesComicsDash />} />
+              <Route path="/GeocodingDash" element={<GeoCodingDash />} />
+              <Route path="/GovernmentDash" element={<GovernmentDash />} />
+              <Route path="HealthDash" element={<HealthDash />} />
+              <Route path="/JobsDash" element={<JobsDash />} />
+              <Route
+                path="/MachineLearningDash"
+                element={<MachineLearningDash />}
+              />
+              <Route path="/MusicDash" element={<MusicDash />} />
+              <Route path="/NewsDash" element={<NewsDash />} />
+              <Route path="/OpenSourceDash" element={<OpenSourceDash />} />
+              <Route path="/OpenDataDash" element={<OpenDataDash />} />
+              <Route path="/PatentDash" element={<PatentDash />} />
+              <Route path="/PersonalityDash" element={<PersonalityDash />} />
+              <Route path="/PhoneDash" element={<PhoneDash />} />
+              <Route path="/PhotographyDash" element={<PhotographyDash />} />
+              <Route path="/ProgrammingDash" element={<ProgrammingDash />} />
+              <Route path="/ScienceMathDash" element={<ScienceMathDash />} />
+              <Route path="/SecurityDash" element={<SecurityDash />} />
+              <Route path="/ShoppingDash" element={<ShoppingDash />} />
+              <Route path="/SocialDash" element={<SocialDash />} />
+              <Route
+                path="/SportsFitnessDash"
+                element={<SportsFitnessDash />}
+              />
+              <Route path="/TestDataDash" element={<TestDataDash />} />
+              <Route path="/TextAnalysisDash" element={<TextAnalysisDash />} />
+              <Route path="/TrackingDash" element={<TrackingDash />} />
+              <Route
+                path="/TransportationDash"
+                element={<TransportationDash />}
+              />
+              <Route path="/UrlShortenerDash" element={<UrlShortenerDash />} />
+              <Route path="/VehicleDash" element={<VehicleDash />} />
+              <Route path="/VideoDash" element={<VideoDash />} />
+              <Route path="/WeatherDash" element={<WeatherDash />} />
+              <Route
+                path="/AnimalsDash/AnimalsDailyCatFacts"
+                element={<AnimalsDailyCatFacts />}
+              />
+              <Route
+                path="/AnimalsDash/AnimalsCataas"
+                element={<AnimalsCataas />}
+              />
+              <Route
+                path="/AnimalsDash/AnimalsDogApi"
+                element={<AnimalsDogApi />}
+              />
+              <Route path="/AnimalsDash/AnimalsDog" element={<AnimalsDog />} />
+              <Route
+                path="/AnimalsDash/AnimalsMeowFacts"
+                element={<AnimalsMeowFacts />}
+              />
+              <Route path="/AntiMalwareDash" element={<AntiMalwareDash />} />
+              <Route
+                path="/ArtDesignDash/ArtDesignArtic"
+                element={<ArtDesignArtic />}
+              />
+              <Route
+                path="/ArtDesignDash/ArtDesignEmojiHub"
+                element={<ArtDesignEmojiHub />}
+              />
+              {/* Met museum */}
+              <Route 
+                path="/ArtDesignDash/ArtDesignMetMuseum" 
+                element ={<ArtDesignMetMuseum/>}
+              />
+
+              {/* Books */}
+              <Route
+                path="/BooksDash/ABibliaDigital"
+                element={<BooksABibliaDigital />}
+              />
+              <Route path="/BooksDash/BibleApi" element={<BooksBibleApi />} />
+              {/* Entertainment */}
+              <Route
+                path="/EntertainmentDash/EntertainmentChuckNorris"
+                element={<EntertainmentChuckNorris />}
+              />
+              <Route
+                path="/EntertainmentDash/EntertainmentCorpBuzzWords"
+                element={<EntertainmentCorpBuzzWords />}
+              />
+              <Route
+                path="/EntertainmentDash/EntertainmentTechy"
+                element={<EntertainmentTechy />}
+              />
+              {/* Personality */}
+              <Route
+                path="/PersonalityDash/PersonalityQuoteClear"
+                element={<PersonalityQuoteClear />}
+              />
+            </Routes>
+          </Box>
+          <Box sx={{ height: "5vh" }}>
+            <Footer />
+          </Box>
         </Box>
-        <Box sx={{ height: "5vh" }}>
-          <Footer />
-        </Box>
-      </Box>
-    </Router>
+      </Router>
+    </ThemeProvider>
   );
 }
 
