@@ -75,6 +75,7 @@ import themeDark from "./themeDark";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import PersonalityQuoteClear from "./api/personality/PersonalityQuoteClear";
 import ArtDesignMetMuseum from "./api/artDesign/ArtDesignMetMuseum";
+import BooksGutendex from "./api/books/BooksGutendex";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -221,9 +222,9 @@ function App() {
                 element={<ArtDesignEmojiHub />}
               />
               {/* Met museum */}
-              <Route 
-                path="/ArtDesignDash/ArtDesignMetMuseum" 
-                element ={<ArtDesignMetMuseum/>}
+              <Route
+                path="/ArtDesignDash/ArtDesignMetMuseum"
+                element={<ArtDesignMetMuseum />}
               />
 
               {/* Books */}
@@ -232,6 +233,7 @@ function App() {
                 element={<BooksABibliaDigital />}
               />
               <Route path="/BooksDash/BibleApi" element={<BooksBibleApi />} />
+              <Route path="/BooksDash/Gutendex" element={<BooksGutendex />} />
               {/* Entertainment */}
               <Route
                 path="/EntertainmentDash/EntertainmentChuckNorris"
