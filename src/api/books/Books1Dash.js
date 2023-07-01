@@ -9,6 +9,7 @@ const BooksDash = () => {
       <Box>
         <BtnRouting btnName="ABiblia Digital" navigateTo="ABibliaDigital" />
         <BtnRouting btnName="Bible Api" navigateTo="BibleApi" />
+        <BtnRouting btnName="Gutendex" navigateTo="Gutendex" />
       </Box>
     </Box>
   );
