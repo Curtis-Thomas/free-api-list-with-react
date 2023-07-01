@@ -29,9 +29,9 @@ src/App.js
 Find the route with path="/###"
 
 
-2.2 - Input on the line below:
+2.2 - Input on the line below in routeConfig array:
 
-<Route path="/###" element={<### />} />
+{ path: "/###", component: ### },
 
 !!NOTE!! 
 
