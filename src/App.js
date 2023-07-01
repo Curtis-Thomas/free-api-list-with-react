@@ -76,6 +76,7 @@ import EntertainmentCorpBuzzWords from "./api/entertainment/EntertainmentCorpBuz
 import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
 import PersonalityQuoteClear from "./api/personality/PersonalityQuoteClear";
 import ArtDesignMetMuseum from "./api/artDesign/ArtDesignMetMuseum";
+import BooksGutendex from "./api/books/BooksGutendex";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.

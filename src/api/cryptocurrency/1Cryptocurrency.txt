@@ -1,97 +1,20 @@
+Date checked: 17/06/2023
  {name:'Cryptocurrency',
     list: [
-        //https://www.0x.org/
-        {name:'0x'},
-
-        //https://1inch.io/api/
-        {name:'1inch'},
-
-        //https://docs.alchemy.com/
-        {name:'Alchemy Ethereum'},
-
-        //https://coinlayer.com/
-        {name:'apilayer coinlayer'},
-
-        //https://github.com/binance/binance-spot-api-docs
-        {name:'Binance'},
-
-        //https://nova.bitcambio.com.br/api/v3/docs#a-public
-        {name:'Bitcambio'},
-
-        //https://apiv2.bitcoinaverage.com/
-        {name:'Bitcoinaverage'},
-
-        //https://bitcoincharts.com/about/exchanges/
-        {name:'BitcoinCharts'},
-
-        //https://docs.bitfinex.com/docs
-        {name:'Bitfinex'},
-
-        //https://www.bitmex.com/app/apiOverview
-        {name:'Bitmex'},
-
-        //https://bittrex.github.io/api/v3
-        {name:'Bittrex'},
-
-        //https://block.io/docs/basic
-        {name:'Block'},
-
-        //https://www.blockchain.com/explorer/api
-        {name:'Blockchain'},
-
-        //https://blockfrost.io/
-        {name:'blockfrost Cardano'},
-
-        //https://bravenewcoin.com/developers
-        {name:'Brave NewCoin'},
-
-        //https://docs.btcturk.com/
-        {name:'BtcTurk'},
-
-        //https://bybit-exchange.github.io/docs/futuresV2/linear/#t-introduction
-        {name:'Bybit'},
-
-        //https://docs.coinapi.io/
-        {name:'CoinAPI'},
-
-        //https://www.coinbase.com/cloud
-        {name:'Coinbase'},
-
-        //https://docs.cloud.coinbase.com/exchange/docs/welcome#api
-        {name:'Coinbase Pro'},
-
         //https://docs.coincap.io/
         {name:'CoinCap'},
 
         //https://docs.coindcx.com/#terms-and-conditions
         {name:'CoinDCX'},
 
-        //https://old.coindesk.com/coindesk-api/
-        {name:'CoinDesk'},
-
         //https://www.coingecko.com/en/api
         {name:'CoinGecko'},
-
-        //https://coinigy.docs.apiary.io/#
-        {name:'Coinigy'},
-
-        //https://coinlib.io/apidocs
-        {name:'Coinlib'},
 
         //https://www.coinlore.com/cryptocurrency-data-api
         {name:'Coinlore'},
 
-        //https://coinmarketcap.com/api/
-        {name:'CoinMarketCap'},
-
         //https://api.coinpaprika.com/
         {name:'Coinpaprika'},
-
-        //https://developers.coinranking.com/api/documentation
-        {name:'CoinRanking'},
-
-        //https://coinremitter.com/docs
-        {name:'Coinremitter'},
 
         //https://documenter.getpostman.com/view/5734027/RzZ6Hzr3?version=latest
         {name:'CoinStats'},
@@ -99,59 +22,17 @@
         //https://docs.cryptapi.io/
         {name:'CryptAPI'},
 
-        //https://cryptingup.com/apidoc/#introduction
-        {name:'CryptingUp'},
-
-        //https://min-api.cryptocompare.com/
-        {name:'CryptoCompare'},
-
         //https://api.exchange.cryptomkt.com/
         {name:'CryptoMarket'},
-
-        //https://www.cryptonator.com/api/
-        {name:'Cryptonator'},
 
         //https://dydxprotocol.github.io/v3-teacher/#terms-of-service-and-privacy-policy
         {name:'dYdX'},
 
-        //https://github.com/EverexIO/Ethplorer/wiki/Ethplorer-API
-        {name:'Ethplorer'},
-
         //https://documenter.getpostman.com/view/10287440/SzYXWKPi
         {name:'EXMO'},
 
-        //https://docs.ftx.com/
-        {name:'FTX'},
-
-        //https://www.gate.io/api2
-        {name:'Gateio'},
-
-        //https://www.gate.io/api2
-        {name:'Gemini'},
-
-        //chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/document-blocked.html?details=%7B%22url%22%3A%22http%3A%2F%2Fiyfbodn.com%2F%3Fdn%3Dhirak.site%26pid%3D9POT3387I%26pbsubid%3Dbde89772-d8ab-686f-b468-33f1055d4b76%26noads%3Dhttp%253A%252F%252Fiyfbodn.com%252F%253Fdn%253Dhirak.site%2526skipskenzo%253Dtrue%22%2C%22hn%22%3A%22iyfbodn.com%22%2C%22dn%22%3A%22iyfbodn.com%22%2C%22fs%22%3A%22%7C%7Ciyfbodn.com%5E%22%7D
-        {name:'Hirak Exchange Rates'},
-
-        //https://huobiapi.github.io/docs/spot/v1/en/#change-log
-        {name:'Huobi'},
-
-        //https://developers.icy.tools/
-        {name:'icy.tools'},
-
         //https://github.com/btcid/indodax-official-api-docs
         {name:'Indodax'},
-
-        //https://www.infura.io/product/ethereum
-        {name:'INFURA Etherium'},
-
-        //https://docs.kraken.com/rest/
-        {name:'Kraken'},
-
-        //https://docs.kucoin.com/#general
-        {name:'KuCoin'},
-
-        //https://localbitcoins.com/api-docs/
-        {name:'Localbitcoins'},
 
         //https://mempool.space/docs/api/rest
         {name:'Mempool'},
@@ -159,36 +40,21 @@
         //https://www.mercadobitcoin.com.br/api-doc/
         {name:'MercadoBitcoin'},
 
-        //https://messari.io/api
+        //https://messari.io/api/docs
         {name:'Messari'},
 
         //https://nexchange2.docs.apiary.io/#
         {name:'Nexchange'},
 
-        //https://nomics.com/docs/
-        {name:'Nomics'},
-
         //https://doc.novadax.com/en-US/#introduction
         {name:'NocaDax'},
 
-        //https://www.okx.com/docs/en/#overview
-        {name:'OKEx'},
-
-        //https://www.okx.com/docs/en/#overview
+        //https://docs.poloniex.com/#introduction
         {name:'Poloniex'},
 
         //https://docs.solana.com/developing/clients/jsonrpc-api
         {name:'Solana JSON RPC'},
 
-        //https://technical-analysis-api.com/
-        {name:'Technical Analysis'},
-
         //https://docs.valr.com/
-        {name:'CALR'},
-
-        //https://www.worldcoinindex.com/apiservice
-        {name:'WorldCoinIndex'},
-        
-        //https://zmok.io/
-        {name:'ZMOK'},
+        {name:'VALR'},
     ]},
