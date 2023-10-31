@@ -10,12 +10,21 @@ const EntertainmentDash = () => {
         <BtnRouting
           btnName="Chuck Norris"
           navigateTo="EntertainmentChuckNorris"
+          backgroundColor="#0077ba"
+          textColor="white"
         />
         <BtnRouting
           btnName="Corp Buzz Words"
           navigateTo="EntertainmentCorpBuzzWords"
+          backgroundColor="#0077ba"
+          textColor="white"
         />
-        <BtnRouting btnName="Techy" navigateTo="EntertainmentTechy" />
+        <BtnRouting
+          btnName="Techy"
+          navigateTo="EntertainmentTechy"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
