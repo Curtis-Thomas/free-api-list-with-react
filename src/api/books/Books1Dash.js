@@ -7,9 +7,12 @@ const BooksDash = () => {
     <Box>
       <NavBar link="/BooksDash" />
       <Box>
-        <BtnRouting btnName="ABiblia Digital" navigateTo="ABibliaDigital" />
-        <BtnRouting btnName="Bible Api" navigateTo="BibleApi" />
-        <BtnRouting btnName="Gutendex" navigateTo="Gutendex" />
+        <BtnRouting
+          btnName="ABiblia Digital"
+          navigateTo="BooksABibliaDigital"
+        />
+        <BtnRouting btnName="Bible Api" navigateTo="BooksBibleApi" />
+        <BtnRouting btnName="Gutendex" navigateTo="BooksGutendex" />
       </Box>
     </Box>
   );

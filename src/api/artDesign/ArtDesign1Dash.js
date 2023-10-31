@@ -19,7 +19,12 @@ const ArtDesignDash = () => {
           backgroundColor="#0077ba"
           textColor="white"
         />
-        <BtnRouting btnName="MetMuseum" navigateTo="ArtDesignMetMuseum" />
+        <BtnRouting
+          btnName="MetMuseum"
+          navigateTo="ArtDesignMetMuseum"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );

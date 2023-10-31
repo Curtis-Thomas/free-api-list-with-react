@@ -88,17 +88,20 @@ const routeConfig = [
   // Header Files
   { path: "/", component: Main },
   { path: "/free-api-list-with-react/", component: Main },
-  
+
   // Tools
   { path: "/Tools", component: Tools },
-  
+
   // Documentation
   { path: "/Docs", component: Documentation },
 
   // Animals
   { path: "/AnimalsDash", component: AnimalDash },
   { path: "/AnimalsDash/AnimalsCataas", component: AnimalsCataas },
-  { path: "/AnimalsDash/AnimalsDailyCatFacts", component: AnimalsDailyCatFacts },
+  {
+    path: "/AnimalsDash/AnimalsDailyCatFacts",
+    component: AnimalsDailyCatFacts,
+  },
   { path: "/AnimalsDash/AnimalsDog", component: AnimalsDog },
   { path: "/AnimalsDash/AnimalsDogApi", component: AnimalsDogApi },
   { path: "/AnimalsDash/AnimalsMeowFacts", component: AnimalsMeowFacts },
@@ -125,6 +128,7 @@ const routeConfig = [
   { path: "/BooksDash", component: BooksDash },
   { path: "/BooksDash/BooksABibliaDigital", component: BooksABibliaDigital },
   { path: "/BooksDash/BooksBibleApi", component: BooksBibleApi },
+  { path: "/BooksDash/BooksGutendex", component: BooksGutendex },
 
   // Business Dashboard
   { path: "/BusinessDash", component: BusinessDash },
@@ -161,9 +165,18 @@ const routeConfig = [
 
   // Entertainment
   { path: "/EntertainmentDash", component: EntertainmentDash },
-  { path: "/EntertainmentDash/EntertainmentChuckNorris", component: EntertainmentChuckNorris },
-  { path: "/EntertainmentDash/EntertainmentCorpBuzzWords", component: EntertainmentCorpBuzzWords },
-  { path: "/EntertainmentDash/EntertainmentTechy", component: EntertainmentTechy },
+  {
+    path: "/EntertainmentDash/EntertainmentChuckNorris",
+    component: EntertainmentChuckNorris,
+  },
+  {
+    path: "/EntertainmentDash/EntertainmentCorpBuzzWords",
+    component: EntertainmentCorpBuzzWords,
+  },
+  {
+    path: "/EntertainmentDash/EntertainmentTechy",
+    component: EntertainmentTechy,
+  },
 
   // Environment Dashboard
   { path: "/EnvironmentDash", component: EnvironmentDash },
@@ -212,7 +225,10 @@ const routeConfig = [
 
   // Personality
   { path: "/PersonalityDash", component: PersonalityDash },
-  { path: "/PersonalityDash/PersonalityQuoteClear", component: PersonalityQuoteClear },
+  {
+    path: "/PersonalityDash/PersonalityQuoteClear",
+    component: PersonalityQuoteClear,
+  },
 
   // Phone Dashboard
   { path: "/PhoneDash", component: PhoneDash },
@@ -265,7 +281,7 @@ const routeConfig = [
 
 /**
  * This the main Function which shows all the apis
- * @returns 
+ * @returns
  */
 function App() {
   const [darkMode, setDarkMode] = useState(false);
