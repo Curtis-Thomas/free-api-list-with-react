@@ -2,12 +2,14 @@ import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
 import NavBar from "../../core/main/navigation/NavBar";
+import BoxTestCrud from "../../tools/BoxTestCrud";
 
 const BooksABibliaDigital = () => {
   return (
     <Box>
       <NavBar link="/BooksDash" route2="/ABibliaDigital" />
       <Box />
+      <BoxTestCrud />
       <Box>
         <BoxApiInfo baseEndpoint="https://www.abibliadigital.com.br/api" />
         <Endpoints header="GET" endpoint="/books" />

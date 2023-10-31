@@ -10,9 +10,21 @@ const BooksDash = () => {
         <BtnRouting
           btnName="ABiblia Digital"
           navigateTo="BooksABibliaDigital"
+          backgroundColor="#0077ba"
+          textColor="white"
         />
-        <BtnRouting btnName="Bible Api" navigateTo="BooksBibleApi" />
-        <BtnRouting btnName="Gutendex" navigateTo="BooksGutendex" />
+        <BtnRouting
+          btnName="Bible Api"
+          navigateTo="BooksBibleApi"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
+        <BtnRouting
+          btnName="Gutendex"
+          navigateTo="BooksGutendex"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
