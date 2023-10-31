@@ -16,16 +16,36 @@ const AnimalDash = () => {
         />
 
         {/* Button for Cat as a service */}
-        <BtnRouting btnName="Cat as a service" navigateTo="AnimalsCataas" />
+        <BtnRouting
+          btnName="Cat as a service"
+          navigateTo="AnimalsCataas"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
 
         {/* Button for Dog API */}
-        <BtnRouting btnName="Dog API" navigateTo="AnimalsDogApi" />
+        <BtnRouting
+          btnName="Dog API"
+          navigateTo="AnimalsDogApi"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
 
         {/* Button for Dog */}
-        <BtnRouting btnName="Dog" navigateTo="AnimalsDog" />
+        <BtnRouting
+          btnName="Dog"
+          navigateTo="AnimalsDog"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
 
         {/* Button for Meow Facts */}
-        <BtnRouting btnName="Meow Facts" navigateTo="AnimalsMeowFacts" />
+        <BtnRouting
+          btnName="Meow Facts"
+          navigateTo="AnimalsMeowFacts"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
