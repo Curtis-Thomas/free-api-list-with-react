@@ -7,7 +7,12 @@ const PersonalityDash = () => {
     <Box>
       <NavBar link="/PersonalityDash" />
       <Box>
-        <BtnRouting btnName="Quote Clear" navigateTo="PersonalityQuoteClear" />
+        <BtnRouting
+          btnName="Quote Clear"
+          navigateTo="PersonalityQuoteClear"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
