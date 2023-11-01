@@ -1,6 +1,5 @@
 name:'Blockchain',
    
-   
         //https://tierion.com/chainpoint/
         {name:'Chainpoint'},
 

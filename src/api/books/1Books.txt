@@ -1,9 +1,4 @@
-'Books',
- 
-       
-
-         //https://www.bl.uk/collection-metadata/metadata-services/linked-open-bnb
-         {name:'British National Bibliography'},
+'Books'
 
          //https://github.com/CrossRef/rest-api-doc
          {name:'Crossref Metadata Search'},
@@ -13,12 +8,6 @@
 
          //https://developers.google.com/books/
          {name:'Google books'},
-
-         //https://github.com/GurbaniNow/api
-         {name:'GurbaniNow'},
-
-         //https://gutendex.com/
-         {name:'Gutendex'},
 
          //https://openlibrary.org/developers/api
          {name:'Open Library'},
@@ -55,4 +44,3 @@
 
          //https://wolnelektury.pl/api/
          {name:'Wolne Lektury'},
-    ]},

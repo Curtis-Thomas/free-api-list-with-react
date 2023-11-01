@@ -3,13 +3,8 @@
     //http://colormind.io/api-access/
     {name:'Colormind'},
 
-
-
-
     //https://www.colourlovers.com/api
     {name:'ColorLovers'},
-
-
 
     //https://php-noise.com/
     {name:'PHP-Noice'},

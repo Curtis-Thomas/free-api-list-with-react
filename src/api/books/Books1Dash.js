@@ -25,6 +25,12 @@ const BooksDash = () => {
           backgroundColor="#0077ba"
           textColor="white"
         />
+        <BtnRouting
+          btnName="PoetryDB"
+          navigateTo="BooksPoetryDB"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
