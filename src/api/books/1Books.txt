@@ -18,9 +18,6 @@
          //https://quran.api-docs.io/v4/getting-started/introduction
          {name:'Quran'},
 
-         //https://alquran.cloud/api
-         {name:'Quran Cloud'},
-
          //https://github.com/fawazahmed0/quran-api#readme
          {name:'Quran-api'},
 
