@@ -12,9 +12,9 @@ const Main = () => {
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          '@media screen and (max-width: 600px)': { 
-            display: "block"
-          }
+          "@media screen and (max-width: 600px)": {
+            display: "block",
+          },
         }}
       >
         {/* Column 1 */}
@@ -26,7 +26,12 @@ const Main = () => {
             backgroundColor="#0077ba"
             textColor="white"
           />
-          <BtnRouting btnName="Anime" navigateTo="/AnimeDash" />
+          <BtnRouting
+            btnName="Anime"
+            navigateTo="/AnimeDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+          />
           <BtnRouting btnName="Anti-Malware" navigateTo="/AntiMalwareDash" />
           <BtnRouting
             btnName="Art & Design"

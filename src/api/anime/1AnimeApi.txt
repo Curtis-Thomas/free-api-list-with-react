@@ -10,9 +10,6 @@ Date checked: 12/06/2023
         //https://kitsu.docs.apiary.io/#
         {name:'Kitsu'},
 
-        //https://docs.nekos.best/
-        {name:'NekosBest'},
-
         //https://ghibliapi.vercel.app/
         {name:'Studio Ghibli'},
       

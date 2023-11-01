@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/free-api-list-with-react/static/js/main.d5367307.js",
+    "main.js": "/free-api-list-with-react/static/js/main.e3d15645.js",
     "static/js/787.f778a5db.chunk.js": "/free-api-list-with-react/static/js/787.f778a5db.chunk.js",
     "index.html": "/free-api-list-with-react/index.html",
-    "main.d5367307.js.map": "/free-api-list-with-react/static/js/main.d5367307.js.map",
+    "main.e3d15645.js.map": "/free-api-list-with-react/static/js/main.e3d15645.js.map",
     "787.f778a5db.chunk.js.map": "/free-api-list-with-react/static/js/787.f778a5db.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d5367307.js"
+    "static/js/main.e3d15645.js"
   ]
 }
