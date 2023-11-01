@@ -15,9 +15,6 @@
          //http://www.penguinrandomhouse.biz/webservices/rest/
          {name:'Penguin Publishing'},
 
-         //https://github.com/thundercomb/poetrydb#readme
-         {name:'PoetryDB'},
-
          //https://quran.api-docs.io/v4/getting-started/introduction
          {name:'Quran'},
 

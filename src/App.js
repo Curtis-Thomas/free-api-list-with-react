@@ -80,6 +80,7 @@ import BooksGutendex from "./api/books/BooksGutendex";
 import AnimeNekos from "./api/anime/AnimeNekos";
 import AnimeStudioGhibli from "./api/anime/AnimeStudioGhibli";
 import BooksPoetryDB from "./api/books/BooksPoetryDb";
+import BooksQuranCloud from "./api/books/BooksQuranCloud";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -135,6 +136,7 @@ const routeConfig = [
   { path: "/BooksDash/BooksBibleApi", component: BooksBibleApi },
   { path: "/BooksDash/BooksGutendex", component: BooksGutendex },
   { path: "/BooksDash/BooksPoetryDB", component: BooksPoetryDB },
+  { path: "/BooksDash/BooksQuranCloud", component: BooksQuranCloud },
 
   // Business Dashboard
   { path: "/BusinessDash", component: BusinessDash },

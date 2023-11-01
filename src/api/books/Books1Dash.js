@@ -31,6 +31,12 @@ const BooksDash = () => {
           backgroundColor="#0077ba"
           textColor="white"
         />
+        <BtnRouting
+          btnName="Quran Cloud"
+          navigateTo="BooksQuranCloud"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );
