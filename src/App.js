@@ -77,6 +77,7 @@ import EntertainmentTechy from "./api/entertainment/EntertainmentTechy";
 import PersonalityQuoteClear from "./api/personality/PersonalityQuoteClear";
 import ArtDesignMetMuseum from "./api/artDesign/ArtDesignMetMuseum";
 import BooksGutendex from "./api/books/BooksGutendex";
+import AnimeNekos from "./api/anime/AnimeNekos";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -108,6 +109,7 @@ const routeConfig = [
 
   // Anime Dashboard
   { path: "/AnimeDash", component: AnimeDash },
+  { path: "/AnimeDash/Nekos", component: AnimeNekos },
 
   // AntiMalware Dashboard
   { path: "/AntiMalwareDash", component: AntiMalwareDash },

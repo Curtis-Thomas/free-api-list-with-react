@@ -1,15 +1,15 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
+import BtnRouting from "../../core/main/BtnRouting";
 
 const AnimeDash = () => {
   return (
     <Box>
       {/* Navigation bar */}
-      <NavBar link="/AnimeDash" />
+      <NavBar link="/Anime" />
 
       <Box>
-        {/* Heading */}
-        <Typography>Anime Dash</Typography>
+        <BtnRouting btnName="Nekos" navigateTo="Nekos" />
       </Box>
     </Box>
   );

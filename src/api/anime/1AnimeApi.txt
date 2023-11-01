@@ -1,21 +1,8 @@
 Date checked: 12/06/2023
 {name:'Anime',
     list: [
-       ,
-        //https://github.com/AniList/ApiV2-GraphQL-Docs
-        {name:'AniList'},
-
-        //https://github.com/RocktimSaikia/anime-chan
-        {name:'AnimeChan'},
-
-        //https://chandan-02.github.io/anime-facts-rest-api/
-        {name:'AnimeFacts'},
-
         //https://www.animenewsnetwork.com/encyclopedia/api.php
         {name:'AnimeNewsNetwork'},
-
-        //https://catboys.com/api
-        {name:'Catboy'},
 
         //https://jikan.moe/
         {name:'Jikan'},
