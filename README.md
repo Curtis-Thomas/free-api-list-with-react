@@ -2,8 +2,6 @@
 ![Image Alt Text](./ReadMeImg.png)
 
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-blue)](https://curtis-thomas.github.io/free-api-list-with-react/)
-
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://material-ui.com/)
@@ -20,7 +18,7 @@ Welcome to the Free API List with React project! This open source project aims t
 
 ## Live Demo
 
-Explore the live demo of the Free API List with React project hosted on GitHub Pages: [GitHub Pages Demo](https://curtis-thomas.github.io/free-api-list-with-react/)
+Explore the live demo of the Free API List with React project: [Free API List](https://freeapilist.com/)
 
 ## Getting Started
 
