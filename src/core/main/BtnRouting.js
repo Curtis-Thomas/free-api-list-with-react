@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 
 /**
  * Component for a routing button that navigates to a specified route.
@@ -9,7 +9,13 @@ import { Box, Button } from "@mui/material";
  * @param {string} backgroundColor - The background color of the button.
  * @param {string} textColor - The text color of the button.
  */
-const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
+const BtnRouting = ({
+  btnName,
+  navigateTo,
+  backgroundColor,
+  textColor,
+  amount,
+}) => {
   const navigate = useNavigate();
 
   /**
@@ -22,13 +28,13 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
   return (
     <Box
       sx={{
-        display:"flex",
+        display: "flex",
         width: "95%",
         maxWidth: "100%",
         marginBottom: 2,
         borderRadius: "3px",
-        marginLeft:"auto",
-        marginRight:"auto",
+        marginLeft: "auto",
+        marginRight: "auto",
       }}
     >
       <Button
@@ -43,6 +49,14 @@ const BtnRouting = ({ btnName, navigateTo, backgroundColor, textColor }) => {
         }}
       >
         {btnName}
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            paddingLeft: 0.5,
+          }}
+        >
+          {amount}
+        </Typography>
       </Button>
     </Box>
   );

@@ -25,19 +25,26 @@ const Main = () => {
             navigateTo="/AnimalsDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="5"
           />
           <BtnRouting
             btnName="Anime"
             navigateTo="/AnimeDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="2"
           />
-          <BtnRouting btnName="Anti-Malware" navigateTo="/AntiMalwareDash" />
+          <BtnRouting
+            btnName="Anti-Malware"
+            navigateTo="/AntiMalwareDash"
+            amount="0"
+          />
           <BtnRouting
             btnName="Art & Design"
             navigateTo="/ArtDesignDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="3"
           />
           <BtnRouting
             btnName="Authentication"
@@ -49,6 +56,7 @@ const Main = () => {
             navigateTo="/BooksDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="5"
           />
           <BtnRouting btnName="Business" navigateTo="/BusinessDash" />
           <BtnRouting btnName="Calendar" navigateTo="/CalendarDash" />
@@ -83,6 +91,7 @@ const Main = () => {
             navigateTo="/EntertainmentDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="3"
           />{" "}
           <BtnRouting btnName="Environment" navigateTo="/EnvironmentDash" />{" "}
           <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
@@ -112,6 +121,7 @@ const Main = () => {
             navigateTo="/PersonalityDash"
             backgroundColor="#0077ba"
             textColor="white"
+            amount="1"
           />
           <BtnRouting btnName="Phone" navigateTo="/PhoneDash" />{" "}
           <BtnRouting btnName="Photography" navigateTo="/PhotographyDash" />{" "}
