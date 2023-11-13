@@ -81,6 +81,7 @@ import AnimeNekos from "./api/anime/AnimeNekos";
 import AnimeStudioGhibli from "./api/anime/AnimeStudioGhibli";
 import BooksPoetryDB from "./api/books/BooksPoetryDb";
 import BooksQuranCloud from "./api/books/BooksQuranCloud";
+import Hero from "./core/main/Hero";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -318,6 +319,21 @@ function App() {
           <Box sx={{ minHeight: "5vh" }}>
             {/* Render the Header component and pass the toggleDarkMode function as a prop */}
             <Header toggleDarkMode={toggleDarkMode} />
+          </Box>
+          <Box
+            sx={{
+              minHeight: "5vh",
+              padding: 2,
+              "@media screen and (max-width: 600px)": {
+                padding: 1,
+              },
+              "@media screen and (min-width: 601px)": {
+                margin: "0 auto",
+                maxWidth: "960px",
+              },
+            }}
+          >
+            <Hero />
           </Box>
           <Box
             sx={{
