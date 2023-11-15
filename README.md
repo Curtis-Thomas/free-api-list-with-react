@@ -1,6 +1,6 @@
 # Free API List with React
 
-![Image Alt Text](./ReadMeImg.png)
+![Image Alt Text](https://raw.githubusercontent.com/Curtis-Thomas/free-api-list-with-react/main/ReadMeImg.png)
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://material-ui.com/)
