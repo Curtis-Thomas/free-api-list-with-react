@@ -7,7 +7,12 @@ const HealthDash = () => {
     <Box>
       <NavBar link="/HealthDash" />
       <Box>
-        <BtnRouting btnName="" navigateTo="" />
+        <BtnRouting
+          btnName="Makeup API"
+          navigateTo="HealthMakeupApi"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );

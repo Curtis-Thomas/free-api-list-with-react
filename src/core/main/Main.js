@@ -4,7 +4,7 @@ import NavBar from "./navigation/NavBar";
 
 const Main = () => {
   return (
-    // Currently 51 total catagoties, Main will have 3 column of 17
+    // Currently 51 total catagories, Main will have 3 column of 17
 
     <Box>
       <NavBar />
@@ -106,7 +106,13 @@ const Main = () => {
           <BtnRouting btnName="Games Comics" navigateTo="/GamesComicsDash" />{" "}
           <BtnRouting btnName="Geocoding" navigateTo="/GeocodingDash" />{" "}
           <BtnRouting btnName="Government" navigateTo="/GovernmentDash" />{" "}
-          <BtnRouting btnName="Health" navigateTo="/HealthDash" />{" "}
+          <BtnRouting
+            btnName="Health"
+            navigateTo="/HealthDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+            amount="1"
+          />{" "}
           <BtnRouting btnName="Jobs" navigateTo="/JobsDash" />{" "}
           <BtnRouting
             btnName="Machine Learning"

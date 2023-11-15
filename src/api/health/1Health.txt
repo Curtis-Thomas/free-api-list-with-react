@@ -42,8 +42,6 @@
         {name:'LAPIS'},
         //https://docs.lexigram.io/
         {name:'Lexigram'},
-        //http://makeup-api.herokuapp.com/
-        {name:'Makeup'},
         //https://documenter.getpostman.com/view/16605343/Tzm8GG7u
         {name:'MyVaccination'},
         //https://npiregistry.cms.hhs.gov/search

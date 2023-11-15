@@ -83,6 +83,7 @@ import BooksPoetryDB from "./api/books/BooksPoetryDb";
 import BooksQuranCloud from "./api/books/BooksQuranCloud";
 import Hero from "./core/main/Hero";
 import EnvironmentUKCarbonIntensity from "./api/environment/EnvironmentUKCarbonIntensity";
+import HealthMakeupApi from "./api/health/HealthMakeupApi";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -215,6 +216,7 @@ const routeConfig = [
 
   // Health Dashboard
   { path: "/HealthDash", component: HealthDash },
+  { path: "/HealthDash/HealthMakeupApi", component: HealthMakeupApi },
 
   // Jobs Dashboard
   { path: "/JobsDash", component: JobsDash },

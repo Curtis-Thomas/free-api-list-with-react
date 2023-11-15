@@ -19,9 +19,6 @@
         //http://www.pm25.in/api_doc
         {name:'PM25.in'},
 
-        //https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v2-0-0
-        {name:'UK Carbon Intensity'},
-
         //https://api.websitecarbon.com/
         {name:'Website Carbon'},
         
