@@ -7,7 +7,12 @@ const EnvironmentDash = () => {
     <Box>
       <NavBar link="/EnvironmentDash" />
       <Box>
-        <BtnRouting btnName="" navigateTo="" />
+        <BtnRouting
+          btnName="UK Carbon Intensity"
+          navigateTo="EnvironmentUKCarbonIntensity"
+          backgroundColor="#0077ba"
+          textColor="white"
+        />
       </Box>
     </Box>
   );

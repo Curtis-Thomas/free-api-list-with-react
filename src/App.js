@@ -82,6 +82,7 @@ import AnimeStudioGhibli from "./api/anime/AnimeStudioGhibli";
 import BooksPoetryDB from "./api/books/BooksPoetryDb";
 import BooksQuranCloud from "./api/books/BooksQuranCloud";
 import Hero from "./core/main/Hero";
+import EnvironmentUKCarbonIntensity from "./api/environment/EnvironmentUKCarbonIntensity";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -189,6 +190,10 @@ const routeConfig = [
 
   // Environment Dashboard
   { path: "/EnvironmentDash", component: EnvironmentDash },
+  {
+    path: "/EnvironmentDash/EnvironmentUKCarbonIntensity",
+    component: EnvironmentUKCarbonIntensity,
+  },
 
   // Events Dashboard
   { path: "/EventsDash", component: EventsDash },

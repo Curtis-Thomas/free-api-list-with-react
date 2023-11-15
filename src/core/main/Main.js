@@ -93,7 +93,13 @@ const Main = () => {
             textColor="white"
             amount="3"
           />{" "}
-          <BtnRouting btnName="Environment" navigateTo="/EnvironmentDash" />{" "}
+          <BtnRouting
+            btnName="Environment"
+            navigateTo="/EnvironmentDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+            amount="1"
+          />{" "}
           <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
           <BtnRouting btnName="Finance" navigateTo="/FinanceDash" />{" "}
           <BtnRouting btnName="Food Drink" navigateTo="/FoodDrinkDash" />{" "}

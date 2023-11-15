@@ -13,6 +13,8 @@ const AnimalDash = () => {
         <BtnRouting
           btnName="Daily Cat Facts"
           navigateTo="AnimalsDailyCatFacts"
+          backgroundColor="#0077ba"
+          textColor="white"
         />
 
         {/* Button for Cat as a service */}
