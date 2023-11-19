@@ -32,7 +32,7 @@
         {name:'Comic Vine'},
         //https://crafatar.com/
         {name:'Casfatar'},
-        //https://battle.crossuniverse.net/apiDocs.html
+        //https://crossuniverse.net/apiDocs
         {name:'Cross Universe'},
         //https://deckofcardsapi.com/
         {name:'Deckl of Cards'},
