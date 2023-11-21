@@ -3,126 +3,108 @@ import {
   Box,
   Typography,
   Button,
-  Input,
+  TextField,
   Select,
   MenuItem,
+  FormControl,
+  InputLabel,
 } from "@mui/material";
 import axios from "axios";
 
 const BoxTestCrud = ({ url }) => {
-  // State variables for response, CRUD option, URL, and endpoint
   const [response, setResponse] = useState("");
   const [crudOption, setCrudOption] = useState("get");
-  const [urlValue, setUrl] = useState("");
+  const [urlValue, setUrl] = useState(url || "");
   const [endpointValue, setEndpoint] = useState("");
 
-  // Function to fetch API data
   const fetchAPI = async () => {
     try {
-      // Check if the selected CRUD option is valid
       if (crudOption && axios[crudOption]) {
-        // Send API request based on the selected CRUD option
         const response = await axios[crudOption](`${urlValue}${endpointValue}`);
         if (response.status === 200) {
-          const { data } = response;
-          // Update response state with the received data
-          setResponse(data);
+          setResponse(response.data);
         } else {
-          const errorMessage = `Error: ${response.status}`;
-          // Update response state with the error message
-          setResponse(errorMessage);
-          console.log(errorMessage);
+          setResponse(`Error: ${response.status}`);
         }
       } else {
-        const errorMessage = `Invalid CRUD option: ${crudOption}`;
-        // Update response state with the error message
-        setResponse(errorMessage);
-        console.log(errorMessage);
+        setResponse(`Invalid CRUD option: ${crudOption}`);
       }
     } catch (error) {
-      const errorMessage = `Error: ${error.message}`;
-      // Update response state with the error message
-      setResponse(errorMessage);
-      console.log(errorMessage);
+      setResponse(`Error: ${error.message}`);
     }
   };
 
-  // Event handler for CRUD option change
-  const handleCrudOptionChange = (event) => {
-    // Update the selected CRUD option
-    setCrudOption(event.target.value);
-  };
-
   return (
-    <Box
-      sx={{
-        border: "solid 1px #bbb",
-        padding: 2,
-        margin: 2,
-        minHeight: "20vh",
-      }}
-    >
-      <Box sx={{ marginBottom: 2 }}>
-        <Typography variant="h6">Testing Box</Typography>
-        {/* Select dropdown for CRUD option */}
+    <Box sx={{ border: "solid 1px #bbb", padding: 2, margin: 2 }}>
+      <Typography variant="h6" sx={{ marginBottom: 2 }}>
+        Testing Box
+      </Typography>
+
+      <FormControl
+        variant="outlined"
+        sx={{ marginRight: 2, minWidth: 120, marginBottom: 2 }}
+      >
+        <InputLabel>CRUD Option</InputLabel>
         <Select
           value={crudOption}
-          onChange={handleCrudOptionChange}
+          onChange={(e) => setCrudOption(e.target.value)}
           label="CRUD Option"
-          sx={{ marginRight: 2, width: "110px" }}
         >
-          {/* Options for CRUD operations */}
           <MenuItem value="get">GET</MenuItem>
           <MenuItem value="post">POST</MenuItem>
           <MenuItem value="put">PUT</MenuItem>
           <MenuItem value="delete">DELETE</MenuItem>
         </Select>
-        {/* Input field for the base URL */}
-        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
-          <Input
-            label="Base URL"
-            placeholder="Base URL"
-            value={urlValue}
-            onChange={(e) => setUrl(e.target.value)}
-            sx={{ marginRight: 2, width: "100%" }}
-          />
-        </Box>
-        {/* Input field for the endpoint */}
-        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
-          <Input
-            label="Endpoint"
-            placeholder="Endpoint"
-            value={endpointValue}
-            onChange={(e) => setEndpoint(e.target.value)}
-            sx={{ marginRight: 2, width: "100%" }}
-          />
-        </Box>
-        {/* Button to trigger the API request */}
-        <Box>
-          <Button onClick={fetchAPI}>Fetch</Button>
-        </Box>
-        <Box></Box>
-      </Box>
+      </FormControl>
 
-      <Box>
-        {/* Display the API response */}
-        <Typography variant="h6">Response</Typography>
-        <pre
-          style={{
-            fontFamily: "monospace",
-            whiteSpace: "pre-wrap",
-            background: "#f7f7f7",
-            padding: "10px",
-            borderRadius: "5px",
-            maxHeight: "60vh",
-            overflow: "auto",
-            border: "solid 1px ##0077ba",
-          }}
-        >
-          {typeof response === "object"
-            ? JSON.stringify(response, null, 2)
-            : response}
-        </pre>
+      <TextField
+        label="Base URL"
+        placeholder="Base URL"
+        value={urlValue}
+        onChange={(e) => setUrl(e.target.value)}
+        variant="outlined"
+        fullWidth
+        sx={{ marginBottom: 2 }}
+      />
+
+      <TextField
+        label="Endpoint"
+        placeholder="Endpoint"
+        value={endpointValue}
+        onChange={(e) => setEndpoint(e.target.value)}
+        variant="outlined"
+        fullWidth
+        sx={{ marginBottom: 2 }}
+      />
+
+      <Button
+        variant="contained"
+        color="primary"
+        onClick={fetchAPI}
+        sx={{ marginBottom: 2 }}
+      >
+        Fetch
+      </Button>
+
+      <Typography variant="h6" sx={{ marginBottom: 2 }}>
+        Response
+      </Typography>
+      <Box
+        component="pre"
+        sx={{
+          fontFamily: "monospace",
+          whiteSpace: "pre-wrap",
+          background: "#f7f7f7",
+          padding: "10px",
+          borderRadius: "5px",
+          maxHeight: "60vh",
+          overflow: "auto",
+          border: "solid 1px #0077ba",
+        }}
+      >
+        {typeof response === "object"
+          ? JSON.stringify(response, null, 2)
+          : response}
       </Box>
     </Box>
   );
