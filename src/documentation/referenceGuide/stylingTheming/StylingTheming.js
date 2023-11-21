@@ -1,5 +1,11 @@
-import React, { useState } from "react";
-import { Box, Typography } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+} from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import StylingIntroduction from "./StylingIntroduction";
 import StylingFramework from "./StylingFramework";
 import StylingTypography from "./StylingTypography";
@@ -10,93 +16,79 @@ import StylingCustomStyling from "./StylingCustomStyling";
 import StylingBestPractices from "./StylingBestPractices";
 
 const StylingTheming = () => {
-  const [showIntroduction, setShowIntroduction] = useState(false);
-  const [showFramework, setShowFramework] = useState(false);
-  const [showTypography, setShowTypography] = useState(false);
-  const [showColors, setShowColors] = useState(false);
-  const [showIconsGraphics, setShowIconsGraphics] = useState(false);
-  const [showThemingOptions, setShowThemingOptions] = useState(false);
-  const [showCustomStyling, setShowCustomStyling] = useState(false);
-  const [showBestPractices, setShowBestPractices] = useState(false);
-
-  const toggleIntroduction = () => {
-    setShowIntroduction(!showIntroduction);
-  };
-
-  const toggleFramework = () => {
-    setShowFramework(!showFramework);
-  };
-
-  const toggleTypography = () => {
-    setShowTypography(!showTypography);
-  };
-
-  const toggleColors = () => {
-    setShowColors(!showColors);
-  };
-
-  const toggleIconsGraphics = () => {
-    setShowIconsGraphics(!showIconsGraphics);
-  };
-
-  const toggleThemingOptions = () => {
-    setShowThemingOptions(!showThemingOptions);
-  };
-
-  const toggleCustomStyling = () => {
-    setShowCustomStyling(!showCustomStyling);
-  };
-
-  const toggleBestPractices = () => {
-    setShowBestPractices(!showBestPractices);
-  };
-
-  const typographyStyle = {
-    color: "#0077ba",
-    cursor: "pointer",
-  };
-
   return (
-    <Box>
-      <Typography onClick={toggleIntroduction} style={typographyStyle}>
-        Introduction
-      </Typography>
-      {showIntroduction && <StylingIntroduction />}
+    <Box sx={{ border: "solid 1px #333333", padding: 2 }}>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Introduction</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingIntroduction />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleFramework} style={typographyStyle}>
-        Framework
-      </Typography>
-      {showFramework && <StylingFramework />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Framework</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingFramework />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleTypography} style={typographyStyle}>
-        Typography
-      </Typography>
-      {showTypography && <StylingTypography />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Typography</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingTypography />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleColors} style={typographyStyle}>
-        Colors
-      </Typography>
-      {showColors && <StylingColors />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Colors</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingColors />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleIconsGraphics} style={typographyStyle}>
-        Icons and Graphics
-      </Typography>
-      {showIconsGraphics && <StylingIconsGraphics />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Icons and Graphics</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingIconsGraphics />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleThemingOptions} style={typographyStyle}>
-        Theming Options
-      </Typography>
-      {showThemingOptions && <StylingThemingOptions />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Theming Options</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingThemingOptions />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleCustomStyling} style={typographyStyle}>
-        Custom Styling
-      </Typography>
-      {showCustomStyling && <StylingCustomStyling />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Custom Styling</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingCustomStyling />
+        </AccordionDetails>
+      </Accordion>
 
-      <Typography onClick={toggleBestPractices} style={typographyStyle}>
-        Best Practices
-      </Typography>
-      {showBestPractices && <StylingBestPractices />}
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Best Practices</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <StylingBestPractices />
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 };

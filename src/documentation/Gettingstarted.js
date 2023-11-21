@@ -10,9 +10,16 @@ const GettingStarted = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333" }}>
-      <Button onClick={toggleGettingStarted}>
-        <Typography>Getting Started</Typography>
+    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+      <Button
+        onClick={toggleGettingStarted}
+        variant="contained"
+        color="primary"
+        sx={{ marginBottom: 2 }}
+      >
+        <Typography variant="button">
+          {showGettingStarted ? "Hide Getting Started" : "Show Getting Started"}
+        </Typography>
       </Button>
       {showGettingStarted && <GettingStartedContent />}
     </Box>

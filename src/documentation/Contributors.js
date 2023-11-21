@@ -10,9 +10,16 @@ const Contributors = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333" }}>
-      <Button onClick={toggleContributors}>
-        <Typography>Contributors</Typography>
+    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+      <Button
+        onClick={toggleContributors}
+        variant="contained"
+        color="primary"
+        sx={{ marginBottom: 2 }}
+      >
+        <Typography variant="button">
+          {showContributors ? "Hide Contributors" : "Show Contributors"}
+        </Typography>
       </Button>
       {showContributors && <ContributorsContent />}
     </Box>

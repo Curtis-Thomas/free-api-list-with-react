@@ -10,9 +10,16 @@ const ApiListings = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333" }}>
-      <Button onClick={toggleApiListings}>
-        <Typography>Api Listings</Typography>
+    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+      <Button
+        onClick={toggleApiListings}
+        variant="contained"
+        color="primary"
+        sx={{ marginBottom: 2 }}
+      >
+        <Typography variant="button">
+          {showApiListings ? "Hide API Listings" : "Show API Listings"}
+        </Typography>
       </Button>
       {showApiListings && <ApiListingsIntroduction />}
     </Box>

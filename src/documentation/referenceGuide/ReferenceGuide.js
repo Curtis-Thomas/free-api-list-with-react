@@ -10,9 +10,18 @@ const ReferenceGuide = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333" }}>
-      <Button onClick={toggleStyling}>
-        <Typography>Reference Guide</Typography>
+    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+      <Button
+        onClick={toggleStyling}
+        variant="contained"
+        color="primary"
+        sx={{ marginBottom: 2 }}
+      >
+        <Typography variant="button">
+          {showStyling
+            ? "Hide Styling & Theming Guide"
+            : "Show Styling & Theming Guide"}
+        </Typography>
       </Button>
       {showStyling && <StylingTheming />}
     </Box>

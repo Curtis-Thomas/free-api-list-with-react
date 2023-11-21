@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import NavBar from "../core/main/navigation/NavBar";
 import ApiListings from "./apiListings/ApiListings";
 import ReferenceGuide from "./referenceGuide/ReferenceGuide";
@@ -9,13 +9,18 @@ import Contributors from "./Contributors";
 
 const Documentation = () => {
   return (
-    <Box>
+    <Box sx={{ backgroundColor: "#f5f5f5" }}>
       <NavBar route2="/Docs" />
-      <Contributors />
-      <Overview />
-      <GettingStarted />
-      <ApiListings />
-      <ReferenceGuide />
+      <Container maxWidth="lg" sx={{ paddingTop: 4, paddingBottom: 4 }}>
+        <Typography variant="h4" gutterBottom sx={{ marginBottom: 3 }}>
+          Free API List with React Project Documentation
+        </Typography>
+        <Contributors />
+        <Overview />
+        <GettingStarted />
+        <ApiListings />
+        <ReferenceGuide />
+      </Container>
     </Box>
   );
 };
