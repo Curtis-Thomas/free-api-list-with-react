@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import BtnRouting from "./BtnRouting";
 import NavBar from "./navigation/NavBar";
 
@@ -8,18 +8,9 @@ const Main = () => {
 
     <Box>
       <NavBar />
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          "@media screen and (max-width: 600px)": {
-            display: "block",
-          },
-        }}
-      >
+      <Grid container spacing={2} sx={{ padding: 2 }}>
         {/* Column 1 */}
-
-        <Box sx={{ flex: 1 }}>
+        <Grid item xs={12} sm={4}>
           <BtnRouting
             btnName="Animals"
             navigateTo="/AnimalsDash"
@@ -80,11 +71,11 @@ const Main = () => {
             btnName="Documents Production"
             navigateTo="/DocsProdDash"
           />
-        </Box>
+        </Grid>
 
         {/* Column 2 */}
 
-        <Box sx={{ flex: 1 }}>
+        <Grid item xs={12} sm={4}>
           <BtnRouting btnName="Email" navigateTo="/EmailDash" />{" "}
           <BtnRouting
             btnName="Entertainment"
@@ -123,11 +114,11 @@ const Main = () => {
           <BtnRouting btnName="Open Data" navigateTo="/OpenDataDash" />{" "}
           <BtnRouting btnName="Open Source" navigateTo="/OpenSourceDash" />{" "}
           <BtnRouting btnName="Patent" navigateTo="/PatentDash" />
-        </Box>
+        </Grid>
 
         {/* Column 3 */}
 
-        <Box sx={{ flex: 1 }}>
+        <Grid item xs={12} sm={4}>
           <BtnRouting
             btnName="Personality"
             navigateTo="/PersonalityDash"
@@ -157,8 +148,8 @@ const Main = () => {
           <BtnRouting btnName="Vehicle" navigateTo="/VehicleDash" />{" "}
           <BtnRouting btnName="Video" navigateTo="/VideoDash" />{" "}
           <BtnRouting btnName="Weather" navigateTo="/WeatherDash" />
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
