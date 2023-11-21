@@ -3,11 +3,15 @@ import { AppBar, Typography, Toolbar } from "@mui/material";
 
 const Footer = () => {
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      component="footer"
+      sx={{ top: "auto", bottom: 0 }}
+    >
       <Toolbar sx={{ justifyContent: "center" }}>
-        <Typography>
-          Copyright 2023 - 2023, Curtis Thomas and the Free API List with React
-          contributors.
+        <Typography variant="body2">
+          Copyright © 2023 Curtis Thomas and the Free API List with React
+          contributors
         </Typography>
       </Toolbar>
     </AppBar>
