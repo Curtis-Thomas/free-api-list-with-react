@@ -1,54 +1,44 @@
-import { Box, Typography, Button } from "@mui/material";
+import React from "react";
+import { Box, Typography, Button, Snackbar, IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
-/**
- * Component for displaying an endpoint with a header, endpoint URL, and description.
- *
- * @param {string} header - The header text for the endpoint.
- * @param {string} endpoint - The URL of the endpoint.
- * @param {string} description - The description of the endpoint.
- */
 const Endpoints = ({ header, endpoint, description }) => {
-  /**
-   * Handles copying the endpoint URL to the clipboard.
-   */
+  const [openSnackbar, setOpenSnackbar] = React.useState(false);
+
   const handleCopyEndpoint = () => {
-    clearClipboard()
-      .then(() => {
-        return navigator.clipboard.writeText(endpoint);
-      })
+    navigator.clipboard
+      .writeText(endpoint)
       .then(() => {
         console.log("Copied endpoint to clipboard:", endpoint);
+        setOpenSnackbar(true);
       })
       .catch((error) => {
         console.error("Failed to copy endpoint to clipboard:", error);
       });
   };
 
-  /**
-   * Clears the clipboard by creating a temporary textarea element and simulating a cut command.
-   *
-   * @returns {Promise} - A promise that resolves when the clipboard is cleared successfully.
-   */
-  const clearClipboard = () => {
-    return new Promise((resolve, reject) => {
-      const textarea = document.createElement("textarea");
-      textarea.value = "";
-      document.body.appendChild(textarea);
-      textarea.select();
-
-      try {
-        const successful = document.execCommand("cut");
-        if (!successful) {
-          throw new Error("Clearing clipboard failed");
-        }
-        resolve();
-      } catch (error) {
-        reject(error);
-      } finally {
-        document.body.removeChild(textarea);
-      }
-    });
+  const handleCloseSnackbar = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpenSnackbar(false);
   };
+
+  const action = (
+    <React.Fragment>
+      <Button color="secondary" size="small" onClick={handleCloseSnackbar}>
+        UNDO
+      </Button>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleCloseSnackbar}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <Box sx={{ border: "solid 1px #bbb", padding: 2, marginBottom: 2 }}>
@@ -57,23 +47,29 @@ const Endpoints = ({ header, endpoint, description }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          marginBottom: 1,
         }}
       >
-        <Box>
-          <Typography>{header}</Typography>
-        </Box>
-        <Box>
-          <Typography>{endpoint}</Typography>
-        </Box>
-        <Box>
-          <Button variant="outlined" onClick={handleCopyEndpoint}>
-            Copy Endpoint
-          </Button>
-        </Box>
+        <Typography variant="subtitle1">{header}</Typography>
+        <Button variant="outlined" onClick={handleCopyEndpoint}>
+          Copy Endpoint
+        </Button>
       </Box>
       <Box>
-        <Typography>Description: {description}</Typography>
+        <Typography variant="body2" color="textSecondary">
+          Endpoint: {endpoint}
+        </Typography>
       </Box>
+      <Box>
+        <Typography variant="body2">{description}</Typography>
+      </Box>
+      <Snackbar
+        open={openSnackbar}
+        autoHideDuration={6000}
+        onClose={handleCloseSnackbar}
+        message="Endpoint copied to clipboard"
+        action={action}
+      />
     </Box>
   );
 };
