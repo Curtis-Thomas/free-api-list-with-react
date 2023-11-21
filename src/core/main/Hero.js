@@ -16,16 +16,12 @@ function Hero() {
       sx={{
         width: "100%",
         backgroundColor: "#24292e",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "10vh",
         padding: 2,
       }}
     >
-      <Grid container alignItems="center" justifyContent="center">
-        <Grid item xs={6} display="flex" justifyContent="center">
-          <Typography variant="h6" sx={{ marginRight: 2, color: "white" }}>
+      <Grid container alignItems="center" justifyContent="center" spacing={2}>
+        <Grid item xs={12} md={6} display="flex" justifyContent="center">
+          <Typography variant="h6" sx={{ marginRight: 2, color: "#BBBBBB" }}>
             GitHub
           </Typography>
           <GitHubButton
@@ -34,14 +30,12 @@ function Hero() {
             aria-label="Star buttons/github-buttons on GitHub"
             data-show-count="true"
             data-size="large"
-            data-count-href="/Curtis-Thomas/free-api-list-with-react/stargazers"
-            data-count-api="/repos/Curtis-Thomas/free-api-list-with-react#stargazers_count"
-            data-count-aria-label="# stargazers on GitHub"
           >
             Star
           </GitHubButton>
         </Grid>
-        <Grid item xs={6} display="flex" justifyContent="center">
+
+        <Grid item xs={12} md={6} display="flex" justifyContent="center">
           <Button
             onClick={handleDocsClick}
             startIcon={<DescriptionIcon />}
@@ -59,6 +53,38 @@ function Hero() {
               Docs
             </Typography>
           </Button>
+        </Grid>
+
+        <Grid item xs={12} sx={{ textAlign: "center", paddingTop: 4 }}>
+          <Box>
+            <Typography component="h1" variant="h4" color={"#BBBBBB"}>
+              Discover the Best Free APIs - Your Ultimate Open-Source API
+              Directory
+            </Typography>
+            <Typography
+              component="h2"
+              variant="h5"
+              sx={{ paddingTop: 1 }}
+              color={"#BBBBBB"}
+            >
+              Seamlessly Integrate with Diverse and Reliable Free APIs
+            </Typography>
+            <Typography
+              component="body1"
+              variant="body1"
+              sx={{ paddingTop: 2 }}
+              color={"#BBBBBB"}
+            >
+              Welcome to our comprehensive Free API List, the go-to resource for
+              developers and businesses seeking reliable, open-source APIs. Our
+              curated directory offers an extensive range of free APIs, spanning
+              various categories like data analytics, machine learning, weather,
+              and more. Perfect for innovators and startups, our platform
+              ensures easy access and seamless integration, empowering your
+              projects with the best free tools available. Dive into our diverse
+              collection and find the ideal API for your next big idea!
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     </Box>
