@@ -1,13 +1,19 @@
 import { Box, Grid } from "@mui/material";
 import BtnRouting from "./BtnRouting";
 import NavBar from "./navigation/NavBar";
+import Hero from "./Hero";
 
 const Main = () => {
   return (
     // Currently 51 total catagories, Main will have 3 column of 17
 
     <Box>
+      <Box sx={{ marginBottom: 4 }}>
+        <Hero />
+      </Box>
+
       <NavBar />
+
       <Grid container spacing={2} sx={{ padding: 2 }}>
         {/* Column 1 */}
         <Grid item xs={12} sm={4}>

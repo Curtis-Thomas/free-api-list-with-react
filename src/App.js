@@ -81,7 +81,6 @@ import AnimeNekos from "./api/anime/AnimeNekos";
 import AnimeStudioGhibli from "./api/anime/AnimeStudioGhibli";
 import BooksPoetryDB from "./api/books/BooksPoetryDb";
 import BooksQuranCloud from "./api/books/BooksQuranCloud";
-import Hero from "./core/main/Hero";
 import EnvironmentUKCarbonIntensity from "./api/environment/EnvironmentUKCarbonIntensity";
 import HealthMakeupApi from "./api/health/HealthMakeupApi";
 
@@ -339,9 +338,7 @@ function App() {
                 maxWidth: "960px",
               },
             }}
-          >
-            <Hero />
-          </Box>
+          ></Box>
           <Box
             sx={{
               minHeight: "85vh",
