@@ -15,7 +15,7 @@ const theme = createTheme({
     },
     // Background color palette
     background: {
-      default: "#ffffff", // Default background color
+      default: "#FCFCFC", // Default background color
     },
     text: {
       primary: "#0077ba",
