@@ -20,9 +20,6 @@ const themeDark = createTheme({
     },
   },
   typography: {
-    body1: {
-      color: "#dadedf",
-    },
     h1: {
       color: "#c1c7c9",
     },
@@ -39,6 +36,15 @@ const themeDark = createTheme({
       color: "#a7b0b2",
     },
     h6: {
+      color: "#a7b0b2",
+    },
+    body1: {
+      color: "#a7b0b2",
+    },
+    body2: {
+      color: "#a7b0b2",
+    },
+    subtitle1: {
       color: "#a7b0b2",
     },
   },
