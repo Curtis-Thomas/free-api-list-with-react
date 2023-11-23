@@ -1,31 +1,48 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const ArtDesignDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
+      {/* Navigation bar */}
       <NavBar link="/ArtDesignDash" />
-      <Box>
-        <BtnRouting
-          btnName="Artic"
-          navigateTo="ArtDesignArtic"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="EmojiHub"
-          navigateTo="ArtDesignEmojiHub"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="MetMuseum"
-          navigateTo="ArtDesignMetMuseum"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+
+      {/* Cards in a grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Artic */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Artic"
+            navigateTo="ArtDesignArtic"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for EmojiHub */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="EmojiHub"
+            navigateTo="ArtDesignEmojiHub"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for MetMuseum */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="MetMuseum"
+            navigateTo="ArtDesignMetMuseum"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
