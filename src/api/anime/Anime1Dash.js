@@ -1,29 +1,37 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
-import BtnRouting from "../../core/main/BtnRouting";
+import CardRouting from "../../core/main/CardRouting";
 
 const AnimeDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
       {/* Navigation bar */}
-      <NavBar link="/Anime" />
+      <NavBar link="/AnimeDash" />
 
-      <Box>
-        <BtnRouting
-          btnName="Nekos"
-          navigateTo="Nekos"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
-      <Box>
-        <BtnRouting
-          btnName="StudioGhibli"
-          navigateTo="StudioGhibli"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+      {/* Cards in a grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Nekos */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Nekos"
+            navigateTo="Nekos"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for StudioGhibli */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="StudioGhibli"
+            navigateTo="StudioGhibli"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
