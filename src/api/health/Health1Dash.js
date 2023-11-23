@@ -1,19 +1,23 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const HealthDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
       <NavBar link="/HealthDash" />
-      <Box>
-        <BtnRouting
-          btnName="Makeup API"
-          navigateTo="HealthMakeupApi"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Chuck Norris */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Makeup API"
+            navigateTo="HealthMakeupApi"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
