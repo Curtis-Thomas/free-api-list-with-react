@@ -3,7 +3,7 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../core/main/Endpoints";
 import NavBar from "../../navigation/NavBar";
 
-import BoxTestCrud from "../../tools/BoxTestCrud";
+import BoxTestCrud from "../../tools/components/BoxTestCrud";
 
 const AnimeStudioGhibli = () => {
   return (

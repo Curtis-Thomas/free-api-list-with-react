@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import NavBar from "../navigation/NavBar";
-import BoxTestCrud from "./BoxTestCrud";
-import AdvancedBoxTestCrud from "./AdvancedBoxTestCrud";
-import BoxTestImg from "./BoxTestImg";
+import BoxTestCrud from "./components/BoxTestCrud";
+import AdvancedBoxTestCrud from "./components/AdvancedBoxTestCrud";
+import BoxTestImg from "./components/BoxTestImg";
 
 const Tools = () => {
   return (
