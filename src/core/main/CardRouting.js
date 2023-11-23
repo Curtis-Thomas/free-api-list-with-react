@@ -19,7 +19,10 @@ const CardRouting = ({
       onClick={handleClick}
       sx={{
         width: "100%",
+        height: "100%",
         textAlign: "left",
+        padding: 1,
+        borderRadius: 1,
         "&:hover": {
           backgroundColor: "rgba(0, 0, 0, 0.04)", // subtle hover effect
         },
@@ -32,6 +35,8 @@ const CardRouting = ({
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          width: "100%",
+          height: "100%",
         }}
       >
         <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
