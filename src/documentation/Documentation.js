@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
-import NavBar from "../core/main/navigation/NavBar";
+import NavBar from "../navigation/NavBar";
 import ApiListings from "./apiListings/ApiListings";
 import ReferenceGuide from "./referenceGuide/ReferenceGuide";
 import GettingStarted from "./Gettingstarted";

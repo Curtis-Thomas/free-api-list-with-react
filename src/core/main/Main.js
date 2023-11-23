@@ -1,6 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import BtnRouting from "./BtnRouting";
-import NavBar from "./navigation/NavBar";
+import NavBar from "../../navigation/NavBar";
 import Hero from "./Hero";
 
 const Main = () => {

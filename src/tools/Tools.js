@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import NavBar from "../core/main/navigation/NavBar";
+import NavBar from "../navigation/NavBar";
 import BoxTestCrud from "./BoxTestCrud";
 import AdvancedBoxTestCrud from "./AdvancedBoxTestCrud";
 import BoxTestImg from "./BoxTestImg";
