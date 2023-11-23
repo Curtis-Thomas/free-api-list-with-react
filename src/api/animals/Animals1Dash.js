@@ -1,56 +1,70 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
 import CardRouting from "../../core/main/CardRouting";
 
 const AnimalDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
       {/* Navigation bar */}
       <NavBar link="/AnimalsDash" />
 
-      <Box>
-        {/* Button for Daily Cat Facts */}
-        <CardRouting
-          cardName="Daily Cat Facts"
-          navigateTo="AnimalsDailyCatFacts"
-          tags="Animals"
-          description="Daily cat facts!"
-          difficulty="Beginner"
-        />
+      {/* Cards in a responsive grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Daily Cat Facts */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Daily Cat Facts"
+            navigateTo="AnimalsDailyCatFacts"
+            tags="Animals"
+            description="Daily cat facts!"
+            difficulty="Beginner"
+          />
+        </Grid>
 
-        {/* Button for Cat as a service */}
-        <BtnRouting
-          btnName="Cat as a service"
-          navigateTo="AnimalsCataas"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
+        {/* Card for Cat as a service */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Cat as a service"
+            navigateTo="AnimalsCataas"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
 
-        {/* Button for Dog API */}
-        <BtnRouting
-          btnName="Dog API"
-          navigateTo="AnimalsDogApi"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
+        {/* Card for Dog API */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Dog API"
+            navigateTo="AnimalsDogApi"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
 
-        {/* Button for Dog */}
-        <BtnRouting
-          btnName="Dog"
-          navigateTo="AnimalsDog"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
+        {/* Card for Dog */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Dog"
+            navigateTo="AnimalsDog"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
 
-        {/* Button for Meow Facts */}
-        <BtnRouting
-          btnName="Meow Facts"
-          navigateTo="AnimalsMeowFacts"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+        {/* Card for Meow Facts */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Meow Facts"
+            navigateTo="AnimalsMeowFacts"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
