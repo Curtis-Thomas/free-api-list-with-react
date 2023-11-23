@@ -1,19 +1,23 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import BtnRouting from "../../core/main/BtnRouting";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const PersonalityDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
       <NavBar link="/PersonalityDash" />
-      <Box>
-        <BtnRouting
-          btnName="Quote Clear"
-          navigateTo="PersonalityQuoteClear"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Quote Clear"
+            navigateTo="PersonalityQuoteClear"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
