@@ -7,8 +7,8 @@ import Footer from "./core/footer/Footer";
 import Tools from "./tools/Tools";
 import Documentation from "./documentation/Documentation";
 
-import theme from "./theme";
-import themeDark from "./themeDark";
+import theme from "../src/themes/theme";
+import themeDark from "../src/themes/themeDark";
 
 // Import all the components for different routes
 import AnimalDash from "./api/animals/Animals1Dash";
