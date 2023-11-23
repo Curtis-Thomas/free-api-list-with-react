@@ -1,43 +1,70 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const BooksDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
+      {/* Navigation bar */}
       <NavBar link="/BooksDash" />
-      <Box>
-        <BtnRouting
-          btnName="ABiblia Digital"
-          navigateTo="BooksABibliaDigital"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Bible Api"
-          navigateTo="BooksBibleApi"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Gutendex"
-          navigateTo="BooksGutendex"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="PoetryDB"
-          navigateTo="BooksPoetryDB"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Quran Cloud"
-          navigateTo="BooksQuranCloud"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+
+      {/* Cards in a grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for ABiblia Digital */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="ABiblia Digital"
+            navigateTo="BooksABibliaDigital"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for Bible Api */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Bible Api"
+            navigateTo="BooksBibleApi"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for Gutendex */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Gutendex"
+            navigateTo="BooksGutendex"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for PoetryDB */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="PoetryDB"
+            navigateTo="BooksPoetryDB"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for Quran Cloud */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Quran Cloud"
+            navigateTo="BooksQuranCloud"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
