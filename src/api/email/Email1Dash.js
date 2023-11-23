@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import BtnRouting from "../../components/BtnRouting";
 import NavBar from "../../navigation/NavBar";
 
 const EmailDash = () => {

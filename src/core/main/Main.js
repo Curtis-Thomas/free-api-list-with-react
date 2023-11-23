@@ -1,5 +1,5 @@
 import { Box, Grid } from "@mui/material";
-import BtnRouting from "./BtnRouting";
+import BtnRouting from "../../components/BtnRouting";
 import NavBar from "../../navigation/NavBar";
 import Hero from "./Hero";
 

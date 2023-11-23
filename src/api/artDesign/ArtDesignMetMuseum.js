@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
-import Endpoints from "../../core/main/Endpoints";
+import Endpoints from "../../components/Endpoints";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
 import NavBar from "../../navigation/NavBar";
 

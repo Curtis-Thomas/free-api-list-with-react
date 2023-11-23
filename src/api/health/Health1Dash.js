@@ -1,6 +1,6 @@
 import { Box, Grid } from "@mui/material";
 import NavBar from "../../navigation/NavBar";
-import CardRouting from "../../core/main/CardRouting";
+import CardRouting from "../../components/CardRouting";
 
 const HealthDash = () => {
   return (
