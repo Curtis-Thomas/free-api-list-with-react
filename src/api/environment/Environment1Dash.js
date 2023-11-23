@@ -1,19 +1,26 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
+
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const EnvironmentDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
+      {/* Navigation bar */}
       <NavBar link="/EnvironmentDash" />
-      <Box>
-        <BtnRouting
-          btnName="UK Carbon Intensity"
-          navigateTo="EnvironmentUKCarbonIntensity"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+      {/* Cards in a grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Chuck Norris */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="UK Carbon Intensity"
+            navigateTo="EnvironmentUKCarbonIntensity"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
