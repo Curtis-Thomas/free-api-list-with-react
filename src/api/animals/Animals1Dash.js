@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import BtnRouting from "../../core/main/BtnRouting";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const AnimalDash = () => {
   return (
@@ -10,11 +11,12 @@ const AnimalDash = () => {
 
       <Box>
         {/* Button for Daily Cat Facts */}
-        <BtnRouting
-          btnName="Daily Cat Facts"
+        <CardRouting
+          cardName="Daily Cat Facts"
           navigateTo="AnimalsDailyCatFacts"
-          backgroundColor="#0077ba"
-          textColor="white"
+          tags="Animals"
+          description="Daily cat facts!"
+          difficulty="Beginner"
         />
 
         {/* Button for Cat as a service */}
