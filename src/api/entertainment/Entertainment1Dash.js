@@ -1,31 +1,48 @@
-import { Box } from "@mui/material";
-import BtnRouting from "../../core/main/BtnRouting";
+import { Box, Grid } from "@mui/material";
 import NavBar from "../../core/main/navigation/NavBar";
+import CardRouting from "../../core/main/CardRouting";
 
 const EntertainmentDash = () => {
   return (
-    <Box>
+    <Box sx={{ flexGrow: 1 }}>
+      {/* Navigation bar */}
       <NavBar link="/EntertainmentDash" />
-      <Box>
-        <BtnRouting
-          btnName="Chuck Norris"
-          navigateTo="EntertainmentChuckNorris"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Corp Buzz Words"
-          navigateTo="EntertainmentCorpBuzzWords"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-        <BtnRouting
-          btnName="Techy"
-          navigateTo="EntertainmentTechy"
-          backgroundColor="#0077ba"
-          textColor="white"
-        />
-      </Box>
+
+      {/* Cards in a grid layout */}
+      <Grid container spacing={2} sx={{ p: 3 }}>
+        {/* Card for Chuck Norris */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Chuck Norris"
+            navigateTo="EntertainmentChuckNorris"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for Corp Buzz Words */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Corp Buzz Words"
+            navigateTo="EntertainmentCorpBuzzWords"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+
+        {/* Card for Techy */}
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Techy"
+            navigateTo="EntertainmentTechy"
+            tags=""
+            description=""
+            difficulty=""
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
