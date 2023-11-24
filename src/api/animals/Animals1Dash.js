@@ -48,9 +48,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Dog"
             navigateTo="AnimalsDog"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="The internet's biggest collection of open source dog pictures."
+            difficulty="Easy"
           />
         </Grid>
 
