@@ -3,6 +3,7 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestImg from "../../tools/components/BoxTestImg";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimalsCataas = () => {
   return (
@@ -10,10 +11,16 @@ const AnimalsCataas = () => {
       {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/Cataas" />
 
+      <ApiPageInfo
+        title={"Cat as a service (CATAAS)"}
+        linkUrl={"https://cataas.com/doc.html"}
+        description={
+          "Cat as a service (CATAAS) is a REST API to spread peace and love (or not) thanks to cats."
+        }
+      />
+      {/* Test image box */}
+      <BoxTestImg />
       <Box>
-        {/* Test image box */}
-        <BoxTestImg />
-
         {/* API information box */}
         <BoxApiInfo baseEndpoint="https://cataas.com/" />
 

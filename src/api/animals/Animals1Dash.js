@@ -26,9 +26,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Cat as a service"
             navigateTo="AnimalsCataas"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="Cat as a service (CATAAS) is a REST API to spread peace and love (or not) thanks to cats."
+            difficulty="Easy"
           />
         </Grid>
 
