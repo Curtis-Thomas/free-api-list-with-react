@@ -45,7 +45,7 @@ Handles the click event of the "Docs" button and navigates to the "Docs" route.
           <div>
             <Typography variant="h6" component="div">
               <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-                FAR
+                Free API List
               </Link>
             </Typography>
           </div>
