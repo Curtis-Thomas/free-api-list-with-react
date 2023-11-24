@@ -32,7 +32,7 @@ Handles the click event of the "Docs" button and navigates to the "Docs" route.
     navigate("Docs");
   };
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Toolbar>
         <div
           style={{
