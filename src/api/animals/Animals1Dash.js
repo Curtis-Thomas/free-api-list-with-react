@@ -59,9 +59,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Meow Facts"
             navigateTo="AnimalsMeowFacts"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="A simple api that returns a random fact about cats on a GET request"
+            difficulty="Easy"
           />
         </Grid>
       </Grid>
