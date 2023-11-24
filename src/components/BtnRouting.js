@@ -18,12 +18,13 @@ const BtnRouting = ({
     <Box
       sx={{
         display: "flex",
-        width: "95%",
+        width: "80%",
         maxWidth: "100%",
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
-      }}
+      }
+      }
     >
       <Button
         fullWidth
@@ -34,18 +35,25 @@ const BtnRouting = ({
           "&:hover": {
             backgroundColor: backgroundColor,
             opacity: 0.9,
+            color: "#24292e"
           },
+          borderRadius: "8px",
         }}
       >
         <Typography
           variant="button"
-          sx={{ fontWeight: "bold", textTransform: "none" }}
+          sx={{
+            fontWeight: "bold",
+            textTransform: "none",
+            fontSize: "15px",
+            paddingY: "4px", 
+          }}
         >
           {btnName}{" "}
           {amount && <span style={{ paddingLeft: 0.5 }}>{amount}</span>}
         </Typography>
       </Button>
-    </Box>
+    </Box >
   );
 };
 
