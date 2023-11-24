@@ -37,9 +37,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Dog API"
             navigateTo="AnimalsDogApi"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="The Dog API provides a wealth of information on dog breeds, groups, and fun facts. Access and integrate this data into your website or application with our easy-to-use JSON API."
+            difficulty="Easy"
           />
         </Grid>
 
