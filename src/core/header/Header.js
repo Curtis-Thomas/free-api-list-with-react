@@ -86,17 +86,28 @@ Handles the click event of the "Docs" button and navigates to the "Docs" route.
                   anchorEl={anchorEl}
                   open={Boolean(anchorEl)}
                   onClose={handleMenuClose}
+                  PaperProps={{
+                    style: {
+                      width: '100%',
+                    },
+                  }}
+                  fullWidth={true}
+                  anchorOrigin={{
+                    vertical: 'bottom',
+                    horizontal: 'left',
+                  }}
                 >
-                  <MenuItem onClick={handleToolsClick}>
-                    <BuildIcon sx={{ marginRight: 1 }} />
+                  <MenuItem onClick={handleToolsClick} style={{ alignItems: 'center' }}>
+                    <BuildIcon sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
                     <Typography variant="body1">Tools</Typography>
                   </MenuItem>
-                  <MenuItem onClick={handleDocsClick}>
-                    <DescriptionIcon sx={{ marginRight: 1 }} />
+                  <MenuItem onClick={handleDocsClick} style={{ alignItems: 'center' }}>
+                    <DescriptionIcon sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
                     <Typography variant="body1">Docs</Typography>
                   </MenuItem>
-                  <MenuItem>
-                    <Switch checked={darkMode} onChange={handleSwitchToggle} />
+                  <MenuItem style={{ alignItems: 'center' }}>
+                    <Switch sx={{ transform: 'scale(1.3)', marginRight: 1, marginLeft: -1 }} checked={darkMode} onChange={handleSwitchToggle} />
+                    <Typography variant="body1">Theme</Typography>
                   </MenuItem>
                 </Menu>
               </Hidden>
