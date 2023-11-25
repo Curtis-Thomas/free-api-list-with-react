@@ -16,6 +16,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import MenuIcon from '@mui/icons-material/Menu';
 import Hidden from "@mui/material/Hidden";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Divider from '@mui/material/Divider';
 
 
 
@@ -116,11 +117,15 @@ Handles the click event of the "Docs" button and navigates to the "Docs" route.
                 <Stack direction="row" alignItems="center">
                   <IconButton onClick={handleToolsClick} edge="start">
                     <BuildIcon sx={{ margin: 1 }} />
+                    <Typography variant="body1">Tools</Typography>
                   </IconButton>
                   <IconButton onClick={handleDocsClick} edge="start">
                     <DescriptionIcon sx={{ margin: 1 }} />
+                    <Typography variant="body1">Docs</Typography>
                   </IconButton>
+                  <Divider orientation="vertical" flexItem sx={{ margin: 1 }} />
                   <Switch checked={darkMode} onChange={handleSwitchToggle} />
+                  <Typography variant="body1">Theme</Typography>
                 </Stack>
               </Hidden>
             )}
