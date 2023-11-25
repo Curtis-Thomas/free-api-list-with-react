@@ -26,9 +26,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Cat as a service"
             navigateTo="AnimalsCataas"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="Cat as a service (CATAAS) is a REST API to spread peace and love (or not) thanks to cats."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -37,9 +37,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Dog API"
             navigateTo="AnimalsDogApi"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="The Dog API provides a wealth of information on dog breeds, groups, and fun facts. Access and integrate this data into your website or application with our easy-to-use JSON API."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -48,9 +48,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Dog"
             navigateTo="AnimalsDog"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="The internet's biggest collection of open source dog pictures."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -59,9 +59,9 @@ const AnimalDash = () => {
           <CardRouting
             cardName="Meow Facts"
             navigateTo="AnimalsMeowFacts"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Animals"
+            description="A simple api that returns a random fact about cats on a GET request"
+            difficulty="Easy"
           />
         </Grid>
       </Grid>

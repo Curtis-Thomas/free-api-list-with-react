@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <Toolbar sx={{ justifyContent: "center" }}>
         <Typography variant="body2">
-          Copyright © 2023 Curtis Thomas and the Free API List with React
+          Copyright © {new Date().getFullYear()} Curtis Thomas and the Free API List with React
           contributors
         </Typography>
       </Toolbar>

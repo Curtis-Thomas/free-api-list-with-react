@@ -1,3 +1,4 @@
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography } from "@mui/material";
 
@@ -32,22 +33,19 @@ const BtnRouting = ({
         sx={{
           color: textColor,
           backgroundColor: backgroundColor,
+          padding: "12px 24px",
+          borderRadius: "8px",
+          transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
             backgroundColor: backgroundColor,
-            opacity: 0.9,
-            color: "#24292e"
+            opacity: 0.70,
           },
           borderRadius: "8px",
         }}
       >
         <Typography
           variant="button"
-          sx={{
-            fontWeight: "bold",
-            textTransform: "none",
-            fontSize: "15px",
-            paddingY: "4px", 
-          }}
+          sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
         >
           {btnName}{" "}
           {amount && <span style={{ paddingLeft: 0.5 }}>{amount}</span>}

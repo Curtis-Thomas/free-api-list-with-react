@@ -3,12 +3,21 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimalsDogApi = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/DogApi" />
+
+      <ApiPageInfo
+        title={"Dog API"}
+        linkUrl={"https://dogapi.dog/docs/api-v2"}
+        description={
+          "The Dog API provides a wealth of information on dog breeds, groups, and fun facts. Access and integrate this data into your website or application with our easy-to-use JSON API."
+        }
+      />
 
       {/* CRUD test box */}
       <BoxTestCrud />

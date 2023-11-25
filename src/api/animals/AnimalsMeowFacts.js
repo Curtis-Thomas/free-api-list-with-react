@@ -3,12 +3,21 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimalsMeowFacts = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/MeowFacts" />
+
+      <ApiPageInfo
+        title={"Dog API"}
+        linkUrl={"https://github.com/wh-iterabb-it/meowfacts"}
+        description={
+          "A simple api that returns a random fact about cats on a GET request"
+        }
+      />
 
       {/* CRUD test box */}
       <BoxTestCrud />
