@@ -1,21 +1,22 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Input } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  TextField,
+  Snackbar,
+} from "@mui/material";
 import axios from "axios";
 
-/**
- * Component for testing image fetching from an API endpoint.
- *
- * @param {string} url - The base URL of the API.
- */
 const BoxTestImg = ({ url }) => {
   const [response, setResponse] = useState("");
   const [urlValue, setUrl] = useState("");
   const [endpointValue, setEndpoint] = useState("");
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  /**
-   * Fetches the image from the API endpoint and sets the response state accordingly.
-   */
   const fetchAPI = async () => {
+    setLoading(true);
     try {
       const response = await axios.get(`${urlValue}${endpointValue}`, {
         responseType: "blob",
@@ -27,15 +28,17 @@ const BoxTestImg = ({ url }) => {
         };
         reader.readAsDataURL(response.data);
       } else {
-        const errorMessage = `Error: ${response.status}`;
-        setResponse(errorMessage);
-        console.log(errorMessage);
+        setError(`Error: ${response.status}`);
       }
     } catch (error) {
-      const errorMessage = `Error: ${error.message}`;
-      setResponse(errorMessage);
-      console.log(errorMessage);
+      setError(`Error: ${error.message}`);
+    } finally {
+      setLoading(false);
     }
+  };
+
+  const handleCloseError = () => {
+    setError(null);
   };
 
   return (
@@ -49,34 +52,40 @@ const BoxTestImg = ({ url }) => {
     >
       <Box sx={{ marginBottom: 2 }}>
         <Typography variant="h6">IMG Testing Box</Typography>
-        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
-          <Input
-            label="Base URL"
-            placeholder="Base URL"
-            value={urlValue}
-            onChange={(e) => setUrl(e.target.value)}
-            sx={{ marginRight: 2, width: "100%" }}
-          />
-        </Box>
-        <Box sx={{ minHeight: "10vh", display: "flex", alignItems: "center" }}>
-          <Input
-            label="Endpoint"
-            placeholder="Endpoint"
-            value={endpointValue}
-            onChange={(e) => setEndpoint(e.target.value)}
-            sx={{ marginRight: 2, width: "100%" }}
-          />
-        </Box>
-        <Box>
-          <Button
-            sx={{ "&:hover": { backgroundColor: "inherit" } }}
-            variant="contained"
-            onClick={fetchAPI}
-          >
-            Fetch
-          </Button>
-        </Box>
+        <TextField
+          label="Base URL"
+          placeholder="Base URL"
+          value={urlValue}
+          onChange={(e) => setUrl(e.target.value)}
+          sx={{ marginRight: 2, width: "100%" }}
+        />
+        <TextField
+          label="Endpoint"
+          placeholder="Endpoint"
+          value={endpointValue}
+          onChange={(e) => setEndpoint(e.target.value)}
+          sx={{ marginRight: 2, width: "100%" }}
+        />
+        <Button
+          variant="contained"
+          color="primary"
+          sx={{ "&:hover": { backgroundColor: "#0077ba" } }}
+          onClick={fetchAPI}
+        >
+          Fetch
+        </Button>
       </Box>
+
+      {loading && <Typography variant="body2">Loading...</Typography>}
+
+      {error && (
+        <Snackbar
+          open={!!error}
+          autoHideDuration={6000}
+          onClose={handleCloseError}
+          message={error}
+        />
+      )}
 
       {response && (
         <Box>
@@ -89,7 +98,7 @@ const BoxTestImg = ({ url }) => {
           >
             <img
               src={response}
-              alt="Response"
+              alt="Fetched Response"
               style={{
                 position: "absolute",
                 top: 0,

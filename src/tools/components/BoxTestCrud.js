@@ -9,6 +9,7 @@ import {
   FormControl,
   InputLabel,
 } from "@mui/material";
+import DescriptionIcon from "@mui/icons-material/Description";
 import axios from "axios";
 
 const BoxTestCrud = ({ url }) => {
@@ -35,8 +36,17 @@ const BoxTestCrud = ({ url }) => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #bbb", padding: 2, margin: 2 }}>
+    <Box
+      sx={{
+        border: "solid 1px #bbb",
+        padding: 2,
+        margin: 2,
+        borderRadius: 10,
+        boxShadow: 1,
+      }}
+    >
       <Typography variant="h6" sx={{ marginBottom: 2 }}>
+        <DescriptionIcon sx={{ fontSize: 20, marginRight: 1 }} />
         Testing Box
       </Typography>
 

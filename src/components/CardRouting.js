@@ -24,7 +24,7 @@ const CardRouting = ({
         padding: 1,
         borderRadius: 1,
         "&:hover": {
-          backgroundColor: "rgba(0, 0, 0, 0.04)", // subtle hover effect
+          backgroundColor: "rgba(0, 0, 0, 0.04)", 
         },
       }}
     >
