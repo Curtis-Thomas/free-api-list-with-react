@@ -37,10 +37,11 @@ const BtnRouting = ({
           borderRadius: "8px",
           transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
+            color: 'black',
             backgroundColor: backgroundColor,
-            opacity: 0.70,
+            opacity: 1,
+            boxShadow: theme.palette.mode === "#FCFCFC" ? "4px 5px 7px rgba(0, 119, 186, 1)" : "4px 5px 7px rgba(0, 0, 0, 0.7)",
           },
-          borderRadius: "8px",
         }}
       >
         <Typography
