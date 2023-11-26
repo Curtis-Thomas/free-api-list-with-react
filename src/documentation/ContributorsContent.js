@@ -10,7 +10,8 @@ const ContributorsContent = () => {
   useEffect(() => {
     const fetchData = async () => {
       const octokit = new Octokit({
-        auth: `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`,
+        //recommended to use env variables
+        auth: `GitHub access token`, //add the access token here for auth, https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
       });
 
       try {
