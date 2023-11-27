@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography } from "@mui/material";
+import theme from "../themes/theme";
+
 
 const BtnRouting = ({
   btnName,
@@ -10,11 +12,14 @@ const BtnRouting = ({
   amount,
 }) => {
   const navigate = useNavigate();
-
+  const hoverShadow = function () {
+    return theme.palette.background.default === "#FCFCFC"
+      ? "0px 4px 10px rgba(0, 0, 0, 0.2)" // Light mode shadow
+      : "0px 4px 10px rgba(0, 119, 186, 1)" // Dark mode shadow
+  };
   const handleClick = () => {
     navigate(navigateTo);
-  };
-
+  }
   return (
     <Box
       sx={{
@@ -40,7 +45,7 @@ const BtnRouting = ({
             color: 'black',
             backgroundColor: backgroundColor,
             opacity: 1,
-            boxShadow: theme.palette.mode === "#FCFCFC" ? "4px 5px 7px rgba(0, 119, 186, 1)" : "4px 5px 7px rgba(0, 0, 0, 0.7)",
+            boxShadow: hoverShadow(),
           },
         }}
       >
@@ -54,6 +59,6 @@ const BtnRouting = ({
       </Button>
     </Box >
   );
-};
+}
 
 export default BtnRouting;
