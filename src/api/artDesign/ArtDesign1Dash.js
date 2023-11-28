@@ -15,9 +15,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="Artic"
             navigateTo="ArtDesignArtic"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="The Art Institute of Chicago API provides JSON-formatted data as a REST-style service that allows developers to explore and integrate the museum’s public data into their projects."
+            difficulty="Medium"
           />
         </Grid>
 
