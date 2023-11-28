@@ -3,11 +3,19 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
 import NavBar from "../../navigation/NavBar";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const ArtDesignMetMuseum = () => {
   return (
     <Box>
       <NavBar link="/ArtDesignDash" route2="/MetMuseum" />
+      <ApiPageInfo
+        title={"The Metropolitan Museum of Art Collection API"}
+        linkUrl={"https://metmuseum.github.io/"}
+        description={
+          "The Metropolitan Museum of Art provides select datasets of information on more than 470,000 artworks in its Collection for unrestricted commercial and noncommercial use."
+        }
+      />
 
       <Box>
         <BoxTestCrud />
