@@ -37,9 +37,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="MetMuseum"
             navigateTo="ArtDesignMetMuseum"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="The Metropolitan Museum of Art provides select datasets of information on more than 470,000 artworks in its Collection for unrestricted commercial and noncommercial use."
+            difficulty="Medium"
           />
         </Grid>
       </Grid>
