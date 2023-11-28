@@ -26,9 +26,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="EmojiHub"
             navigateTo="ArtDesignEmojiHub"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="A simple & free HTTP API with emojis for your cool apps"
+            difficulty="Easy"
           />
         </Grid>
 
