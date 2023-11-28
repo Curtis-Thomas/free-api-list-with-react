@@ -15,9 +15,9 @@ const AnimeDash = () => {
           <CardRouting
             cardName="Nekos"
             navigateTo="Nekos"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Anime"
+            description="nekos.best is a RESTful API serving fully SFW and high quality anime images and GIFs."
+            difficulty="Easy"
           />
         </Grid>
 
