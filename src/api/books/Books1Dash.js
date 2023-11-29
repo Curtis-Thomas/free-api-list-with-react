@@ -15,9 +15,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="ABiblia Digital"
             navigateTo="BooksABibliaDigital"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="RESTful Bible API with 7 versions, 4 languages and multiple features to simplify your day to day."
+            difficulty="Easy"
           />
         </Grid>
 
