@@ -48,9 +48,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="PoetryDB"
             navigateTo="BooksPoetryDB"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="PoetryDB is an API for internet poets."
+            difficulty="Medium"
           />
         </Grid>
 
@@ -59,9 +59,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Quran Cloud"
             navigateTo="BooksQuranCloud"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="The Al Quran Cloud allows you to read and hear the Quran being recited by Juz, Surah or Ayah. "
+            difficulty="Medium"
           />
         </Grid>
       </Grid>

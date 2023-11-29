@@ -3,11 +3,19 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const BooksQuranCloud = () => {
   return (
     <Box>
       <NavBar link="/BooksDash" route2="/QuranCloud" />
+      <ApiPageInfo
+        title={"Quran Cloud"}
+        linkUrl={"https://alquran.cloud/api"}
+        description={
+          "The Al Quran Cloud allows you to read and hear the Quran being recited by Juz, Surah or Ayah. "
+        }
+      />
       <Box />
       <BoxTestCrud />
       <Box>
