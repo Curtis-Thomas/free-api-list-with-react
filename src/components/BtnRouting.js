@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography } from "@mui/material";
 
+
+
 const BtnRouting = ({
   btnName,
   navigateTo,
@@ -10,21 +12,23 @@ const BtnRouting = ({
   amount,
 }) => {
   const navigate = useNavigate();
-
+  const hoverShadow = function () {
+    return "0px 4px 10px rgba(0, 119, 186, 1)" // Dark mode shadow
+  };
   const handleClick = () => {
     navigate(navigateTo);
-  };
-
-  return (  
+  }
+  return (
     <Box
       sx={{
         display: "flex",
-        width: "95%",
+        width: "80%",
         maxWidth: "100%",
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
-      }}
+      }
+      }
     >
       <Button
         fullWidth
@@ -32,12 +36,14 @@ const BtnRouting = ({
         sx={{
           color: textColor,
           backgroundColor: backgroundColor,
-          padding: "12px 24px", 
-          borderRadius: "8px", 
-          transition: "background-color 0.3s ease, opacity 0.3s ease", 
+          padding: "12px 24px",
+          borderRadius: "8px",
+          transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
+            color: 'black',
             backgroundColor: backgroundColor,
-            opacity: 0.70,
+            opacity: 1,
+            boxShadow: hoverShadow(),
           },
         }}
       >
@@ -49,8 +55,8 @@ const BtnRouting = ({
           {amount && <span style={{ paddingLeft: 0.5 }}>{amount}</span>}
         </Typography>
       </Button>
-    </Box>
+    </Box >
   );
-};
+}
 
 export default BtnRouting;
