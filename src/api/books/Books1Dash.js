@@ -37,9 +37,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Gutendex"
             navigateTo="BooksGutendex"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="JSON web API for Project Gutenberg ebook metadata"
+            difficulty="Medium"
           />
         </Grid>
 
