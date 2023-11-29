@@ -26,9 +26,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Bible Api"
             navigateTo="BooksBibleApi"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="This is a tiny little web app that provides a JSON API for grabbing bible verses and passages."
+            difficulty="Medium"
           />
         </Grid>
 

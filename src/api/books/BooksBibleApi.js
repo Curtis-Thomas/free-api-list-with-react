@@ -3,11 +3,19 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const BooksBibleApi = () => {
   return (
     <Box>
       <NavBar link="/BooksDash" route2="/BibleApi" />
+      <ApiPageInfo
+        title={"Bible API"}
+        linkUrl={"https://bible-api.com"}
+        description={
+          "This is a tiny little web app that provides a JSON API for grabbing bible verses and passages."
+        }
+      />
       <BoxTestCrud />
       <Box>
         <BoxApiInfo baseEndpoint="https://bible-api.com" />
