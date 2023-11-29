@@ -7,9 +7,9 @@ import { Box, Button, Typography } from "@mui/material";
 const BtnRouting = ({
   btnName,
   navigateTo,
-  backgroundColor,
-  textColor,
-  amount,
+  backgroundColor = "#0077ba",
+  textColor = "white",
+  amount = 0
 }) => {
   const navigate = useNavigate();
   const hoverShadow = function () {
