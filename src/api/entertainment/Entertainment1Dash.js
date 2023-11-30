@@ -26,9 +26,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Corp Buzz Words"
             navigateTo="EntertainmentCorpBuzzWords"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Corporate buzzword generator to randomly pick out phrases, which can help your application get ahead in an industry where spin."
+            difficulty="Easy"
           />
         </Grid>
 
