@@ -15,9 +15,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Chuck Norris"
             navigateTo="EntertainmentChuckNorris"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris."
+            difficulty="Easy"
           />
         </Grid>
 
