@@ -37,9 +37,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Techy"
             navigateTo="EntertainmentTechy"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Generate cool tech-savvy sounding phrases easily."
+            difficulty="Easy"
           />
         </Grid>
       </Grid>
