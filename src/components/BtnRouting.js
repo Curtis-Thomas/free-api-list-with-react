@@ -19,8 +19,6 @@ const BtnRouting = ({
   const handleClick = () => {
     navigate(navigateTo);
   }
-  console.log("color is " + theme.components.MuiButton.styleOverrides.root.color);
-  console.log("background is " + theme.components.MuiButton.styleOverrides.root.backgroundColor);
   return (
     <Box
       sx={{
