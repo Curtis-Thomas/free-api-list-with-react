@@ -1,23 +1,26 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 
 
 
 const BtnRouting = ({
   btnName,
   navigateTo,
-  backgroundColor = "#0077ba",
-  textColor = "white",
+  backgroundColor,
+  textColor,
   amount = 0
 }) => {
   const navigate = useNavigate();
+  const theme = useTheme();
   const hoverShadow = function () {
     return "0px 4px 10px rgba(0, 119, 186, 1)" // Dark mode shadow
   };
   const handleClick = () => {
     navigate(navigateTo);
   }
+  console.log("color is " + theme.components.MuiButton.styleOverrides.root.color);
+  console.log("background is " + theme.components.MuiButton.styleOverrides.root.backgroundColor);
   return (
     <Box
       sx={{
@@ -34,14 +37,14 @@ const BtnRouting = ({
         fullWidth
         onClick={handleClick}
         sx={{
-          color: textColor,
-          backgroundColor: backgroundColor,
+          color: textColor || theme.components.MuiButton.styleOverrides.root.color,
+          backgroundColor: backgroundColor || theme.components.MuiButton.styleOverrides.root.backgroundColor,
           padding: "12px 24px",
           borderRadius: "8px",
           transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
             color: 'black',
-            backgroundColor: backgroundColor,
+            backgroundColor: backgroundColor || theme.components.MuiButton.styleOverrides.root.backgroundColor,
             opacity: 1,
             boxShadow: hoverShadow(),
           },
