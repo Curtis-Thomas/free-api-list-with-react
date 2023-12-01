@@ -7,12 +7,12 @@
 
 Welcome to the Free API List with React project! This open source project aims to provide a comprehensive list of free APIs along with tools to test and explore them. The project is built using React, and it allows users to discover and learn about various APIs available for different purposes.
 
-### Features
+## Features
 
 ![Image Alt Text](img/Initial_page.png)
 
 
-#### **API Listing**
+### **API Listing**
 
 Explore a diverse selection of APIs spanning various types and applications, providing a comprehensive array of valuable services for your projects.
 
@@ -21,7 +21,7 @@ Explore a diverse selection of APIs spanning various types and applications, pro
 - APIs are classified based on application difficulty levels, ranging from beginner-friendly complexities to challenging applications, suitable even for experienced developers.
 
 
-#### **Easy access to APIs Documentation**
+### **Easy access to APIs Documentation**
 
 Aiming to simplify the process of finding the documentation for a desired API, FREE API List provides the documentation right at the beginning of each API page, right above its description.
 
@@ -29,7 +29,7 @@ Aiming to simplify the process of finding the documentation for a desired API, F
 - Obtain detailed information about each API more easily, including endpoints, request parameters, and response formats.
 
 
-#### **API Testing**
+### **API Testing**
 
 ![Image Alt Text](img/api_testing.png)
 
@@ -40,21 +40,21 @@ Experience a streamlined testing interface that enables the execution of fundame
 - Accessible Base URLs and Endpoints simplify and expedite the functionality testing process.
 
 
-### Live Demo
+## Live Demo
 
 Explore the live demo of the Free API List with React project: [Free API List](https://freeapilist.com/)
 
 
-### Contributing
+## Contributing
 
 Contributions are welcome and greatly appreciated! If you would like to contribute to the project by adding new APIs, improving documentatio or enchancing the testing tools, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
 
 
-### License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
-### Contact
+## Contact
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to the project maintainer.
 
