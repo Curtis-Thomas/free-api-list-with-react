@@ -9,6 +9,7 @@ import {
   Stack,
   Menu,
   MenuItem,
+  Tooltip,
 } from "@mui/material";
 
 import BuildIcon from "@mui/icons-material/Build";
@@ -115,16 +116,22 @@ Handles the click event of the "Docs" button and navigates to the "Docs" route.
             ) : (
               <Hidden smDown>
                 <Stack direction="row" alignItems="center">
-                  <IconButton onClick={handleToolsClick} edge="start">
-                    <BuildIcon sx={{ margin: 1 }} />
-                    <Typography variant="body1">Tools</Typography>
-                  </IconButton>
-                  <IconButton onClick={handleDocsClick} edge="start">
-                    <DescriptionIcon sx={{ margin: 1 }} />
-                    <Typography variant="body1">Docs</Typography>
-                  </IconButton>
+                  <Tooltip title="Go to Tools" placement="bottom">
+                    <IconButton onClick={handleToolsClick} edge="start">
+                        <BuildIcon sx={{ margin: 1 }} />
+                        <Typography variant="body1">Tools</Typography>
+                    </IconButton>
+                  </Tooltip>
+                  <Tooltip title="View Documentation" placement="bottom">
+                    <IconButton onClick={handleDocsClick} edge="start">
+                      <DescriptionIcon sx={{ margin: 1 }} />
+                      <Typography variant="body1">Docs</Typography>
+                    </IconButton>
+                  </Tooltip>
                   <Divider orientation="vertical" flexItem sx={{ margin: 1 }} />
-                  <Switch checked={darkMode} onChange={handleSwitchToggle} />
+                  <Tooltip title={`Switch to ${darkMode ? "light" : "dark"} mode`} placement="bottom">
+                    <Switch checked={darkMode} onChange={handleSwitchToggle} />
+                  </Tooltip>
                   <Typography variant="body1">Theme</Typography>
                 </Stack>
               </Hidden>
