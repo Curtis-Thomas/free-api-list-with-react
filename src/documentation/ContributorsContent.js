@@ -9,12 +9,22 @@ import {
   TableBody,
   TableRow,
   TableCell,
+  TableContainer,
+  Paper,
+  useMediaQuery
 } from "@mui/material";
+
+const cell = {
+  padding:'5px',
+  width:'fit-content'
+}
 
 const ContributorsContent = () => {
   const [contributors, setContributors] = useState([]);
   const [sortOrder, setSortOrder] = useState("asc");
   const [sortCriteria, setSortCriteria] = useState("contributions");
+
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -96,18 +106,21 @@ const ContributorsContent = () => {
       <Typography variant="h6" gutterBottom>
         Contributors List
       </Typography>
-      <Table>
+      <TableContainer component={Paper}>
+      <Table sx={{minWidth:500}}>
         <TableHead>
           <TableRow>
             <TableCell
               style={{ color: "black" }}
               onClick={() => handleSort("name")}
+               sx={isSmallScreen ? cell : {}}
             >
               Name
             </TableCell>
             <TableCell
               style={{ color: "black" }}
               onClick={() => handleSort("contributions")}
+              sx={isSmallScreen ? cell : {}}
             >
               Contributions
               {sortCriteria === "contributions" && (
@@ -117,42 +130,44 @@ const ContributorsContent = () => {
             <TableCell
               style={{ color: "black" }}
               onClick={() => handleSort("lastContributionDate")}
+              sx={isSmallScreen ? cell : {}}
             >
               Last Contribution Date
               {sortCriteria === "lastContributionDate" && (
                 <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
               )}
             </TableCell>
-            <TableCell style={{ color: "black" }}>GitHub Profile</TableCell>
+            <TableCell style={{ color: "black" }} sx={isSmallScreen ? cell : {}}>GitHub Profile</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {sortedContributors.map((contributor) => (
             <TableRow key={contributor.id}>
-              <TableCell style={{ color: "black" }}>
+              <TableCell style={{ color: "black" }} sx={isSmallScreen ? cell : {}}>
                 {contributor.name}
               </TableCell>
-              <TableCell style={{ color: "black" }}>
+              <TableCell style={{ color: "black" }} sx={isSmallScreen ? cell : {}}>
                 {contributor.contributions}
               </TableCell>
-              <TableCell style={{ color: "black" }}>
+              <TableCell style={{ color: "black" }} sx={isSmallScreen ? cell : {}}>
                 {contributor.lastContributionDate
                   ? contributor.lastContributionDate.toDateString()
                   : "No contributions"}
               </TableCell>
-              <TableCell>
+              <TableCell sx={isSmallScreen ? cell : {}}>
                 <Link
                   href={contributor.html_url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub
+                  GitHub  
                 </Link>
               </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
+      </TableContainer>
     </Box>
   );
 };
