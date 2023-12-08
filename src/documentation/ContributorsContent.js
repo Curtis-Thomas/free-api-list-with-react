@@ -97,6 +97,12 @@ const ContributorsContent = () => {
       return sortOrder === "asc"
         ? (a.lastContributionDate || 0) - (b.lastContributionDate || 0)
         : (b.lastContributionDate || 0) - (a.lastContributionDate || 0);
+    } else if (sortCriteria === "name") {
+      const nameA = a.name.toUpperCase();
+      const nameB = b.name.toUpperCase();
+      return sortOrder === "asc"
+        ? nameA.localeCompare(nameB)
+        : nameB.localeCompare(nameA);
     }
     return 0;
   });
@@ -116,6 +122,9 @@ const ContributorsContent = () => {
                sx={isSmallScreen ? cell : {}}
             >
               Name
+              {sortCriteria === "name" && (
+                <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
+              )}
             </TableCell>
             <TableCell
               style={{ color: "black" }}
