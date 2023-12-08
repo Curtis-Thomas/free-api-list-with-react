@@ -14,6 +14,7 @@ const ContributorsContent = () => {
             href="https://github.com/Curtis-Thomas"
             target="_blank"
             rel="noopener noreferrer"
+            
           >
             GitHub
           </Link>
