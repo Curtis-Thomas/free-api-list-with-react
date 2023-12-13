@@ -15,9 +15,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="ABiblia Digital"
             navigateTo="BooksABibliaDigital"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="RESTful Bible API with 7 versions, 4 languages and multiple features to simplify your day to day."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -26,9 +26,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Bible Api"
             navigateTo="BooksBibleApi"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="This is a tiny little web app that provides a JSON API for grabbing bible verses and passages."
+            difficulty="Medium"
           />
         </Grid>
 
@@ -37,9 +37,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Gutendex"
             navigateTo="BooksGutendex"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="JSON web API for Project Gutenberg ebook metadata"
+            difficulty="Medium"
           />
         </Grid>
 
@@ -48,9 +48,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="PoetryDB"
             navigateTo="BooksPoetryDB"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="PoetryDB is an API for internet poets."
+            difficulty="Medium"
           />
         </Grid>
 
@@ -59,9 +59,9 @@ const BooksDash = () => {
           <CardRouting
             cardName="Quran Cloud"
             navigateTo="BooksQuranCloud"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Books"
+            description="The Al Quran Cloud allows you to read and hear the Quran being recited by Juz, Surah or Ayah. "
+            difficulty="Medium"
           />
         </Grid>
       </Grid>

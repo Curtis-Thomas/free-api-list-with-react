@@ -15,9 +15,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Chuck Norris"
             navigateTo="EntertainmentChuckNorris"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -26,9 +26,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Corp Buzz Words"
             navigateTo="EntertainmentCorpBuzzWords"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Corporate buzzword generator to randomly pick out phrases, which can help your application get ahead in an industry where spin."
+            difficulty="Easy"
           />
         </Grid>
 
@@ -37,9 +37,9 @@ const EntertainmentDash = () => {
           <CardRouting
             cardName="Techy"
             navigateTo="EntertainmentTechy"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Entertainment"
+            description="Generate cool tech-savvy sounding phrases easily."
+            difficulty="Easy"
           />
         </Grid>
       </Grid>

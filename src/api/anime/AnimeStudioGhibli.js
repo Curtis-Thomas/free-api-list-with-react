@@ -4,12 +4,20 @@ import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimeStudioGhibli = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/Animedash" route2="/StudioGhibli" />
+      <ApiPageInfo
+        title={"CStudio Ghibli"}
+        linkUrl={"https://ghibliapi.vercel.app"}
+        description={
+          "The Studio Ghibli API catalogs the people, places, and things found in the worlds of Ghibli."
+        }
+      />
 
       <Box>
         <BoxTestCrud />

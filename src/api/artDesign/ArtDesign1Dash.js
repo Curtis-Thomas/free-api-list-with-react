@@ -15,9 +15,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="Artic"
             navigateTo="ArtDesignArtic"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="The Art Institute of Chicago API provides JSON-formatted data as a REST-style service that allows developers to explore and integrate the museum’s public data into their projects."
+            difficulty="Medium"
           />
         </Grid>
 
@@ -26,9 +26,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="EmojiHub"
             navigateTo="ArtDesignEmojiHub"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="A simple & free HTTP API with emojis for your cool apps"
+            difficulty="Easy"
           />
         </Grid>
 
@@ -37,9 +37,9 @@ const ArtDesignDash = () => {
           <CardRouting
             cardName="MetMuseum"
             navigateTo="ArtDesignMetMuseum"
-            tags=""
-            description=""
-            difficulty=""
+            tags="Art"
+            description="The Metropolitan Museum of Art provides select datasets of information on more than 470,000 artworks in its Collection for unrestricted commercial and noncommercial use."
+            difficulty="Medium"
           />
         </Grid>
       </Grid>

@@ -9,26 +9,46 @@ Welcome to the Free API List with React project! This open source project aims t
 
 ## Features
 
-- **API Listings**: Browse through a curated collection of free APIs across different categories.
-- **Documentation**: Access detailed information and documentation about each API, including endpoints, request parameters, and response formats.
-- **API Testing**: Utilize built-in tools to test and experiment with the APIs directly from the project.
-- **Contribution**: Contribute to the project by adding new APIs, improving documentation, or enhancing the testing tools.
+![Image Alt Text](img/Initial_page.png)
+
+
+### **API Listing**
+
+Explore a diverse selection of APIs spanning various types and applications, providing a comprehensive array of valuable services for your projects.
+
+- Enjoy a user-friendly interface designed for effortless comprehension and usability, making it simple to navigate and explore the available APIs.
+- Benefit from a categorized listing that streamlines the process of discovering the ideal API for your specific needs.
+- APIs are classified based on application difficulty levels, ranging from beginner-friendly complexities to challenging applications, suitable even for experienced developers.
+
+
+### **Easy access to APIs Documentation**
+
+Aiming to simplify the process of finding the documentation for a desired API, FREE API List provides the documentation right at the beginning of each API page, right above its description.
+
+- Access the documentation with a single link that will direct you to the official API page.
+- Obtain detailed information about each API more easily, including endpoints, request parameters, and response formats.
+
+
+### **API Testing**
+
+![Image Alt Text](img/api_testing.png)
+
+Experience a streamlined testing interface that enables the execution of fundamental functionalities for each API.
+
+- Effortless invocation of GET, POST, PUT, and DELETE functions.
+- View responses in the JSON format provided by the API itself.
+- Accessible Base URLs and Endpoints simplify and expedite the functionality testing process.
+
 
 ## Live Demo
 
 Explore the live demo of the Free API List with React project: [Free API List](https://freeapilist.com/)
 
-## Getting Started
-
-To run the project locally and contribute, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/curtis-thomas/free-api-list-with-react.git`
-2. Install dependencies: `npm install`
-3. Start the development server: `npm start`
 
 ## Contributing
 
-Contributions are welcome and greatly appreciated! If you would like to contribute to the project, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
+Contributions are welcome and greatly appreciated! If you would like to contribute to the project by adding new APIs, improving documentatio or enchancing the testing tools, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
+
 
 ## License
 

@@ -4,12 +4,20 @@ import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimeNekos = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/Animedash" route2="/Nekos" />
+      <ApiPageInfo
+        title={"NEKOS.BEST"}
+        linkUrl={"https://docs.nekos.best/"}
+        description={
+          "nekos.best is a RESTful API serving fully SFW and high quality anime images and GIFs."
+        }
+      />
 
       <Box>
         <BoxTestCrud />

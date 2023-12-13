@@ -3,11 +3,17 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const BooksGutendex = () => {
   return (
     <Box>
       <NavBar link="/BooksDash" route2="/Gutendex" />
+      <ApiPageInfo
+        title={"Gutendex"}
+        linkUrl={"https://gutendex.com/"}
+        description={"JSON web API for Project Gutenberg ebook metadata"}
+      />
       <Box>
         <BoxTestCrud />
         <BoxApiInfo baseEndpoint="https://gutendex.com" />
