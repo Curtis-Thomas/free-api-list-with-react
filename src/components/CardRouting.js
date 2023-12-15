@@ -35,8 +35,8 @@ const CardRouting = ({
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          width: "100%",
-          height: "100%",
+          width: "16rem",
+          height: "18rem",
         }}
       >
         <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>

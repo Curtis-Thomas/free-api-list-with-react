@@ -11,7 +11,7 @@ const AnimalDash = () => {
       {/* Cards in a responsive grid layout */}
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Daily Cat Facts */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid>
           <CardRouting
             cardName="Daily Cat Facts"
             navigateTo="AnimalsDailyCatFacts"
@@ -22,7 +22,7 @@ const AnimalDash = () => {
         </Grid>
 
         {/* Card for Cat as a service */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid>
           <CardRouting
             cardName="Cat as a service"
             navigateTo="AnimalsCataas"
@@ -33,7 +33,7 @@ const AnimalDash = () => {
         </Grid>
 
         {/* Card for Dog API */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid>
           <CardRouting
             cardName="Dog API"
             navigateTo="AnimalsDogApi"
@@ -44,7 +44,7 @@ const AnimalDash = () => {
         </Grid>
 
         {/* Card for Dog */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid>
           <CardRouting
             cardName="Dog"
             navigateTo="AnimalsDog"
@@ -55,7 +55,7 @@ const AnimalDash = () => {
         </Grid>
 
         {/* Card for Meow Facts */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        <Grid>
           <CardRouting
             cardName="Meow Facts"
             navigateTo="AnimalsMeowFacts"
