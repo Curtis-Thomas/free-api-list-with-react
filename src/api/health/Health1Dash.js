@@ -11,9 +11,9 @@ const HealthDash = () => {
           <CardRouting
             cardName="Makeup API"
             navigateTo="HealthMakeupApi"
-            tags=""
-            description=""
-            difficulty=""
+            tags="health"
+            description="There is currently one API call: Search makeup products"
+            difficulty="medium"
           />
         </Grid>
       </Grid>

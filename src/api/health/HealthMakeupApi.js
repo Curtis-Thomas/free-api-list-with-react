@@ -3,12 +3,18 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const HealthMakeupApi = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/HealthDash" route2="/MakeupApi" />
+      <ApiPageInfo
+        title={"Makeup API"}
+        linkUrl={"http://makeup-api.herokuapp.com/"}
+        description={"There is currently one API call: Search makeup products"}
+      />
 
       {/* CRUD test box */}
       <BoxTestCrud />
