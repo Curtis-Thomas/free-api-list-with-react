@@ -15,9 +15,9 @@ const EnvironmentDash = () => {
           <CardRouting
             cardName="UK Carbon Intensity"
             navigateTo="EnvironmentUKCarbonIntensity"
-            tags=""
-            description=""
-            difficulty=""
+            tags="environment"
+            description="This is the Official Carbon Intensity API for Great Britain developed by National Grid."
+            difficulty="Medium"
           />
         </Grid>
       </Grid>
