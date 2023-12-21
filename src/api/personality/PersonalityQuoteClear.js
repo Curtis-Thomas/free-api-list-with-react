@@ -3,12 +3,21 @@ import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
+import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const PersonalityQuoteClear = () => {
   return (
     <Box>
       {/* Navigation bar */}
       <NavBar link="/PersonalityDash" route2="/QuoteClear" />
+
+      <ApiPageInfo
+        title={"jcquotess"}
+        linkUrl={"https://github.com/MauricioRobayo/jcquotes"}
+        description={
+          "Ever growing list of quotes from James Clear's 3-2-1 Newsletter."
+        }
+      />
 
       {/* CRUD test box */}
       <BoxTestCrud />

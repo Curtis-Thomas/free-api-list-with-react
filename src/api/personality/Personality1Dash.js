@@ -11,9 +11,9 @@ const PersonalityDash = () => {
           <CardRouting
             cardName="Quote Clear"
             navigateTo="PersonalityQuoteClear"
-            tags=""
-            description=""
-            difficulty=""
+            tags="personality"
+            description="Ever growing list of quotes from James Clear's 3-2-1 Newsletter."
+            difficulty="easy"
           />
         </Grid>
       </Grid>
