@@ -83,8 +83,8 @@ import BooksPoetryDB from "./api/books/BooksPoetryDb";
 import BooksQuranCloud from "./api/books/BooksQuranCloud";
 import EnvironmentUKCarbonIntensity from "./api/environment/EnvironmentUKCarbonIntensity";
 import HealthMakeupApi from "./api/health/HealthMakeupApi";
-import SportsFitnessBallDontLie from "./api/sportsFitness/SportsFitnessBallDontLie";
 import SportsFitnessCityBikes from "./api/sportsFitness/SportsFitnessCityBikes";
+import SportsFitnessBallDontLie from "./api/sportsFitness/SportsFitnessBallDontLie";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -275,7 +275,7 @@ const routeConfig = [
     component: SportsFitnessBallDontLie,
   },
   {
-    path: "/SportsFitnessDash/SportsFitnessCityBikes",
+    path: "/SportsFitnessDash/SportsfitnessCityBikes",
     component: SportsFitnessCityBikes,
   },
 
