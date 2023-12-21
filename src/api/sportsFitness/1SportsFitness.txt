@@ -4,13 +4,6 @@
 
 'Sports & Fitness',
   
-
-        //https://www.balldontlie.io/home.html#introduction
-        {name:'balldontlie'},
-
-        //https://api.citybik.es/v2/
-        {name:'City Bikes'},
-
         //http://ergast.com/mrd/
         {name:'Ergast F1'},
 
