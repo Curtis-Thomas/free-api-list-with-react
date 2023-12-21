@@ -142,6 +142,9 @@ const Main = () => {
           <BtnRouting
             btnName="Sports Fitness"
             navigateTo="/SportsFitnessDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+            amount="1"
           />{" "}
           <BtnRouting btnName="Test Data" navigateTo="/TestDataDash" />{" "}
           <BtnRouting btnName="Text Analysis" navigateTo="/TextAnalysisDash" />{" "}
