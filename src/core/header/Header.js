@@ -221,8 +221,6 @@ const Header = ({ toggleDarkMode }) => {
   );
 };
 
-Header.propTypes = {
-  toggleDarkMode: PropTypes.func.isRequired,
-};
+
 
 export default Header;
