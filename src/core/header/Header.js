@@ -89,7 +89,8 @@ const Header = ({ toggleDarkMode }) => {
           }}
         >
           <div>
-            <Typography variant="h6" component="div">
+            <Typography role="heading" aria-level="1"
+             variant="h6" component="div">
               <Link
                 to="/"
                 style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -108,7 +109,8 @@ const Header = ({ toggleDarkMode }) => {
                 {/* Mobile Menu */}
                 <IconButton 
                   onClick={handleMenuClick} 
-                  edge="start">
+                  edge="start"
+                  aria-label="Open Menu">
                   <MenuIcon />
                 </IconButton>
 
@@ -132,7 +134,8 @@ const Header = ({ toggleDarkMode }) => {
                   {/* Menu item 1 */}
                   <MenuItem 
                     onClick={handleToolsClick}
-                    style={{ alignItems: 'center' }}>
+                    style={{ alignItems: 'center' }}
+                    aria-label="Go to Tools">
                     <BuildIcon sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
                     <Typography variant="body1">Tools</Typography>
                   </MenuItem>
@@ -140,7 +143,8 @@ const Header = ({ toggleDarkMode }) => {
                   {/* Menu item 2 */}
                   <MenuItem 
                     onClick={handleDocsClick}
-                    style={{ alignItems: 'center' }}>
+                    style={{ alignItems: 'center' }}
+                    aria-label="View Documentation">
                     <DescriptionIcon 
                       sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
                     <Typography variant="body1">Docs</Typography>
@@ -151,7 +155,8 @@ const Header = ({ toggleDarkMode }) => {
                     <Switch 
                       sx={{ transform: 'scale(1.3)', marginRight: 1, marginLeft: -1 }}
                       checked={darkMode} 
-                      onChange={handleSwitchToggle} />
+                      onChange={handleSwitchToggle}
+                      aria-label={`Toggle ${darkMode ? 'light' : 'dark'} mode`} />
                     <Typography variant="body1">Theme</Typography>
                   </MenuItem>
 
@@ -171,7 +176,8 @@ const Header = ({ toggleDarkMode }) => {
                     placement="bottom">
                     <IconButton 
                       onClick={handleToolsClick} 
-                      edge="start">
+                      edge="start"
+                      aria-label="Go to Tools">
                       <BuildIcon sx={{ margin: 1 }} />
                       <Typography variant="body1">Tools</Typography>
                     </IconButton>
@@ -183,7 +189,8 @@ const Header = ({ toggleDarkMode }) => {
                     placement="bottom">
                     <IconButton 
                       onClick={handleDocsClick} 
-                      edge="start">
+                      edge="start"
+                      aria-label="View Documentation">
                       <DescriptionIcon sx={{ margin: 1 }} />
                       <Typography variant="body1">Docs</Typography>
                     </IconButton>
@@ -200,7 +207,8 @@ const Header = ({ toggleDarkMode }) => {
                     placement="bottom">
                     <Switch 
                     checked={darkMode} 
-                    onChange={handleSwitchToggle} />
+                    onChange={handleSwitchToggle}
+                    aria-label={`Toggle ${darkMode ? 'light' : 'dark'} mode`}  />
                   </Tooltip>
                   <Typography variant="body1">Theme</Typography>
                 </Stack>
@@ -211,6 +219,10 @@ const Header = ({ toggleDarkMode }) => {
       </Toolbar>
     </AppBar>
   );
+};
+
+Header.propTypes = {
+  toggleDarkMode: PropTypes.func.isRequired,
 };
 
 export default Header;
