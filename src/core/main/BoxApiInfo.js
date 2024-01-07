@@ -42,11 +42,14 @@ const BoxApiInfo = ({ baseEndpoint }) => {
     <Box
       sx={{
         padding: 2,
-        marginBottom: 3,
+        marginBottom: 16,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
         border: "1px solid #bbb",
+        borderRadius: 4,
+        backgroundColor: '#f9f9f9',
+        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
       }}
     >
       <Typography variant="subtitle1">Base URL:</Typography>
@@ -57,6 +60,7 @@ const BoxApiInfo = ({ baseEndpoint }) => {
         variant="outlined"
         startIcon={<ContentCopyIcon />}
         onClick={handleCopyClick}
+        sx={{ marginLeft: 2}}
       >
         Copy
       </Button>
