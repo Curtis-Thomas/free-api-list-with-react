@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 
@@ -19,6 +19,15 @@ const BtnRouting = ({
   const handleClick = () => {
     navigate(navigateTo);
   }
+  const hoverColorChange = () => {
+    if(amount > 0){
+      return "black"
+    }
+    else{
+      return "white"
+    }
+  }
+
   return (
     <Box
       sx={{
@@ -41,7 +50,7 @@ const BtnRouting = ({
           borderRadius: "8px",
           transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
-            color: 'black',
+            color: hoverColorChange(),
             backgroundColor: backgroundColor || theme.components.MuiButton.styleOverrides.root.backgroundColor,
             opacity: 1,
             boxShadow: hoverShadow(),
