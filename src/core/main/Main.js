@@ -72,7 +72,13 @@ const Main = () => {
             navigateTo="/DataValidationDash"
           />
           <BtnRouting btnName="Development" navigateTo="/DevelopmentDash" />
-          <BtnRouting btnName="Dictionary" navigateTo="/DictionaryDash" />
+          <BtnRouting 
+            btnName="Dictionary" 
+            navigateTo="/DictionaryDash"
+            backgroundColor="#0077ba"
+            textColor="white"
+            amount="1"
+          />{" "}
           <BtnRouting
             btnName="Documents Production"
             navigateTo="/DocsProdDash"
