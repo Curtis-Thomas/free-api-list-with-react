@@ -85,6 +85,7 @@ import EnvironmentUKCarbonIntensity from "./api/environment/EnvironmentUKCarbonI
 import HealthMakeupApi from "./api/health/HealthMakeupApi";
 import SportsFitnessCityBikes from "./api/sportsFitness/SportsFitnessCityBikes";
 import SportsFitnessBallDontLie from "./api/sportsFitness/SportsFitnessBallDontLie";
+import DictionaryFreeDictionary from "./api/dictionary/DictionaryFreeDictionary";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -168,6 +169,7 @@ const routeConfig = [
 
   // Dictionary Dashboard
   { path: "/DictionaryDash", component: DictionaryDash },
+  {path: "/DictionaryDash/DictionaryFreeDictionary", component: DictionaryFreeDictionary},
 
   // Docs Prod Dashboard
   { path: "/DocsProdDash", component: DocsProdDash },
