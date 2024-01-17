@@ -42,7 +42,7 @@ const BoxApiInfo = ({ baseEndpoint }) => {
     <Box
       sx={{
         padding: 2,
-        marginBottom: 16,
+        marginBottom: 5,
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
