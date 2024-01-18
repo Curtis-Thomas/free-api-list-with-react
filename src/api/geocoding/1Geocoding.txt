@@ -1,3 +1,5 @@
+ checked by Curt 18 Jan 2024
+ 
  {name:'Geocoding',
     list: [
         //https://github.com/kamikazechaser/administrative-divisions-db
@@ -90,7 +92,7 @@
 
         //https://www.zippopotam.us/
         {name:'Zippopotam.us'},
-        
+
         //https://ziptasticapi.com/
         {name:'Ziptastic'},
     ]},

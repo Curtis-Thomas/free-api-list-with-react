@@ -39,19 +39,31 @@ const CardRouting = ({
           height: "100%",
         }}
       >
-        <Typography variant="h5" gutterBottom sx={{ fontWeight: "bold" }}>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{ fontWeight: "bold", height: "17.5%" }}
+        >
           {cardName}
         </Typography>
-        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mb: 1 }}>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 0.5,
+            mb: 1,
+            height: "5%",
+          }}
+        >
           Tags:
           {tags}
         </Box>
-        <Typography variant="body1" gutterBottom>
-          Description: {description}
+        <Typography variant="body1" gutterBottom sx={{ height: "75%" }}>
+          {description}
         </Typography>
         <Typography
           variant="caption"
-          sx={{ alignSelf: "flex-end", color: "primary.main" }}
+          sx={{ alignSelf: "flex-end", color: "primary.main", height: "2.5%" }}
         >
           Difficulty: {difficulty}
         </Typography>
