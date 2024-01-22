@@ -9,10 +9,10 @@ const GeoCodingDash = () => {
       <Grid container spacing={2} sx={{ p: 3 }}>
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <CardRouting
-            cardName="administrive-divisions-db"
-            navigateTo="GeoCodingadministrive-divisions-db"
+            cardName="Administrative Divisions Db"
+            navigateTo="GeocodingAdministrativeDivisionsDb"
             tags="geocoding"
-            description="Administrative divisons of countries as a JSON API over Github"
+            description="Administrative divisions of countries as a JSON API over Github"
             difficulty="Beginner"
           />
         </Grid>

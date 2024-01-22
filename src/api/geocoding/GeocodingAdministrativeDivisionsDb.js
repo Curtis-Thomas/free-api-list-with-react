@@ -5,12 +5,12 @@ import NavBar from "../../navigation/NavBar";
 import ApiPageInfo from "../../core/main/ApiPageInfo";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
 
-const GeoCodingadministrive = () => {
+const GeoCodingAdministrativeDivisionsDb = () => {
   return (
     <Box>
-        <NavBar link="/GeoCodingDash" route2="/administrive-divisions-db" />
+        <NavBar link="/GeoCodingDash" route2="/administrativeDivisionsDb" />
         <ApiPageInfo
-        title={"administrive-divisions-db"}
+        title={"Administrative-Divisions-Db"}
         linkUrl={"https://github.com/kamikazechaser/administrative-divisions-db"}
         description={
           "This repo automagically serves an 'API' over Rawgit (Cloudflare network). No limits and uptime is guranteed."
@@ -25,4 +25,4 @@ const GeoCodingadministrive = () => {
   )
 }
 
-export default GeoCodingadministrive
+export default GeoCodingAdministrativeDivisionsDb
