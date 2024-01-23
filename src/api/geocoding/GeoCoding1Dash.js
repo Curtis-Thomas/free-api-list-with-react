@@ -16,6 +16,15 @@ const GeoCodingDash = () => {
             difficulty="Beginner"
           />
         </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="GeoJS"
+            navigateTo="GeoCodingGeoJS"
+            tags="geocoding"
+            description="A REST/JSON/JSONP IP Geolocation lookup API without any rate limits"
+            difficulty="Beginner"
+          />
+        </Grid>
       </Grid>
     </Box>
   );
