@@ -11,7 +11,7 @@ const EntertainmentDash = () => {
       {/* Cards in a grid layout */}
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Chuck Norris */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="Chuck Norris"
             navigateTo="EntertainmentChuckNorris"
@@ -19,10 +19,10 @@ const EntertainmentDash = () => {
             description="Chuck Norris facts are satirical factoids about martial artist and actor Chuck Norris."
             difficulty="Easy"
           />
-        </Grid>
+       
 
         {/* Card for Corp Buzz Words */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="Corp Buzz Words"
             navigateTo="EntertainmentCorpBuzzWords"
@@ -30,10 +30,10 @@ const EntertainmentDash = () => {
             description="Corporate buzzword generator to randomly pick out phrases, which can help your application get ahead in an industry where spin."
             difficulty="Easy"
           />
-        </Grid>
+       
 
         {/* Card for Techy */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+     
           <CardRouting
             cardName="Techy"
             navigateTo="EntertainmentTechy"
@@ -42,7 +42,7 @@ const EntertainmentDash = () => {
             difficulty="Easy"
           />
         </Grid>
-      </Grid>
+      
     </Box>
   );
 };
