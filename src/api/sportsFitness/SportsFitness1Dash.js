@@ -8,7 +8,7 @@ const SportsFitnessDash = () => {
       <NavBar link="/SportsFitnessDash" />
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Daily Cat Facts */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="BallDontLie"
             navigateTo="SportsFitnessBallDontLie"
@@ -16,8 +16,8 @@ const SportsFitnessDash = () => {
             description="You can use our free API to access NBA related data. No email required. No API key required."
             difficulty="Beginner"
           />
-        </Grid>
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
+        
           <CardRouting
             cardName="City Bikes"
             navigateTo="SportsFitnessCityBikes"
@@ -26,7 +26,7 @@ const SportsFitnessDash = () => {
             difficulty="Medium"
           />
         </Grid>
-      </Grid>
+      
     </Box>
   );
 };

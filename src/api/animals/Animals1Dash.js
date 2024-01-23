@@ -11,7 +11,7 @@ const AnimalDash = () => {
       {/* Cards in a responsive grid layout */}
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Daily Cat Facts */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        
           <CardRouting
             cardName="Daily Cat Facts"
             navigateTo="AnimalsDailyCatFacts"
@@ -19,10 +19,10 @@ const AnimalDash = () => {
             description="Daily cat facts!"
             difficulty="Beginner"
           />
-        </Grid>
+       
 
         {/* Card for Cat as a service */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="Cat as a service"
             navigateTo="AnimalsCataas"
@@ -30,10 +30,10 @@ const AnimalDash = () => {
             description="Cat as a service (CATAAS) is a REST API to spread peace and love (or not) thanks to cats."
             difficulty="Easy"
           />
-        </Grid>
+       
 
         {/* Card for Dog API */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+     
           <CardRouting
             cardName="Dog API"
             navigateTo="AnimalsDogApi"
@@ -41,10 +41,9 @@ const AnimalDash = () => {
             description="The Dog API provides a wealth of information on dog breeds, groups, and fun facts. Access and integrate this data into your website or application with our easy-to-use JSON API."
             difficulty="Easy"
           />
-        </Grid>
-
+        
         {/* Card for Dog */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="Dog"
             navigateTo="AnimalsDog"
@@ -52,10 +51,10 @@ const AnimalDash = () => {
             description="The internet's biggest collection of open source dog pictures."
             difficulty="Easy"
           />
-        </Grid>
+        
 
         {/* Card for Meow Facts */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+        
           <CardRouting
             cardName="Meow Facts"
             navigateTo="AnimalsMeowFacts"
@@ -64,7 +63,7 @@ const AnimalDash = () => {
             difficulty="Easy"
           />
         </Grid>
-      </Grid>
+      
     </Box>
   );
 };

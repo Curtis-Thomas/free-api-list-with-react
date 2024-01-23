@@ -11,7 +11,7 @@ const AnimeDash = () => {
       {/* Cards in a grid layout */}
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Nekos */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+       
           <CardRouting
             cardName="Nekos"
             navigateTo="Nekos"
@@ -19,10 +19,10 @@ const AnimeDash = () => {
             description="nekos.best is a RESTful API serving fully SFW and high quality anime images and GIFs."
             difficulty="Easy"
           />
-        </Grid>
+       
 
         {/* Card for StudioGhibli */}
-        <Grid item xs={12} sm={6} md={4} lg={3}>
+      
           <CardRouting
             cardName="StudioGhibli"
             navigateTo="StudioGhibli"
@@ -31,7 +31,7 @@ const AnimeDash = () => {
             difficulty="Medium"
           />
         </Grid>
-      </Grid>
+      
     </Box>
   );
 };
