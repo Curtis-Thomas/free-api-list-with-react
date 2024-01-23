@@ -86,6 +86,7 @@ import HealthMakeupApi from "./api/health/HealthMakeupApi";
 import SportsFitnessCityBikes from "./api/sportsFitness/SportsFitnessCityBikes";
 import SportsFitnessBallDontLie from "./api/sportsFitness/SportsFitnessBallDontLie";
 import DictionaryFreeDictionary from "./api/dictionary/DictionaryFreeDictionary";
+import GeoCodingAdministrativeDivisionsDb from "./api/geocoding/GeocodingAdministrativeDivisionsDb";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -213,6 +214,7 @@ const routeConfig = [
 
   // GeoCoding Dashboard
   { path: "/GeoCodingDash", component: GeoCodingDash },
+  { path: "/GeoCodingDash/GeoCodingAdministrativeDivisionsDb", component: GeoCodingAdministrativeDivisionsDb },
 
   // Government Dashboard
   { path: "/GovernmentDash", component: GovernmentDash },
