@@ -31,7 +31,7 @@ const CardRouting = ({
       <Card
         sx={{
           p: 2,
-          m: 1,
+          m: 0.10,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -42,7 +42,10 @@ const CardRouting = ({
         <Typography
           variant="h5"
           gutterBottom
-          sx={{ fontWeight: "bold", height: "17.5%" }}
+          sx={{
+            fontWeight: "bold",
+            minHeight: "2rem", // Adjusted to allow for variable title height
+          }}
         >
           {cardName}
         </Typography>
@@ -52,18 +55,19 @@ const CardRouting = ({
             flexWrap: "wrap",
             gap: 0.5,
             mb: 1,
-            height: "5%",
           }}
         >
-          Tags:
+          <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+            Tags:
+          </Typography>
           {tags}
         </Box>
-        <Typography variant="body1" gutterBottom sx={{ height: "75%" }}>
+        <Typography variant="body1" gutterBottom>
           {description}
         </Typography>
         <Typography
           variant="caption"
-          sx={{ alignSelf: "flex-end", color: "primary.main", height: "2.5%" }}
+          sx={{ alignSelf: "flex-end", color: "primary.main" }}
         >
           Difficulty: {difficulty}
         </Typography>
