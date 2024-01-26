@@ -34,9 +34,10 @@ const CardRouting = ({
           m: 0.10,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "flex-start", // Align items at the start of the flex container
           width: "100%",
           height: "100%",
+          position: "relative", // Ensure positioning context for children
         }}
       >
         <Typography
@@ -44,11 +45,16 @@ const CardRouting = ({
           gutterBottom
           sx={{
             fontWeight: "bold",
-            minHeight: "2rem", // Adjusted to allow for variable title height
+            paddingBottom: "20px", // Add padding to the top
+            position: "sticky",
+            top: "0",
+            backgroundColor: "white", // Optional: Set background color if needed
+            zIndex: 1, // Ensure it's above other elements
           }}
         >
           {cardName}
         </Typography>
+
         <Box
           sx={{
             display: "flex",
