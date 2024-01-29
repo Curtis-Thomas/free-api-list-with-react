@@ -88,6 +88,8 @@ import SportsFitnessBallDontLie from "./api/sportsFitness/SportsFitnessBallDontL
 import DictionaryFreeDictionary from "./api/dictionary/DictionaryFreeDictionary";
 import GeoCodingAdministrativeDivisionsDb from "./api/geocoding/GeocodingAdministrativeDivisionsDb";
 import GeoCodingGeoJS from "./api/geocoding/GeoCodingGeoJS";
+import BarLeft from "./components/barLeft/BarLeft";
+import BarRight from "./components/barRight/BarRight";
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -171,7 +173,10 @@ const routeConfig = [
 
   // Dictionary Dashboard
   { path: "/DictionaryDash", component: DictionaryDash },
-  {path: "/DictionaryDash/DictionaryFreeDictionary", component: DictionaryFreeDictionary},
+  {
+    path: "/DictionaryDash/DictionaryFreeDictionary",
+    component: DictionaryFreeDictionary,
+  },
 
   // Docs Prod Dashboard
   { path: "/DocsProdDash", component: DocsProdDash },
@@ -215,7 +220,10 @@ const routeConfig = [
 
   // GeoCoding Dashboard
   { path: "/GeoCodingDash", component: GeoCodingDash },
-  { path: "/GeoCodingDash/GeoCodingAdministrativeDivisionsDb", component: GeoCodingAdministrativeDivisionsDb },
+  {
+    path: "/GeoCodingDash/GeoCodingAdministrativeDivisionsDb",
+    component: GeoCodingAdministrativeDivisionsDb,
+  },
   { path: "/GeoCodingDash/GeoCodingGeoJS", component: GeoCodingGeoJS },
 
   // Government Dashboard
@@ -330,59 +338,64 @@ function App() {
     // Provide the theme based on the current dark mode state
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
-        <Box
-          sx={{
-            minHeight: "100vh",
-            backgroundColor: darkMode
-              ? darkTheme.palette.background.default
-              : lightTheme.palette.background.default,
-          }}
-        >
-          <Box sx={{ minHeight: "5vh" }}>
-            {/* Render the Header component and pass the toggleDarkMode function as a prop */}
-            <Header toggleDarkMode={toggleDarkMode} />
-          </Box>
+        <Box sx={{ minHeight: "5vh" }}>
+          {/* Render the Header component and pass the toggleDarkMode function as a prop */}
+          <Header toggleDarkMode={toggleDarkMode} />
+        </Box>
+        <Box sx={{ display: "flex", width: "100%" }}>
           <Box
             sx={{
-              minHeight: "5vh",
-              padding: 2,
-              "@media screen and (max-width: 600px)": {
-                padding: 1,
-              },
-              "@media screen and (min-width: 601px)": {
-                margin: "0 auto",
-                maxWidth: "960px",
-              },
-            }}
-          ></Box>
-          <Box
-            sx={{
-              minHeight: "85vh",
-              padding: 2,
-              "@media screen and (max-width: 600px)": {
-                padding: 1,
-              },
-              "@media screen and (min-width: 601px)": {
-                margin: "0 auto",
-                maxWidth: "960px",
-              },
+              width: "25%",
+              position: "fixed",
+              pl: 5,
+              pt: 5,
+              display: { xs: "none", sm: "none", md: "block" },
             }}
           >
-            <Routes>
-              {/* Render the routes based on the routeConfig */}
-              {routeConfig.map((route) => (
-                <Route
-                  key={route.path}
-                  path={route.path}
-                  element={<route.component />}
-                />
-              ))}
-            </Routes>
+            <BarLeft />
           </Box>
-          <Box sx={{ height: "5vh" }}>
-            {/* Render the Footer component */}
-            <Footer />
+
+          <Box
+            sx={{
+              minHeight: "100vh",
+              width: { xs: "100%", sm: "100%", md: "50%" },
+              marginLeft: { xs: "0%", sm: "0%", md: "25%" },
+
+              backgroundColor: darkMode
+                ? darkTheme.palette.background.default
+                : lightTheme.palette.background.default,
+            }}
+          >
+            <Box>
+              <Routes>
+                {/* Render the routes based on the routeConfig */}
+                {routeConfig.map((route) => (
+                  <Route
+                    key={route.path}
+                    path={route.path}
+                    element={<route.component />}
+                  />
+                ))}
+              </Routes>
+            </Box>
           </Box>
+
+          <Box
+            sx={{
+              width: "25%",
+              position: "fixed",
+              marginLeft: "75%",
+
+              display: { xs: "none", sm: "none", md: "block" },
+              pt: 5,
+            }}
+          >
+            <BarRight />
+          </Box>
+        </Box>
+        <Box sx={{ height: "5vh" }}>
+          {/* Render the Footer component */}
+          <Footer />
         </Box>
       </Router>
     </ThemeProvider>

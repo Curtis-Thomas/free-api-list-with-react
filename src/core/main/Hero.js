@@ -16,7 +16,6 @@ function Hero() {
       sx={{
         width: "100%",
         backgroundColor: "#24292e",
-        padding: 2,
       }}
     >
       <Grid container alignItems="center" justifyContent="center" spacing={2}>
