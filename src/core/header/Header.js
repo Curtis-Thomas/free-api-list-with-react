@@ -19,10 +19,6 @@ import DescriptionIcon from "@mui/icons-material/Description";
 const Header = () => {
   const theme = useTheme();
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
   const navigate = useNavigate();
 
   const isMobile = useMediaQuery("(max-width: 712px)");
