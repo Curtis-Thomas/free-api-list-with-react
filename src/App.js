@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Box, createTheme, ThemeProvider, useTheme } from "@mui/material";
+import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Header from "./core/header/Header";
 import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
