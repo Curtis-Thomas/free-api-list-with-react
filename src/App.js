@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
-import { Box, createTheme, ThemeProvider } from "@mui/material";
+import { Box, createTheme, ThemeProvider, useTheme } from "@mui/material";
 import Header from "./core/header/Header";
 import Main from "./core/main/Main";
 import Footer from "./core/footer/Footer";
@@ -9,6 +9,15 @@ import Documentation from "./documentation/Documentation";
 
 import theme from "../src/themes/theme";
 import themeDark from "../src/themes/themeDark";
+import themeDracula from "./themes/themeDracula";
+import themeCobalt from "./themes/themeCobalt";
+import themeGruvBox from "./themes/themeGruvBox";
+import themeHighContrast from "./themes/themeHighContrast";
+import themeMero from "./themes/themeMero";
+import themeOneDark from "./themes/themeOneDark";
+import themeRadical from "./themes/themeRadical";
+import themeSynthwave from "./themes/themeSynthwave";
+import themeTokyoNight from "./themes/themeTokyoNight";
 
 // Import all the components for different routes
 import AnimalDash from "./api/animals/Animals1Dash";
@@ -90,6 +99,32 @@ import GeoCodingAdministrativeDivisionsDb from "./api/geocoding/GeocodingAdminis
 import GeoCodingGeoJS from "./api/geocoding/GeoCodingGeoJS";
 import BarLeft from "./components/barLeft/BarLeft";
 import BarRight from "./components/barRight/BarRight";
+
+const lightTheme = createTheme(theme);
+const darkTheme = createTheme(themeDark);
+const draculaTheme = createTheme(themeDracula);
+const cobaltTheme = createTheme(themeCobalt);
+const gruvboxTheme = createTheme(themeGruvBox);
+const highContrastTheme = createTheme(themeHighContrast);
+const meroTheme = createTheme(themeMero);
+const oneDarkTheme = createTheme(themeOneDark);
+const radicalTheme = createTheme(themeRadical);
+const synthwaveTheme = createTheme(themeSynthwave);
+const tokyoNightTheme = createTheme(themeTokyoNight);
+
+const themes = {
+  light: lightTheme,
+  dark: darkTheme,
+  dracula: draculaTheme,
+  cobalt: cobaltTheme,
+  gruvbox: gruvboxTheme,
+  highcontrast: highContrastTheme,
+  mero: meroTheme,
+  onedark: oneDarkTheme,
+  radical: radicalTheme,
+  synthwave: synthwaveTheme,
+  tokyonight: tokyoNightTheme,
+};
 
 /**
  * This array of objects defines the routes to be rendered on the Page.
@@ -322,33 +357,39 @@ const routeConfig = [
  * This the main Function which shows all the apis
  * @returns
  */
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
 
-  // Function to toggle dark mode
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
+function App() {
+  const [currentTheme, setCurrentTheme] = useState("light");
+
+  const activeTheme = themes[currentTheme];
+
+  const handleThemeChange = (selectedTheme) => {
+    setCurrentTheme(selectedTheme);
+    // Perform any other actions related to theme change if needed
   };
 
-  // Create light and dark themes using the imported theme configurations
-  const lightTheme = createTheme(theme);
-  const darkTheme = createTheme(themeDark);
-
   return (
-    // Provide the theme based on the current dark mode state
-    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+    <ThemeProvider theme={activeTheme}>
       <Router>
-        <Box sx={{ minHeight: "5vh" }}>
-          {/* Render the Header component and pass the toggleDarkMode function as a prop */}
-          <Header toggleDarkMode={toggleDarkMode} />
+        <Box
+          sx={{
+            minHeight: "5vh",
+          }}
+        >
+          {/* Pass onThemeChange to Header component */}
+          <Header />
         </Box>
-        <Box sx={{ display: "flex", width: "100%" }}>
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+          }}
+        >
           <Box
             sx={{
               width: "25%",
               position: "fixed",
-              pl: 5,
-              pt: 5,
+
               display: { xs: "none", sm: "none", md: "block" },
             }}
           >
@@ -360,10 +401,6 @@ function App() {
               minHeight: "100vh",
               width: { xs: "100%", sm: "100%", md: "50%" },
               marginLeft: { xs: "0%", sm: "0%", md: "25%" },
-
-              backgroundColor: darkMode
-                ? darkTheme.palette.background.default
-                : lightTheme.palette.background.default,
             }}
           >
             <Box>
@@ -387,10 +424,12 @@ function App() {
               marginLeft: "75%",
 
               display: { xs: "none", sm: "none", md: "block" },
-              pt: 5,
             }}
           >
-            <BarRight />
+            <BarRight
+              onThemeChange={handleThemeChange}
+              currentTheme={currentTheme}
+            />
           </Box>
         </Box>
         <Box sx={{ height: "5vh" }}>

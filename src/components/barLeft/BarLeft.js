@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import BarLeftSearchBox from "./components/BarLeftSearchBox";
 import BarLeftSearchBoxBtn from "./components/BarLeftSearchBoxBtn";
 
 function BarLeft() {
+  const theme = useTheme();
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: theme.palette.background.default,
+        pl: 5,
+        paddingTop: "5vh",
+        height: "90vh",
+      }}
+    >
       <Typography>Left bar search box</Typography>
       <Box sx={{ position: "fixed" }}>
         <BarLeftSearchBox />

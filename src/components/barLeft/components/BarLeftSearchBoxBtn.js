@@ -1,8 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button } from "@mui/material";
+import { Box, Button, useTheme } from "@mui/material";
 
 const BarLeftSearchBoxBtn = ({ btnName, navigateTo }) => {
+  const theme = useTheme();
+
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -21,7 +23,7 @@ const BarLeftSearchBoxBtn = ({ btnName, navigateTo }) => {
         onClick={handleClick}
         sx={{
           border: "none",
-          backgroundColor: "white",
+          backgroundColor: theme.palette.background.default,
         }}
       >
         {btnName}

@@ -1,18 +1,18 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 import BtnRouting from "../../components/BtnRouting";
 import NavBar from "../../navigation/NavBar";
 import Hero from "./Hero";
 
 const Main = () => {
+  const theme = useTheme();
   return (
     // Currently 51 total catagories, Main will have 3 column of 17
-
     <Box
       sx={{
         display: "flex",
-
+        backgroundColor: theme.palette.background.default,
         width: "100%",
-        marginTop: 5,
+        pt: 5,
       }}
     >
       <Box
@@ -21,9 +21,7 @@ const Main = () => {
         }}
       >
         <Hero />
-
         <NavBar />
-
         <Grid container spacing={0} sx={{ padding: 2 }}>
           {/* Column 1 */}
           <Grid item xs={12} sm={4}>

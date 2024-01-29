@@ -2,23 +2,21 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 
-
-
 const BtnRouting = ({
   btnName,
   navigateTo,
   backgroundColor,
   textColor,
-  amount = 0
+  amount = 0,
 }) => {
   const navigate = useNavigate();
   const theme = useTheme();
   const hoverShadow = function () {
-    return "0px 4px 10px rgba(0, 119, 186, 1)" // Dark mode shadow
+    return "0px 4px 10px rgba(0, 119, 186, 1)"; // Dark mode shadow
   };
   const handleClick = () => {
     navigate(navigateTo);
-  }
+  };
   return (
     <Box
       sx={{
@@ -28,21 +26,21 @@ const BtnRouting = ({
         marginBottom: 2,
         marginLeft: "auto",
         marginRight: "auto",
-      }
-      }
+      }}
     >
       <Button
         fullWidth
         onClick={handleClick}
         sx={{
-          color: textColor || theme.components.MuiButton.styleOverrides.root.color,
-          backgroundColor: backgroundColor || theme.components.MuiButton.styleOverrides.root.backgroundColor,
+          color: theme.palette.primary.main,
+          backgroundColor: theme.palette.primary.main,
           padding: "12px 24px",
           borderRadius: "8px",
           transition: "background-color 0.3s ease, opacity 0.3s ease",
           "&:hover": {
-            color: 'black',
-            backgroundColor: backgroundColor || theme.components.MuiButton.styleOverrides.root.backgroundColor,
+            color: "black",
+            backgroundColor:
+              theme.components.MuiButton.styleOverrides.root.backgroundColor,
             opacity: 1,
             boxShadow: hoverShadow(),
           },
@@ -56,8 +54,8 @@ const BtnRouting = ({
           {amount && <span style={{ paddingLeft: 0.5 }}>{amount}</span>}
         </Typography>
       </Button>
-    </Box >
+    </Box>
   );
-}
+};
 
 export default BtnRouting;

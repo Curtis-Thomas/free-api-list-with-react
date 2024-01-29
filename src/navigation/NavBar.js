@@ -1,10 +1,18 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Typography } from "@mui/material";
+import { AppBar, Toolbar, Box, Typography, useTheme } from "@mui/material";
 import Link from "./Link";
 
 const NavBar = ({ link, route2 }) => {
+  const theme = useTheme();
+
   return (
-    <AppBar position="static" sx={{ marginBottom: 4 }}>
+    <AppBar
+      position="static"
+      sx={{
+        marginBottom: 4,
+        backgroundColor: theme.palette.background.default,
+      }}
+    >
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: "flex" }}>
           <Link label="Home" to={"/"} />

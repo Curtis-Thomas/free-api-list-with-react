@@ -4,24 +4,24 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#000000",
+      main: "#0077ba",
     },
     secondary: {
-      light: "#000000",
-      main: "#000000",
-      contrastText: "#000000",
+      light: "#33c9dc",
+      main: "#00bcd4",
+      contrastText: "#ffffff",
     },
     background: {
-      default: "#151515",
+      default: "#0D1117",
     },
     text: {
-      primary: "#000000",
-      secondary: "#000000",
+      primary: "#0077ba",
+      secondary: "#0077ba",
     },
   },
   typography: {
     common: {
-      color: "#000000",
+      color: "#373d3f",
     },
     body1: {},
     h1: {},
@@ -38,16 +38,16 @@ const theme = createTheme({
           textTransform: "none",
           borderRadius: 0,
           padding: "8px 16px",
-          color: "#000000",
-          backgroundColor: "#000000",
-          borderColor: "#000000",
+          color: "#0077ba",
+          backgroundColor: "#ffffff",
+          borderColor: "#0077ba",
         },
       },
     },
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: "#000000",
+          backgroundColor: "#bbb",
         },
       },
     },

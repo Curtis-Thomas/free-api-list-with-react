@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Box, Button, Typography, Grid } from "@mui/material";
+import { Box, Button, Typography, Grid, useTheme } from "@mui/material";
 import GitHubButton from "react-github-btn";
 import DescriptionIcon from "@mui/icons-material/Description";
 
 function Hero() {
+  const theme = useTheme();
+
   const navigate = useNavigate();
 
   const handleDocsClick = () => {
@@ -15,12 +17,15 @@ function Hero() {
     <Box
       sx={{
         width: "100%",
-        backgroundColor: "#24292e",
+        backgroundColor: theme.palette.background.default,
       }}
     >
       <Grid container alignItems="center" justifyContent="center" spacing={2}>
         <Grid item xs={12} md={6} display="flex" justifyContent="center">
-          <Typography variant="h6" sx={{ marginRight: 2, color: "#BBBBBB" }}>
+          <Typography
+            variant="h6"
+            sx={{ marginRight: 2, color: theme.palette.text.primary }}
+          >
             GitHub
           </Typography>
           <GitHubButton
@@ -39,16 +44,16 @@ function Hero() {
             onClick={handleDocsClick}
             startIcon={<DescriptionIcon />}
             sx={{
-              border: "1px solid #BBBBBB",
-              color: "#BBBBBB",
-              backgroundColor: "#343a40",
+              border: "1px solid #000000",
+              color: theme.palette.text.primary,
+              backgroundColor: theme.palette.background.default,
               "&:hover": {
-                color: "white",
-                borderColor: "white",
+                color: theme.palette.text.secondary,
+                borderColor: theme.palette.text.secondary,
               },
             }}
           >
-            <Typography variant="h6" sx={{ color: "#BBBBBB" }}>
+            <Typography variant="h6" sx={{ color: theme.palette.text.primary }}>
               Docs
             </Typography>
           </Button>
@@ -56,7 +61,11 @@ function Hero() {
 
         <Grid item xs={12} sx={{ textAlign: "center", paddingTop: 4 }}>
           <Box>
-            <Typography component="h1" variant="h4" color={"#BBBBBB"}>
+            <Typography
+              component="h1"
+              variant="h4"
+              color={theme.palette.text.primary}
+            >
               Discover the Best Free APIs - Your Ultimate Open-Source API
               Directory
             </Typography>
@@ -64,7 +73,7 @@ function Hero() {
               component="h2"
               variant="h5"
               sx={{ paddingTop: 1 }}
-              color={"#BBBBBB"}
+              color={theme.palette.text.secondary}
             >
               Seamlessly Integrate with Diverse and Reliable Free APIs
             </Typography>
@@ -72,7 +81,7 @@ function Hero() {
               component="body1"
               variant="body1"
               sx={{ paddingTop: 2 }}
-              color={"#BBBBBB"}
+              color={theme.palette.text.secondary}
             >
               Welcome to our comprehensive Free API List, the go-to resource for
               developers and businesses seeking reliable, open-source APIs. Our
