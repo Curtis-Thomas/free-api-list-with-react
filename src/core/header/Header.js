@@ -25,12 +25,10 @@ const Header = () => {
 
   const handleToolsClick = () => {
     navigate("Tools");
-    handleMenuClose();
   };
 
   const handleDocsClick = () => {
     navigate("Docs");
-    handleMenuClose();
   };
 
   return (
