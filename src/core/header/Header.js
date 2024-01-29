@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import {
-  AppBar,
   Switch,
   Toolbar,
   Typography,
@@ -13,11 +12,12 @@ import {
   Hidden,
   useMediaQuery,
   Divider,
-} from '@mui/material';
+  Box,
+} from "@mui/material";
 
-import MenuIcon from '@mui/icons-material/Menu';
-import BuildIcon from '@mui/icons-material/Build';
-import DescriptionIcon from '@mui/icons-material/Description';
+import MenuIcon from "@mui/icons-material/Menu";
+import BuildIcon from "@mui/icons-material/Build";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 /* The Header component represents the application's navigation bar.
    It includes a title "Free API List" with a link to the home page.
@@ -36,13 +36,13 @@ const Header = ({ toggleDarkMode }) => {
   const [darkMode, setDarkMode] = useState(false);
 
   // Check if the device width is mobile
-  const isMobile = useMediaQuery('(max-width: 712px)');
+  const isMobile = useMediaQuery("(max-width: 712px)");
 
   /**
    * Handles the click event of the "Tools" button and navigates to the "Tools" route.
    */
   const handleToolsClick = () => {
-    navigate('Tools');
+    navigate("Tools");
     handleMenuClose();
   };
 
@@ -50,7 +50,7 @@ const Header = ({ toggleDarkMode }) => {
    * Handles the click event of the "Docs" button and navigates to the "Docs" route.
    */
   const handleDocsClick = () => {
-    navigate('Docs');
+    navigate("Docs");
     handleMenuClose();
   };
 
@@ -78,37 +78,34 @@ const Header = ({ toggleDarkMode }) => {
   };
 
   return (
-    <AppBar position="fixed">
+    <Box
+      position="fixed"
+      width="100%"
+      sx={{ backgroundColor: "#BBBBBB", zIndex: 2 }}
+    >
       <Toolbar>
         <div
           style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            width: '100%',
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "100%",
           }}
         >
           <div>
             <Typography variant="h6" component="div">
-              <Link
-                to="/"
-                style={{ textDecoration: 'none', color: 'inherit' }}>
+              <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                 Free API List
               </Link>
             </Typography>
           </div>
 
-
-          <div style={{ textAlign: 'right' }}>
-
+          <div style={{ textAlign: "right" }}>
             {/* Render different components based on screen size */}
             {isMobile ? (
               <Hidden mdUp>
-
                 {/* Mobile Menu */}
-                <IconButton 
-                  onClick={handleMenuClick} 
-                  edge="start">
+                <IconButton onClick={handleMenuClick} edge="start">
                   <MenuIcon />
                 </IconButton>
 
@@ -118,89 +115,91 @@ const Header = ({ toggleDarkMode }) => {
                   onClose={handleMenuClose}
                   PaperProps={{
                     style: {
-                      width: '100%',
+                      width: "100%",
                     },
                   }}
                   fullWidth={true}
                   anchorOrigin={{
-                    vertical: 'bottom',
-                    horizontal: 'left',
+                    vertical: "bottom",
+                    horizontal: "left",
                   }}
                 >
                   {/* Menu Items for Tools, Docs, and Theme Switch */}
 
                   {/* Menu item 1 */}
-                  <MenuItem 
+                  <MenuItem
                     onClick={handleToolsClick}
-                    style={{ alignItems: 'center' }}>
-                    <BuildIcon sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
+                    style={{ alignItems: "center" }}
+                  >
+                    <BuildIcon
+                      sx={{
+                        transform: "scale(1.5)",
+                        marginRight: 2,
+                        marginLeft: 1,
+                      }}
+                    />
                     <Typography variant="body1">Tools</Typography>
                   </MenuItem>
-                    
+
                   {/* Menu item 2 */}
-                  <MenuItem 
+                  <MenuItem
                     onClick={handleDocsClick}
-                    style={{ alignItems: 'center' }}>
-                    <DescriptionIcon 
-                      sx={{ transform: 'scale(1.5)', marginRight: 2, marginLeft: 1 }} />
+                    style={{ alignItems: "center" }}
+                  >
+                    <DescriptionIcon
+                      sx={{
+                        transform: "scale(1.5)",
+                        marginRight: 2,
+                        marginLeft: 1,
+                      }}
+                    />
                     <Typography variant="body1">Docs</Typography>
                   </MenuItem>
 
                   {/* Menu item 3 */}
-                  <MenuItem style={{ alignItems: 'center' }}>
-                    <Switch 
-                      sx={{ transform: 'scale(1.3)', marginRight: 1, marginLeft: -1 }}
-                      checked={darkMode} 
-                      onChange={handleSwitchToggle} />
+                  <MenuItem style={{ alignItems: "center" }}>
+                    <Switch
+                      sx={{
+                        transform: "scale(1.3)",
+                        marginRight: 1,
+                        marginLeft: -1,
+                      }}
+                      checked={darkMode}
+                      onChange={handleSwitchToggle}
+                    />
                     <Typography variant="body1">Theme</Typography>
                   </MenuItem>
-
                 </Menu>
               </Hidden>
             ) : (
               <Hidden smDown>
-
                 {/* Desktop Menu */}
-                <Stack
-                  direction="row"
-                  alignItems="center">
-
+                <Stack direction="row" alignItems="center">
                   {/* Tooltip for Tools */}
-                  <Tooltip
-                    title="Go to Tools"
-                    placement="bottom">
-                    <IconButton 
-                      onClick={handleToolsClick} 
-                      edge="start">
+                  <Tooltip title="Go to Tools" placement="bottom">
+                    <IconButton onClick={handleToolsClick} edge="start">
                       <BuildIcon sx={{ margin: 1 }} />
                       <Typography variant="body1">Tools</Typography>
                     </IconButton>
                   </Tooltip>
 
                   {/* Tooltip for Docs */}
-                  <Tooltip 
-                    title="View Documentation"
-                    placement="bottom">
-                    <IconButton 
-                      onClick={handleDocsClick} 
-                      edge="start">
+                  <Tooltip title="View Documentation" placement="bottom">
+                    <IconButton onClick={handleDocsClick} edge="start">
                       <DescriptionIcon sx={{ margin: 1 }} />
                       <Typography variant="body1">Docs</Typography>
                     </IconButton>
                   </Tooltip>
 
                   {/* Divider */}
-                  <Divider 
-                  orientation="vertical" 
-                  flexItem sx={{ margin: 1 }}/>
-
+                  <Divider orientation="vertical" flexItem sx={{ margin: 1 }} />
 
                   {/* Tooltip for Theme Switch */}
-                  <Tooltip title={`Switch to ${darkMode ? 'light' : 'dark'} mode`}
-                    placement="bottom">
-                    <Switch 
-                    checked={darkMode} 
-                    onChange={handleSwitchToggle} />
+                  <Tooltip
+                    title={`Switch to ${darkMode ? "light" : "dark"} mode`}
+                    placement="bottom"
+                  >
+                    <Switch checked={darkMode} onChange={handleSwitchToggle} />
                   </Tooltip>
                   <Typography variant="body1">Theme</Typography>
                 </Stack>
@@ -209,7 +208,7 @@ const Header = ({ toggleDarkMode }) => {
           </div>
         </div>
       </Toolbar>
-    </AppBar>
+    </Box>
   );
 };
 
