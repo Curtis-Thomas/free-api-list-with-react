@@ -24,6 +24,12 @@ const BarLeftSearchBoxBtn = ({ btnName, navigateTo }) => {
         sx={{
           border: "none",
           backgroundColor: theme.palette.background.default,
+          color: theme.palette.text.secondary,
+          transition: "none",
+
+          "&:hover": {
+            opacity: 0.8,
+          },
         }}
       >
         {btnName}

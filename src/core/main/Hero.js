@@ -44,12 +44,13 @@ function Hero() {
             onClick={handleDocsClick}
             startIcon={<DescriptionIcon />}
             sx={{
-              border: "1px solid #000000",
+              border: "1px solid",
               color: theme.palette.text.primary,
               backgroundColor: theme.palette.background.default,
               "&:hover": {
-                color: theme.palette.text.secondary,
                 borderColor: theme.palette.text.secondary,
+                opacity: 0.8,
+                border: "1px dashed",
               },
             }}
           >

@@ -26,7 +26,9 @@ function BarRight({ onThemeChange, currentTheme }) {
         pl: 5,
       }}
     >
-      <Typography variant="h6">Choose Color Theme </Typography>
+      <Typography variant="h6" sx={{ color: theme.palette.text.primary }}>
+        Choose Color Theme{" "}
+      </Typography>
 
       <FormControl>
         <FormLabel id="demo-radio-buttons-group-label">
@@ -37,6 +39,7 @@ function BarRight({ onThemeChange, currentTheme }) {
           value={currentTheme}
           onChange={handleChange}
           name="radio-buttons-group"
+          sx={{ color: theme.palette.text.secondary }}
         >
           <FormControlLabel value="light" control={<Radio />} label="Light" />
           <FormControlLabel value="dark" control={<Radio />} label="Dark" />

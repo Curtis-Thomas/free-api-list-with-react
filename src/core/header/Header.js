@@ -54,7 +54,7 @@ const Header = () => {
                 to="/"
                 style={{
                   textDecoration: "none",
-                  color: theme.palette.primary.main,
+                  color: theme.palette.text.primary,
                 }}
               >
                 Free API List

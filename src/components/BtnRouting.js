@@ -11,9 +11,7 @@ const BtnRouting = ({
 }) => {
   const navigate = useNavigate();
   const theme = useTheme();
-  const hoverShadow = function () {
-    return "0px 4px 10px rgba(0, 119, 186, 1)"; // Dark mode shadow
-  };
+
   const handleClick = () => {
     navigate(navigateTo);
   };
@@ -32,17 +30,15 @@ const BtnRouting = ({
         fullWidth
         onClick={handleClick}
         sx={{
-          color: theme.palette.primary.main,
-          backgroundColor: theme.palette.primary.main,
+          color: theme.palette.text.primary,
+          backgroundColor: theme.palette.background.default,
           padding: "12px 24px",
           borderRadius: "8px",
-          transition: "background-color 0.3s ease, opacity 0.3s ease",
+          border: "1px solid",
           "&:hover": {
-            color: "black",
-            backgroundColor:
-              theme.components.MuiButton.styleOverrides.root.backgroundColor,
-            opacity: 1,
-            boxShadow: hoverShadow(),
+            borderColor: theme.palette.text.secondary,
+            opacity: 0.8,
+            border: "1px dashed",
           },
         }}
       >

@@ -1,15 +1,23 @@
 import React from "react";
-import { Box, Input, InputAdornment, IconButton } from "@mui/material";
+import {
+  Box,
+  Input,
+  InputAdornment,
+  IconButton,
+  useTheme,
+} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 function BarLeftSearchBox() {
+  const theme = useTheme();
+
   return (
     <Box>
       <Input
         placeholder="Search (NOT IN USE)"
         startAdornment={
           <InputAdornment position="start">
-            <IconButton>
+            <IconButton sx={{ color: theme.palette.text.primary }}>
               <SearchIcon />
             </IconButton>
           </InputAdornment>

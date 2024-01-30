@@ -1,11 +1,19 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 
 import NavBar from "../../navigation/NavBar";
 import CardRouting from "../../components/CardRouting";
 
 const EnvironmentDash = () => {
+  const theme = useTheme();
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.default,
+        minHeight: "110vh",
+      }}
+    >
       {/* Navigation bar */}
       <NavBar link="/EnvironmentDash" />
       {/* Cards in a grid layout */}

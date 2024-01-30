@@ -17,11 +17,15 @@ function BarLeft() {
         height: "90vh",
       }}
     >
-      <Typography>Left bar search box</Typography>
+      <Typography sx={{ color: theme.palette.text.primary }}>
+        Left bar search box
+      </Typography>
       <Box sx={{ position: "fixed" }}>
         <BarLeftSearchBox />
 
-        <Typography>Overview</Typography>
+        <Typography sx={{ color: theme.palette.text.primary }}>
+          Overview
+        </Typography>
 
         <BarLeftSearchBoxBtn btnName="Home" navigateTo="/" />
         <BarLeftSearchBoxBtn btnName="Tools" navigateTo="/Tools" />
@@ -36,8 +40,12 @@ function BarLeft() {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Typography>Getting Started</Typography>
-        <Typography>API Categories</Typography>
+        <Typography sx={{ color: theme.palette.text.primary }}>
+          Getting Started
+        </Typography>
+        <Typography sx={{ color: theme.palette.text.primary }}>
+          API Categories
+        </Typography>
         <BarLeftSearchBoxBtn
           btnName="Animals"
           navigateTo="/AnimalsDash"
