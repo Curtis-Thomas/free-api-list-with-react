@@ -31,39 +31,49 @@ const CardRouting = ({
       <Card
         sx={{
           p: 2,
-          m: 1,
+          m: 0.10,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "flex-start", // Align items at the start of the flex container
           width: "100%",
           height: "100%",
+          position: "relative", // Ensure positioning context for children
         }}
       >
         <Typography
           variant="h5"
           gutterBottom
-          sx={{ fontWeight: "bold", height: "17.5%" }}
+          sx={{
+            fontWeight: "bold",
+            paddingBottom: "20px", // Add padding to the top
+            position: "sticky",
+            top: "0",
+            backgroundColor: "white", // Optional: Set background color if needed
+            zIndex: 1, // Ensure it's above other elements
+          }}
         >
           {cardName}
         </Typography>
+
         <Box
           sx={{
             display: "flex",
             flexWrap: "wrap",
             gap: 0.5,
             mb: 1,
-            height: "5%",
           }}
         >
-          Tags:
+          <Typography variant="body2" sx={{ fontWeight: "bold" }}>
+            Tags:
+          </Typography>
           {tags}
         </Box>
-        <Typography variant="body1" gutterBottom sx={{ height: "75%" }}>
+        <Typography variant="body1" gutterBottom>
           {description}
         </Typography>
         <Typography
           variant="caption"
-          sx={{ alignSelf: "flex-end", color: "primary.main", height: "2.5%" }}
+          sx={{ alignSelf: "flex-end", color: "primary.main" }}
         >
           Difficulty: {difficulty}
         </Typography>
