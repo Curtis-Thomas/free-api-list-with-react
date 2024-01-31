@@ -2,7 +2,6 @@ import {
   Box,
   FormControl,
   FormControlLabel,
-  FormLabel,
   Radio,
   RadioGroup,
   Typography,
@@ -31,9 +30,6 @@ function BarRight({ onThemeChange, currentTheme }) {
       </Typography>
 
       <FormControl>
-        <FormLabel id="demo-radio-buttons-group-label">
-          Color Theme(Work In Progress)
-        </FormLabel>
         <RadioGroup
           aria-labelledby="demo-radio-buttons-group-label"
           value={currentTheme}
@@ -52,33 +48,33 @@ function BarRight({ onThemeChange, currentTheme }) {
           <FormControlLabel
             value="gruvbox"
             control={<Radio />}
-            label="gruvbox"
+            label="Gruvbox"
           />
           <FormControlLabel
             value="highcontrast"
             control={<Radio />}
-            label="highcontrast"
+            label="High Contrast"
           />
-          <FormControlLabel value="mero" control={<Radio />} label="mero" />
+          <FormControlLabel value="mero" control={<Radio />} label="Mero" />
           <FormControlLabel
             value="onedark"
             control={<Radio />}
-            label="onedark"
+            label="One Dark"
           />
           <FormControlLabel
             value="radical"
             control={<Radio />}
-            label="radical"
+            label="Radical"
           />
           <FormControlLabel
             value="synthwave"
             control={<Radio />}
-            label="synthwave"
+            label="Synth Wave"
           />
           <FormControlLabel
             value="tokyonight"
             control={<Radio />}
-            label="tokyonight"
+            label="Tokyo Night"
           />
         </RadioGroup>
       </FormControl>
