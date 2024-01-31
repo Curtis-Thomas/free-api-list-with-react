@@ -1,10 +1,19 @@
 import React, { useState } from "react";
-import { Typography, Box, Button, Snackbar, IconButton } from "@mui/material";
+import {
+  Typography,
+  Box,
+  Button,
+  Snackbar,
+  IconButton,
+  useTheme,
+} from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import CloseIcon from "@mui/icons-material/Close";
 
 // A functional component to display API information and allow copying the base URL to the clipboard.
 const BoxApiInfo = ({ baseEndpoint }) => {
+  const theme = useTheme();
+
   // State to control the visibility of the Snackbar (notification) when URL is copied.
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
@@ -56,16 +65,18 @@ const BoxApiInfo = ({ baseEndpoint }) => {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        border: "1px solid #bbb",
         borderRadius: 4,
-        backgroundColor: '#f9f9f9',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+        border: "solid 1px",
+        borderColor: theme.palette.text.primary,
       }}
     >
       {/* Display "Base URL:" label */}
       <Typography variant="subtitle1">Base URL:</Typography>
       {/* Display the actual base endpoint */}
-      <Typography variant="body2" sx={{ marginRight: 2 }}>
+      <Typography
+        variant="body2"
+        sx={{ marginRight: 2, color: theme.palette.text.secondary }}
+      >
         {baseEndpoint}
       </Typography>
       {/* Button to trigger the copy functionality */}
@@ -73,7 +84,17 @@ const BoxApiInfo = ({ baseEndpoint }) => {
         variant="outlined"
         startIcon={<ContentCopyIcon />}
         onClick={handleCopyClick}
-        sx={{ marginLeft: 2}}
+        sx={{
+          marginLeft: 2,
+          backgroundColor: theme.palette.background.default,
+          borderColor: theme.palette.text.primary,
+          color: theme.palette.text.secondary,
+          "&:hover": {
+            borderColor: theme.palette.text.secondary,
+            opacity: 0.8,
+            border: "1px dashed",
+          },
+        }}
       >
         Copy
       </Button>
