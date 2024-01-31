@@ -1,8 +1,17 @@
 import React from "react";
-import { Box, Typography, Button, Snackbar, IconButton } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Snackbar,
+  IconButton,
+  useTheme,
+} from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Endpoints = ({ header, endpoint, description }) => {
+  const theme = useTheme();
+
   const [openSnackbar, setOpenSnackbar] = React.useState(false);
 
   const handleCopyEndpoint = () => {
@@ -41,7 +50,7 @@ const Endpoints = ({ header, endpoint, description }) => {
   );
 
   return (
-    <Box sx={{ border: "solid 1px #bbb", padding: 2, marginBottom: 2 }}>
+    <Box sx={{ border: "solid 1px", padding: 2, marginBottom: 2 }}>
       <Box
         sx={{
           display: "flex",
@@ -51,7 +60,23 @@ const Endpoints = ({ header, endpoint, description }) => {
         }}
       >
         <Typography variant="subtitle1">{header}</Typography>
-        <Button variant="outlined" onClick={handleCopyEndpoint}>
+        <Button
+          variant="outlined"
+          onClick={handleCopyEndpoint}
+          sx={{
+            color: theme.palette.text.secondary,
+            backgroundColor: theme.palette.background.default,
+            padding: "12px 24px",
+            borderRadius: "8px",
+
+            border: "1px solid",
+            "&:hover": {
+              color: theme.palette.text.primary,
+              opacity: 0.8,
+              border: "1px dashed",
+            },
+          }}
+        >
           Copy Endpoint
         </Button>
       </Box>
