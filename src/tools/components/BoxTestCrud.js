@@ -8,10 +8,13 @@ import {
   MenuItem,
   FormControl,
   InputLabel,
+  useTheme,
 } from "@mui/material";
 import axios from "axios";
 
 const BoxTestCrud = ({ url }) => {
+  const theme = useTheme();
+
   const [response, setResponse] = useState("");
   const [crudOption, setCrudOption] = useState("get");
   const [urlValue, setUrl] = useState(url || "");
@@ -35,7 +38,7 @@ const BoxTestCrud = ({ url }) => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #bbb", padding: 2, margin: 2 }}>
+    <Box sx={{ border: "solid 1px ", padding: 2, margin: 2 }}>
       <Typography variant="h6" sx={{ marginBottom: 2 }}>
         Testing Box
       </Typography>
@@ -78,10 +81,19 @@ const BoxTestCrud = ({ url }) => {
       />
 
       <Button
-        variant="contained"
-        color="primary"
+        variant="outlined"
         onClick={fetchAPI}
-        sx={{ marginBottom: 2 }}
+        sx={{
+          marginBottom: 2,
+          backgroundColor: theme.palette.background.default,
+          borderColor: theme.palette.text.primary,
+          color: theme.palette.text.secondary,
+          "&:hover": {
+            borderColor: theme.palette.text.secondary,
+            opacity: 0.8,
+            border: "1px dashed",
+          },
+        }}
       >
         Fetch
       </Button>
@@ -94,12 +106,13 @@ const BoxTestCrud = ({ url }) => {
         sx={{
           fontFamily: "monospace",
           whiteSpace: "pre-wrap",
-          background: "#f7f7f7",
+          background: theme.palette.background.default,
           padding: "10px",
           borderRadius: "5px",
           maxHeight: "60vh",
           overflow: "auto",
           border: "solid 1px #0077ba",
+          color: theme.palette.text.secondary,
         }}
       >
         {typeof response === "object"
