@@ -74,14 +74,28 @@ const Header = () => {
                 >
                   <Tooltip title="Go to Tools" placement="bottom">
                     <IconButton onClick={handleToolsClick} edge="start">
-                      <BuildIcon sx={{ margin: 1 }} />
-                      <Typography variant="body1">Tools</Typography>
+                      <BuildIcon
+                        sx={{ margin: 1, color: theme.palette.text.primary }}
+                      />
+                      <Typography
+                        variant="body1"
+                        sx={{ color: theme.palette.text.secondary }}
+                      >
+                        Tools
+                      </Typography>
                     </IconButton>
                   </Tooltip>
                   <Tooltip title="View Documentation" placement="bottom">
                     <IconButton onClick={handleDocsClick} edge="start">
-                      <DescriptionIcon sx={{ margin: 1 }} />
-                      <Typography variant="body1">Docs</Typography>
+                      <DescriptionIcon
+                        sx={{ margin: 1, color: theme.palette.text.primary }}
+                      />
+                      <Typography
+                        variant="body1"
+                        sx={{ color: theme.palette.text.secondary }}
+                      >
+                        Docs
+                      </Typography>
                     </IconButton>
                   </Tooltip>
                 </Stack>
