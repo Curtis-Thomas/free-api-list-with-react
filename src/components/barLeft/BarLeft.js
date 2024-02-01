@@ -36,6 +36,18 @@ function BarLeft() {
           mt: 25,
           overflowY: isHovered ? "auto" : "hidden",
           maxHeight: "60vh",
+          "&::-webkit-scrollbar": {
+            width: "0.4em",
+          },
+          "&::-webkit-scrollbar-track": {
+            background: theme.palette.background.default,
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: theme.palette.text.secondary,
+          },
+          "&::-webkit-scrollbar-thumb:hover": {
+            background: theme.palette.text.primary,
+          },
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
