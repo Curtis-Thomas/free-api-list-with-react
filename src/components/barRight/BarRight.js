@@ -37,43 +37,125 @@ function BarRight({ onThemeChange, currentTheme }) {
           name="radio-buttons-group"
           sx={{ color: theme.palette.text.secondary }}
         >
-          <FormControlLabel value="light" control={<Radio />} label="Light" />
-          <FormControlLabel value="dark" control={<Radio />} label="Dark" />
+          <FormControlLabel
+            value="light"
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
+            label="Light"
+          />
+          <FormControlLabel
+            value="dark"
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
+            label="Dark"
+          />
           <FormControlLabel
             value="dracula"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="Dracula"
           />
-          <FormControlLabel value="cobalt" control={<Radio />} label="Cobalt" />
+          <FormControlLabel
+            value="cobalt"
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
+            label="Cobalt"
+          />
           <FormControlLabel
             value="gruvbox"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="Gruvbox"
           />
           <FormControlLabel
             value="highcontrast"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="High Contrast"
           />
-          <FormControlLabel value="mero" control={<Radio />} label="Mero" />
+          <FormControlLabel
+            value="mero"
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
+            label="Mero"
+          />
           <FormControlLabel
             value="onedark"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="One Dark"
           />
           <FormControlLabel
             value="radical"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="Radical"
           />
           <FormControlLabel
             value="synthwave"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="Synth Wave"
           />
           <FormControlLabel
             value="tokyonight"
-            control={<Radio />}
+            control={
+              <Radio
+                sx={{
+                  "&.Mui-checked": { color: theme.palette.text.primary },
+                }}
+              />
+            }
             label="Tokyo Night"
           />
         </RadioGroup>
