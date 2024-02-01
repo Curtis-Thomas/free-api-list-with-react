@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
@@ -6,8 +6,16 @@ import NavBar from "../../navigation/NavBar";
 import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const ArtDesignMetMuseum = () => {
+  const theme = useTheme();
+
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: theme.palette.background.default,
+        color: theme.palette.text.primary,
+        minHeight: "120vh",
+      }}
+    >
       <NavBar link="/ArtDesignDash" route2="/MetMuseum" />
       <ApiPageInfo
         title={"The Metropolitan Museum of Art Collection API"}
