@@ -50,7 +50,15 @@ const Endpoints = ({ header, endpoint, description }) => {
   );
 
   return (
-    <Box sx={{ border: "solid 1px", padding: 2, marginBottom: 2 }}>
+    <Box
+      sx={{
+        border: "solid 1px",
+        padding: 2,
+        marginLeft: 2,
+        marginTop: 2,
+        marginRight: 2,
+      }}
+    >
       <Box
         sx={{
           display: "flex",

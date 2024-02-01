@@ -12,8 +12,8 @@ const AnimalsDailyCatFacts = () => {
     <Box
       sx={{
         backgroundColor: theme.palette.background.default,
-        border: "solid 1px",
         color: theme.palette.text.primary,
+        minHeight: "120vh",
       }}
     >
       {/* Navigation bar */}

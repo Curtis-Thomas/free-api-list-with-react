@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import BoxApiInfo from "../../core/main/BoxApiInfo";
 import Endpoints from "../../components/Endpoints";
 import NavBar from "../../navigation/NavBar";
@@ -6,8 +6,16 @@ import BoxTestCrud from "../../tools/components/BoxTestCrud";
 import ApiPageInfo from "../../core/main/ApiPageInfo";
 
 const AnimalsDog = () => {
+  const theme = useTheme();
+
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: theme.palette.background.default,
+        color: theme.palette.text.primary,
+        minHeight: "120vh",
+      }}
+    >
       {/* Navigation bar */}
       <NavBar link="/AnimalsDash" route2="/Dog" />
 
