@@ -16,9 +16,8 @@ const Footer = () => {
       }}
     >
       <Toolbar sx={{ justifyContent: "center" }}>
-        <Typography variant="body2">
-          Copyright © {new Date().getFullYear()} Curtis Thomas and the Free API
-          List with React contributors
+        <Typography variant="body2" sx={{ color: theme.palette.text.primary }}>
+          Copyright © {new Date().getFullYear()} Free API List Contributors
         </Typography>
       </Toolbar>
     </AppBar>
