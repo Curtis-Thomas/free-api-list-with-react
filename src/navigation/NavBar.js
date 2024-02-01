@@ -1,19 +1,19 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Typography, useTheme } from "@mui/material";
+import { Toolbar, Box, Typography, useTheme } from "@mui/material";
 import Link from "./Link";
 
 const NavBar = ({ link, route2 }) => {
   const theme = useTheme();
 
   return (
-    <AppBar
+    <Box
       position="static"
       sx={{
         marginBottom: 4,
         backgroundColor: theme.palette.background.default,
       }}
     >
-      <Toolbar sx={{ color: theme.palette.text.secondary }}>
+      <Toolbar sx={{ color: theme.palette.text.primary }}>
         <Box
           sx={{
             flexGrow: 1,
@@ -41,7 +41,7 @@ const NavBar = ({ link, route2 }) => {
           )}
         </Box>
       </Toolbar>
-    </AppBar>
+    </Box>
   );
 };
 
