@@ -13,7 +13,7 @@ const NavBar = ({ link, route2 }) => {
         backgroundColor: theme.palette.background.default,
       }}
     >
-      <Toolbar sx={{ color: "cyan" }}>
+      <Toolbar sx={{ color: theme.palette.text.secondary }}>
         <Box
           sx={{
             flexGrow: 1,
