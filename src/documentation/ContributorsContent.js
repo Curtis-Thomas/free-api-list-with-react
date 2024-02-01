@@ -17,11 +17,13 @@ import {
   Select,
   MenuItem,
   FormControl,
-  InputLabel
+  InputLabel,
+  useTheme,
 } from "@mui/material";
 
-
 const ContributorsContent = () => {
+  const theme = useTheme();
+
   const [contributors, setContributors] = useState([]);
   const [sortOrder, setSortOrder] = useState("asc");
   const [sortCriteria, setSortCriteria] = useState("contributions");
@@ -111,15 +113,16 @@ const ContributorsContent = () => {
 
   // Card component for screen-width<=600px
   const contributorCard = (contributor) => (
-    <Card key={contributor.id} sx={{ marginBottom: 2 }}>
+    <Card
+      key={contributor.id}
+      sx={{
+        marginBottom: 2,
+      }}
+    >
       <CardContent>
-        <Typography variant="h6" style={{ color: "black" }}>
-          {contributor.name}
-        </Typography>
-        <Typography style={{ color: "black" }}>
-          Contributions: {contributor.contributions}
-        </Typography>
-        <Typography style={{ color: "black" }}>
+        <Typography variant="h6">{contributor.name}</Typography>
+        <Typography>Contributions: {contributor.contributions}</Typography>
+        <Typography>
           Last Contribution Date:{" "}
           {contributor.lastContributionDate
             ? contributor.lastContributionDate.toDateString()
@@ -181,7 +184,12 @@ const ContributorsContent = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333", padding: 2 }}>
+    <Box
+      sx={{
+        border: "solid 1px #333333",
+        padding: 2,
+      }}
+    >
       <Typography variant="h6" gutterBottom>
         Contributors List
       </Typography>
@@ -197,79 +205,62 @@ const ContributorsContent = () => {
       {isSmallScreen ? (
         // Card Layout for small screens
         <Box>{sortedContributors.map(contributorCard)}</Box>
-      ) :(
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 500 }}>
-          <TableHead>
-            <TableRow>
-              <TableCell
-                style={{ color: "black" }}
-                onClick={() => handleSort("name")}
-              >
-                Name
-                {sortCriteria === "name" && (
-                  <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
-                )}
-              </TableCell>
-              <TableCell
-                style={{ color: "black" }}
-                onClick={() => handleSort("contributions")}
-              >
-                Contributions
-                {sortCriteria === "contributions" && (
-                  <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
-                )}
-              </TableCell>
-              <TableCell
-                style={{ color: "black" }}
-                onClick={() => handleSort("lastContributionDate")}
-              >
-                Last Contribution Date
-                {sortCriteria === "lastContributionDate" && (
-                  <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
-                )}
-              </TableCell>
-              <TableCell
-                style={{ color: "black" }}
-              >
-                GitHub Profile
-              </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {sortedContributors.map((contributor) => (
-              <TableRow key={contributor.id}>
-                <TableCell
-                  style={{ color: "black" }}
-                >
-                  {contributor.name}
+      ) : (
+        <TableContainer
+          component={Paper}
+          sx={{
+            backgroundColor: theme.palette.background.default,
+            color: theme.palette.text.primary,
+          }}
+        >
+          <Table sx={{ minWidth: 500 }}>
+            <TableHead>
+              <TableRow>
+                <TableCell onClick={() => handleSort("name")}>
+                  Name
+                  {sortCriteria === "name" && (
+                    <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
+                  )}
                 </TableCell>
-                <TableCell
-                  style={{ color: "black" }}
-                >
-                  {contributor.contributions}
+                <TableCell onClick={() => handleSort("contributions")}>
+                  Contributions
+                  {sortCriteria === "contributions" && (
+                    <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
+                  )}
                 </TableCell>
-                <TableCell
-                  style={{ color: "black" }}
-                >
-                  {contributor.lastContributionDate
-                    ? contributor.lastContributionDate.toDateString()
-                    : "No contributions"}
+                <TableCell onClick={() => handleSort("lastContributionDate")}>
+                  Last Contribution Date
+                  {sortCriteria === "lastContributionDate" && (
+                    <span>{sortOrder === "asc" ? " ↑" : " ↓"}</span>
+                  )}
                 </TableCell>
-                <TableCell>
-                  <Link
-                    href={contributor.html_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GitHub
-                  </Link>
-                </TableCell>
+                <TableCell>GitHub Profile</TableCell>
               </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
+            </TableHead>
+            <TableBody>
+              {sortedContributors.map((contributor) => (
+                <TableRow key={contributor.id}>
+                  <TableCell>{contributor.name}</TableCell>
+                  <TableCell>{contributor.contributions}</TableCell>
+                  <TableCell>
+                    {contributor.lastContributionDate
+                      ? contributor.lastContributionDate.toDateString()
+                      : "No contributions"}
+                  </TableCell>
+                  <TableCell>
+                    <Link
+                      href={contributor.html_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </Link>
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
       )}
     </Box>
   );

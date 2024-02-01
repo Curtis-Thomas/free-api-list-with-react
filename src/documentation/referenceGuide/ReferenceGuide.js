@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import StylingTheming from "./stylingTheming/StylingTheming";
 
 const ReferenceGuide = () => {
+  const theme = useTheme();
+
   const [showStyling, setShowStyling] = useState(false);
 
   const toggleStyling = () => {
@@ -10,12 +12,30 @@ const ReferenceGuide = () => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+    <Box
+      sx={{
+        border: "solid 1px",
+        padding: 2,
+        marginBottom: 3,
+        color: theme.palette.text.primary,
+      }}
+    >
       <Button
         onClick={toggleStyling}
         variant="contained"
         color="primary"
-        sx={{ marginBottom: 2 }}
+        sx={{
+          marginBottom: 2,
+          backgroundColor: theme.palette.background.default,
+          border: "1px solid",
+          color: theme.palette.text.primary,
+          "&:hover": {
+            borderColor: theme.palette.text.secondary,
+            opacity: 0.8,
+            border: "1px dashed",
+            backgroundColor: theme.palette.background.default,
+          },
+        }}
       >
         <Typography variant="button">
           {showStyling

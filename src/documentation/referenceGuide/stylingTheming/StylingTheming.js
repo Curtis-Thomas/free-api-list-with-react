@@ -4,6 +4,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  useTheme,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import StylingIntroduction from "./StylingIntroduction";
@@ -16,9 +17,16 @@ import StylingCustomStyling from "./StylingCustomStyling";
 import StylingBestPractices from "./StylingBestPractices";
 
 const StylingTheming = () => {
+  const theme = useTheme();
+
   return (
-    <Box sx={{ border: "solid 1px #333333", padding: 2 }}>
-      <Accordion>
+    <Box
+      sx={{
+        padding: 2,
+        color: theme.palette.text.primary,
+      }}
+    >
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Introduction</Typography>
         </AccordionSummary>
@@ -27,7 +35,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Framework</Typography>
         </AccordionSummary>
@@ -36,7 +44,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Typography</Typography>
         </AccordionSummary>
@@ -45,7 +53,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Colors</Typography>
         </AccordionSummary>
@@ -54,7 +62,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Icons and Graphics</Typography>
         </AccordionSummary>
@@ -63,7 +71,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Theming Options</Typography>
         </AccordionSummary>
@@ -72,7 +80,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Custom Styling</Typography>
         </AccordionSummary>
@@ -81,7 +89,7 @@ const StylingTheming = () => {
         </AccordionDetails>
       </Accordion>
 
-      <Accordion>
+      <Accordion sx={{ backgroundColor: theme.palette.background.default }}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography>Best Practices</Typography>
         </AccordionSummary>

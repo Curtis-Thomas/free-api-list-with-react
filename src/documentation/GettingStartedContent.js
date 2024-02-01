@@ -1,13 +1,21 @@
 import React from "react";
-import { Box, Typography, Link } from "@mui/material";
+import { Box, Typography, Link, useTheme } from "@mui/material";
 
 const GettingStartedContent = () => {
+  const theme = useTheme();
+
   return (
-    <Box sx={{ border: "solid 1px #333333", padding: 2 }}>
+    <Box
+      sx={{
+        border: "solid 1px",
+        padding: 2,
+        color: theme.palette.text.primary,
+      }}
+    >
       <Typography variant="h5" gutterBottom>
         Getting Started with the Free API List with React Project
       </Typography>
-      <Typography paragraph>
+      <Typography paragraph sx={{ color: theme.palette.text.secondary }}>
         To start exploring and contributing to the Free API List with React
         project, follow these simple steps:
       </Typography>

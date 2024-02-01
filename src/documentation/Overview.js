@@ -1,9 +1,17 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 
 const Overview = () => {
+  const theme = useTheme();
   return (
-    <Box sx={{ border: "solid 1px #333333", padding: 2, marginBottom: 3 }}>
+    <Box
+      sx={{
+        border: "solid 1px",
+        padding: 2,
+        marginBottom: 3,
+        color: theme.palette.text.primary,
+      }}
+    >
       <Typography variant="h5" gutterBottom>
         Free API List with React Project Documentation
       </Typography>
@@ -11,7 +19,7 @@ const Overview = () => {
       <Typography variant="h6" gutterBottom>
         Welcome
       </Typography>
-      <Typography paragraph>
+      <Typography paragraph sx={{ color: theme.palette.text.secondary }}>
         Welcome to the Free API List with React project! This open-source
         initiative provides a comprehensive collection of free APIs, complete
         with tools for testing and exploration. Crafted using React JS and
