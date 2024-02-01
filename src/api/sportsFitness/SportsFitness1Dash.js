@@ -1,10 +1,18 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 import NavBar from "../../navigation/NavBar";
 import CardRouting from "../../components/CardRouting";
 
 const SportsFitnessDash = () => {
+  const theme = useTheme();
+
   return (
-    <Box>
+    <Box
+      sx={{
+        flexGrow: 1,
+        backgroundColor: theme.palette.background.default,
+        minHeight: "110vh",
+      }}
+    >
       <NavBar link="/SportsFitnessDash" />
       <Grid container spacing={2} sx={{ p: 3 }}>
         {/* Card for Daily Cat Facts */}
