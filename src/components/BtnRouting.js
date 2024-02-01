@@ -47,7 +47,11 @@ const BtnRouting = ({
           sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
         >
           {btnName}{" "}
-          {amount && <span style={{ paddingLeft: 0.5 }}>{amount}</span>}
+          <span
+            style={{ paddingLeft: 0.5, color: theme.palette.text.secondary }}
+          >
+            {amount}
+          </span>
         </Typography>
       </Button>
     </Box>
