@@ -30,7 +30,7 @@ const Main = () => {
               navigateTo="/AnimalsDash"
               backgroundColor="#0077ba"
               textColor="white"
-              amount="5"
+              amount="6"
             />
             <BtnRouting
               btnName="Anime"

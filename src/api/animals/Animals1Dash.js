@@ -72,6 +72,15 @@ const AnimalDash = () => {
             difficulty="Easy"
           />
         </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Random Dog"
+            navigateTo="AnimalsRandomDog"
+            tags="Animals"
+            description="A simple api that returns a random url for a dog image"
+            difficulty="Easy"
+          />
+        </Grid>
       </Grid>
     </Box>
   );

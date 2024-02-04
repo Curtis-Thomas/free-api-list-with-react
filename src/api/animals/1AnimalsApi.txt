@@ -1,9 +1,5 @@
 name: 'Animals',
  
-        //https://random.dog/woof.json
-        {name:'RandomDog'},
-
-      
         //https://randomfox.ca/floof/
         {name:'RandomFox'},
 
