@@ -81,6 +81,15 @@ const AnimalDash = () => {
             difficulty="Easy"
           />
         </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="shibe.online"
+            navigateTo="AnimalsShibeOnline"
+            tags="Animals"
+            description="shibes as a service, returns shibe picture url"
+            difficulty="Easy"
+          />
+        </Grid>
       </Grid>
     </Box>
   );

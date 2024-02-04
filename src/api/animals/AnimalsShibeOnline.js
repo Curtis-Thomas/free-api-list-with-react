@@ -5,7 +5,7 @@ import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
 import ApiPageInfo from "../../core/main/ApiPageInfo";
 
-const AnimalsRandomDog = () => {
+const AnimalsShibeOnline = () => {
   const theme = useTheme();
 
   return (
@@ -17,12 +17,12 @@ const AnimalsRandomDog = () => {
       }}
     >
       {/* Navigation bar */}
-      <NavBar link="/AnimalsDash" route2="/RandomDog" />
+      <NavBar link="/AnimalsDash" route2="/MeowFacts" />
 
       <ApiPageInfo
-        title={"Random Dog"}
-        linkUrl={"https://random.dog/"}
-        description={"A simple api that returns a random dog picture url"}
+        title={"Dog API"}
+        linkUrl={"https://shibe.online/"}
+        description={"shibes as a service"}
       />
 
       {/* CRUD test box */}
@@ -30,17 +30,17 @@ const AnimalsRandomDog = () => {
 
       <Box>
         {/* API information box */}
-        <BoxApiInfo baseEndpoint="https://random.dog" />
+        <BoxApiInfo baseEndpoint="https://shibe.online" />
 
         {/* Endpoints */}
         <Endpoints
           header="GET"
-          endpoint="/woof.json"
-          description="Retrieve a random dog picture url"
+          endpoint="/api/shibes?count=1&urls=true&httpsUrls=true"
+          description="Retrieve a random shibe image"
         />
       </Box>
     </Box>
   );
 };
 
-export default AnimalsRandomDog;
+export default AnimalsShibeOnline;

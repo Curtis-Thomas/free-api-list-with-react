@@ -100,6 +100,7 @@ import GeoCodingGeoJS from "./api/geocoding/GeoCodingGeoJS";
 import BarLeft from "./components/barLeft/BarLeft";
 import BarRight from "./components/barRight/BarRight";
 import AnimalsRandomDog from "./api/animals/AnimalsRandomDog";
+import AnimalsShibeOnline from "./api/animals/AnimalsShibeOnline";
 
 const lightTheme = createTheme(theme);
 const darkTheme = createTheme(themeDark);
@@ -155,6 +156,7 @@ const routeConfig = [
   { path: "/AnimalsDash/AnimalsDogApi", component: AnimalsDogApi },
   { path: "/AnimalsDash/AnimalsMeowFacts", component: AnimalsMeowFacts },
   { path: "/AnimalsDash/AnimalsRandomDog", component: AnimalsRandomDog },
+  { path: "/AnimalsDash/AnimalsShibeOnline", component: AnimalsShibeOnline },
 
   // Anime Dashboard
   { path: "/AnimeDash", component: AnimeDash },
