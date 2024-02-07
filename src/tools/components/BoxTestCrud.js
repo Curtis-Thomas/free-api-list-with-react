@@ -38,7 +38,14 @@ const BoxTestCrud = ({ url }) => {
   };
 
   return (
-    <Box sx={{ border: "solid 1px ", padding: 2, margin: 2 }}>
+    <Box
+      sx={{
+        border: "solid 1px ",
+        padding: 2,
+        margin: 2,
+        color: theme.palette.text.primary,
+      }}
+    >
       <Typography variant="h6" sx={{ marginBottom: 2 }}>
         Testing Box
       </Typography>

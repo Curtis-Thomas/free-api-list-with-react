@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Typography, Button, Input } from "@mui/material";
+import { Box, Typography, Button, Input, useTheme } from "@mui/material";
 import axios from "axios";
 
 /**
@@ -8,6 +8,8 @@ import axios from "axios";
  * @param {string} url - The base URL of the API.
  */
 const BoxTestImg = ({ url }) => {
+  const theme = useTheme();
+
   const [response, setResponse] = useState("");
   const [urlValue, setUrl] = useState("");
   const [endpointValue, setEndpoint] = useState("");
@@ -41,10 +43,11 @@ const BoxTestImg = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px #bbb",
+        border: "solid 1px",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
+        color: theme.palette.text.primary,
       }}
     >
       <Box sx={{ marginBottom: 2 }}>

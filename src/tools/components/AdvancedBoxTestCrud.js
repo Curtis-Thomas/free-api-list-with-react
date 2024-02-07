@@ -6,10 +6,13 @@ import {
   Input,
   Select,
   MenuItem,
+  useTheme,
 } from "@mui/material";
 import axios from "axios";
 
 const AdvancedBoxTestCrud = ({ url }) => {
+  const theme = useTheme();
+
   // State variables for response, CRUD option, URL, endpoint, headers, and body
   const [response, setResponse] = useState("");
   const [crudOption, setCrudOption] = useState("get");
@@ -65,10 +68,11 @@ const AdvancedBoxTestCrud = ({ url }) => {
   return (
     <Box
       sx={{
-        border: "solid 1px #bbb",
+        border: "solid 1px",
         padding: 2,
         margin: 2,
         minHeight: "20vh",
+        color: theme.palette.text.primary,
       }}
     >
       <Box sx={{ marginBottom: 2 }}>
