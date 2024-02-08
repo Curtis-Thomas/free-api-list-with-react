@@ -21,7 +21,9 @@ const HealthMakeupApi = () => {
       <ApiPageInfo
         title={"Makeup API"}
         linkUrl={"http://makeup-api.herokuapp.com/"}
-        description={"There is currently one API call: Search makeup products"}
+        description={
+          "Embark on a beauty journey with Makeup API, hosted on Heroku. With just one simple API call, unlock a world of makeup products. Whether you're searching for the perfect lipstick shade or the trendiest eyeshadow palette, Makeup API has you covered. Seamlessly integrate with ease and discover a plethora of beauty products to elevate your projects. Dive in now and revolutionize your makeup-related applications!"
+        }
       />
 
       {/* CRUD test box */}
