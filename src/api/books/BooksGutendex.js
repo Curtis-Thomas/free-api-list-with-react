@@ -19,7 +19,9 @@ const BooksGutendex = () => {
       <ApiPageInfo
         title={"Gutendex"}
         linkUrl={"https://gutendex.com/"}
-        description={"JSON web API for Project Gutenberg ebook metadata"}
+        description={
+          "Discover the world of literature with Gutendex API, your key to accessing Project Gutenberg's vast collection. Seamlessly integrate with our JSON web API to unlock metadata for countless ebooks. Whether you're a book enthusiast, researcher, or developer, Gutendex offers unparalleled access to literary riches. Dive into the depths of classic literature and modern masterpieces with ease. Embrace the power of Gutendex and embark on your next literary adventure today!"
+        }
       />
       <Box>
         <BoxTestCrud />
