@@ -102,6 +102,7 @@ import BarRight from "./components/barRight/BarRight";
 import AnimalsRandomDog from "./api/animals/AnimalsRandomDog";
 import AnimalsShibeOnline from "./api/animals/AnimalsShibeOnline";
 import GeoCodingGetTheData from "./api/geocoding/GeoCodingGetTheData";
+import GeoCodingCountry from "./api/geocoding/GeoCodingCountry";
 
 const lightTheme = createTheme(theme);
 const darkTheme = createTheme(themeDark);
@@ -269,6 +270,7 @@ const routeConfig = [
     path: "/GeoCodingDash/GeoCodingGetTheData",
     component: GeoCodingGetTheData,
   },
+  { path: "/GeoCodingDash/GeoCodingCountry", component: GeoCodingCountry },
 
   // Government Dashboard
   { path: "/GovernmentDash", component: GovernmentDash },

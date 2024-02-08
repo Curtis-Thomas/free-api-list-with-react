@@ -12,9 +12,6 @@
         //https://github.com/M-Media-Group/Cartes.io/wiki/API
         {name:'Cartes.io'},
 
-        //https://country.is/
-        {name:'Country'},
-
         //https://gis.ducks.org/datasets/du-university-chapters/api
         {name:'Ducks Unlimited'},
 

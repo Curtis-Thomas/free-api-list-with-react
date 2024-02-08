@@ -42,6 +42,15 @@ const GeoCodingDash = () => {
             difficulty="Beginner"
           />
         </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Country"
+            navigateTo="GeoCodingCountry"
+            tags="geocoding"
+            description="Geolocation API that finds a user's country from their IP address."
+            difficulty="Beginner"
+          />
+        </Grid>
       </Grid>
     </Box>
   );
