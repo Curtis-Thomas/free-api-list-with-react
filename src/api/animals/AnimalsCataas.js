@@ -23,7 +23,7 @@ const AnimalsCataas = () => {
         title={"Cat as a service (CATAAS)"}
         linkUrl={"https://cataas.com/doc.html"}
         description={
-          "Cat as a service (CATAAS) is a REST API to spread peace and love (or not) thanks to cats."
+          "Introducing CATAAS, your go-to REST API for spreading joy with cats! Dive into a world of endless feline entertainment with random cat GIFs served fresh from API. Whether you're seeking a dose of cuteness or some light-hearted fun, CATAAS has you covered. Simply integrate with ease and let the purr-fect moments unfold in your applications. Join the cat-loving community today and embrace the power of CATAAS!"
         }
       />
       {/* Test image box */}
