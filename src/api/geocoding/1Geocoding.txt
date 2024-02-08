@@ -2,17 +2,12 @@
  
  {name:'Geocoding',
     list: [
-        //https://github.com/kamikazechaser/administrative-divisions-db
-        {name:'administrive-divisions-db'},
-
         //https://adresse.data.gouv.fr/api-doc/adresse
         {name:'adresse.data.gouv.fr'},
 
         //https://sys.airtel.lv/ip2country/1.1.1.1/?full=true
         {name:'Airtel IP'},
 
-        //https://www.getthedata.com/bng2latlong
-        {name:'bng2latlong'},
 
         //https://github.com/M-Media-Group/Cartes.io/wiki/API
         {name:'Cartes.io'},

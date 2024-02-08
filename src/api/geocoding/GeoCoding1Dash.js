@@ -33,6 +33,15 @@ const GeoCodingDash = () => {
             difficulty="Beginner"
           />
         </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Get The Data"
+            navigateTo="GeoCodingGettheData"
+            tags="geocoding"
+            description="Convert easting and northing to latitude and longitude"
+            difficulty="Beginner"
+          />
+        </Grid>
       </Grid>
     </Box>
   );

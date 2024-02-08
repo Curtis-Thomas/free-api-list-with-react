@@ -120,7 +120,7 @@ const Main = () => {
               navigateTo="/GeocodingDash"
               backgroundColor="#0077ba"
               textColor="white"
-              amount="2"
+              amount="3"
             />{" "}
             <BtnRouting btnName="Government" navigateTo="/GovernmentDash" />{" "}
             <BtnRouting
