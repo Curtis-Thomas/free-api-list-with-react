@@ -23,7 +23,7 @@ const AnimalsDogApi = () => {
         title={"Dog API"}
         linkUrl={"https://dogapi.dog/docs/api-v2"}
         description={
-          "The Dog API provides a wealth of information on dog breeds, groups, and fun facts. Access and integrate this data into your website or application with our easy-to-use JSON API."
+          "Discover a world of furry companionship and information with The Dog API. Dive into a wealth of data on dog breeds, groups, and fascinating facts, all at your fingertips. Seamlessly integrate this treasure trove of knowledge into your website or application using our user-friendly JSON API. Whether you're a dog enthusiast, a developer, or simply curious, The Dog API offers a gateway to enriching your projects with all things canine. Embrace the joy of dogs and enhance your platform with The Dog API today!"
         }
       />
 

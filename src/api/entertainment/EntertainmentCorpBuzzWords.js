@@ -21,7 +21,7 @@ const EntertainmentCorpBuzzWords = () => {
         title={"Corporate BuzzWord Generator"}
         linkUrl={"https://github.com/sameerkumar18/corporate-bs-generator-api"}
         description={
-          "Corporate buzzword generator to randomly pick out phrases, which can help your application get ahead in an industry where spin."
+          "Empower your projects with the Corporate BS Generator API, designed to infuse them with industry-savvy spin. Seamlessly integrate the buzzword generator to randomly select phrases that can give your application an edge in any corporate landscape. Whether you're aiming for innovation or simply looking to spice up your content, the API delivers the perfect blend of corporate jargon to captivate your audience. Embrace the power of spin and propel your application forward with the Corporate BS Generator API today!"
         }
       />
       <BoxTestCrud />
