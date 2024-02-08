@@ -23,7 +23,7 @@ const AnimeStudioGhibli = () => {
         title={"CStudio Ghibli"}
         linkUrl={"https://ghibliapi.vercel.app"}
         description={
-          "The Studio Ghibli API catalogs the people, places, and things found in the worlds of Ghibli."
+          "Introducing the Studio Ghibli API, your ultimate guide to the enchanting worlds crafted by Ghibli. Dive into a treasure trove of information cataloging the people, places, and things that populate these captivating universes. Whether you're a die-hard fan or a curious explorer, our API offers a seamless experience to discover the essence of Studio Ghibli's creations. Embrace the magic and embark on an unforgettable journey through Ghibli's imaginative realms with ease. Start exploring today with the Studio Ghibli API!"
         }
       />
 

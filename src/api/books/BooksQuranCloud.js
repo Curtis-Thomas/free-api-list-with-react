@@ -21,7 +21,7 @@ const BooksQuranCloud = () => {
         title={"Quran Cloud"}
         linkUrl={"https://alquran.cloud/api"}
         description={
-          "The Al Quran Cloud allows you to read and hear the Quran being recited by Juz, Surah or Ayah. "
+          "Discover the spiritual richness of the Quran with the Al Quran Cloud API. Immerse yourself in the sacred text through seamless access to recitations by Juz, Surah, or Ayah. Whether you seek solace, inspiration, or understanding, the API offers a gateway to the profound teachings of the Quran. Delve into the beauty of recitation and deepen your connection with the holy scripture effortlessly. Join us in experiencing the transformative power of the Quran with the Al Quran Cloud API today!"
         }
       />
       <Box />
