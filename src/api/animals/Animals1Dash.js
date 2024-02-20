@@ -84,8 +84,8 @@ const AnimalDash = () => {
 
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <CardRouting
-            cardName="Animal Cat Facts"
-            navigateTo="AnimalCatFacts"
+            cardName="Animals Cat Facts"
+            navigateTo="AnimalsCatFacts"
             tags="Animals"
             description="A simple api that returns a Cat fact"
             difficulty="Easy"

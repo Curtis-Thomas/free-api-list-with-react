@@ -5,7 +5,7 @@ import NavBar from "../../navigation/NavBar";
 import BoxTestCrud from "../../tools/components/BoxTestCrud";
 import ApiPageInfo from "../../core/main/ApiPageInfo";
 
-const AnimalCatFacts = () => {
+const AnimalsCatFacts = () => {
   const theme = useTheme();
 
   return (
@@ -42,4 +42,4 @@ const AnimalCatFacts = () => {
   );
 };
 
-export default AnimalCatFacts;
+export default AnimalsCatFacts;

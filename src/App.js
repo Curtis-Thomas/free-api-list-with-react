@@ -103,7 +103,7 @@ import AnimalsRandomDog from "./api/animals/AnimalsRandomDog";
 import AnimalsShibeOnline from "./api/animals/AnimalsShibeOnline";
 import GeoCodingGetTheData from "./api/geocoding/GeoCodingGetTheData";
 import GeoCodingCountry from "./api/geocoding/GeoCodingCountry";
-import AnimalCatFacts from "./api/animals/AnimalCatFacts";
+import AnimalsCatFacts from "./api/animals/AnimalsCatFacts";
 
 const lightTheme = createTheme(theme);
 const darkTheme = createTheme(themeDark);
@@ -160,7 +160,7 @@ const routeConfig = [
   { path: "/AnimalsDash/AnimalsMeowFacts", component: AnimalsMeowFacts },
   { path: "/AnimalsDash/AnimalsRandomDog", component: AnimalsRandomDog },
   { path: "/AnimalsDash/AnimalsShibeOnline", component: AnimalsShibeOnline },
-  { path:"/AnimalsDash/AnimalCatFacts", component:AnimalCatFacts},
+  { path:"/AnimalsDash/AnimalsCatFacts", component:AnimalsCatFacts},
 
   // Anime Dashboard
   { path: "/AnimeDash", component: AnimeDash },
