@@ -1,9 +1,9 @@
 {name:'Games & Comics',
     list: [
-        //https://age-of-empires-2-api.herokuapp.com/
-        {name:'Age of Empires II'},
+       
         //https://amiiboapi.com/
         {name:'AmiiboAPI'},
+        
         //https://acnhapi.com/
         {name:'Animal Crossing: New Horizons'},
         //https://github.com/didadadida93/autochess-vng-api

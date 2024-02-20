@@ -103,6 +103,7 @@ import AnimalsRandomDog from "./api/animals/AnimalsRandomDog";
 import AnimalsShibeOnline from "./api/animals/AnimalsShibeOnline";
 import GeoCodingGetTheData from "./api/geocoding/GeoCodingGetTheData";
 import GeoCodingCountry from "./api/geocoding/GeoCodingCountry";
+import GamesComicsAmiibo from "./api/gamesComics/GamesComicsAmiibo";
 
 const lightTheme = createTheme(theme);
 const darkTheme = createTheme(themeDark);
@@ -258,6 +259,7 @@ const routeConfig = [
 
   // Games & Comics Dashboard
   { path: "/GamesComicsDash", component: GamesComicsDash },
+  { path: "/GamesComicsDash/GamesComicsAmiibo", component: GamesComicsAmiibo },
 
   // GeoCoding Dashboard
   { path: "/GeoCodingDash", component: GeoCodingDash },
