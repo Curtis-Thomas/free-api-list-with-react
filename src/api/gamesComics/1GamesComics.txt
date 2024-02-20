@@ -1,67 +1,44 @@
 {name:'Games & Comics',
     list: [
-       
-        //https://amiiboapi.com/
-        {name:'AmiiboAPI'},
-        
-        //https://acnhapi.com/
-        {name:'Animal Crossing: New Horizons'},
-        //https://github.com/didadadida93/autochess-vng-api
-        {name:'Autochess VNG'},
         //https://github.com/bartervg/barter.vg/wiki
         {name:'Barter.vg'},
-        //https://develop.battle.net/documentation/guides/getting-started
-        {name:'Battle.net'},
-        //https://boardgamegeek.com/wiki/page/BGG_XML_API2
-        {name:'Board Game Geek'},
-        //https://developer.brawlstars.com/#/
-        {name:'Brawl Stars'},
+
         //https://apidocs.cheapshark.com/
         {name:'Bugsnax'},
-        //https://apidocs.cheapshark.com/
-        {name:'CheapShark'},
+
         //https://www.chess.com/news/view/published-data-api
         {name:'Chess.com'},
-        //http://www.icndb.com/api/
-        {name:'Chuck Norris Database'},
-        //https://developer.clashofclans.com/#/
-        {name:'Clash of Clans'},
-        //https://developer.clashroyale.com/#/
-        {name:'Clash Royale'},
-        //https://comicvine.gamespot.com/api/documentation
-        {name:'Comic Vine'},
+
         //https://crafatar.com/
         {name:'Casfatar'},
+
         //https://crossuniverse.net/apiDocs
         {name:'Cross Universe'},
+
         //https://deckofcardsapi.com/
         {name:'Deckl of Cards'},
-        //https://bungie-net.github.io/multi/index.html
-        {name:'Destiny The Game'},
+
         //https://digimon-api.vercel.app/
         {name:'Digimon Information'},
+
         //https://documenter.getpostman.com/view/14059948/TzecB4fH
         {name:'Digimon TCG'},
+
         //https://disneyapi.dev/
         {name:'Disney'},
+    
         //https://docs.opendota.com/
         {name:'Dota 2'},
+
         //https://www.dnd5eapi.co/docs/
         {name:'Dungeons and Dragons'},
-        //https://open5e.com/
-        {name:'Dungeons and Dragons (Alternate)'},
-        //https://esi.evetech.net/ui
-        {name:'Eve Online'},
+
         //https://ffxivcollect.com/
         {name:'FFXIV Collect'},
-        //https://www.easports.com/fifa/ultimate-team/api/fut/item
-        {name:'FIFA Ultimate Team'},
+
         //https://xivapi.com/
         {name:'Final Fantacy XIV'},
-        //https://fortnitetracker.com/site-api
-        {name:'Fortnite'},
-        //https://docs.forza-api.tk/
-        {name:'Forza'},
+,
         // /https://www.freetogame.com/api-doc
         {name:'FreeToGame'},
         //https://asli-fun-fact-api.herokuapp.com/

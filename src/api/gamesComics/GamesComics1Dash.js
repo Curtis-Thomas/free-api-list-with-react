@@ -15,7 +15,6 @@ const GamesComicsDash = () => {
     >
       <NavBar link="/GamesComicsDash" />
       <Grid container spacing={2} sx={{ p: 3 }}>
-        {/* Card for ABiblia Digital */}
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <CardRouting
             cardName="Amiibo"
