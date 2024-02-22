@@ -16,7 +16,7 @@ const GamesComicsAmiibo = () => {
         minHeight: "120vh",
       }}
     >
-      <NavBar link="/BooksDash" route2="/BibleApi" />
+      <NavBar link="/GamesComicsDash" route2="/Amiibo" />
       <ApiPageInfo
         title={"Amiibo"}
         linkUrl={"https://amiiboapi.com/docs/"}
