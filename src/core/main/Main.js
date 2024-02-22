@@ -114,7 +114,11 @@ const Main = () => {
             <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
             <BtnRouting btnName="Finance" navigateTo="/FinanceDash" />{" "}
             <BtnRouting btnName="Food Drink" navigateTo="/FoodDrinkDash" />{" "}
-            <BtnRouting btnName="Games Comics" navigateTo="/GamesComicsDash" />{" "}
+            <BtnRouting
+              btnName="Games Comics"
+              navigateTo="/GamesComicsDash"
+              amount="2"
+            />{" "}
             <BtnRouting
               btnName="Geocoding"
               navigateTo="/GeocodingDash"
