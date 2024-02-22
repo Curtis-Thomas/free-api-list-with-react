@@ -3,9 +3,6 @@
         //https://github.com/bartervg/barter.vg/wiki
         {name:'Barter.vg'},
 
-        //https://apidocs.cheapshark.com/
-        {name:'Bugsnax'},
-
         //https://www.chess.com/news/view/published-data-api
         {name:'Chess.com'},
 
