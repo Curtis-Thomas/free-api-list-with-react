@@ -107,7 +107,7 @@ import GeoCodingCountry from "./api/geocoding/GeoCodingCountry";
 import AnimalsCatFacts from "./api/animals/AnimalsCatFacts";
 
 import GamesComicsAmiibo from "./api/gamesComics/GamesComicsAmiibo";
-
+import GamesComicsCheapShark from "./api/gamesComics/GamesComicsCheapShark";
 
 const lightTheme = createTheme(theme);
 const darkTheme = createTheme(themeDark);
@@ -164,7 +164,7 @@ const routeConfig = [
   { path: "/AnimalsDash/AnimalsMeowFacts", component: AnimalsMeowFacts },
   { path: "/AnimalsDash/AnimalsRandomDog", component: AnimalsRandomDog },
   { path: "/AnimalsDash/AnimalsShibeOnline", component: AnimalsShibeOnline },
-  { path:"/AnimalsDash/AnimalsCatFacts", component:AnimalsCatFacts},
+  { path: "/AnimalsDash/AnimalsCatFacts", component: AnimalsCatFacts },
 
   // Anime Dashboard
   { path: "/AnimeDash", component: AnimeDash },
@@ -265,6 +265,10 @@ const routeConfig = [
   // Games & Comics Dashboard
   { path: "/GamesComicsDash", component: GamesComicsDash },
   { path: "/GamesComicsDash/GamesComicsAmiibo", component: GamesComicsAmiibo },
+  {
+    path: "/GamesComicsDash/GamesComicsCheapshark",
+    component: GamesComicsCheapShark,
+  },
 
   // GeoCoding Dashboard
   { path: "/GeoCodingDash", component: GeoCodingDash },

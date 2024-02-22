@@ -19,9 +19,18 @@ const GamesComicsDash = () => {
           <CardRouting
             cardName="Amiibo"
             navigateTo="GamesComicsAmiibo"
-            tags="Books"
+            tags="Games Comics"
             description="It returns information of all amiibos or specific amiibo as a list."
             difficulty="Easy"
+          />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+          <CardRouting
+            cardName="Cheapshark"
+            navigateTo="GamesComicsCheapShark"
+            tags="Games Comics"
+            description="Price comparisons on digital PC games."
+            difficulty="Medium"
           />
         </Grid>
       </Grid>
