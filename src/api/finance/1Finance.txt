@@ -1,93 +1,14 @@
  {name:'Finance',
     list: [
-        //https://www.abstractapi.com/api/vat-validation-rates-api
-        {name:'Abstract VAT Validation'},
-        //https://aletheiaapi.com/
-        {name:'Aletheia'},
-        //https://alpaca.markets/docs/api-references/market-data-api/
-        {name:'Alpaca'},
-        //https://www.alphavantage.co/
-        {name:'Alpha Vantage'},
-        //https://marketstack.com/
-        {name:'apilayer marketstack'},
-        //https://developers.bb.com.br/home
-        {name:'Banco do Brasil'},
-        //https://apilayer.com/marketplace/bank_data-api
-        {name:'Bank Data API'},
-        //https://www.billplz.com/api#introduction
-        {name:'Billplz'},
-        //https://binlist.net/
-        {name:'Binlist'},
-        //https://boleto.cloud/
-        {name:'Boleto.Cloud'},
-        //https://sandbox.developerhub.citi.com/api-catalog-list
-        {name:'Citi'},
-        //https://www.econdb.com/api/series/CPIUS/?page=1
-        {name:'Econdb'},
-        //https://fiscaldata.treasury.gov/api-documentation/
-        {name:'Fed Treasury'},
-        //https://finage.co.uk/
-        {name:'Finage'},
-        //https://site.financialmodelingprep.com/developer/docs/
-        {name:'Financial Modeling Prep'},
-        //https://finnhub.io/docs/api
-        {name:'Finnhub'},
-        //https://fred.stlouisfed.org/docs/api/fred/
-        {name:'FRED'},
-        //https://frontaccounting.com/fawiki/index.php?n=Devel.SimpleAPIModule
-        {name:'Front Accounting APIs'},
-        //https://hotstoks.com/?utm_source=public-apis
-        {name:'Hotstoks'},
-        //https://iexcloud.io/docs/api/
-        {name:'IEX Cloud'},
-        //https://labs.ig.com/gettingstarted
-        {name:'IG'},
-        //https://www.mfapi.in/
-        {name:'Indian Mutual Fund'},
-        //https://intrinio.com/
-        {name:'Intrinio'},
+        
+
         //https://docs.klarna.com/api/payments/
         {name:'Klarna'},
-        //https://www.mercadopago.com.br/developers/es/reference
-        {name:'MercadoPago'},
-        //https://mono.co/
-        {name:'Mono'},
-        //https://docs.moov.io/api/
-        {name:'Moov'},
-        //https://nordigen.com/en/account_information_documenation/integration/quickstart_guide/
-        {name:'Nordigen'},
-        //https://www.openfigi.com/api
-        {name:'OpenFIGI'},
-        //https://plaid.com/en-eu/
-        {name:'Plaid'},
-        //https://polygon.io/
-        {name:'Polygon'},
-        //https://portfoliooptimizer.io/
-        {name:'Portfolio Optimizer'},
-        //https://razorpay.com/docs/#home-payments
-        {name:'Razorpay IFSC'},
-        //https://github.com/Real-time-finance/finance-websocket-API/
-        {name:'Real Time Finance'},
+
         //https://www.sec.gov/edgar/sec-api-documentation
         {name:'SEC EDGAR Data'},
-        //https://smartapi.angelbroking.com/
-        {name:'SmartAPI'},
-        //https://www.stockdata.org/
-        {name:'StockData'},
-        //https://www.styvio.com/
-        {name:'Styvio'},
-        //https://apilayer.com/marketplace/tax_data-api
-        {name:'Tax Data API'},
-        //https://developer.tradier.com/
-        {name:'Tradier'},
-        //https://twelvedata.com/
-        {name:'Tewlve Data'},
+
         //https://tradestie.com/apps/reddit/api/
         {name:'WallstreetBets'},
-        //https://www.yahoofinanceapi.com/
-        {name:'Yahoo finance'},
-        //https://api.youneedabudget.com/
-        {name:'YNAB'},
-        //https://www.zoho.com/books/api/v3/introduction/#organization-id
-        {name:'Zoho Books'},
+
     ]},
