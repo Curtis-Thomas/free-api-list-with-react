@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Header from "./core/header/Header";
@@ -381,7 +381,30 @@ const routeConfig = [
  */
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState("onedark");
+  const [currentTheme, setCurrentTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme || "onedark";
+  });
+
+
+  const saveThemeToLocalStorage = (theme) => {
+    localStorage.setItem('theme', theme);
+  };
+
+  const loadThemeFromLocalStorage = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setCurrentTheme(savedTheme);
+    }
+  };
+
+  useEffect(() => {
+    loadThemeFromLocalStorage();
+  }, []);
+
+  useEffect(() => {
+    saveThemeToLocalStorage(currentTheme);
+  }, [currentTheme]);
 
   const activeTheme = themes[currentTheme];
 
