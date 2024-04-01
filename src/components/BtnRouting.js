@@ -42,17 +42,27 @@ const BtnRouting = ({
           },
         }}
       >
-        <Typography
-          variant="button"
-          sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
-        >
-          {btnName}{" "}
-          <span
-            style={{ paddingLeft: 0.5, color: theme.palette.text.secondary }}
+        <Box sx={{ height: "100%", width: "90%" }}>
+          <Typography
+            variant="button"
+            sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
+          >
+            {btnName}
+          </Typography>
+        </Box>
+        <Box sx={{ height: "100%", width: "10%" }}>
+          <Typography
+            variant="button"
+            sx={{
+              fontWeight: "bold",
+              textTransform: "none",
+              fontSize: "16px",
+              color: theme.palette.text.secondary,
+            }}
           >
             {amount}
-          </span>
-        </Typography>
+          </Typography>
+        </Box>
       </Button>
     </Box>
   );
