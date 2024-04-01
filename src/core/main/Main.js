@@ -1,10 +1,9 @@
-import { Box, Grid, useTheme } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import BtnRouting from "../../components/BtnRouting";
 import NavBar from "../../navigation/NavBar";
 import Hero from "./Hero";
 
 const Main = () => {
-  const theme = useTheme();
   return (
     <Box
       sx={{
