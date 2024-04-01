@@ -6,11 +6,9 @@ import Hero from "./Hero";
 const Main = () => {
   const theme = useTheme();
   return (
-    // Currently 51 total catagories, Main will have 3 column of 17
     <Box
       sx={{
         display: "flex",
-        backgroundColor: theme.palette.background.default,
         width: "100%",
         pt: 5,
       }}
@@ -22,8 +20,14 @@ const Main = () => {
       >
         <Hero />
         <NavBar />
-        <Grid container spacing={0} sx={{ padding: 2 }}>
-          <Grid item xs={12} sm={4}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            padding: 2,
+          }}
+        >
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Animals"
               navigateTo="/AnimalsDash"
@@ -32,7 +36,7 @@ const Main = () => {
               amount="8"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Anime"
               navigateTo="/AnimeDash"
@@ -41,7 +45,7 @@ const Main = () => {
               amount="2"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Art & Design"
               navigateTo="/ArtDesignDash"
@@ -50,7 +54,7 @@ const Main = () => {
               amount="3"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Books"
               navigateTo="/BooksDash"
@@ -59,7 +63,7 @@ const Main = () => {
               amount="5"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Dictionary"
               navigateTo="/DictionaryDash"
@@ -68,7 +72,7 @@ const Main = () => {
               amount="1"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Entertainment"
               navigateTo="/EntertainmentDash"
@@ -77,7 +81,7 @@ const Main = () => {
               amount="3"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Environment"
               navigateTo="/EnvironmentDash"
@@ -86,14 +90,14 @@ const Main = () => {
               amount="1"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Games Comics"
               navigateTo="/GamesComicsDash"
               amount="2"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Geocoding"
               navigateTo="/GeocodingDash"
@@ -102,7 +106,7 @@ const Main = () => {
               amount="4"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Health"
               navigateTo="/HealthDash"
@@ -111,7 +115,7 @@ const Main = () => {
               amount="1"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Personality"
               navigateTo="/PersonalityDash"
@@ -120,7 +124,7 @@ const Main = () => {
               amount="1"
             />
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Sports Fitness"
               navigateTo="/SportsFitnessDash"
@@ -163,7 +167,7 @@ const Main = () => {
             />
           </Grid> */}
           {/* Column 2 */}
-          {/* <Grid item xs={12} sm={4}> */}
+          {/* <Grid item xs={12} sm={6}> */}
           {/* <BtnRouting btnName="Email" navigateTo="/EmailDash" />{" "} */}
           {/* <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
             <BtnRouting btnName="Finance" navigateTo="/FinanceDash" />{" "}

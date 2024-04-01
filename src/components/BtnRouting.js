@@ -19,11 +19,9 @@ const BtnRouting = ({
     <Box
       sx={{
         display: "flex",
-        width: "80%",
+        width: "100%",
         maxWidth: "100%",
         marginBottom: 2,
-        marginLeft: "auto",
-        marginRight: "auto",
       }}
     >
       <Button
@@ -32,7 +30,7 @@ const BtnRouting = ({
         sx={{
           color: theme.palette.text.primary,
           backgroundColor: theme.palette.background.default,
-          padding: "12px 24px",
+          p: 1,
           borderRadius: "8px",
           border: "1px solid",
           "&:hover": {
