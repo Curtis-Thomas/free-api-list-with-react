@@ -420,9 +420,10 @@ function App() {
 
           <Box
             sx={{
-              minHeight: "100vh",
+              minHeight: "95vh",
               width: { xs: "100%", sm: "100%", md: "50%" },
               marginLeft: { xs: "0%", sm: "0%", md: "25%" },
+              backgroundColor: activeTheme.palette.background.default,
             }}
           >
             <Box>

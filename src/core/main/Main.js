@@ -23,7 +23,6 @@ const Main = () => {
         <Hero />
         <NavBar />
         <Grid container spacing={0} sx={{ padding: 2 }}>
-          {/* Column 1 */}
           <Grid item xs={12} sm={4}>
             <BtnRouting
               btnName="Animals"
@@ -32,6 +31,8 @@ const Main = () => {
               textColor="white"
               amount="8"
             />
+          </Grid>
+          <Grid item xs={12} sm={4}>
             <BtnRouting
               btnName="Anime"
               navigateTo="/AnimeDash"
@@ -39,11 +40,8 @@ const Main = () => {
               textColor="white"
               amount="2"
             />
-            <BtnRouting
-              btnName="Anti-Malware"
-              navigateTo="/AntiMalwareDash"
-              amount="0"
-            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
             <BtnRouting
               btnName="Art & Design"
               navigateTo="/ArtDesignDash"
@@ -51,11 +49,8 @@ const Main = () => {
               textColor="white"
               amount="3"
             />
-            <BtnRouting
-              btnName="Authentication"
-              navigateTo="/AuthenticationDash"
-            />
-            <BtnRouting btnName="Blockchain" navigateTo="/BlockchainDash" />
+          </Grid>
+          <Grid item xs={12} sm={4}>
             <BtnRouting
               btnName="Books"
               navigateTo="/BooksDash"
@@ -63,7 +58,89 @@ const Main = () => {
               textColor="white"
               amount="5"
             />
-            <BtnRouting btnName="Business" navigateTo="/BusinessDash" />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Dictionary"
+              navigateTo="/DictionaryDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="1"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Entertainment"
+              navigateTo="/EntertainmentDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="3"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Environment"
+              navigateTo="/EnvironmentDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="1"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Games Comics"
+              navigateTo="/GamesComicsDash"
+              amount="2"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Geocoding"
+              navigateTo="/GeocodingDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="4"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Health"
+              navigateTo="/HealthDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="1"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Personality"
+              navigateTo="/PersonalityDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="1"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <BtnRouting
+              btnName="Sports Fitness"
+              navigateTo="/SportsFitnessDash"
+              backgroundColor="#0077ba"
+              textColor="white"
+              amount="2"
+            />
+          </Grid>
+
+          {/* <BtnRouting
+              btnName="Anti-Malware"
+              navigateTo="/AntiMalwareDash"
+              amount="0"
+            /> */}
+          {/* <BtnRouting
+              btnName="Authentication"
+              navigateTo="/AuthenticationDash"
+            /> */}
+          {/* <BtnRouting btnName="Blockchain" navigateTo="/BlockchainDash" /> */}
+          {/* <BtnRouting btnName="Business" navigateTo="/BusinessDash" />
             <BtnRouting btnName="Calendar" navigateTo="/CalendarDash" />
             <BtnRouting btnName="Cloud" navigateTo="/CloudDash" />
             <BtnRouting btnName="ContInt" navigateTo="/ContIntDash" />
@@ -79,62 +156,20 @@ const Main = () => {
               btnName="Data Validation"
               navigateTo="/DataValidationDash"
             />
-            <BtnRouting btnName="Development" navigateTo="/DevelopmentDash" />
-            <BtnRouting
-              btnName="Dictionary"
-              navigateTo="/DictionaryDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="1"
-            />{" "}
-            <BtnRouting
+            <BtnRouting btnName="Development" navigateTo="/DevelopmentDash" /> */}
+          {/* <BtnRouting
               btnName="Documents Production"
               navigateTo="/DocsProdDash"
             />
-          </Grid>
-
+          </Grid> */}
           {/* Column 2 */}
-
-          <Grid item xs={12} sm={4}>
-            <BtnRouting btnName="Email" navigateTo="/EmailDash" />{" "}
-            <BtnRouting
-              btnName="Entertainment"
-              navigateTo="/EntertainmentDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="3"
-            />{" "}
-            <BtnRouting
-              btnName="Environment"
-              navigateTo="/EnvironmentDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="1"
-            />{" "}
-            <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
+          {/* <Grid item xs={12} sm={4}> */}
+          {/* <BtnRouting btnName="Email" navigateTo="/EmailDash" />{" "} */}
+          {/* <BtnRouting btnName="Events" navigateTo="/EventsDash" />{" "}
             <BtnRouting btnName="Finance" navigateTo="/FinanceDash" />{" "}
-            <BtnRouting btnName="Food Drink" navigateTo="/FoodDrinkDash" />{" "}
-            <BtnRouting
-              btnName="Games Comics"
-              navigateTo="/GamesComicsDash"
-              amount="2"
-            />{" "}
-            <BtnRouting
-              btnName="Geocoding"
-              navigateTo="/GeocodingDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="4"
-            />{" "}
-            <BtnRouting btnName="Government" navigateTo="/GovernmentDash" />{" "}
-            <BtnRouting
-              btnName="Health"
-              navigateTo="/HealthDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="1"
-            />{" "}
-            <BtnRouting btnName="Jobs" navigateTo="/JobsDash" />{" "}
+            <BtnRouting btnName="Food Drink" navigateTo="/FoodDrinkDash" />{" "} */}
+          {/* <BtnRouting btnName="Government" navigateTo="/GovernmentDash" /> */}
+          {/* <BtnRouting btnName="Jobs" navigateTo="/JobsDash" />{" "}
             <BtnRouting
               btnName="Machine Learning"
               navigateTo="/MachineLearningDash"
@@ -144,33 +179,18 @@ const Main = () => {
             <BtnRouting btnName="Open Data" navigateTo="/OpenDataDash" />{" "}
             <BtnRouting btnName="Open Source" navigateTo="/OpenSourceDash" />{" "}
             <BtnRouting btnName="Patent" navigateTo="/PatentDash" />
-          </Grid>
-
+          </Grid> */}
           {/* Column 3 */}
-
-          <Grid item xs={12} sm={4}>
-            <BtnRouting
-              btnName="Personality"
-              navigateTo="/PersonalityDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="1"
-            />
-            <BtnRouting btnName="Phone" navigateTo="/PhoneDash" />{" "}
+          {/* <Grid item xs={12} sm={4}> */}
+          {/* <BtnRouting btnName="Phone" navigateTo="/PhoneDash" />{" "}
             <BtnRouting btnName="Photography" navigateTo="/PhotographyDash" />{" "}
             <BtnRouting btnName="Programming" navigateTo="/ProgrammingDash" />{" "}
             <BtnRouting btnName="Science Math" navigateTo="/ScienceMathDash" />{" "}
             <BtnRouting btnName="Security" navigateTo="/SecurityDash" />{" "}
             <BtnRouting btnName="Shopping" navigateTo="/ShoppingDash" />{" "}
-            <BtnRouting btnName="Social" navigateTo="/SocialDash" />{" "}
-            <BtnRouting
-              btnName="Sports Fitness"
-              navigateTo="/SportsFitnessDash"
-              backgroundColor="#0077ba"
-              textColor="white"
-              amount="2"
-            />{" "}
-            <BtnRouting btnName="Test Data" navigateTo="/TestDataDash" />{" "}
+            <BtnRouting btnName="Social" navigateTo="/SocialDash" />{" "} */}
+
+          {/* <BtnRouting btnName="Test Data" navigateTo="/TestDataDash" />{" "}
             <BtnRouting
               btnName="Text Analysis"
               navigateTo="/TextAnalysisDash"
@@ -186,8 +206,7 @@ const Main = () => {
             />{" "}
             <BtnRouting btnName="Vehicle" navigateTo="/VehicleDash" />{" "}
             <BtnRouting btnName="Video" navigateTo="/VideoDash" />{" "}
-            <BtnRouting btnName="Weather" navigateTo="/WeatherDash" />
-          </Grid>
+            <BtnRouting btnName="Weather" navigateTo="/WeatherDash" /> */}
         </Grid>
       </Box>
     </Box>
