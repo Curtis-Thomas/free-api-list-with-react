@@ -381,7 +381,7 @@ const routeConfig = [
  */
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState("onedark");
 
   const activeTheme = themes[currentTheme];
 
