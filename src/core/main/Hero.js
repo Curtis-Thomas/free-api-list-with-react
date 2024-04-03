@@ -22,21 +22,39 @@ function Hero() {
     >
       <Grid container alignItems="center" justifyContent="center" spacing={2}>
         <Grid item xs={12} md={6} display="flex" justifyContent="center">
-          <Typography
-            variant="h6"
-            sx={{ marginRight: 2, color: theme.palette.text.primary }}
+          <Box
+            sx={{
+              height: "5vh",
+              width: "50%",
+              display: "flex",
+              justifyContent: "right",
+            }}
           >
-            GitHub
-          </Typography>
-          <GitHubButton
-            href="https://github.com/Curtis-Thomas/free-api-list-with-react"
-            data-icon="octicon-star"
-            aria-label="Star buttons/github-buttons on GitHub"
-            data-show-count="true"
-            data-size="large"
+            <Typography
+              variant="h6"
+              sx={{ marginRight: 2, color: theme.palette.text.primary }}
+            >
+              GitHub
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              height: "100%",
+              width: "50%",
+              display: "flex",
+              justifyContent: "left",
+            }}
           >
-            Star
-          </GitHubButton>
+            <GitHubButton
+              href="https://github.com/Curtis-Thomas/free-api-list-with-react"
+              data-icon="octicon-star"
+              aria-label="Star buttons/github-buttons on GitHub"
+              data-show-count="true"
+              data-size="large"
+            >
+              Star
+            </GitHubButton>
+          </Box>
         </Grid>
 
         <Grid item xs={12} md={6} display="flex" justifyContent="center">

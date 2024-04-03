@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Box, createTheme, ThemeProvider } from "@mui/material";
 import Header from "./core/header/Header";
@@ -383,7 +383,30 @@ const routeConfig = [
  */
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState("light");
+  const [currentTheme, setCurrentTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme || "onedark";
+  });
+
+
+  const saveThemeToLocalStorage = (theme) => {
+    localStorage.setItem('theme', theme);
+  };
+
+  const loadThemeFromLocalStorage = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setCurrentTheme(savedTheme);
+    }
+  };
+
+  useEffect(() => {
+    loadThemeFromLocalStorage();
+  }, []);
+
+  useEffect(() => {
+    saveThemeToLocalStorage(currentTheme);
+  }, [currentTheme]);
 
   const activeTheme = themes[currentTheme];
 
@@ -422,9 +445,10 @@ function App() {
 
           <Box
             sx={{
-              minHeight: "100vh",
+              minHeight: "95vh",
               width: { xs: "100%", sm: "100%", md: "50%" },
               marginLeft: { xs: "0%", sm: "0%", md: "25%" },
+              backgroundColor: activeTheme.palette.background.default,
             }}
           >
             <Box>

@@ -19,11 +19,9 @@ const BtnRouting = ({
     <Box
       sx={{
         display: "flex",
-        width: "80%",
+        width: "100%",
         maxWidth: "100%",
         marginBottom: 2,
-        marginLeft: "auto",
-        marginRight: "auto",
       }}
     >
       <Button
@@ -32,7 +30,7 @@ const BtnRouting = ({
         sx={{
           color: theme.palette.text.primary,
           backgroundColor: theme.palette.background.default,
-          padding: "12px 24px",
+          p: 1,
           borderRadius: "8px",
           border: "1px solid",
           "&:hover": {
@@ -42,17 +40,27 @@ const BtnRouting = ({
           },
         }}
       >
-        <Typography
-          variant="button"
-          sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
-        >
-          {btnName}{" "}
-          <span
-            style={{ paddingLeft: 0.5, color: theme.palette.text.secondary }}
+        <Box sx={{ height: "100%", width: "90%" }}>
+          <Typography
+            variant="button"
+            sx={{ fontWeight: "bold", textTransform: "none", fontSize: "16px" }}
+          >
+            {btnName}
+          </Typography>
+        </Box>
+        <Box sx={{ height: "100%", width: "10%" }}>
+          <Typography
+            variant="button"
+            sx={{
+              fontWeight: "bold",
+              textTransform: "none",
+              fontSize: "16px",
+              color: theme.palette.text.secondary,
+            }}
           >
             {amount}
-          </span>
-        </Typography>
+          </Typography>
+        </Box>
       </Button>
     </Box>
   );
