@@ -62,6 +62,15 @@ const Main = () => {
               amount="5"
             />
           </Grid>
+
+          <Grid item xs={12} sm={6}>
+            <BtnRouting
+              btnName="Development"
+              navigateTo="/DevelopmentDash"
+              amount="1"
+            />
+          </Grid>
+
           <Grid item xs={12} sm={6}>
             <BtnRouting
               btnName="Dictionary"
@@ -159,7 +168,6 @@ const Main = () => {
               btnName="Data Validation"
               navigateTo="/DataValidationDash"
             />
-            <BtnRouting btnName="Development" navigateTo="/DevelopmentDash" /> */}
           {/* <BtnRouting
               btnName="Documents Production"
               navigateTo="/DocsProdDash"
