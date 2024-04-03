@@ -43,6 +43,7 @@ import CurrencyExchangeDash from "./api/currencyExchange/CurrencyExchange1Dash";
 import BooksABibliaDigital from "./api/books/BooksABibliDigital";
 import BooksBibleApi from "./api/books/BooksBibleApi";
 import DevelopmentDash from "./api/development/Development1Dash";
+import DevelopmentCloudFlareTrace from "./api/development/DevelopmentCloudFlareTrace";
 import DictionaryDash from "./api/dictionary/Dictionary1Dash";
 import DocsProdDash from "./api/docsProd/DocsProd1Dash";
 import EmailDash from "./api/email/Email1Dash";
@@ -213,11 +214,12 @@ const routeConfig = [
   { path: "/CurrencyExchangeDash", component: CurrencyExchangeDash },
 
   // Data Validation Dashboard
-  { path: "/DataValidationDash", component: DataValidationDash },
+  { path: "/DataValidationDash", component: DataValidationDash},
 
   // Development Dashboard
   { path: "/DevelopmentDash", component: DevelopmentDash },
-
+  {path : "/DevelopmentDash/DevelopmentCloudFlareTrace", component: DevelopmentCloudFlareTrace},
+  
   // Dictionary Dashboard
   { path: "/DictionaryDash", component: DictionaryDash },
   {
