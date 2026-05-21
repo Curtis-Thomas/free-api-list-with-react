@@ -1,55 +1,25 @@
 {
-  "name": "public-api-with-react",
-  "version": "0.2.0",
+  "name": "free-api-list",
+  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.13.5",
-    "@octokit/core": "^5.0.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.4.0",
-    "core-js": "^3.31.0",
-    "octokit": "^3.1.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-github-btn": "^1.4.0",
-    "react-router-dom": "^6.12.1",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4"
+  "description": "A catalog of free public APIs, an in-browser testing harness, and an MCP server.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=10.0.0"
   },
+  "packageManager": "pnpm@10.5.2",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "pnpm --filter @free-api-list/web dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "validate": "pnpm --filter @free-api-list/catalog validate"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.3",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/preset-env": "^7.23.3",
-    "babel-loader": "^9.1.3",
-    "gh-pages": "^5.0.0"
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.6.3"
   }
 }
