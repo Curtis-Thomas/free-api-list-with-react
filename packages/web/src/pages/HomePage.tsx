@@ -1,18 +1,9 @@
+import type { Difficulty } from "@free-api-list/catalog";
+import { Box, Chip, Grid, MenuItem, Stack, TextField, Typography, useTheme } from "@mui/material";
 import { useMemo, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  Box,
-  Chip,
-  Grid,
-  MenuItem,
-  Stack,
-  TextField,
-  Typography,
-  useTheme,
-} from "@mui/material";
-import { APIS, categoriesWithApis } from "../data/catalog.js";
 import { ApiCard } from "../components/ApiCard.js";
-import type { Difficulty } from "@free-api-list/catalog";
+import { APIS, categoriesWithApis } from "../data/catalog.js";
 
 const DIFFICULTIES: Array<Difficulty | "all"> = ["all", "beginner", "intermediate", "advanced"];
 
@@ -95,7 +86,11 @@ export function HomePage() {
             to={`/${category.id}`}
             clickable
             variant="outlined"
-            sx={{ color: theme.palette.text.primary, borderColor: theme.palette.text.primary, mb: 1 }}
+            sx={{
+              color: theme.palette.text.primary,
+              borderColor: theme.palette.text.primary,
+              mb: 1,
+            }}
           />
         ))}
       </Stack>

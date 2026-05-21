@@ -1,5 +1,5 @@
-import { Link as RouterLink } from "react-router-dom";
 import { Box, Link, Typography, useTheme } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 export function NotFoundPage() {
   const theme = useTheme();

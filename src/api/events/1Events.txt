@@ -1,4 +1,0 @@
- checked by curt june 23
-    name:'Events',
-  
-    

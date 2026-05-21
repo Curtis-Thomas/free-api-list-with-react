@@ -11,15 +11,8 @@
       "**/build/**",
       "**/node_modules/**",
       "**/.wrangler/**",
+      "**/*.generated.json",
       "pnpm-lock.yaml",
-      "src/**",
-      "public/**",
-      "build/**",
-      "scripts/**",
-      "babel.config.js",
-      "webpack.config.js",
-      "netlify.toml",
-      "OVERHAUL_NOTES.md",
       "prompt.md"
     ]
   },

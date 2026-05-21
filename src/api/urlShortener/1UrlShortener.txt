@@ -1,4 +1,0 @@
- {name:'URL Shorteners',
-    list: [
-        {name:''},
-    ]},

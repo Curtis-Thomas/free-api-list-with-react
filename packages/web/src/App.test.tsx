@@ -1,11 +1,11 @@
-import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter, Routes, Route } from "react-router-dom";
-import { ThemeProvider } from "./theme/ThemeContext.js";
-import { HomePage } from "./pages/HomePage.js";
-import { CategoryPage } from "./pages/CategoryPage.js";
-import { ApiDetailPage } from "./pages/ApiDetailPage.js";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
+import { describe, expect, it } from "vitest";
 import { APIS } from "./data/catalog.js";
+import { ApiDetailPage } from "./pages/ApiDetailPage.js";
+import { CategoryPage } from "./pages/CategoryPage.js";
+import { HomePage } from "./pages/HomePage.js";
+import { ThemeProvider } from "./theme/ThemeContext.js";
 
 function renderAt(path: string, element: React.ReactNode) {
   return render(
@@ -32,7 +32,9 @@ describe("HomePage", () => {
   it("renders the catalog and counts match", () => {
     renderAt("/", null);
     expect(screen.getByText(/Free API List/i)).toBeInTheDocument();
-    expect(screen.getByText(new RegExp(`Showing ${APIS.length} of ${APIS.length} APIs`))).toBeInTheDocument();
+    expect(
+      screen.getByText(new RegExp(`Showing ${APIS.length} of ${APIS.length} APIs`)),
+    ).toBeInTheDocument();
   });
 });
 
@@ -52,7 +54,9 @@ describe("CategoryPage", () => {
 describe("ApiDetailPage", () => {
   it("renders the detail page for a known API", () => {
     renderAt("/animals/cataas", null);
-    expect(screen.getByRole("heading", { name: /Cat as a Service/i, level: 4 })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /Cat as a Service/i, level: 4 }),
+    ).toBeInTheDocument();
     expect(screen.getByText(/Endpoints/i)).toBeInTheDocument();
   });
 

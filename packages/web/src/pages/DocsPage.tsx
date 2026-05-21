@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import {
   Alert,
   Box,
@@ -13,6 +12,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import { useEffect, useState } from "react";
 
 interface Contributor {
   id: number;
@@ -55,8 +55,8 @@ export function DocsPage() {
         Documentation
       </Typography>
       <Typography variant="body1" sx={{ color: theme.palette.text.secondary, marginBottom: 2 }}>
-        See <code>AGENTS.md</code> and <code>CONTRIBUTING.md</code> in the repository for the canonical
-        contribution guides. Below is the list of GitHub contributors to this project.
+        See <code>AGENTS.md</code> and <code>CONTRIBUTING.md</code> in the repository for the
+        canonical contribution guides. Below is the list of GitHub contributors to this project.
       </Typography>
 
       {loading && (
@@ -71,7 +71,10 @@ export function DocsPage() {
       )}
 
       {!loading && !error && (
-        <TableContainer component={Paper} sx={{ backgroundColor: theme.palette.background.default }}>
+        <TableContainer
+          component={Paper}
+          sx={{ backgroundColor: theme.palette.background.default }}
+        >
           <Table>
             <TableHead>
               <TableRow>
@@ -84,7 +87,9 @@ export function DocsPage() {
               {contributors.map((c) => (
                 <TableRow key={c.id}>
                   <TableCell sx={{ color: theme.palette.text.secondary }}>{c.login}</TableCell>
-                  <TableCell sx={{ color: theme.palette.text.secondary }}>{c.contributions}</TableCell>
+                  <TableCell sx={{ color: theme.palette.text.secondary }}>
+                    {c.contributions}
+                  </TableCell>
                   <TableCell>
                     <Link href={c.html_url} target="_blank" rel="noopener noreferrer">
                       GitHub

@@ -1,4 +1,3 @@
-import { Link as RouterLink, useParams } from "react-router-dom";
 import {
   Box,
   Breadcrumbs,
@@ -14,9 +13,10 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import { Link as RouterLink, useParams } from "react-router-dom";
+import { CrudTester } from "../components/CrudTester.js";
 import { findApi, findCategory } from "../data/catalog.js";
 import { NotFoundPage } from "./NotFoundPage.js";
-import { CrudTester } from "../components/CrudTester.js";
 
 export function ApiDetailPage() {
   const { categoryId, apiId } = useParams<{ categoryId: string; apiId: string }>();
@@ -30,7 +30,12 @@ export function ApiDetailPage() {
   return (
     <Box>
       <Breadcrumbs sx={{ color: theme.palette.text.secondary, marginBottom: 2 }}>
-        <Link component={RouterLink} to="/" underline="hover" sx={{ color: theme.palette.text.secondary }}>
+        <Link
+          component={RouterLink}
+          to="/"
+          underline="hover"
+          sx={{ color: theme.palette.text.secondary }}
+        >
           Home
         </Link>
         {category && (
@@ -65,7 +70,7 @@ export function ApiDetailPage() {
         />
         <Chip
           size="small"
-          label={`auth: ${api.auth.required ? api.auth.type ?? "required" : "none"}`}
+          label={`auth: ${api.auth.required ? (api.auth.type ?? "required") : "none"}`}
           variant="outlined"
           sx={{ color: theme.palette.text.secondary, borderColor: theme.palette.text.secondary }}
         />
@@ -119,7 +124,9 @@ export function ApiDetailPage() {
               <TableCell sx={{ color: theme.palette.text.secondary, fontFamily: "monospace" }}>
                 {endpoint.path}
               </TableCell>
-              <TableCell sx={{ color: theme.palette.text.secondary }}>{endpoint.description}</TableCell>
+              <TableCell sx={{ color: theme.palette.text.secondary }}>
+                {endpoint.description}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

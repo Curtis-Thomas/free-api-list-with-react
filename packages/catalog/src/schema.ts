@@ -29,10 +29,15 @@ export const Pricing = z.enum(["free", "freemium", "trial"]);
 export type Pricing = z.infer<typeof Pricing>;
 
 export const ApiEntrySchema = z.object({
-  id: z.string().regex(/^[a-z0-9-]+$/, "id must be kebab-case (lowercase letters, digits, hyphens)"),
+  id: z
+    .string()
+    .regex(/^[a-z0-9-]+$/, "id must be kebab-case (lowercase letters, digits, hyphens)"),
   name: z.string().min(1),
   description: z.string().min(20).max(500),
-  category: z.string().min(1).regex(/^[a-z0-9-]+$/, "category must be kebab-case"),
+  category: z
+    .string()
+    .min(1)
+    .regex(/^[a-z0-9-]+$/, "category must be kebab-case"),
   difficulty: Difficulty,
   baseUrl: z.string().url(),
   documentationUrl: z.string().url(),

@@ -34,10 +34,10 @@ export default {
     }
 
     if (!ALLOWED.has(targetUrl.host)) {
-      return new Response(
-        `Host "${targetUrl.host}" is not in the catalog allowlist`,
-        { status: 403, headers: corsHeaders(origin) },
-      );
+      return new Response(`Host "${targetUrl.host}" is not in the catalog allowlist`, {
+        status: 403,
+        headers: corsHeaders(origin),
+      });
     }
 
     const upstreamInit: RequestInit = { method: request.method };

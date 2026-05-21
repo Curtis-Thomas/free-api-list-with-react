@@ -1,4 +1,9 @@
-import { ApiEntrySchema, CategorySchema, type ApiEntry, type Category } from "@free-api-list/catalog";
+import {
+  type ApiEntry,
+  ApiEntrySchema,
+  type Category,
+  CategorySchema,
+} from "@free-api-list/catalog";
 
 const apiModules = import.meta.glob<{ default: unknown }>("../../../catalog/apis/*.json", {
   eager: true,

@@ -1,5 +1,5 @@
+import { type ApiEntry, ApiEntrySchema } from "@free-api-list/catalog";
 import { z } from "zod";
-import { ApiEntrySchema, type ApiEntry } from "@free-api-list/catalog";
 
 export const getApiInputSchema = {
   id: z.string().min(1).describe("Catalog id of the API (e.g. 'cat-facts-ninja')"),

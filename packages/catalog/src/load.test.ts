@@ -1,9 +1,9 @@
-import { describe, it, expect, beforeAll, afterAll } from "vitest";
-import { mkdtempSync, writeFileSync, rmSync } from "node:fs";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { afterAll, beforeAll, describe, expect, it } from "vitest";
+import { CatalogValidationError, loadCatalog } from "./load.js";
 import { ApiEntrySchema } from "./schema.js";
-import { loadCatalog, CatalogValidationError } from "./load.js";
 
 const VALID_ENTRY = {
   id: "test-api",
@@ -127,9 +127,9 @@ describe("loadCatalog (failure modes)", () => {
     const apisDir = join(workdir, "apis");
     const file = join(apisDir, "broken.json");
     writeFileSync(file, "{ this is not json");
-    expect(() => loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") })).toThrow(
-      CatalogValidationError,
-    );
+    expect(() =>
+      loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") }),
+    ).toThrow(CatalogValidationError);
     rmSync(file);
   });
 
@@ -137,9 +137,9 @@ describe("loadCatalog (failure modes)", () => {
     const apisDir = join(workdir, "apis");
     const file = join(apisDir, "mismatch.json");
     writeFileSync(file, JSON.stringify({ ...VALID_ENTRY, id: "actual-id" }));
-    expect(() => loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") })).toThrow(
-      /filename implies/,
-    );
+    expect(() =>
+      loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") }),
+    ).toThrow(/filename implies/);
     rmSync(file);
   });
 
@@ -150,9 +150,9 @@ describe("loadCatalog (failure modes)", () => {
       file,
       JSON.stringify({ ...VALID_ENTRY, id: "weird", category: "not-a-real-category" }),
     );
-    expect(() => loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") })).toThrow(
-      /not in categories\.json/,
-    );
+    expect(() =>
+      loadCatalog({ apisDir, categoriesFile: join(workdir, "categories.json") }),
+    ).toThrow(/not in categories\.json/);
     rmSync(file);
   });
 });

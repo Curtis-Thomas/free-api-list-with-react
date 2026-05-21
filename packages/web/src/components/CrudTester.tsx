@@ -1,4 +1,4 @@
-import { useState } from "react";
+import type { HttpMethod } from "@free-api-list/catalog";
 import {
   Alert,
   Box,
@@ -13,8 +13,8 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import { useState } from "react";
 import { callApi, tryFormatJson } from "../lib/fetch-api.js";
-import type { HttpMethod } from "@free-api-list/catalog";
 
 const METHODS: HttpMethod[] = ["GET", "POST", "PUT", "PATCH", "DELETE"];
 
@@ -48,9 +48,7 @@ export function CrudTester({
     try {
       const url = `${base}${path}`;
       const result = await callApi(
-        method === "GET"
-          ? { method, url, useProxy }
-          : { method, url, body, useProxy },
+        method === "GET" ? { method, url, useProxy } : { method, url, body, useProxy },
       );
       setMeta(
         `${result.status} ${result.statusText} · ${result.contentType ?? "no content-type"} · ${result.durationMs}ms`,
@@ -129,17 +127,15 @@ export function CrudTester({
         />
       )}
 
-      <Button
-        variant="outlined"
-        onClick={onFetch}
-        disabled={loading}
-        sx={{ marginBottom: 2 }}
-      >
+      <Button variant="outlined" onClick={onFetch} disabled={loading} sx={{ marginBottom: 2 }}>
         {loading ? "Fetching…" : "Fetch"}
       </Button>
 
       {meta && (
-        <Typography variant="caption" sx={{ display: "block", color: theme.palette.text.secondary }}>
+        <Typography
+          variant="caption"
+          sx={{ display: "block", color: theme.palette.text.secondary }}
+        >
           {meta}
         </Typography>
       )}

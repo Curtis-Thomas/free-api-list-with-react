@@ -1,13 +1,8 @@
 import { readFileSync, readdirSync } from "node:fs";
+import { basename, dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { dirname, join, basename } from "node:path";
-import { ZodError } from "zod";
-import {
-  ApiEntrySchema,
-  CategoriesFileSchema,
-  type ApiEntry,
-  type Category,
-} from "./schema.js";
+import type { ZodError } from "zod";
+import { type ApiEntry, ApiEntrySchema, CategoriesFileSchema, type Category } from "./schema.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const PACKAGE_ROOT = join(HERE, "..");

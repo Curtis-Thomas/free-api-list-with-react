@@ -1,9 +1,9 @@
-import type { ReactNode } from "react";
 import { Box } from "@mui/material";
-import { Header } from "./Header.js";
-import { Footer } from "./Footer.js";
+import type { ReactNode } from "react";
 import { BarLeft } from "./BarLeft.js";
 import { BarRight } from "./BarRight.js";
+import { Footer } from "./Footer.js";
+import { Header } from "./Header.js";
 
 export function AppLayout({ children }: { children: ReactNode }) {
   return (

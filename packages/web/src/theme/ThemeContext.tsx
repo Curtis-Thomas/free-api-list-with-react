@@ -1,7 +1,7 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import { DEFAULT_THEME, getTheme, isThemeId, type ThemeId } from "./themes.js";
+import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
+import { type ReactNode, createContext, useContext, useEffect, useMemo, useState } from "react";
+import { DEFAULT_THEME, type ThemeId, getTheme, isThemeId } from "./themes.js";
 
 const STORAGE_KEY = "theme";
 

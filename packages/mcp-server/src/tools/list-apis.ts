@@ -1,5 +1,5 @@
-import { z } from "zod";
 import type { ApiEntry } from "@free-api-list/catalog";
+import { z } from "zod";
 import { type ApiSummary, summarize } from "./common.js";
 
 export const listApisInputSchema = {

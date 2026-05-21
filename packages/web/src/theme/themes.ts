@@ -1,4 +1,4 @@
-import { createTheme, type Theme, type ThemeOptions } from "@mui/material/styles";
+import { type Theme, type ThemeOptions, createTheme } from "@mui/material/styles";
 
 interface ThemeBuild {
   bg: string;

@@ -1,4 +1,4 @@
-import { loadCatalog, CatalogValidationError } from "../src/load.js";
+import { CatalogValidationError, loadCatalog } from "../src/load.js";
 
 try {
   const { apis, categories } = loadCatalog();

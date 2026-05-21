@@ -1,5 +1,0 @@
- {name:'Patent',
-    list: [
-        //https://patentsview.org/apis/purpose
-        {name:'PatentsView'},
-    ]},

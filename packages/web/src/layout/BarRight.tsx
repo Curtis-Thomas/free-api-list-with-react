@@ -5,12 +5,12 @@ import {
   Link,
   MenuItem,
   Select,
+  type SelectChangeEvent,
   Typography,
   useTheme,
-  type SelectChangeEvent,
 } from "@mui/material";
-import { THEME_IDS, THEME_LABELS, isThemeId } from "../theme/themes.js";
 import { useThemeId } from "../theme/ThemeContext.js";
+import { THEME_IDS, THEME_LABELS, isThemeId } from "../theme/themes.js";
 
 export function BarRight() {
   const theme = useTheme();
@@ -28,12 +28,7 @@ export function BarRight() {
       <Typography variant="overline">Theme</Typography>
       <FormControl fullWidth size="small" sx={{ mt: 1 }}>
         <InputLabel id="theme-select-label">Theme</InputLabel>
-        <Select
-          labelId="theme-select-label"
-          value={themeId}
-          label="Theme"
-          onChange={onChange}
-        >
+        <Select labelId="theme-select-label" value={themeId} label="Theme" onChange={onChange}>
           {THEME_IDS.map((id) => (
             <MenuItem key={id} value={id}>
               {THEME_LABELS[id]}

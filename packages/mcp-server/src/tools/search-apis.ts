@@ -1,10 +1,19 @@
-import { z } from "zod";
 import type { ApiEntry } from "@free-api-list/catalog";
+import { z } from "zod";
 import { type ApiSummary, scoreMatch, summarize } from "./common.js";
 
 export const searchApisInputSchema = {
-  query: z.string().min(1).describe("Free-text query matched against name, description, tags, category"),
-  limit: z.number().int().min(1).max(50).optional().describe("Maximum matches to return (default 10)"),
+  query: z
+    .string()
+    .min(1)
+    .describe("Free-text query matched against name, description, tags, category"),
+  limit: z
+    .number()
+    .int()
+    .min(1)
+    .max(50)
+    .optional()
+    .describe("Maximum matches to return (default 10)"),
 };
 
 export interface SearchApisInput {

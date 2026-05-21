@@ -1,6 +1,14 @@
-import { Link as RouterLink } from "react-router-dom";
-import { Card, CardActionArea, CardContent, Chip, Stack, Typography, useTheme } from "@mui/material";
 import type { ApiEntry } from "@free-api-list/catalog";
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  Chip,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 export function ApiCard({ api }: { api: ApiEntry }) {
   const theme = useTheme();
@@ -26,7 +34,10 @@ export function ApiCard({ api }: { api: ApiEntry }) {
             <Chip
               size="small"
               label={api.difficulty}
-              sx={{ color: theme.palette.text.secondary, borderColor: theme.palette.text.secondary }}
+              sx={{
+                color: theme.palette.text.secondary,
+                borderColor: theme.palette.text.secondary,
+              }}
               variant="outlined"
             />
             {api.auth.required && (
@@ -34,7 +45,10 @@ export function ApiCard({ api }: { api: ApiEntry }) {
                 size="small"
                 label="auth required"
                 variant="outlined"
-                sx={{ color: theme.palette.text.secondary, borderColor: theme.palette.text.secondary }}
+                sx={{
+                  color: theme.palette.text.secondary,
+                  borderColor: theme.palette.text.secondary,
+                }}
               />
             )}
           </Stack>

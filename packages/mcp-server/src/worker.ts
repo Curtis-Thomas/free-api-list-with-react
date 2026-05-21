@@ -5,7 +5,10 @@
 // StreamableHTTPServerTransport instead of stdio, and bundle the
 // catalog JSON at build time (Workers have no filesystem).
 
-export interface Env {}
+export interface Env {
+  // bindings (KV, Durable Objects, secrets) go here when the HTTP transport is wired up
+  [key: string]: unknown;
+}
 
 export default {
   async fetch(_request: Request, _env: Env): Promise<Response> {

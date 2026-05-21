@@ -1,5 +1,5 @@
-import { Link as RouterLink } from "react-router-dom";
 import { Box, List, ListItemButton, ListItemText, Typography, useTheme } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import { categoriesWithApis } from "../data/catalog.js";
 
 export function BarLeft() {

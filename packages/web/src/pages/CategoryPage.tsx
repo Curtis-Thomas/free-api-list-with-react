@@ -1,7 +1,7 @@
-import { Link as RouterLink, useParams } from "react-router-dom";
 import { Box, Breadcrumbs, Grid, Link, Typography, useTheme } from "@mui/material";
-import { apisInCategory, findCategory } from "../data/catalog.js";
+import { Link as RouterLink, useParams } from "react-router-dom";
 import { ApiCard } from "../components/ApiCard.js";
+import { apisInCategory, findCategory } from "../data/catalog.js";
 import { NotFoundPage } from "./NotFoundPage.js";
 
 export function CategoryPage() {
@@ -17,7 +17,12 @@ export function CategoryPage() {
   return (
     <Box>
       <Breadcrumbs sx={{ color: theme.palette.text.secondary, marginBottom: 2 }}>
-        <Link component={RouterLink} to="/" underline="hover" sx={{ color: theme.palette.text.secondary }}>
+        <Link
+          component={RouterLink}
+          to="/"
+          underline="hover"
+          sx={{ color: theme.palette.text.secondary }}
+        >
           Home
         </Link>
         <Typography sx={{ color: theme.palette.text.primary }}>{category.label}</Typography>
@@ -29,7 +34,11 @@ export function CategoryPage() {
 
       {apis.length === 0 ? (
         <Typography variant="body1" sx={{ color: theme.palette.text.secondary }}>
-          No APIs catalogued in this category yet. See <Link component={RouterLink} to="/">how to contribute</Link>.
+          No APIs catalogued in this category yet. See{" "}
+          <Link component={RouterLink} to="/">
+            how to contribute
+          </Link>
+          .
         </Typography>
       ) : (
         <Grid container spacing={2}>

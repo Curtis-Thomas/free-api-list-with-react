@@ -1,6 +1,6 @@
-import { z } from "zod";
 import type { ApiEntry } from "@free-api-list/catalog";
-import { scoreMatch, summarize, tokenize, type ApiSummary } from "./common.js";
+import { z } from "zod";
+import { type ApiSummary, scoreMatch, summarize, tokenize } from "./common.js";
 
 export const suggestApisInputSchema = {
   task_description: z
@@ -48,7 +48,8 @@ function rationaleFor(api: ApiEntry, terms: string[]): string {
   for (const term of terms) {
     if (api.name.toLowerCase().includes(term)) reasons.push(`name mentions "${term}"`);
     else if (api.tags.some((t) => t.toLowerCase() === term)) reasons.push(`tagged "${term}"`);
-    else if (api.category.toLowerCase().includes(term)) reasons.push(`category is "${api.category}"`);
+    else if (api.category.toLowerCase().includes(term))
+      reasons.push(`category is "${api.category}"`);
     else if (api.description.toLowerCase().includes(term))
       reasons.push(`description mentions "${term}"`);
   }

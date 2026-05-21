@@ -1,14 +1,14 @@
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Box } from "@mui/material";
-import { ThemeProvider } from "./theme/ThemeContext.js";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "./layout/AppLayout.js";
-import { HomePage } from "./pages/HomePage.js";
-import { CategoryPage } from "./pages/CategoryPage.js";
 import { ApiDetailPage } from "./pages/ApiDetailPage.js";
-import { ToolsPage } from "./pages/ToolsPage.js";
+import { CategoryPage } from "./pages/CategoryPage.js";
 import { DocsPage } from "./pages/DocsPage.js";
-import { NotFoundPage } from "./pages/NotFoundPage.js";
+import { HomePage } from "./pages/HomePage.js";
 import { LegacyRedirect } from "./pages/LegacyRedirect.js";
+import { NotFoundPage } from "./pages/NotFoundPage.js";
+import { ToolsPage } from "./pages/ToolsPage.js";
+import { ThemeProvider } from "./theme/ThemeContext.js";
 
 export function App() {
   return (

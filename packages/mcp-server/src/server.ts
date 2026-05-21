@@ -1,9 +1,9 @@
-import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { ApiEntry } from "@free-api-list/catalog";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { jsonContent } from "./tools/common.js";
+import { ApiNotFoundError, getApi, getApiInputSchema } from "./tools/get-api.js";
 import { listApis, listApisInputSchema } from "./tools/list-apis.js";
 import { searchApis, searchApisInputSchema } from "./tools/search-apis.js";
-import { ApiNotFoundError, getApi, getApiInputSchema } from "./tools/get-api.js";
 import { suggestApis, suggestApisInputSchema } from "./tools/suggest-apis.js";
 
 export interface BuildServerOptions {
