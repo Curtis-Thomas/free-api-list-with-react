@@ -1,68 +1,69 @@
-# Free API List with React
+# Free API List
 
-![Image Alt Text](img/ReadMeImg.png)
+[![CI](https://github.com/curtis-thomas/free-api-list-with-react/actions/workflows/ci.yml/badge.svg)](https://github.com/curtis-thomas/free-api-list-with-react/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
-[![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://mui.com/)
+A community-maintained catalog of free public APIs, with an in-browser test harness and an MCP server that exposes the catalog to Claude (or any MCP-aware coding agent).
 
-Welcome to the Free API List with React project! This open source project aims to provide a comprehensive list of free APIs along with tools to test and explore them. The project is built using React, and it allows users to discover and learn about various APIs available for different purposes.
+## What's in the box
 
-## Getting Started
+```
+free-api-list/
+├── packages/catalog/      # The Zod-validated API catalog. The source of truth.
+├── packages/web/          # The website (Vite + React 19 + MUI 7).
+└── packages/mcp-server/   # MCP server (npx @free-api-list/mcp-server).
+```
 
-npm install
-npm run dev
+The catalog is upstream of everything. Adding an API means editing one JSON file in `packages/catalog/apis/` — no TypeScript, no build system knowledge required.
 
-## Features
+## Contribute
 
-![Image Alt Text](img/Initial_page.png)
+Two clear tracks:
 
+- **Want to add an API to the list?** Read [Track A of `CONTRIBUTING.md`](./CONTRIBUTING.md#track-a--add-an-api-no-coding-required). One JSON file, one PR.
+- **Want to work on the code or the MCP server?** Read [Track B of `CONTRIBUTING.md`](./CONTRIBUTING.md#track-b--work-on-the-codebase) and [`AGENTS.md`](./AGENTS.md).
 
-### **API Listing**
+## Run the web app locally
 
-Explore a diverse selection of APIs spanning various types and applications, providing a comprehensive array of valuable services for your projects.
+```bash
+pnpm install
+pnpm dev
+# open http://localhost:5173
+```
 
-- Enjoy a user-friendly interface designed for effortless comprehension and usability, making it simple to navigate and explore the available APIs.
-- Benefit from a categorized listing that streamlines the process of discovering the ideal API for your specific needs.
-- APIs are classified based on application difficulty levels, ranging from beginner-friendly complexities to challenging applications, suitable even for experienced developers.
+## Use the MCP server with Claude
 
+Add to your MCP client config (Claude Code, Claude Desktop, Cursor, …):
 
-### **Easy access to APIs Documentation**
+```jsonc
+{
+  "mcpServers": {
+    "free-api-list": {
+      "command": "npx",
+      "args": ["-y", "@free-api-list/mcp-server"]
+    }
+  }
+}
+```
 
-Aiming to simplify the process of finding the documentation for a desired API, FREE API List provides the documentation right at the beginning of each API page, right above its description.
+Then ask things like *"What free weather APIs are in the catalog?"* or *"Suggest 3 APIs I could use for a generative-art project."*
 
-- Access the documentation with a single link that will direct you to the official API page.
-- Obtain detailed information about each API more easily, including endpoints, request parameters, and response formats.
+Tools exposed: `list_apis`, `search_apis`, `get_api`, `suggest_apis_for_task`. See [`packages/mcp-server/README.md`](./packages/mcp-server/README.md).
 
+## Tech stack
 
-### **API Testing**
-
-![Image Alt Text](img/api_testing.png)
-
-Experience a streamlined testing interface that enables the execution of fundamental functionalities for each API.
-
-- Effortless invocation of GET, POST, PUT, and DELETE functions.
-- View responses in the JSON format provided by the API itself.
-- Accessible Base URLs and Endpoints simplify and expedite the functionality testing process.
-
-
-## Live Demo
-
-Explore the live demo of the Free API List with React project: [Free API List](https://freeapilist.com/)
-
-
-## Contributing
-
-Contributions are welcome and greatly appreciated! If you would like to contribute to the project by adding new APIs, improving documentation or enhancing the testing tools, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
-
+| Layer | Choice |
+| --- | --- |
+| Package manager | pnpm + workspaces |
+| Language | TypeScript strict |
+| Web bundler | Vite 6 |
+| UI framework | React 19 + MUI 7 |
+| Schema | Zod |
+| MCP SDK | `@modelcontextprotocol/sdk` |
+| Testing | Vitest |
+| Lint/format | Biome |
+| Hosting | Cloudflare Pages (web) + Workers (CORS proxy + MCP HTTP) |
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-If you have any questions, suggestions, or feedback, please feel free to reach out to the project maintainer.
-
----
-
-Thank you for your interest in the Free API List with React project. We hope you find it useful and contribute to its growth and improvement!
+MIT — see [`LICENSE`](./LICENSE).
