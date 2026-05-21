@@ -2,10 +2,15 @@
 
 ![Image Alt Text](img/ReadMeImg.png)
 
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://material-ui.com/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Material UI](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](https://mui.com/)
 
 Welcome to the Free API List with React project! This open source project aims to provide a comprehensive list of free APIs along with tools to test and explore them. The project is built using React, and it allows users to discover and learn about various APIs available for different purposes.
+
+## Getting Started
+
+npm install
+npm run dev
 
 ## Features
 
@@ -47,7 +52,7 @@ Explore the live demo of the Free API List with React project: [Free API List](h
 
 ## Contributing
 
-Contributions are welcome and greatly appreciated! If you would like to contribute to the project by adding new APIs, improving documentatio or enchancing the testing tools, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
+Contributions are welcome and greatly appreciated! If you would like to contribute to the project by adding new APIs, improving documentation or enhancing the testing tools, please follow the guidelines in the [Contributing](CONTRIBUTING.md) document.
 
 
 ## License
