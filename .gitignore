@@ -34,3 +34,6 @@ pnpm-debug.log*
 # local
 .claude/settings.local.json
 prompt.md
+
+# generated
+packages/cors-proxy/src/allowlist.generated.json

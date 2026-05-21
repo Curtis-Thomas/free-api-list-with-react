@@ -1,0 +1,26 @@
+{
+  "name": "@free-api-list/cors-proxy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "tsx scripts/build-allowlist.ts",
+    "dev": "wrangler dev",
+    "predeploy": "tsx scripts/build-allowlist.ts",
+    "deploy": "wrangler deploy",
+    "build": "tsx scripts/build-allowlist.ts && tsc --noEmit",
+    "typecheck": "tsx scripts/build-allowlist.ts && tsc --noEmit",
+    "test": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@free-api-list/catalog": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5",
+    "wrangler": "^3.91.0"
+  }
+}
