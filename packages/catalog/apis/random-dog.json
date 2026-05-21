@@ -1,0 +1,18 @@
+{
+  "id": "random-dog",
+  "name": "Random Dog",
+  "description": "A simple API that returns a random dog picture URL. Useful for placeholder images and fun projects.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://random.dog",
+  "documentationUrl": "https://random.dog/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/woof.json", "method": "GET", "description": "Retrieve a random dog picture URL" }
+  ],
+  "tags": ["dogs", "images"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

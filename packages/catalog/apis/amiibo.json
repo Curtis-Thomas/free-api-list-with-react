@@ -1,0 +1,18 @@
+{
+  "id": "amiibo",
+  "name": "AmiiboAPI",
+  "description": "Read-only API that returns information about Nintendo amiibo figures. No auth required, supports filtering by name, id, or type.",
+  "category": "games-comics",
+  "difficulty": "beginner",
+  "baseUrl": "https://amiiboapi.com/api/amiibo",
+  "documentationUrl": "https://amiiboapi.com/docs/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/", "method": "GET", "description": "Return all amiibo available in the API" }
+  ],
+  "tags": ["games", "nintendo", "amiibo"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

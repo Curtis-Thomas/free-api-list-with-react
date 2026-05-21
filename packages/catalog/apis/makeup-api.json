@@ -1,0 +1,22 @@
+{
+  "id": "makeup-api",
+  "name": "Makeup API",
+  "description": "Search and retrieve makeup product data: brand, name, price, ingredients, and product images.",
+  "category": "health",
+  "difficulty": "beginner",
+  "baseUrl": "http://makeup-api.herokuapp.com/api/v1",
+  "documentationUrl": "http://makeup-api.herokuapp.com/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/products.json",
+      "method": "GET",
+      "description": "Search makeup products with optional filters"
+    }
+  ],
+  "tags": ["beauty", "products", "shopping"],
+  "cors": "unknown",
+  "https": false,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

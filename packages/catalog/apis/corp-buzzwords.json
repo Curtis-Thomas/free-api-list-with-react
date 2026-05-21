@@ -1,0 +1,18 @@
+{
+  "id": "corp-buzzwords",
+  "name": "Corporate Buzzword Generator",
+  "description": "A free API that returns a random corporate buzzword phrase. Useful for placeholder content and humor.",
+  "category": "entertainment",
+  "difficulty": "beginner",
+  "baseUrl": "https://corporatebs-generator.sameerkumar.website",
+  "documentationUrl": "https://github.com/sameerkumar18/corporate-bs-generator-api",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/", "method": "GET", "description": "Return a random corporate phrase" }
+  ],
+  "tags": ["jokes", "fun", "text"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

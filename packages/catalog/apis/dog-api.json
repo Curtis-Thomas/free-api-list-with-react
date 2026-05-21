@@ -1,0 +1,30 @@
+{
+  "id": "dog-api",
+  "name": "Dog API",
+  "description": "JSON API for dog breeds, groups, and facts. Browse the full catalog of breeds or look up a single breed by id.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://dogapi.dog/api/v2",
+  "documentationUrl": "https://dogapi.dog/docs/api-v2",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/breeds", "method": "GET", "description": "Retrieve a list of dog breeds" },
+    {
+      "path": "/breeds/{id}",
+      "method": "GET",
+      "description": "Retrieve details of a specific dog breed"
+    },
+    { "path": "/facts", "method": "GET", "description": "Retrieve dog facts" },
+    { "path": "/groups", "method": "GET", "description": "Retrieve a list of dog groups" },
+    {
+      "path": "/groups/{id}",
+      "method": "GET",
+      "description": "Retrieve details of a specific dog group"
+    }
+  ],
+  "tags": ["dogs", "breeds", "facts"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

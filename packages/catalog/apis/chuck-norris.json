@@ -1,0 +1,25 @@
+{
+  "id": "chuck-norris",
+  "name": "Chuck Norris",
+  "description": "Satirical factoid jokes about martial artist and actor Chuck Norris. Random, categorized, or searchable.",
+  "category": "entertainment",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.chucknorris.io/jokes",
+  "documentationUrl": "https://api.chucknorris.io/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/random", "method": "GET", "description": "Return a random joke" },
+    { "path": "/categories", "method": "GET", "description": "List available joke categories" },
+    {
+      "path": "/random?category={category}",
+      "method": "GET",
+      "description": "Return a random joke from a category"
+    },
+    { "path": "/search?query={query}", "method": "GET", "description": "Search jokes by free text" }
+  ],
+  "tags": ["jokes", "fun"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

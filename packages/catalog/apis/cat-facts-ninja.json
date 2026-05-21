@@ -1,0 +1,16 @@
+{
+  "id": "cat-facts-ninja",
+  "name": "Cat Facts (catfact.ninja)",
+  "description": "A simple API that returns a random cat fact from the catfact.ninja project. No auth, JSON response.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://catfact.ninja",
+  "documentationUrl": "https://catfact.ninja/docs/api-docs.json",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [{ "path": "/fact", "method": "GET", "description": "Retrieve a random cat fact" }],
+  "tags": ["cats", "facts"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

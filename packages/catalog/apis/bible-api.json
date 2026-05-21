@@ -1,0 +1,32 @@
+{
+  "id": "bible-api",
+  "name": "Bible API",
+  "description": "A tiny web app that provides a JSON API for fetching bible verses and passages across multiple translations.",
+  "category": "books",
+  "difficulty": "beginner",
+  "baseUrl": "https://bible-api.com",
+  "documentationUrl": "https://bible-api.com",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/john 3:16",
+      "method": "GET",
+      "description": "Get a single verse (/BOOK+CHAPTER:VERSE)"
+    },
+    { "path": "/jn 3:16", "method": "GET", "description": "Abbreviated book name" },
+    { "path": "/romans+12:1-2", "method": "GET", "description": "Verse range" },
+    { "path": "/romans 12:1-2,5-7,9,13:1-9&10", "method": "GET", "description": "Multiple ranges" },
+    { "path": "/john 3:16?translation=kjv", "method": "GET", "description": "Pick a translation" },
+    {
+      "path": "/john 3:16?verse_numbers=true",
+      "method": "GET",
+      "description": "Include verse numbers"
+    },
+    { "path": "/john+3:16?callback=func", "method": "GET", "description": "JSONP" }
+  ],
+  "tags": ["bible", "religion", "books"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

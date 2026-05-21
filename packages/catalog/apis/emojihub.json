@@ -1,0 +1,29 @@
+{
+  "id": "emojihub",
+  "name": "EmojiHub",
+  "description": "A simple, free HTTP API that returns emoji metadata. Supports random, grouped, and categorized lookups.",
+  "category": "art-design",
+  "difficulty": "beginner",
+  "baseUrl": "https://emojihub.yurace.pro/api",
+  "documentationUrl": "https://github.com/cheatsnake/emojihub",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/all", "method": "GET", "description": "Return all emoji" },
+    { "path": "/random", "method": "GET", "description": "Return a random emoji" },
+    {
+      "path": "/random/group/face-positive",
+      "method": "GET",
+      "description": "Random emoji from a group (/group/{group-name})"
+    },
+    {
+      "path": "/random/category/food-and-drink",
+      "method": "GET",
+      "description": "Random emoji from a category (/category/{category-name})"
+    }
+  ],
+  "tags": ["emoji", "images"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

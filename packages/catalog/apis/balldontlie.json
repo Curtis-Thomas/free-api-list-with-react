@@ -1,0 +1,22 @@
+{
+  "id": "balldontlie",
+  "name": "BALLDONTLIE",
+  "description": "Free API for NBA-related data: players, teams, games, and stats. Originally no key required; an API key is now needed for higher tiers.",
+  "category": "sports-fitness",
+  "difficulty": "beginner",
+  "baseUrl": "https://www.balldontlie.io/api/v1",
+  "documentationUrl": "https://www.balldontlie.io/home.html#introduction",
+  "auth": {
+    "required": false,
+    "type": "none",
+    "notes": "Free tier; paid tiers require an API key."
+  },
+  "endpoints": [
+    { "path": "/players", "method": "GET", "description": "List players across all seasons" }
+  ],
+  "tags": ["sports", "nba", "basketball"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "freemium",
+  "addedAt": "2023-06-01"
+}

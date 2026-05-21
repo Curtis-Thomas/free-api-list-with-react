@@ -1,0 +1,35 @@
+{
+  "id": "art-institute-chicago",
+  "name": "Art Institute of Chicago",
+  "description": "JSON REST API exposing the Art Institute of Chicago's public collection for developers and researchers.",
+  "category": "art-design",
+  "difficulty": "intermediate",
+  "baseUrl": "https://api.artic.edu/api/v1/artworks",
+  "documentationUrl": "https://api.artic.edu/docs/#quick-start",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/", "method": "GET", "description": "List artworks" },
+    {
+      "path": "/129884",
+      "method": "GET",
+      "description": "Get a single artwork by id (/artworks/{id})"
+    },
+    {
+      "path": "?fields=id,title,artist_display,date_display,main_reference_number",
+      "method": "GET",
+      "description": "Sparse fieldset query"
+    },
+    { "path": "?page=2&limit=100", "method": "GET", "description": "Paginate results" },
+    { "path": "/search?q=cats", "method": "GET", "description": "Free-text search" },
+    {
+      "path": "/search?q=cats&query[term][is_public_domain]=true",
+      "method": "GET",
+      "description": "Search filtered to public-domain artworks"
+    }
+  ],
+  "tags": ["art", "museum", "images"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

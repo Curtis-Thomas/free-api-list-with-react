@@ -1,0 +1,28 @@
+{
+  "id": "geojs",
+  "name": "GeoJS",
+  "description": "REST/JSON/JSONP IP geolocation lookup API with no rate limits. Returns IP, country, and full geo data.",
+  "category": "geocoding",
+  "difficulty": "beginner",
+  "baseUrl": "https://get.geojs.io/v1",
+  "documentationUrl": "https://www.geojs.io/docs/v1/endpoints/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/ip.json", "method": "GET", "description": "Return the requester's IP address" },
+    {
+      "path": "/ip/country.json",
+      "method": "GET",
+      "description": "Return the country associated with the requesting IP"
+    },
+    {
+      "path": "/ip/geo.json",
+      "method": "GET",
+      "description": "Return latitude, longitude, and ASN organisation for the requesting IP"
+    }
+  ],
+  "tags": ["geocoding", "ip", "geolocation"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

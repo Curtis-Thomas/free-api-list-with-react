@@ -1,0 +1,37 @@
+{
+  "id": "dog-ceo",
+  "name": "Dog CEO",
+  "description": "The internet's biggest collection of open source dog pictures, organised by breed and sub-breed.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://dog.ceo/api",
+  "documentationUrl": "https://dog.ceo/dog-api/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/breeds/list/all",
+      "method": "GET",
+      "description": "Retrieve a list of all dog breeds"
+    },
+    {
+      "path": "/breed/hound/images",
+      "method": "GET",
+      "description": "Retrieve images of hound dogs"
+    },
+    {
+      "path": "/breed/hound/list",
+      "method": "GET",
+      "description": "Retrieve a list of hound sub-breeds"
+    },
+    {
+      "path": "/breeds/image/random",
+      "method": "GET",
+      "description": "Retrieve a random dog image"
+    }
+  ],
+  "tags": ["dogs", "images", "breeds"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

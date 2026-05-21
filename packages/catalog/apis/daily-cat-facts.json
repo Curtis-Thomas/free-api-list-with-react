@@ -1,0 +1,18 @@
+{
+  "id": "daily-cat-facts",
+  "name": "Daily Cat Facts",
+  "description": "Daily cat facts served from the Cat Facts project. Retrieve random cat facts or browse the full archive.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://cat-fact.herokuapp.com",
+  "documentationUrl": "https://alexwohlbruck.github.io/cat-facts/docs/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/facts/random", "method": "GET", "description": "Retrieve a random cat fact" }
+  ],
+  "tags": ["cats", "facts", "fun"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

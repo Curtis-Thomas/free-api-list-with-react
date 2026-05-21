@@ -1,0 +1,22 @@
+{
+  "id": "nekos-best",
+  "name": "nekos.best",
+  "description": "A RESTful API serving fully SFW, high-quality anime images and GIFs with metadata.",
+  "category": "anime",
+  "difficulty": "beginner",
+  "baseUrl": "https://nekos.best/api/v2",
+  "documentationUrl": "https://docs.nekos.best/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/neko",
+      "method": "GET",
+      "description": "Get a random image or GIF along with metadata"
+    }
+  ],
+  "tags": ["anime", "images", "gifs"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

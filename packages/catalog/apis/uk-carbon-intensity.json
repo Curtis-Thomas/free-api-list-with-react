@@ -1,0 +1,22 @@
+{
+  "id": "uk-carbon-intensity",
+  "name": "UK Carbon Intensity",
+  "description": "The official Carbon Intensity API for Great Britain, developed by National Grid. Half-hourly data.",
+  "category": "environment",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.carbonintensity.org.uk",
+  "documentationUrl": "https://api.carbonintensity.org.uk/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/intensity",
+      "method": "GET",
+      "description": "Carbon intensity data for the current half hour"
+    }
+  ],
+  "tags": ["energy", "carbon", "climate"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

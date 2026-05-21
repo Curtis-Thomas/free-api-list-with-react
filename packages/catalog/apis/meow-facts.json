@@ -1,0 +1,21 @@
+{
+  "id": "meow-facts",
+  "name": "Meow Facts",
+  "description": "A simple API that returns a random fact about cats on a GET request. Supports multiple languages and counts.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://meowfacts.herokuapp.com",
+  "documentationUrl": "https://github.com/wh-iterabb-it/meowfacts",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/", "method": "GET", "description": "Retrieve a random cat fact" },
+    { "path": "/?count=3", "method": "GET", "description": "Retrieve multiple cat facts" },
+    { "path": "/?id=3", "method": "GET", "description": "Retrieve a specific cat fact by ID" },
+    { "path": "/?lang=ukr", "method": "GET", "description": "Retrieve a cat fact in Ukrainian" }
+  ],
+  "tags": ["cats", "facts"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

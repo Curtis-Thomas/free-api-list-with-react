@@ -1,0 +1,22 @@
+{
+  "id": "techy",
+  "name": "Techy",
+  "description": "Generates cool tech-savvy sounding phrases. Useful for placeholder text in tech demos and presentations.",
+  "category": "entertainment",
+  "difficulty": "beginner",
+  "baseUrl": "https://techy-api.vercel.app/api",
+  "documentationUrl": "https://techy-api.vercel.app/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/json",
+      "method": "GET",
+      "description": "Return a random tech-sounding phrase as JSON"
+    }
+  ],
+  "tags": ["jokes", "fun", "text"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

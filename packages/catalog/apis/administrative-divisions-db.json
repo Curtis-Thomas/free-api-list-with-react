@@ -1,0 +1,22 @@
+{
+  "id": "administrative-divisions-db",
+  "name": "Administrative Divisions DB",
+  "description": "Country-level administrative-division datasets (states, provinces, etc.) served as static JSON over a CDN.",
+  "category": "geocoding",
+  "difficulty": "beginner",
+  "baseUrl": "https://rawcdn.githack.com/kamikazechaser/administrative-divisions-db/master/api",
+  "documentationUrl": "https://github.com/kamikazechaser/administrative-divisions-db",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/US.json",
+      "method": "GET",
+      "description": "Administrative divisions for a country (replace US with any ISO country code)"
+    }
+  ],
+  "tags": ["geocoding", "countries", "static"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

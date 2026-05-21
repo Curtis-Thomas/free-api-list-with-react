@@ -1,0 +1,22 @@
+{
+  "id": "country-is",
+  "name": "country.is",
+  "description": "Open-source IP-to-country lookup. Supports IPv4 and IPv6. No API key, no usage quotas.",
+  "category": "geocoding",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.country.is",
+  "documentationUrl": "https://country.is/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/",
+      "method": "GET",
+      "description": "Look up the calling browser or app's country by IP"
+    }
+  ],
+  "tags": ["geocoding", "ip", "country"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

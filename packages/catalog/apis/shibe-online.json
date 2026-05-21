@@ -1,0 +1,22 @@
+{
+  "id": "shibe-online",
+  "name": "shibe.online",
+  "description": "Shibes as a service. Returns random shibe (and optionally cat or bird) image URLs over HTTPS.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://shibe.online",
+  "documentationUrl": "https://shibe.online/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/api/shibes?count=1&urls=true&httpsUrls=true",
+      "method": "GET",
+      "description": "Retrieve a random shibe image"
+    }
+  ],
+  "tags": ["dogs", "shibes", "images"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

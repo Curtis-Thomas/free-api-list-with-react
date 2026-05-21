@@ -1,0 +1,40 @@
+{
+  "id": "abibliadigital",
+  "name": "A Biblia Digital",
+  "description": "RESTful Bible API with seven versions across four languages plus search, random verse, and version listing.",
+  "category": "books",
+  "difficulty": "intermediate",
+  "baseUrl": "https://www.abibliadigital.com.br/api",
+  "documentationUrl": "https://github.com/omarciovsena/abibliadigital/blob/master/DOCUMENTATION.md",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/books", "method": "GET", "description": "List all books" },
+    {
+      "path": "/verses/:version/:abbrev/:chapter",
+      "method": "GET",
+      "description": "Get all verses of a chapter"
+    },
+    {
+      "path": "/verses/:version/:abbrev/:chapter/:number",
+      "method": "GET",
+      "description": "Get a specific verse"
+    },
+    {
+      "path": "/verses/:version/random",
+      "method": "GET",
+      "description": "Get a random verse in a version"
+    },
+    {
+      "path": "/verses/:version/:abbrev/random",
+      "method": "GET",
+      "description": "Get a random verse in a book"
+    },
+    { "path": "/verses/search", "method": "POST", "description": "Search for verses by keyword" },
+    { "path": "/versions", "method": "GET", "description": "List supported translations" }
+  ],
+  "tags": ["bible", "religion", "books"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

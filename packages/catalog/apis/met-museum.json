@@ -1,0 +1,44 @@
+{
+  "id": "met-museum",
+  "name": "The Metropolitan Museum of Art Collection",
+  "description": "Open access to metadata on more than 470,000 artworks in the Met's collection. Unrestricted commercial and noncommercial use.",
+  "category": "art-design",
+  "difficulty": "intermediate",
+  "baseUrl": "https://collectionapi.metmuseum.org/public/collection/v1",
+  "documentationUrl": "https://metmuseum.github.io/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/objects?departmentIds=1",
+      "method": "GET",
+      "description": "List object IDs filtered by department"
+    },
+    {
+      "path": "/objects?departmentIds=3|9|12",
+      "method": "GET",
+      "description": "List object IDs across multiple departments"
+    },
+    {
+      "path": "/objects?metadataDate=2018-10-22",
+      "method": "GET",
+      "description": "List object IDs updated since a date (yyyy-mm-dd)"
+    },
+    { "path": "/objects/437133", "method": "GET", "description": "Get a single object by id" },
+    { "path": "/departments", "method": "GET", "description": "List all departments" },
+    {
+      "path": "/search?isOnView=true&q=sunflower",
+      "method": "GET",
+      "description": "Search on-view objects by keyword"
+    },
+    {
+      "path": "/search?q=sunflowers",
+      "method": "GET",
+      "description": "Search all objects by keyword"
+    }
+  ],
+  "tags": ["art", "museum", "images", "open-access"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

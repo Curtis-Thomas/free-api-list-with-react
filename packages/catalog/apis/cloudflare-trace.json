@@ -1,0 +1,22 @@
+{
+  "id": "cloudflare-trace",
+  "name": "Cloudflare Trace",
+  "description": "Returns the requester's IP address, timestamp, user agent, country code, IATA, HTTP version, TLS version, and more. Plain text, not JSON.",
+  "category": "development",
+  "difficulty": "beginner",
+  "baseUrl": "https://1.1.1.1/cdn-cgi",
+  "documentationUrl": "https://developers.cloudflare.com/fundamentals/basic-tasks/trace-request/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/trace",
+      "method": "GET",
+      "description": "Get IP address, HTTP version, geolocation, and other trace metadata"
+    }
+  ],
+  "tags": ["network", "diagnostics", "ip"],
+  "cors": "no",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

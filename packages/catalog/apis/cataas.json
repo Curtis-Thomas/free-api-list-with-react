@@ -1,0 +1,39 @@
+{
+  "id": "cataas",
+  "name": "Cat as a Service (CATAAS)",
+  "description": "A REST API that returns random cat images, GIFs, and customized cats with text overlays.",
+  "category": "animals",
+  "difficulty": "beginner",
+  "baseUrl": "https://cataas.com",
+  "documentationUrl": "https://cataas.com/doc.html",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/cat", "method": "GET", "description": "Retrieve a random cat" },
+    {
+      "path": "/cat/:tag",
+      "method": "GET",
+      "description": "Retrieve a random cat from a specific tag category"
+    },
+    { "path": "/cat/gif", "method": "GET", "description": "Retrieve a random GIF cat" },
+    {
+      "path": "/cat/says/:text",
+      "method": "GET",
+      "description": "Retrieve a random cat with custom text"
+    },
+    {
+      "path": "/cat/:tag/says/:text",
+      "method": "GET",
+      "description": "Retrieve a random cat from a specific tag with custom text"
+    },
+    {
+      "path": "/cat/says/:text?size=:size&color=:color",
+      "method": "GET",
+      "description": "Retrieve a custom random cat with text, size, and color"
+    }
+  ],
+  "tags": ["cats", "images", "gifs"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

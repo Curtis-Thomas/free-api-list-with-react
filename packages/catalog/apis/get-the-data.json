@@ -1,0 +1,22 @@
+{
+  "id": "get-the-data",
+  "name": "GetTheData (BNG to lat/long)",
+  "description": "Converts British National Grid easting/northing coordinates to WGS84 latitude and longitude.",
+  "category": "geocoding",
+  "difficulty": "intermediate",
+  "baseUrl": "https://api.getthedata.com/bng2latlong",
+  "documentationUrl": "https://www.getthedata.com/bng2latlong",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/529090/179645",
+      "method": "GET",
+      "description": "Convert easting/northing to lat/long (/{easting}/{northing})"
+    }
+  ],
+  "tags": ["geocoding", "uk", "coordinates"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

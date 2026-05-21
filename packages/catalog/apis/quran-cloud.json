@@ -1,0 +1,22 @@
+{
+  "id": "quran-cloud",
+  "name": "Al Quran Cloud",
+  "description": "A free API for fetching the Quran by Juz, Surah, or Ayah with translations and recitations.",
+  "category": "books",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.alquran.cloud/v1",
+  "documentationUrl": "https://alquran.cloud/api",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/quran/en.asad",
+      "method": "GET",
+      "description": "Full Quran in the Asad English translation"
+    }
+  ],
+  "tags": ["quran", "religion", "books"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

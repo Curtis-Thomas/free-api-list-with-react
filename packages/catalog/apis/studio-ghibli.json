@@ -1,0 +1,22 @@
+{
+  "id": "studio-ghibli",
+  "name": "Studio Ghibli",
+  "description": "Catalog of people, places, and things that populate Studio Ghibli films. Hosted on Vercel.",
+  "category": "anime",
+  "difficulty": "beginner",
+  "baseUrl": "https://ghibliapi.vercel.app",
+  "documentationUrl": "https://ghibliapi.vercel.app/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/films",
+      "method": "GET",
+      "description": "Information about all of the Studio Ghibli films"
+    }
+  ],
+  "tags": ["anime", "films", "studio-ghibli"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

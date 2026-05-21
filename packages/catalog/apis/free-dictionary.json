@@ -1,0 +1,22 @@
+{
+  "id": "free-dictionary",
+  "name": "Free Dictionary",
+  "description": "A REST API that returns definitions, pronunciations, and examples for any English word. No auth required.",
+  "category": "dictionary",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.dictionaryapi.dev/api/v2/entries/en",
+  "documentationUrl": "https://dictionaryapi.dev/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/hello",
+      "method": "GET",
+      "description": "Get the definition of a single English word"
+    }
+  ],
+  "tags": ["dictionary", "english", "words"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

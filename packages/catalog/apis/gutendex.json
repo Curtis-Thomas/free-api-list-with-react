@@ -1,0 +1,25 @@
+{
+  "id": "gutendex",
+  "name": "Gutendex",
+  "description": "A JSON web API that exposes metadata for Project Gutenberg's catalog of public-domain books.",
+  "category": "books",
+  "difficulty": "beginner",
+  "baseUrl": "https://gutendex.com",
+  "documentationUrl": "https://gutendex.com/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/books", "method": "GET", "description": "List books in the catalog" },
+    { "path": "/books?languages=en,fr", "method": "GET", "description": "Filter by language(s)" },
+    {
+      "path": "/books?search=dickens%20great",
+      "method": "GET",
+      "description": "Search author and title"
+    },
+    { "path": "/books?topic=horror", "method": "GET", "description": "Filter by subject keyword" }
+  ],
+  "tags": ["books", "literature", "public-domain"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

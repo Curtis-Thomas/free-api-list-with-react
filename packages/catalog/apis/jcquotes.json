@@ -1,0 +1,16 @@
+{
+  "id": "jcquotes",
+  "name": "JCQuotes",
+  "description": "An ever-growing list of quotes pulled from James Clear's 3-2-1 newsletter. Random or paginated lookup.",
+  "category": "personality",
+  "difficulty": "beginner",
+  "baseUrl": "https://www.jcquotes.com/api/quotes",
+  "documentationUrl": "https://github.com/MauricioRobayo/jcquotes",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [{ "path": "/random", "method": "GET", "description": "Return a random quote" }],
+  "tags": ["quotes", "inspiration"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

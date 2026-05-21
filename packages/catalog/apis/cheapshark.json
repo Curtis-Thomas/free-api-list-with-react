@@ -1,0 +1,22 @@
+{
+  "id": "cheapshark",
+  "name": "CheapShark",
+  "description": "Aggregated PC game deal data from Steam, GreenManGaming, and other major stores. Free, no auth, CORS-enabled.",
+  "category": "games-comics",
+  "difficulty": "beginner",
+  "baseUrl": "https://www.cheapshark.com/api/1.0",
+  "documentationUrl": "https://apidocs.cheapshark.com/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/deals?storeID=1&upperPrice=15",
+      "method": "GET",
+      "description": "Paged list of deals filtered by store and price"
+    }
+  ],
+  "tags": ["games", "deals", "shopping"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

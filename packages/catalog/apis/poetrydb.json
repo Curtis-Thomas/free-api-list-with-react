@@ -1,0 +1,16 @@
+{
+  "id": "poetrydb",
+  "name": "PoetryDB",
+  "description": "An API for internet poets. Query by author, title, lines, or line count and combine filters as needed.",
+  "category": "books",
+  "difficulty": "beginner",
+  "baseUrl": "https://poetrydb.org",
+  "documentationUrl": "https://github.com/thundercomb/poetrydb/blob/master/README.md",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [{ "path": "/author", "method": "GET", "description": "List all authors" }],
+  "tags": ["poetry", "literature"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}

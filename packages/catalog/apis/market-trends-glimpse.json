@@ -1,0 +1,47 @@
+{
+  "id": "market-trends-glimpse",
+  "name": "Market Trends & Business Signals (Glimpse)",
+  "description": "Unlock business opportunities with the MarketTrends API from Glimpse. Surface hyper-growth niches, compare topics, and forecast trajectories.",
+  "category": "business",
+  "difficulty": "intermediate",
+  "baseUrl": "https://api.meetglimpse.com/v1",
+  "documentationUrl": "https://meetglimpse.com/api/",
+  "auth": {
+    "required": true,
+    "type": "api_key",
+    "notes": "API key required. See vendor site for pricing and signup."
+  },
+  "endpoints": [
+    {
+      "path": "/trends/exploding",
+      "method": "GET",
+      "description": "Current hyper-growth business niches and insights"
+    },
+    {
+      "path": "/trends/:category",
+      "method": "GET",
+      "description": "Filter trends by industry (e.g. saas, health, sustainability)"
+    },
+    {
+      "path": "/trends/forecast/:topic",
+      "method": "GET",
+      "description": "12-month trend forecast for a topic"
+    },
+    {
+      "path": "/trends/compare?topics=topic1,topic2",
+      "method": "GET",
+      "description": "Compare growth trajectories across topics"
+    },
+    {
+      "path": "/signals/emerging?min_growth=:percentage",
+      "method": "GET",
+      "description": "Identify under-the-radar opportunities by minimum growth threshold"
+    },
+    { "path": "/metadata/tags", "method": "GET", "description": "List all available industry tags" }
+  ],
+  "tags": ["business", "trends", "market-research"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "freemium",
+  "addedAt": "2025-11-21"
+}

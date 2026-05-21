@@ -1,0 +1,18 @@
+{
+  "id": "citybikes",
+  "name": "CityBikes",
+  "description": "CityBikes data: every public bike-share network in the world, with stations and availability.",
+  "category": "sports-fitness",
+  "difficulty": "beginner",
+  "baseUrl": "http://api.citybik.es/v2",
+  "documentationUrl": "https://api.citybik.es/v2/",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    { "path": "/networks", "method": "GET", "description": "Return all bike-share networks" }
+  ],
+  "tags": ["sports", "bikes", "transportation"],
+  "cors": "yes",
+  "https": false,
+  "pricing": "free",
+  "addedAt": "2023-06-01"
+}
