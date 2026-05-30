@@ -1,0 +1,27 @@
+{
+  "id": "longevity-world-cup",
+  "name": "Longevity World Cup",
+  "description": "Public JSON data API for a longevity sport platform, including athlete profiles, biological-age rankings, field metadata, and rank-preview data.",
+  "category": "health",
+  "difficulty": "beginner",
+  "baseUrl": "https://longevityworldcup.com",
+  "documentationUrl": "https://longevityworldcup.com/swagger",
+  "auth": { "required": false, "type": "none" },
+  "endpoints": [
+    {
+      "path": "/api/data/athletes",
+      "method": "GET",
+      "description": "Return public athlete profiles and submitted longevity competition results"
+    },
+    {
+      "path": "/api/data/fields",
+      "method": "GET",
+      "description": "Return public field, league, and ranking metadata"
+    }
+  ],
+  "tags": ["longevity", "health", "open-data", "biological-age"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2026-05-30"
+}
