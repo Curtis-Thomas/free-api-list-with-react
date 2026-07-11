@@ -1,0 +1,21 @@
+{
+  "id": "latlng",
+  "name": "LatLng",
+  "description": "Forward and reverse geocoding, places search, autocomplete, static maps, and MapLibre-compatible vector map tiles powered by OpenStreetMap data. Includes a free developer tier with a generous daily quota.",
+  "category": "geocoding",
+  "difficulty": "beginner",
+  "baseUrl": "https://api.latlng.work",
+  "documentationUrl": "https://www.latlng.work/docs",
+  "auth": { "required": true, "type": "api_key" },
+  "endpoints": [
+    { "path": "/api?q={query}&limit={limit}", "method": "GET", "description": "Forward geocoding — convert an address or place name to coordinates (GeoJSON)" },
+    { "path": "/reverse?lat={lat}&lng={lng}", "method": "GET", "description": "Reverse geocoding — convert coordinates to the nearest address" },
+    { "path": "/places?q={query}", "method": "GET", "description": "Places search — discover OpenStreetMap points of interest by name or category" },
+    { "path": "/static?center={lng},{lat}&zoom={z}&size={w}x{h}", "method": "GET", "description": "Static map image — render a PNG map for a given center, zoom, and size" }
+  ],
+  "tags": ["geocoding", "reverse-geocoding", "maps", "openstreetmap", "map-tiles", "places", "static-maps", "maplibre"],
+  "cors": "yes",
+  "https": true,
+  "pricing": "freemium",
+  "addedAt": "2026-07-10"
+}
