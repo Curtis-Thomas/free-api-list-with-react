@@ -46,6 +46,7 @@
   { "id": "text-analysis", "label": "Text Analysis" },
   { "id": "tracking", "label": "Tracking" },
   { "id": "transportation", "label": "Transportation" },
+  { "id": "travel", "label": "Travel" },
   { "id": "url-shortener", "label": "URL Shortener" },
   { "id": "vehicle", "label": "Vehicle" },
   { "id": "video", "label": "Video" },

@@ -1,0 +1,31 @@
+{
+  "id": "bucketlist-nl-dream-of-the-day",
+  "name": "Bucketlist.nl Dream of the Day",
+  "description": "Returns one published travel or life experience idea per day, with image, theme, destination and canonical URL. Useful for daily inspiration widgets, newsletters and bots that need a fresh idea without a key or account.",
+  "category": "travel",
+  "difficulty": "beginner",
+  "baseUrl": "https://bucketlist.nl/api",
+  "documentationUrl": "https://bucketlist.nl/samenwerken?lang=en#droom-van-de-dag",
+  "auth": {
+    "required": false,
+    "type": "none"
+  },
+  "endpoints": [
+    {
+      "path": "/droom-van-de-dag",
+      "method": "GET",
+      "description": "Get today's idea; optional scope, lang and theme query parameters",
+      "sampleRequest": "https://bucketlist.nl/api/droom-van-de-dag?scope=wereld&lang=en"
+    }
+  ],
+  "tags": [
+    "travel",
+    "inspiration",
+    "bucket-list",
+    "daily"
+  ],
+  "cors": "yes",
+  "https": true,
+  "pricing": "free",
+  "addedAt": "2026-09-23"
+}
