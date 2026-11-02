@@ -1,0 +1,26 @@
+{
+  "id": "siftingio",
+  "name": "SiftingIO",
+  "description": "Real-time and historical market data for US stocks and ETFs, forex, commodities and crypto over REST, with real-time WebSocket streams and Python, TypeScript and Go SDKs. A usage-limited free plan is available for individual, internal non-commercial use.",
+  "category": "finance",
+  "difficulty": "intermediate",
+  "baseUrl": "https://api.sifting.io/v1",
+  "documentationUrl": "https://sifting.io/docs",
+  "auth": {
+    "required": true,
+    "type": "api_key",
+    "notes": "Requires a SiftingIO account and API key sent in the X-API-Key header. Free-plan usage limits and licence restrictions apply; see https://sifting.io/pricing."
+  },
+  "endpoints": [
+    {
+      "path": "/hist/forex/{pair}/bars",
+      "method": "GET",
+      "description": "Historical forex OHLC bars for a currency pair. Requires an API key in X-API-Key, Accept-Encoding: gzip, and the documented date-range parameters."
+    }
+  ],
+  "tags": ["market-data", "stocks", "forex", "commodities", "crypto"],
+  "cors": "unknown",
+  "https": true,
+  "pricing": "freemium",
+  "addedAt": "2026-11-02"
+}
